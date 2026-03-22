@@ -2,118 +2,234 @@
 
 import { useState, useMemo } from 'react'
 
-// 完整的中医知识数据
-const knowledgeData = {
-  formulas: {
-    id: 'formulas',
-    name: '方剂学',
-    icon: '💊',
-    items: [
-      { id: 1, title: '麻黄汤', source: '伤寒论', content: '发汗解表，宣肺平喘。主治外感风寒表实证。', tags: ['解表', '发汗'] },
-      { id: 2, title: '桂枝汤', source: '伤寒论', content: '解肌发表，调和营卫。主治外感风寒表虚证。', tags: ['解表', '调和'] },
-      { id: 3, title: '小柴胡汤', source: '伤寒论', content: '和解少阳。主治伤寒少阳证。', tags: ['和解', '少阳'] },
-    ]
+type KnowledgeItem = {
+  id: string
+  title: string
+  source: string
+  content: string
+  tags: string[]
+}
+
+type Subcategory = {
+  name: string
+  items: KnowledgeItem[]
+}
+
+type Category = {
+  id: string
+  name: string
+  icon: string
+  color: string
+  children: Record<string, Subcategory>
+}
+
+const knowledgeBase: Record<string, Category> = {
+  tcm: {
+    id: 'tcm',
+    name: '中医学',
+    icon: '🏥',
+    color: '#c0392b',
+    children: {
+      formulas: {
+        name: '方剂学',
+        items: [
+          { id: 'formula-1', title: '麻黄汤', source: '《伤寒论》', content: '【组成】麻黄 9g、桂枝 6g、杏仁 9g、甘草 3g。【功效】发汗解表，宣肺平喘。【主治】外感风寒表实证。', tags: ['解表剂', '伤寒论'] },
+          { id: 'formula-2', title: '桂枝汤', source: '《伤寒论》', content: '【组成】桂枝 9g、芍药 9g、生姜 9g、大枣 12 枚、甘草 6g。【功效】解肌发表，调和营卫。【主治】外感风寒表虚证。', tags: ['解表剂', '伤寒论'] },
+          { id: 'formula-3', title: '小柴胡汤', source: '《伤寒论》', content: '【组成】柴胡 12g、黄芩 9g、人参 6g、半夏 9g、甘草 6g、生姜 9g、大枣 12 枚。【功效】和解少阳。【主治】伤寒少阳证。', tags: ['和解剂', '伤寒论'] },
+          { id: 'formula-4', title: '四君子汤', source: '《太平惠民和剂局方》', content: '【组成】人参 9g、白术 9g、茯苓 9g、甘草 6g。【功效】益气健脾。【主治】脾胃气虚证。', tags: ['补益剂', '健脾'] },
+          { id: 'formula-5', title: '六味地黄丸', source: '《小儿药证直诀》', content: '【组成】熟地黄 24g、山茱萸 12g、山药 12g、泽泻 9g、牡丹皮 9g、茯苓 9g。【功效】滋阴补肾。【主治】肾阴虚证。', tags: ['补益剂', '滋阴'] },
+        ]
+      },
+      herbs: {
+        name: '中药学',
+        items: [
+          { id: 'herb-1', title: '人参', source: '五加科', content: '【性味】甘、微苦，微温。【归经】归脾、肺、心经。【功效】大补元气，复脉固脱，补脾益肺，生津养血，安神益智。', tags: ['补气药', '上品'] },
+          { id: 'herb-2', title: '黄芪', source: '豆科', content: '【性味】甘，微温。【归经】归脾、肺经。【功效】补气升阳，固表止汗，利水消肿，生津养血。', tags: ['补气药', '固表'] },
+          { id: 'herb-3', title: '当归', source: '伞形科', content: '【性味】甘、辛，温。【归经】归肝、心、脾经。【功效】补血活血，调经止痛，润肠通便。', tags: ['补血药', '活血'] },
+        ]
+      },
+      theory: {
+        name: '基础理论',
+        items: [
+          { id: 'theory-1', title: '阴阳学说', source: '《黄帝内经》', content: '阴阳者，天地之道也，万物之纲纪，变化之父母，生杀之本始，神明之府也。', tags: ['哲学基础', '核心理论'] },
+          { id: 'theory-2', title: '五行学说', source: '《黄帝内经》', content: '木曰曲直，火曰炎上，土爰稼穑，金曰从革，水曰润下。', tags: ['哲学基础', '系统论'] },
+        ]
+      },
+    }
   },
-  herbs: {
-    id: 'herbs',
-    name: '中药学',
-    icon: '🌿',
-    items: [
-      { id: 1, title: '人参', source: '五加科', content: '大补元气，复脉固脱，补脾益肺，生津养血，安神益智。', tags: ['补气', '上品'] },
-      { id: 2, title: '黄芪', source: '豆科', content: '补气升阳，固表止汗，利水消肿，生津养血。', tags: ['补气', '固表'] },
-      { id: 3, title: '当归', source: '伞形科', content: '补血活血，调经止痛，润肠通便。', tags: ['补血', '活血'] },
-    ]
+  western: {
+    id: 'western',
+    name: '西医学',
+    icon: '🩺',
+    color: '#2980b9',
+    children: {
+      basic: {
+        name: '基础医学',
+        items: [
+          { id: 'west-1', title: '解剖学', source: '基础医学', content: '研究人体形态结构的科学，包括系统解剖学、局部解剖学等。', tags: ['基础', '形态学'] },
+          { id: 'west-2', title: '生理学', source: '基础医学', content: '研究人体正常生命活动规律的科学。', tags: ['基础', '功能学'] },
+        ]
+      },
+    }
+  },
+  integrated: {
+    id: 'integrated',
+    name: '中西医结合',
+    icon: '⚕️',
+    color: '#27ae60',
+    children: {
+      cases: {
+        name: '临床案例',
+        items: [
+          { id: 'int-1', title: '慢性胃炎中西医结合治疗', source: '临床案例', content: '西医诊断：慢性浅表性胃炎。中医辨证：脾胃虚弱证。治法：健脾和胃。方药：香砂六君子汤加减。', tags: ['案例', '胃病'] },
+        ]
+      },
+    }
+  },
+  other: {
+    id: 'other',
+    name: '其他',
+    icon: '📖',
+    color: '#f39c12',
+    children: {
+      food: {
+        name: '药食同源',
+        items: [
+          { id: 'food-1', title: '山药', source: '药食同源目录', content: '【性味】甘，平。【功效】补脾养胃，生津益肺，补肾涩精。【应用】脾虚食少，久泻不止，肺虚喘咳。', tags: ['补气', '健脾'] },
+          { id: 'food-2', title: '枸杞子', source: '药食同源目录', content: '【性味】甘，平。【功效】滋补肝肾，益精明目。【应用】虚劳精亏，腰膝酸痛，眩晕耳鸣。', tags: ['滋补', '肝肾'] },
+        ]
+      },
+    }
   },
 }
 
 export default function Home() {
-  const [selectedCategory, setSelectedCategory] = useState('formulas')
-  const [searchQuery, setSearchQuery] = useState('')
+  const [selectedCategory, setSelectedCategory] = useState<string>('tcm')
+  const [selectedSubcategory, setSelectedSubcategory] = useState<string>('formulas')
+  const [searchQuery, setSearchQuery] = useState<string>('')
+  const [selectedItem, setSelectedItem] = useState<KnowledgeItem | null>(null)
+  const [sidebarOpen, setSidebarOpen] = useState<boolean>(true)
 
-  const currentCategory = knowledgeData[selectedCategory as keyof typeof knowledgeData]
+  const currentCategory = knowledgeBase[selectedCategory]
+  const currentSubcategory = currentCategory?.children?.[selectedSubcategory] || null
   
+  const allItems = useMemo(() => {
+    const items: (KnowledgeItem & { subcategory: string })[] = []
+    if (currentCategory?.children) {
+      Object.values(currentCategory.children).forEach(sub => {
+        sub.items.forEach(item => {
+          items.push({ ...item, subcategory: sub.name })
+        })
+      })
+    }
+    return items
+  }, [currentCategory])
+
   const filteredItems = useMemo(() => {
-    if (!searchQuery) return currentCategory.items
-    return currentCategory.items.filter(item => 
-      item.title.includes(searchQuery) || 
-      item.content.includes(searchQuery)
+    if (!searchQuery) {
+      return currentSubcategory?.items || []
+    }
+    return allItems.filter(item => 
+      item.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
+      item.content.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      item.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()))
     )
-  }, [currentCategory, searchQuery])
+  }, [searchQuery, currentSubcategory, allItems])
+
+  const displayItems = filteredItems || []
 
   return (
-    <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', padding: '20px' }}>
-      <h1 style={{ color: 'white', textAlign: 'center', fontSize: '2.5rem', marginBottom: '30px' }}>
-        🏥 宋宋的知识库
-      </h1>
-      
-      <div style={{ display: 'flex', gap: '20px', maxWidth: '1200px', margin: '0 auto' }}>
-        {/* 左侧菜单 */}
-        <div style={{ width: '250px', background: 'white', borderRadius: '15px', padding: '20px', boxShadow: '0 10px 40px rgba(0,0,0,0.1)' }}>
-          <h2 style={{ fontSize: '1.2rem', marginBottom: '15px', color: '#333' }}>知识分类</h2>
-          {Object.values(knowledgeData).map((category) => (
-            <button
-              key={category.id}
-              onClick={() => setSelectedCategory(category.id)}
-              style={{
-                width: '100%',
-                padding: '12px',
-                marginBottom: '8px',
-                borderRadius: '8px',
-                border: 'none',
-                background: selectedCategory === category.id ? 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' : '#f5f5f5',
-                color: selectedCategory === category.id ? 'white' : '#333',
-                cursor: 'pointer',
-                fontSize: '1rem',
-                textAlign: 'left',
-              }}
-            >
-              {category.icon} {category.name}
-            </button>
-          ))}
+    <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', display: 'flex', flexDirection: 'column' }}>
+      <header style={{ background: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(10px)', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', padding: '15px 30px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'sticky', top: 0, zIndex: 1000 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+          <button onClick={() => setSidebarOpen(!sidebarOpen)} style={{ background: 'none', border: 'none', fontSize: '24px', cursor: 'pointer', padding: '5px' }}>
+            {sidebarOpen ? '📚' : '📖'}
+          </button>
+          <div>
+            <h1 style={{ fontSize: '24px', fontWeight: 'bold', background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', margin: 0 }}>
+              🏥 宋宋的中医药知识库
+            </h1>
+            <p style={{ fontSize: '12px', color: '#666', margin: '5px 0 0 0' }}>传承中医精华 · 融合现代医学</p>
+          </div>
         </div>
+        <div style={{ position: 'relative', width: '400px' }}>
+          <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} placeholder="搜索知识、方剂、中药..." style={{ width: '100%', padding: '12px 20px 12px 45px', borderRadius: '25px', border: '2px solid #e0e0e0', fontSize: '14px', outline: 'none' }} />
+          <span style={{ position: 'absolute', left: '15px', top: '50%', transform: 'translateY(-50%)', fontSize: '18px' }}>🔍</span>
+        </div>
+        <div style={{ textAlign: 'right', fontSize: '12px', color: '#666' }}>
+          <div style={{ fontWeight: 'bold', fontSize: '16px' }}>{Object.values(knowledgeBase).reduce((sum, cat) => sum + Object.values(cat.children).reduce((s, sub) => s + sub.items.length, 0), 0)} 条知识</div>
+          <div>持续更新中...</div>
+        </div>
+      </header>
 
-        {/* 右侧内容 */}
-        <div style={{ flex: 1, background: 'white', borderRadius: '15px', padding: '20px', boxShadow: '0 10px 40px rgba(0,0,0,0.1)' }}>
-          {/* 搜索 */}
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="搜索..."
-            style={{
-              width: '100%',
-              padding: '12px',
-              borderRadius: '8px',
-              border: '2px solid #e0e0e0',
-              fontSize: '1rem',
-              marginBottom: '20px',
-            }}
-          />
-
-          {/* 内容列表 */}
-          <h2 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
-            {currentCategory.name}
-          </h2>
-          
-          {filteredItems.map((item) => (
-            <div
-              key={item.id}
-              style={{
-                padding: '15px',
-                marginBottom: '10px',
-                background: '#f8f9fa',
-                borderRadius: '10px',
-                borderLeft: '4px solid #667eea',
-              }}
-            >
-              <h3 style={{ fontSize: '1.2rem', color: '#333', marginBottom: '5px' }}>
-                {item.title}
-              </h3>
-              <p style={{ color: '#666', fontSize: '0.9rem' }}>{item.content}</p>
-              <span style={{ color: '#999', fontSize: '0.8rem' }}>来源：{item.source}</span>
+      <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
+        {sidebarOpen && (
+          <aside style={{ width: '280px', background: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(10px)', margin: '20px', borderRadius: '20px', boxShadow: '0 10px 40px rgba(0,0,0,0.1)', overflow: 'auto' }}>
+            <div style={{ padding: '20px' }}>
+              <h2 style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', marginBottom: '15px', display: 'flex', alignItems: 'center', gap: '8px' }}>📂 知识分类</h2>
+              {Object.values(knowledgeBase).map((category) => (
+                <div key={category.id} style={{ marginBottom: '10px' }}>
+                  <button onClick={() => { setSelectedCategory(category.id); const firstKey = Object.keys(category.children)[0]; if (firstKey) setSelectedSubcategory(firstKey); }} style={{ width: '100%', padding: '12px 15px', borderRadius: '12px', border: 'none', background: selectedCategory === category.id ? `linear-gradient(135deg, ${category.color} 0%, ${category.color}dd 100%)` : 'transparent', color: selectedCategory === category.id ? 'white' : '#333', cursor: 'pointer', fontSize: '14px', fontWeight: selectedCategory === category.id ? 'bold' : 'normal', textAlign: 'left', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <span style={{ fontSize: '18px' }}>{category.icon}</span>
+                    <div style={{ flex: 1 }}>
+                      <div>{category.name}</div>
+                      <div style={{ fontSize: '11px', opacity: 0.7 }}>{Object.keys(category.children).length} 个子类</div>
+                    </div>
+                  </button>
+                  {selectedCategory === category.id && (
+                    <div style={{ marginLeft: '20px', marginTop: '5px', borderLeft: `2px solid ${category.color}33`, paddingLeft: '10px' }}>
+                      {Object.entries(category.children).map(([key, sub]) => (
+                        <button key={key} onClick={() => setSelectedSubcategory(key)} style={{ width: '100%', padding: '8px 12px', borderRadius: '8px', border: 'none', background: selectedSubcategory === key ? `${category.color}22` : 'transparent', color: selectedSubcategory === key ? category.color : '#666', cursor: 'pointer', fontSize: '13px', textAlign: 'left', marginBottom: '3px' }}>
+                          {sub.name} <span style={{ float: 'right', fontSize: '11px' }}>{sub.items.length}</span>
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </aside>
+        )}
+
+        <main style={{ flex: 1, margin: '20px', background: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(10px)', borderRadius: '20px', boxShadow: '0 10px 40px rgba(0,0,0,0.1)', overflow: 'auto', display: 'flex', flexDirection: 'column' }}>
+          {currentSubcategory && (
+            <div style={{ padding: '25px 30px', borderBottom: '1px solid #f0f0f0' }}>
+              <h2 style={{ fontSize: '22px', fontWeight: 'bold', color: '#333', margin: '0 0 10px 0' }}>{currentSubcategory.name}</h2>
+              <p style={{ color: '#666', fontSize: '14px', margin: 0 }}>共 {currentSubcategory.items.length} 条知识</p>
+            </div>
+          )}
+
+          <div style={{ padding: '20px 30px', flex: 1, overflow: 'auto' }}>
+            {displayItems.length === 0 ? (
+              <div style={{ textAlign: 'center', padding: '60px 20px', color: '#999' }}>
+                <div style={{ fontSize: '48px', marginBottom: '20px' }}>🔍</div>
+                <div style={{ fontSize: '18px', fontWeight: 'bold' }}>暂无内容</div>
+                <div style={{ fontSize: '14px', marginTop: '10px' }}>{searchQuery ? '换个关键词试试吧~' : '该分类下暂无内容'}</div>
+              </div>
+            ) : (
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '20px' }}>
+                {displayItems.map((item) => (
+                  <div key={item.id} onClick={() => setSelectedItem(selectedItem && selectedItem.id === item.id ? null : item)} style={{ padding: '20px', background: selectedItem && selectedItem.id === item.id ? '#f8f9fa' : 'white', borderRadius: '15px', border: `2px solid ${selectedItem && selectedItem.id === item.id ? '#667eea' : '#f0f0f0'}`, cursor: 'pointer', transition: 'all 0.3s', boxShadow: selectedItem && selectedItem.id === item.id ? '0 5px 20px rgba(102,126,234,0.2)' : '0 2px 10px rgba(0,0,0,0.05)' }}>
+                    <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
+                      <div style={{ fontSize: '24px', width: '40px', height: '40px', borderRadius: '10px', background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>📖</div>
+                      <div style={{ flex: 1 }}>
+                        <h3 style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', margin: '0 0 8px 0' }}>{item.title}</h3>
+                        {item.source && <div style={{ fontSize: '12px', color: '#667eea', marginBottom: '8px' }}>📜 {item.source}</div>}
+                        <p style={{ fontSize: '14px', color: '#666', margin: '0 0 12px 0', lineHeight: '1.6' }}>{item.content.length > 100 ? item.content.substring(0, 100) + '...' : item.content}</p>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                          {item.tags.map((tag, i) => (<span key={i} style={{ fontSize: '11px', padding: '3px 8px', background: '#667eea15', color: '#667eea', borderRadius: '12px' }}>{tag}</span>))}
+                        </div>
+                      </div>
+                    </div>
+                    {selectedItem && selectedItem.id === item.id && (
+                      <div style={{ marginTop: '15px', paddingTop: '15px', borderTop: '1px solid #f0f0f0', fontSize: '14px', color: '#666', lineHeight: '1.8' }}>{item.content}</div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </main>
       </div>
     </div>
   )
