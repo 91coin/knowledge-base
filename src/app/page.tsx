@@ -1,200 +1,120 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 
-// 菜单数据
-const menuData = [
-  {
-    id: 'tcm',
-    name: '中医学',
-    icon: '🏥',
-    children: [
-      { id: 'tcm-theory', name: '基础理论' },
-      { id: 'tcm-diagnosis', name: '诊断学' },
-      { id: 'tcm-formulas', name: '方剂学' },
-      { id: 'tcm-herbs', name: '中药学' },
-      { id: 'tcm-classics', name: '经典古籍' },
+// 完整的中医知识数据
+const knowledgeData = {
+  formulas: {
+    id: 'formulas',
+    name: '方剂学',
+    icon: '💊',
+    items: [
+      { id: 1, title: '麻黄汤', source: '伤寒论', content: '发汗解表，宣肺平喘。主治外感风寒表实证。', tags: ['解表', '发汗'] },
+      { id: 2, title: '桂枝汤', source: '伤寒论', content: '解肌发表，调和营卫。主治外感风寒表虚证。', tags: ['解表', '调和'] },
+      { id: 3, title: '小柴胡汤', source: '伤寒论', content: '和解少阳。主治伤寒少阳证。', tags: ['和解', '少阳'] },
     ]
   },
-  {
-    id: 'western',
-    name: '西医学',
-    icon: '🩺',
-    children: [
-      { id: 'western-basic', name: '基础医学' },
-      { id: 'western-diagnosis', name: '诊断学' },
-      { id: 'western-clinical', name: '临床医学' },
+  herbs: {
+    id: 'herbs',
+    name: '中药学',
+    icon: '🌿',
+    items: [
+      { id: 1, title: '人参', source: '五加科', content: '大补元气，复脉固脱，补脾益肺，生津养血，安神益智。', tags: ['补气', '上品'] },
+      { id: 2, title: '黄芪', source: '豆科', content: '补气升阳，固表止汗，利水消肿，生津养血。', tags: ['补气', '固表'] },
+      { id: 3, title: '当归', source: '伞形科', content: '补血活血，调经止痛，润肠通便。', tags: ['补血', '活血'] },
     ]
   },
-  {
-    id: 'integrated',
-    name: '中西医结合',
-    icon: '⚕️',
-    children: [
-      { id: 'integrated-theory', name: '病证结合' },
-      { id: 'integrated-cases', name: '临床案例' },
-    ]
-  },
-  {
-    id: 'other',
-    name: '其他',
-    icon: '📚',
-    children: [
-      { id: 'other-food', name: '药食同源' },
-      { id: 'other-notes', name: '学习笔记' },
-    ]
-  },
-]
-
-// 示例内容数据
-const contentData: Record<string, any[]> = {
-  'tcm-formulas': [
-    { id: 1, title: '麻黄汤', source: '伤寒论', content: '发汗解表，宣肺平喘' },
-    { id: 2, title: '桂枝汤', source: '伤寒论', content: '解肌发表，调和营卫' },
-    { id: 3, title: '小柴胡汤', source: '伤寒论', content: '和解少阳' },
-    { id: 4, title: '四君子汤', source: '太平惠民和剂局方', content: '益气健脾' },
-    { id: 5, title: '六味地黄丸', source: '小儿药证直诀', content: '滋阴补肾' },
-  ],
-  'tcm-herbs': [
-    { id: 1, title: '人参', nature: '微温', content: '大补元气，复脉固脱' },
-    { id: 2, title: '黄芪', nature: '微温', content: '补气升阳，固表止汗' },
-    { id: 3, title: '当归', nature: '温', content: '补血活血，调经止痛' },
-  ],
-  'other-food': [
-    { id: 1, title: '山药', content: '补脾养胃，生津益肺' },
-    { id: 2, title: '枸杞子', content: '滋补肝肾，益精明目' },
-    { id: 3, title: '山楂', content: '消食健胃，行气散瘀' },
-  ],
 }
 
 export default function Home() {
-  const [selectedMenu, setSelectedMenu] = useState('tcm-formulas')
+  const [selectedCategory, setSelectedCategory] = useState('formulas')
   const [searchQuery, setSearchQuery] = useState('')
-  const [expandedMenus, setExpandedMenus] = useState<Set<string>>(new Set(['tcm']))
 
-  const toggleMenu = (menuId: string) => {
-    const newExpanded = new Set(expandedMenus)
-    if (newExpanded.has(menuId)) {
-      newExpanded.delete(menuId)
-    } else {
-      newExpanded.add(menuId)
-    }
-    setExpandedMenus(newExpanded)
-  }
-
-  const currentContent = contentData[selectedMenu] || []
+  const currentCategory = knowledgeData[selectedCategory as keyof typeof knowledgeData]
   
-  const filteredContent = searchQuery
-    ? currentContent.filter(item => 
-        item.title.includes(searchQuery) || 
-        item.content.includes(searchQuery)
-      )
-    : currentContent
+  const filteredItems = useMemo(() => {
+    if (!searchQuery) return currentCategory.items
+    return currentCategory.items.filter(item => 
+      item.title.includes(searchQuery) || 
+      item.content.includes(searchQuery)
+    )
+  }, [currentCategory, searchQuery])
 
   return (
-    <div className="min-h-screen bg-gray-50 flex">
-      {/* 左侧菜单 */}
-      <aside className="w-64 bg-white shadow-md flex-shrink-0">
-        <div className="p-4 border-b">
-          <h1 className="text-xl font-bold text-gray-800">🏥 宋宋的知识库</h1>
-          <p className="text-xs text-gray-500 mt-1">医学知识综合平台</p>
+    <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', padding: '20px' }}>
+      <h1 style={{ color: 'white', textAlign: 'center', fontSize: '2.5rem', marginBottom: '30px' }}>
+        🏥 宋宋的知识库
+      </h1>
+      
+      <div style={{ display: 'flex', gap: '20px', maxWidth: '1200px', margin: '0 auto' }}>
+        {/* 左侧菜单 */}
+        <div style={{ width: '250px', background: 'white', borderRadius: '15px', padding: '20px', boxShadow: '0 10px 40px rgba(0,0,0,0.1)' }}>
+          <h2 style={{ fontSize: '1.2rem', marginBottom: '15px', color: '#333' }}>知识分类</h2>
+          {Object.values(knowledgeData).map((category) => (
+            <button
+              key={category.id}
+              onClick={() => setSelectedCategory(category.id)}
+              style={{
+                width: '100%',
+                padding: '12px',
+                marginBottom: '8px',
+                borderRadius: '8px',
+                border: 'none',
+                background: selectedCategory === category.id ? 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' : '#f5f5f5',
+                color: selectedCategory === category.id ? 'white' : '#333',
+                cursor: 'pointer',
+                fontSize: '1rem',
+                textAlign: 'left',
+              }}
+            >
+              {category.icon} {category.name}
+            </button>
+          ))}
         </div>
-        
-        <nav className="p-2">
-          {menuData.map((menu) => (
-            <div key={menu.id} className="mb-2">
-              <button
-                onClick={() => toggleMenu(menu.id)}
-                className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                <span className="flex items-center gap-2">
-                  <span>{menu.icon}</span>
-                  <span className="font-medium text-gray-700">{menu.name}</span>
-                </span>
-                <span className="text-gray-400">
-                  {expandedMenus.has(menu.id) ? '▼' : '▶'}
-                </span>
-              </button>
-              
-              {expandedMenus.has(menu.id) && (
-                <div className="ml-4 mt-1 space-y-1">
-                  {menu.children.map((child) => (
-                    <button
-                      key={child.id}
-                      onClick={() => setSelectedMenu(child.id)}
-                      className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${
-                        selectedMenu === child.id
-                          ? 'bg-blue-100 text-blue-700 font-medium'
-                          : 'text-gray-600 hover:bg-gray-100'
-                      }`}
-                    >
-                      {child.name}
-                    </button>
-                  ))}
-                </div>
-              )}
+
+        {/* 右侧内容 */}
+        <div style={{ flex: 1, background: 'white', borderRadius: '15px', padding: '20px', boxShadow: '0 10px 40px rgba(0,0,0,0.1)' }}>
+          {/* 搜索 */}
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="搜索..."
+            style={{
+              width: '100%',
+              padding: '12px',
+              borderRadius: '8px',
+              border: '2px solid #e0e0e0',
+              fontSize: '1rem',
+              marginBottom: '20px',
+            }}
+          />
+
+          {/* 内容列表 */}
+          <h2 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
+            {currentCategory.name}
+          </h2>
+          
+          {filteredItems.map((item) => (
+            <div
+              key={item.id}
+              style={{
+                padding: '15px',
+                marginBottom: '10px',
+                background: '#f8f9fa',
+                borderRadius: '10px',
+                borderLeft: '4px solid #667eea',
+              }}
+            >
+              <h3 style={{ fontSize: '1.2rem', color: '#333', marginBottom: '5px' }}>
+                {item.title}
+              </h3>
+              <p style={{ color: '#666', fontSize: '0.9rem' }}>{item.content}</p>
+              <span style={{ color: '#999', fontSize: '0.8rem' }}>来源：{item.source}</span>
             </div>
           ))}
-        </nav>
-      </aside>
-
-      {/* 右侧内容区 */}
-      <main className="flex-1 p-6">
-        {/* 搜索栏 */}
-        <div className="mb-6">
-          <div className="relative max-w-md">
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="搜索内容..."
-              className="w-full px-4 py-2 pl-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            />
-            <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
-              🔍
-            </span>
-          </div>
         </div>
-
-        {/* 内容列表 */}
-        <div className="bg-white rounded-lg shadow">
-          <div className="px-6 py-4 border-b border-gray-200">
-            <h2 className="text-lg font-semibold text-gray-800">
-              {menuData.flatMap(m => m.children).find(c => c.id === selectedMenu)?.name || '内容'}
-            </h2>
-            <p className="text-sm text-gray-500 mt-1">
-              共 {filteredContent.length} 条
-            </p>
-          </div>
-          
-          <div className="divide-y divide-gray-200">
-            {filteredContent.map((item) => (
-              <div
-                key={item.id}
-                className="px-6 py-4 hover:bg-gray-50 transition-colors cursor-pointer"
-              >
-                <div className="flex items-start justify-between">
-                  <div>
-                    <h3 className="font-medium text-gray-900">{item.title}</h3>
-                    <p className="text-sm text-gray-600 mt-1">{item.content}</p>
-                  </div>
-                  {item.source && (
-                    <span className="text-xs text-gray-400 bg-gray-100 px-2 py-1 rounded">
-                      {item.source}
-                    </span>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-          
-          {filteredContent.length === 0 && (
-            <div className="px-6 py-12 text-center text-gray-500">
-              暂无内容
-            </div>
-          )}
-        </div>
-      </main>
+      </div>
     </div>
   )
 }

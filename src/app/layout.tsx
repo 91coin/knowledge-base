@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import './globals.css'
 
 export const metadata: Metadata = {
   title: '宋宋的知识库',
@@ -13,6 +12,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-CN">
+      <head>
+        <link rel="stylesheet" href="/styles.css" />
+      </head>
       <body className="min-h-screen bg-gray-50">
         {children}
       </body>
