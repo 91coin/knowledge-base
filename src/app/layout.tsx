@@ -13,9 +13,10 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <head>
-        <link rel="stylesheet" href="/styles.css" />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className="min-h-screen bg-gray-50">
+      <body style={{ margin: 0, padding: 0, fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
         {children}
       </body>
     </html>
