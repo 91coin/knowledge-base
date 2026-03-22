@@ -1,7 +1,6 @@
 'use client'
 
-import { useState, useMemo } from 'react'
-import Fuse from 'fuse.js'
+import { useState } from 'react'
 
 export default function Home() {
   return (
