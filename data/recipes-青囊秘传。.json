@@ -1,0 +1,2663 @@
+[
+  {
+    "id": "recipe_a_74386",
+    "title": "金蚣丸",
+    "content": "蜈蚣1两，僵蚕1两，全蝎1两。",
+    "source": "《青囊秘传》。",
+    "effects": "杨梅大疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64867",
+    "title": "喉疳化毒丹",
+    "content": "珍珠3分，血珀5分，飞滑石8分（新增西黄2分，大黄3分，轻粉2分，银朱2分，人中黄2分）。",
+    "source": "《青囊秘传》。",
+    "effects": "小儿胎火、胎毒，臀赤无皮，音哑鼻塞，赤游丹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_44568",
+    "title": "鼻衄丹",
+    "content": "龙骨1钱，蒲黄1钱，茅针花5分，梅片2分。",
+    "source": "《青囊秘传》。",
+    "effects": "鼻衄。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_73561",
+    "title": "接骨定痛丹",
+    "content": "商陆3钱，乌药3钱，川芎3钱，大腹皮3钱，炒细辛1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_51773",
+    "title": "大黑丸",
+    "content": "夏枯草（煅存性）。",
+    "source": "《青囊秘传》。",
+    "effects": "风热痰。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_47074",
+    "title": "参硫散",
+    "content": "苦参1钱，西硫黄2分。",
+    "source": "《青囊秘传》。",
+    "effects": "梅花风。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_74125",
+    "title": "解郁丹",
+    "content": "尖香附不拘多少。",
+    "source": "《青囊秘传》。",
+    "effects": "一切气滞脚肿之症。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_57145",
+    "title": "耳聋丸",
+    "content": "巴豆2粒，全虫2个，麝香2厘，石菖蒲2寸。",
+    "source": "《青囊秘传》。",
+    "effects": "耳聋。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_69522",
+    "title": "鸡肝散",
+    "content": "石决明（煅，醋淬5次）1两，夜明砂（用米醋汁水漂去油末并灰，研焙用）5分，代赭石（煅，醋淬）5分，川雅连（醋炒）2分，麝香3分，龙胆草5分，泽泻5分，朱砂5分。",
+    "source": "《青囊秘传》。",
+    "effects": "小儿疳积，骨瘦如柴，精神短少，饭食不思。并治疳眼百药不效者。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_71661",
+    "title": "加味麻风丸",
+    "content": "大胡麻1斤4两，小胡麻1斤4两，川牛膝4两，白蒺藜1斤4两，苦参1斤，防风8两，荆芥8两，当归6两，茅苍术6两，川断4两，苡仁4两，黄柏6两，浮萍20两，马齿苋24两。",
+    "source": "《青囊秘传》。",
+    "effects": "疠风初起。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_58942",
+    "title": "风丸",
+    "content": "浮萍草、马齿苋各等分。",
+    "source": "《青囊秘传》。",
+    "effects": "麻风及一切风气。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_55849",
+    "title": "钉胎丸",
+    "content": "杜仲（糯米汁浸炒）8两，续断（酒浸炒）2两，山药6两。",
+    "source": "《青囊秘传》。",
+    "effects": "频惯堕胎，3-4月即坠者。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_66387",
+    "title": "化坚丸",
+    "content": "方八（刮去皮，麻油熬至浮，取出净，晒干，研）2两，芫花（炒炭）5钱，甲片（炒黄）2两，川乌（姜汁制，炒）5钱，草乌（姜汁炒，制）5钱，乳香（去油）3钱，没药（去油）3钱，当归2两，延胡2两，全蝎（酒洗，炒）5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "痈疽肿毒。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_56258",
+    "title": "兜药",
+    "content": "肉桂2两，公丁香4两，小茴4两，独活4两，川芎2两，当归3两，广木香2两，细辛3两，白芷3两，桃仁4两。",
+    "source": "《青囊秘传》。",
+    "effects": "下焦虚冷各症。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_47087",
+    "title": "参末散",
+    "content": "苦参1斤。",
+    "source": "《青囊秘传》。",
+    "effects": "汤火伤。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_58653",
+    "title": "肥儿糕（《青囊秘传》。）",
+    "content": "苏叶1两，苏梗1两，霜桑叶2两，茅术（炒）3两，广湘黄（炒）5两，楂炭5两，麦芽（炒）5两，红茶叶2两，沙糖半斤或1斤。",
+    "source": "《青囊秘传》。",
+    "effects": "小儿百病。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_73723",
+    "title": "截疟丹",
+    "content": "威灵仙。",
+    "source": "《青囊秘传》。",
+    "effects": "疟疾。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_56413",
+    "title": "痘毒膏",
+    "content": "红花4两，紫草1两，猪板油1斤。",
+    "source": "《青囊秘传》。",
+    "effects": "痘毒，烂腐破溃者。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_62190",
+    "title": "瓜蒂散",
+    "content": "瓜蒂（捣烂）1枚半，生甘草5分，当归3钱，乳香（灯心炒）5分，金银花3钱，青皮5分，白芷1钱，没药（灯芯炒）5分。",
+    "source": "《青囊秘传》。",
+    "effects": "一切乳症。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_68859",
+    "title": "回脉散",
+    "content": "大黄3钱，白芷8分，乳香5分，没药5分，木香5分，山甲（蛤粉炒）5分。",
+    "source": "《青囊秘传》。",
+    "effects": "一切乳症，毒从大便出。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_73243",
+    "title": "降药条",
+    "content": "白降条1两2钱，升药1两8钱，石膏6钱。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_61156",
+    "title": "疳症仙丹",
+    "content": "雄黄3钱，麝香5分，胆星2钱，全蝎（炙，炒，去足）1钱，僵蚕（炒）1钱，朱砂（水飞，为衣）2钱，巴豆（去油）5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "小儿肚大，黄瘦，腹痛，虫积。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_73151",
+    "title": "将军散",
+    "content": "远年石灰2两，大黄1两。",
+    "source": "《青囊秘传》。",
+    "effects": "刀伤。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64720",
+    "title": "红灵药",
+    "content": "滑石1两，银粉1两，轻粉1两，熟石膏4两。",
+    "source": "《青囊秘传》。",
+    "effects": "湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64807",
+    "title": "红消散",
+    "content": "樟水1两，银朱3钱。",
+    "source": "《青囊秘传》。",
+    "effects": "游风丹毒。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_73676",
+    "title": "结毒清烂丸",
+    "content": "乳香2钱，没药2钱，辰砂2钱，雄黄2钱，硫黄2钱，白砒1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "结毒，耳、鼻、肾茎溃烂。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_41262",
+    "title": "拔疔膏",
+    "content": "银朱、荔枝肉、蜗牛、鲜虾肉。",
+    "source": "《青囊秘传》。",
+    "effects": "疔疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_45738",
+    "title": "冰硼散",
+    "content": "月石3钱，梅片1分，西黄1分，僵蚕1钱，青黛3分。",
+    "source": "《青囊秘传》。",
+    "effects": "一切喉症，及口内诸症。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_74478",
+    "title": "金华散",
+    "content": "大黄3两，熟虎（即熟石膏）3两，姜黄2两。",
+    "source": "《青囊秘传》。",
+    "effects": "一切火症。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_50719",
+    "title": "吹耳散",
+    "content": "功劳叶（烧炭）、枳壳（烧炭）、梅片少许。",
+    "source": "《青囊秘传》。",
+    "effects": "耳脓。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_52390",
+    "title": "大疟丹",
+    "content": "胡椒、荜茇、生半夏、丁香、细辛各等分。",
+    "source": "《青囊秘传》。",
+    "effects": "疟疾。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_63280",
+    "title": "海马散",
+    "content": "海马（炙黄）1对，辰砂1钱，雄精3钱，麝香5厘，梅片1分，甲片（黄土炒）1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "痈疽发背，不腐溃者。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_58948",
+    "title": "风癣药",
+    "content": "土槿皮6两，白鲜皮1两，海桐皮1两，生南星1两，番木鳖（麻油拌炒，去皮）1两，槟榔1两，硫黄6两，雄黄4钱，吴茱萸4钱，樟冰4钱，榆面2两，白及1两2钱，苦参1两。",
+    "source": "《青囊秘传》。",
+    "effects": "顽风阴癣。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_48567",
+    "title": "蟾酥墨",
+    "content": "雄黄1两，胆矾1两，韶粉1两，藤黄1两，铜绿1两，硼砂1两，寸香1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "一切痈疽。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_40880",
+    "title": "八将散",
+    "content": "五倍子4钱，雄黄2钱，乳香3钱，角针2钱，全蝎2钱，蜈蚣2条，麝香1分，梅片1分。",
+    "source": "《青囊秘传》。",
+    "effects": "一切疽毒。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_77293",
+    "title": "烂喉痧散",
+    "content": "熟石膏2分，人中黄（煅）2分，煅月石2分，煅儿茶2分，薄荷2分，朱砂2分，冰片2分，麝香5厘，濂珠5厘，琥珀5厘，牛黄5厘。",
+    "source": "《青囊秘传》。",
+    "effects": "烂喉痧。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_41114",
+    "title": "八珍丸",
+    "content": "斑蝥3钱（炒黄），当门子1分，雄黄5钱，辰砂（水飞）2钱。",
+    "source": "《青囊秘传》。",
+    "effects": "流注痈疽，发背疔疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_72568",
+    "title": "家传秘捶红膏药",
+    "content": "千金子肉1两，蓖麻子肉4两，桃仁1两，杏仁1两，老木鳖子肉1两。",
+    "source": "《青囊秘传》。",
+    "effects": "阳症痈疽。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_56417",
+    "title": "痘后化毒丹",
+    "content": "西黄1分，珍珠5分，琥珀5分，灯心炭3分，冰片1分，胆星3分，天竺黄3分，人中黄5分，川贝母1钱，忍冬子3钱。",
+    "source": "《青囊秘传》。",
+    "effects": "痘后余毒走络，遍体发疡。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_72550",
+    "title": "夹纸膏",
+    "content": "麻油4两，水龙骨1两，黄占5钱，白占5钱，铅粉1两，铜青1两。",
+    "source": "《青囊秘传》。",
+    "effects": "臁疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_41955",
+    "title": "白灵丹",
+    "content": "熟石膏1两，白蜡2钱，梅片3分。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_66400",
+    "title": "化瘤丹",
+    "content": "白薇2钱5分，黄连2钱5分，生军2钱5分，黄芩2钱5分，川芎2钱5分，明矾2钱5分，当归2钱5分，吴萸1钱2分。",
+    "source": "《青囊秘传》。",
+    "effects": "诸瘤。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64835",
+    "title": "红玉膏",
+    "content": "蓖麻子（去壳）、松香（葱汁煮）4两，南星（研）5钱，半夏（研）5钱，乳香（去油）5钱，银朱7-8钱，没药（去油）5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "一切无名肿毒。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_50030",
+    "title": "赤霞散",
+    "content": "煅石膏1两，松香1两，黄丹2两。",
+    "source": "《青囊秘传》。",
+    "effects": "小儿秃疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_68861",
+    "title": "回脓散",
+    "content": "归尾1钱5分，大黄3钱，炙山甲5片，黑丑（生熟各半）3钱，角针1钱，蜈蚣1条，炒僵蚕2钱，乳香5分，没药5分。",
+    "source": "《青囊秘传》。",
+    "effects": "便毒初起作痒。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_65956",
+    "title": "护心丹",
+    "content": "绿豆粉1两，乳香5钱，没药5钱，辰砂1钱，甘草1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "阳毒内攻，口干烦躁，恶心呕吐。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_73576",
+    "title": "接骨膏",
+    "content": "葱白4两，桃仁2两，申姜4两，归尾2两，五加皮2两，赤芍1两，白芥子5钱，樟冰5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_62399",
+    "title": "光明散",
+    "content": "川连3钱，黄柏3钱，黄芩3钱，炉甘石（水飞）3钱，梅片2分，辰砂3分，荸荠粉2钱。",
+    "source": "《青囊秘传》。",
+    "effects": "一切目疾。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_49352",
+    "title": "辰砂二宝丹",
+    "content": "飞辰砂2钱5分，飞滑石2钱5分。",
+    "source": "《青囊秘传》。",
+    "effects": "男妇杨梅结毒，或在头脑，咽喉鼻腐。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_73143",
+    "title": "姜芷散",
+    "content": "生僵蚕、白芷等分。",
+    "source": "《青囊秘传》。",
+    "effects": "外疡，眼癣风。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64065",
+    "title": "和中丸",
+    "content": "台白术2两，云茯苓2两，生甘草5钱，奎白芍2两，制首乌2两，银柴胡2两，知母2两，淮山药2两，地骨皮2两，使君子2两，生香附2两，木香1两5钱，川朴2两，陈广皮2两，油青皮2两，南楂肉2两，花粉2两，枳实2两，莱菔子2两，缩砂仁1两5钱，淡黄芩4两，柴胡4两5钱，木通2两，车前子2两，台乌药2两，泽泻2两。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_45704",
+    "title": "冰白散",
+    "content": "人中白、冰片、铜绿、杏仁、黄柏、枯矾各等分。",
+    "source": "《青囊秘传》。",
+    "effects": "口糜及走马疳。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_44346",
+    "title": "抱龙丸",
+    "content": "西牛黄2钱，明雄2钱，朱砂2钱，远志2钱，茯神1两，胆星1两，天竺黄5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "痰迷心窍，不时昏晕，妄见妄闻，痫发，及小儿急慢惊风。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_69803",
+    "title": "吉祥油",
+    "content": "雄黄3钱，明矾1两5钱，花椒2钱，松香1两，猪板油半斤，江青布3尺。",
+    "source": "《青囊秘传》。",
+    "effects": "湿毒臁疮，黄水常流，常结痂而淫痒。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_42720",
+    "title": "白眼药",
+    "content": "月石1两，荸荠粉3钱，梅片5分，麝香5厘。",
+    "source": "《青囊秘传》。",
+    "effects": "一切老眼糊涂，迎风流泪，外内翳障。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_47733",
+    "title": "草霜散",
+    "content": "灯草、壁钱。",
+    "source": "《青囊秘传》。",
+    "effects": "走马牙疳。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_73728",
+    "title": "截疟丸",
+    "content": "巴豆霜6分，梅片1分，雄黄6分，朱砂6分，轻粉6分，斑蝥14个，白土3分，麝香1分。",
+    "source": "《青囊秘传》。",
+    "effects": "疟疾。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_57151",
+    "title": "耳脓散",
+    "content": "水龙骨（煅）1钱，海螵蛸1钱，飞青黛1钱，枯矾3分，五倍子（炒黄）1钱，煅黄鱼齿5分，细薄荷5分，梅片3分，川雅连3分，蛀竹屑3分，石榴花瓣（炙脆）1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "耳疳脓水不止。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_57075",
+    "title": "鹅管眼药",
+    "content": "甘石3两，琥珀2钱，朱砂1钱5分，牛黄5分，梅片3钱，雄黄1钱5分，珍珠1钱，麝香5分，青鱼胆5个，熊胆1钱，蕤仁1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "眼病。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_72546",
+    "title": "夹纸膏",
+    "content": "煅石膏1两，炉甘石（童便浸，煅）1两，龙骨（醋煅3次）5钱，轻粉5钱，寒水石（煅）5钱，嫩松香（放铜勺内，熬至黑色起烟，倒在水内候冷，再用葱白捣液煮滚。候冷为末）5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "多年新起臁疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_58821",
+    "title": "分消泄浊丸",
+    "content": "大黄（晒）1两，西珀1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "茎痛并下疳。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_41661",
+    "title": "白膏",
+    "content": "松香8两，铅粉2两，麻油2两。",
+    "source": "《青囊秘传》。",
+    "effects": "疮疖及久溃不敛者。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64879",
+    "title": "喉症金丹",
+    "content": "硼砂2钱，风化霜（制风化霜法：将嫩黄瓜1条，挖去瓤，以银消研细纳入，挂于檐下透风处，3日后，瓜皮自有白霜透出，拭下，以瓷器收贮待用）2钱，僵蚕（炙）3钱，薄荷1钱，明矾（入巴豆2枚煅，去巴豆用）1钱，大泥5分，滴水石3钱，人中白（煅）3钱。",
+    "source": "《青囊秘传》。",
+    "effects": "喉症。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_67084",
+    "title": "黄病灵验丸",
+    "content": "茅术（米泔水浸）5钱，绿矾（煅）5钱，厚朴（姜汁炒）5钱，百草霜3钱，针砂（醋炒7次为度）5钱，大枣（醋煮，去皮核）3两。",
+    "source": "《青囊秘传》。",
+    "effects": "黄病。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_52840",
+    "title": "代刀散",
+    "content": "斑蝥1钱，巴豆1钱，白信石1分。",
+    "source": "《青囊秘传》。",
+    "effects": "一切流注，痈毒，有脓水。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_44560",
+    "title": "逼瘟丹",
+    "content": "生苍术6两，大黄4两，白芷4两，青蒿4两，红枣（焙干）6两。",
+    "source": "《青囊秘传》。",
+    "effects": "时邪。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_40828",
+    "title": "八宝消毒散",
+    "content": "蟾酥8分，蝎尾4钱，雄黄4钱，僵蚕4钱，炙乳没4钱，银朱4钱，黄连2钱，冰片4分。",
+    "source": "《青囊秘传》。",
+    "effects": "痈疽初起，肿痛微红，面赤者。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_45853",
+    "title": "波斯散",
+    "content": "珍珠3钱，冰片2钱，麝香1钱，炙乳香1钱，炙没药1钱，儿茶1钱，朱砂1钱，轻粉1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "下疳，梅毒。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_77510",
+    "title": "离骨丹",
+    "content": "紫玉簪根1钱，白砒3分，白硇砂7分，月石2分，威灵仙3分，草乌1分5厘。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_77508",
+    "title": "离骨丹",
+    "content": "急性子1钱，白砒1分。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_72536",
+    "title": "夹纸膏",
+    "content": "乳香（炙去油）2钱，没药（炙去油）2钱，制甘石5钱，铅粉4两，轻粉3钱，梅片2分，老白占3两。",
+    "source": "《青囊秘传》。",
+    "effects": "臁疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_77759",
+    "title": "厉风膏",
+    "content": "大风子肉5钱，木鳖子肉5钱，当归1两，细生地1两，防风5钱，紫草5钱，黄柏5钱，玄参5钱，麻黄5分，黄占2两，麻油8两。",
+    "source": "《青囊秘传》。",
+    "effects": "风湿。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_44573",
+    "title": "鼻痔丹",
+    "content": "瓜蒂4钱，甘遂1钱，螺壳炭5分，草乌炭5分（一方有枯矾5分）。",
+    "source": "《青囊秘传》。",
+    "effects": "鼻痔。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_48568",
+    "title": "蟾酥散",
+    "content": "蟾酥1钱，没药（炙）4钱，甲片（炙）2钱，蜈蚣2钱，雄黄2钱，麝香5分，川乌2钱，草乌2钱，藤黄2钱（一本有蝎尾4钱，没药2钱）。",
+    "source": "《青囊秘传》。",
+    "effects": "痈疽。阴阳2症，不红不肿者。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_41260",
+    "title": "拔疔毒新亚散",
+    "content": "矿灰。",
+    "source": "《青囊秘传》。",
+    "effects": "干疔。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_73678",
+    "title": "结毒生肌散",
+    "content": "赤石脂（浸淡）1两，龙骨1两，乳香（炙）5分，没药（炙）5分，枯矾（炙）5分，文蛤（炙）5分，白芷1钱，轻粉1钱，血竭1钱，朱砂1钱，象皮（炙）1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "下疳。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_71511",
+    "title": "加味解毒丹",
+    "content": "解毒丹1两，儿茶4钱（炙），人中白5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "下疳。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_63506",
+    "title": "汗斑散",
+    "content": "扫盆5分，蛇床子2钱，密陀僧1钱，雄黄2钱。",
+    "source": "《青囊秘传》。",
+    "effects": "汗斑。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_77200",
+    "title": "蜡矾针",
+    "content": "黄蜡、枯矾少许。",
+    "source": "《青囊秘传》。",
+    "effects": "漏管。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_61581",
+    "title": "膈气丸",
+    "content": "五灵脂3钱，阿魏3钱，猪胆汁3个。",
+    "source": "《青囊秘传》。",
+    "effects": "痰膈。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_75341",
+    "title": "九宝丹",
+    "content": "带子蜂房（煅，研为末）3钱，大黄3钱，冰片3分，白螺蛳壳（煅，研）2钱，朱砂2钱，血竭1钱，麝香3分，炙没药2钱。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_56003",
+    "title": "定痛丹",
+    "content": "参三七。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_76530",
+    "title": "枯矾散",
+    "content": "枯矾1钱，制僵蚕1钱，硼砂3分，薄荷3分，大梅片1分，雄精1钱，胆矾1分，山豆根2分，苦甘草1分。",
+    "source": "《青囊秘传》。",
+    "effects": "一切风火喉症。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_76240",
+    "title": "开关散",
+    "content": "闹洋花2钱，牙皂2钱，细辛1钱，荆芥2钱，麝香1分，灯心炭2钱。",
+    "source": "《青囊秘传》。",
+    "effects": "一切痧症，更伤寒邪，牙关紧闭，陡然神迷。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_66270",
+    "title": "化毒丹",
+    "content": "金银花2两，夏枯草4两。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_56142",
+    "title": "锭子疮药",
+    "content": "尖槟1两，西丁5钱，皮消5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "疔疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64819",
+    "title": "红阳膏",
+    "content": "麻油4两，黄占2两。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_73651",
+    "title": "揭毒散",
+    "content": "大黄1两，朴消1两5钱，白及7钱。",
+    "source": "《青囊秘传》。",
+    "effects": "热性肿毒。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64853",
+    "title": "洪宝丹",
+    "content": "大黄10两，黄柏5两，姜黄5两，白芷5两，陈皮5两，甘草5两，花粉2两，白蔹15两，石膏15两。",
+    "source": "《青囊秘传》。",
+    "effects": "一切痈疽，红肿热痛。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_74172",
+    "title": "疥疮散",
+    "content": "白椒、樟冰、硫黄、槟榔、生明矾各等分。",
+    "source": "《青囊秘传》。",
+    "effects": "疥疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_42810",
+    "title": "白玉膏药",
+    "content": "白及、白蔹、白芷。",
+    "source": "《青囊秘传》。",
+    "effects": "疔毒疮久不收口。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_51243",
+    "title": "催生散",
+    "content": "半夏（姜制）、白及（生，晒干，研）。",
+    "source": "《青囊秘传》。",
+    "effects": "难产。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_46744",
+    "title": "不二饮",
+    "content": "西丁1钱，靛花5分。",
+    "source": "《青囊秘传》。",
+    "effects": "结毒咽烂。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_43446",
+    "title": "斑龙八师丹",
+    "content": "炙花蛇、露蜂房、甲片、蜈蚣、蝉衣、鹿角（煅）各等分。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_61249",
+    "title": "膏药",
+    "content": "嫩松香2斤，姜汁1碗，葱汁1碗，醋1碗。",
+    "source": "《青囊秘传》。",
+    "effects": "痰毒肿块。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64202",
+    "title": "黑疮药",
+    "content": "皂角子（煅极透）。",
+    "source": "《青囊秘传》。",
+    "effects": "黑疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_74565",
+    "title": "金龙丸",
+    "content": "番木鳖（以米泔浸3日，刮去皮毛，切片晒干，麻油熬浮，换土炒去油，水洗，干待用）4两，炙甲片1两5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "一切疔疮肿毒，跌仆闪伤，胸胁气痛，贴骨痈疽；兼治男妇大小颈项瘰疬，及孔岩、结核、痰气凝滞，硬块成毒，小儿痘后发痈。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_57750",
+    "title": "二消散",
+    "content": "雄黄2钱，明矾2两。",
+    "source": "《青囊秘传》。",
+    "effects": "风湿诸肿痛痒，疮疥。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_74602",
+    "title": "金僧散",
+    "content": "密陀僧1两，冰片1分。",
+    "source": "《青囊秘传》。",
+    "effects": "结毒，多骨疽，烂久不敛，或多骨不出，毒不清。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_45468",
+    "title": "槟榔散",
+    "content": "槟榔1斤，木香8两。",
+    "source": "《青囊秘传》。",
+    "effects": "风疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_74635",
+    "title": "金水济生丹",
+    "content": "北沙参6两，大生地8两，当归4两，白芍2两，云茯苓2两，杏仁4两，半夏2两，新会陈皮2两。",
+    "source": "《青囊秘传》。",
+    "effects": "肺肾虚寒，水泛为痰，或年迈阴虚，多痰喘息。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_70110",
+    "title": "鲫鱼围药",
+    "content": "鲫鱼1条，山药3寸，白砂糖少许，火石（即打火石）1小块（一方有苏木屑，生猪油）。",
+    "source": "《青囊秘传》。",
+    "effects": "一切无名肿毒。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_74433",
+    "title": "金花散",
+    "content": "松花、熟虎、黄柏。",
+    "source": "《青囊秘传》。",
+    "effects": "汤火伤。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64536",
+    "title": "黑子膏",
+    "content": "麻油5斤，木鳖子8两，黄丹（炒，再研）5包（每包6两）。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_76455",
+    "title": "咳嗽劳症膏",
+    "content": "独角老鼠叶。",
+    "source": "《青囊秘传》。",
+    "effects": "咳嗽劳症。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_46788",
+    "title": "布膏药",
+    "content": "生地3钱，当归3钱，首乌3钱，川芎3钱，川断3钱，红花3钱，加皮3钱，川草乌3钱，茅术3钱，良姜3钱，官桂3钱，香附3钱，乌药3钱，枳壳3钱，陈皮3钱，柴胡3钱，白芷3钱，羌独活3钱，灵仙3钱，麻黄3钱，莪术3钱，三棱3钱，寄奴3钱，荆芥3钱，防风3钱，赤芍3钱，青皮3钱，桃红3钱，川军3钱，牙皂3钱，藁本3钱，连翘3钱，南星3钱，山奈3钱，姜半夏3钱，海风藤3钱，甘松3钱，细料方：麝香1钱，附子2钱，冰片5分，洋樟3钱，木香3钱，肉桂1钱，乳没药3钱，细辛3钱，阿魏3钱，八角3钱，茴香3钱（共研末）。",
+    "source": "《青囊秘传》。",
+    "effects": "男子艰嗣，梦遗精滑，妇人半产漏下，白带及跌打损伤，遍身筋骨疼痛，腰脚痠痛，足膝无力，左瘫右痪，水泻痢疾，手足麻痹，腰胁气痛，哮喘咳嗽，癥瘕痞癖，心腹肚痛，呕吐，木肾疝气，偏正头风，漏肩鹤膝，疟疾，瘀血作痛。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_62283",
+    "title": "挂金散",
+    "content": "鸡内金1钱，青黛3分，薄荷4分，白芷4分，蒲黄3分，冰片1分，甘草3分，鹿角炭1钱，挂金灯子2钱。",
+    "source": "《青囊秘传》。",
+    "effects": "口痈，舌菌，重舌，喉蛾。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_48765",
+    "title": "肠风下血丸",
+    "content": "石榴皮（烧存性）。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_58627",
+    "title": "飞龙夺命丹",
+    "content": "犀黄2钱，辰砂（飞）2两，麻黄（去节）4钱，人中黄8钱，麝香3钱，腰黄1两，月石3钱，青黛（飞）5钱，珍珠3钱，蟾酥1钱5分，明矾5分，银消1钱5分，冰片4钱，牙皂3钱，灯草炭1两，真金箔300张。",
+    "source": "《青囊秘传》。",
+    "effects": "痧胀腹痛，霍乱转筋，厥冷脉伏，神昏危急之症；及受温暑瘴疫、秽恶阴晦诸邪，而头晕痞胀，瞀乱昏狂；或卒倒舌强，遗溺不语，身热瘛疭，宛如中风；或时症逆传，神迷狂谵；小儿惊痫，角弓反张，牙关紧闭。",
+    "tags": [
+      "温里"
+    ],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_56415",
+    "title": "痘后吹耳丹",
+    "content": "黄丹、扫盆各等分。",
+    "source": "《青囊秘传》。",
+    "effects": "痘毒入耳。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_40157",
+    "title": "阿魏软坚散",
+    "content": "阿魏3钱，蜗牛（炙）3钱，象贝母3钱，月石1钱5分，桃仁1钱，僵蚕10条，南星3钱，腰黄3钱5分，冰片3分。",
+    "source": "《青囊秘传》。",
+    "effects": "瘰疬痰块等。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_74276",
+    "title": "金蝉散",
+    "content": "蝉衣5钱，青黛5钱，细辛5分，蛇蜕1两（煅存性）。",
+    "source": "《青囊秘传》。",
+    "effects": "疮秽生蛆。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_57793",
+    "title": "发背膏",
+    "content": "白蜜。",
+    "source": "《青囊秘传》。",
+    "effects": "发背。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_73612",
+    "title": "接骨神授丹",
+    "content": "地鳖虫3个，自然铜2钱，没药2钱，大黄2钱，血竭2钱，硼砂2钱。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_40778",
+    "title": "八宝丹（《青囊秘传》。）",
+    "content": "甘石6钱，石膏8钱，东丹2钱，龙骨3钱，轻粉1钱，铅粉2钱，白蜡6钱（以刀刮极细），寒水石6钱。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_41357",
+    "title": "拔麦生肌散",
+    "content": "熟石膏1两，红升3钱，轻粉3钱，蓖麻子（去油）3钱，黄丹2钱，乳香1钱，琥珀1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "疮毒。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_b_119192",
+    "title": "樟冰散",
+    "content": "樟冰1钱，月石3钱，大泥1分，薄荷1钱，僵蚕1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "牙痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "搽擦痛处。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_110154",
+    "title": "下疳神效散",
+    "content": "陈蛤粉1两，青黛3分，冰片1分，人中白（煅）3钱。",
+    "source": "《青囊秘传》。",
+    "effects": "下疳。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_b_103442",
+    "title": "提泡药",
+    "content": "斑蝥1只。",
+    "source": "《青囊秘传》。",
+    "effects": "骱穴痠痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "掺于膏药上贴之。约2小时后起泡，用针挑破去水。",
+    "preparation": "上研末。"
+  },
+  {
+    "id": "recipe_b_80175",
+    "title": "龙虎如意丹",
+    "content": "硇砂3钱，朱砂4钱，麝香1钱，雄精1钱，冰片2钱，蟾酥4钱，白降丹2钱，五倍子4钱，玄参3钱，乳香4钱（去油），没药4钱（去油），雌黄4钱，前胡3钱，胆矾3钱，轻粉5钱，寒水石3钱，明矾3钱，紫草5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "痈疽发背，对口脑疽，无名肿毒，湿痰流注，附骨疽。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_120367",
+    "title": "止泻暖脐膏",
+    "content": "丁香1钱，胡椒3钱，硫黄2钱，绿豆粉5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "湿邪入腹，腹痛泄泻。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "撤膏药上，对脐贴之。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_108539",
+    "title": "五美散",
+    "content": "黄丹3钱，枯矾3钱，黄柏3钱，熟石膏1两（尿浸者更妙）。",
+    "source": "《青囊秘传》。",
+    "effects": "一切疮痍，脓疥，作痛痒。",
+    "tags": [],
+    "category": "formulas",
+    "preparation": "上为细末，和匀。"
+  },
+  {
+    "id": "recipe_b_110636",
+    "title": "香盒方",
+    "content": "连翘心1两，生大黄1两，鬼箭羽2钱5分，白芷2钱5分，苍术1钱5分，台乌药2钱5分，甘松香1钱5分，真降香5钱，真檀香5钱，山柰1钱5分，丁香2钱。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "caution": "勿受湿。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_105482",
+    "title": "退管散",
+    "content": "雄鸡足胫1对（去爪，用雌黄塞入胫孔内，以满为度，将黄泥包好，煨存性，去泥），蛤蟆1只（以芦荟2钱纳入腹中，以黄泥包好，煨存性，去泥）。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每用1钱，加月石2分2厘，麝香1分，梅片1分，小膏药贴之。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_123815",
+    "title": "紫阳真君塞鼻丹",
+    "content": "沉香、木香、乳香、没药、牙皂、荜茇、大良姜、官桂、细辛各等分，巴豆、川乌、好麝香、雄黄、朱砂、血竭、硇砂。",
+    "source": "《青囊秘传》。",
+    "effects": "心疼肚痛，膨胀疝气，水泄痢疾，赤白痢下，牙痛，浑身疼痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每用1丸，塞鼻。",
+    "preparation": "上为丸，如指头大。"
+  },
+  {
+    "id": "recipe_b_95450",
+    "title": "伤膏",
+    "content": "野三七1两，细生地1两，钻地风5钱，肉桂1钱，独活5钱，郁金5钱，千年健5钱，牛膝5钱，木香3钱，秦艽3钱，虎骨5钱，姜黄2钱，金毛脊3钱，透骨草1两，红花4钱，丁香2钱，地骨皮1两，自然铜5钱，刘寄奴5钱，延胡5钱，当归1两，川乌5钱，桃仁3钱，桑白皮1两，五加皮1两，寻骨风5钱，松节5钱，草乌5钱，桔梗3钱，乳香2钱，没药2钱，砂仁3钱。",
+    "source": "《青囊秘传》。",
+    "effects": "一切骱骨疼痛，损伤腰脊，及远年内伤，寒热痹阻。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "摊大膏药用。",
+    "preparation": "用麻油5斤，净丹2斤，诸药末浸至半月而煎，去滓，如法成膏。"
+  },
+  {
+    "id": "recipe_b_98422",
+    "title": "生肌散",
+    "content": "珍珠1钱，瓜儿竭1钱，乳香（箬上烘）1钱，没药（箬上烘）1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "疮口不收，必有伏毒，周围皮肤紫黑，年深日久。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "先用猪蹄汤，或浓茶洗净，用少许掺之。",
+    "preparation": "上为极细末。"
+  },
+  {
+    "id": "recipe_b_115861",
+    "title": "药兜肚",
+    "content": "干姜8分，官桂1钱，白芥子1钱5分，枳实1钱，阿魏4分，半夏1钱，水仙子1钱5分，麝香5分。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "preparation": "上为粗末，用艾绒，大红纱布作夹兜肚1个，将药置于中。"
+  },
+  {
+    "id": "recipe_b_108876",
+    "title": "五香串丸",
+    "content": "沉香3钱，丁香3钱，木香3钱，檀香3钱，乳香（去油）3钱，巴豆霜3钱，大黄5钱，甘草5钱，郁金5钱，苍术5钱，陈皮5钱，厚朴5钱，五灵脂5钱，雄黄5钱，豆蔻肉6钱。",
+    "source": "《青囊秘传》。",
+    "effects": "心腹气，胁痞积，一切痛症。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服5丸，重者7丸、9丸、11丸，总服单数勿双，空心热酒送下。",
+    "caution": "忌生冷、油腻。气虚之人及孕妇忌服。",
+    "preparation": "上为末，醋糊为丸，如梧桐子大，朱砂2钱为衣。"
+  },
+  {
+    "id": "recipe_b_111051",
+    "title": "象皮膏",
+    "content": "象皮（研）3钱，铅粉3钱，铜绿1钱，明矾1钱，黄占3两，白占5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "远年湿毒臁疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "将两占先熬烊，再将诸药研细倾入，即用油纸摊贴。",
+    "preparation": "上用香油1斤，熬至滴水成珠。"
+  },
+  {
+    "id": "recipe_b_99088",
+    "title": "湿毒散",
+    "content": "蚯蚓粪1两（韭菜田内者佳），铜绿3分，麝香5分，梅片5分，血竭5分，扫盆1钱，松香3钱，洋冰3钱，儿茶3钱，乳香（炙）3钱，没药（炙）3钱，白占1两，铅粉1两，黄丹2两。",
+    "source": "《青囊秘传》。",
+    "effects": "下疳。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外掺。",
+    "preparation": "研末。"
+  },
+  {
+    "id": "recipe_b_94088",
+    "title": "三黄丸",
+    "content": "制军3两，乳香（去油）1两，没药（去油）1两，雄精5钱，麝香1钱5分，犀黄2分，淡芩（酒拌，晒干）1两，雅连3钱。",
+    "source": "《青囊秘传》。",
+    "effects": "悬痈红肿疼痛，热毒大痈，杨梅广疮结毒，火毒。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服5钱。",
+    "preparation": "先将制军酒浸透，入碗隔汤蒸软，打烂，然后将乳香、没药、雄精、麝香、犀黄、芩、连等和入，再打千捶为丸，如梧桐子大。"
+  },
+  {
+    "id": "recipe_b_79514",
+    "title": "柳青散",
+    "content": "薄荷5分，儿茶8分，黄连4分，青黛3分，冰片1分。",
+    "source": "《青囊秘传》。",
+    "effects": "口舌破碎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "先用蔷薇根汤漱口，后吹之。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_81234",
+    "title": "瘰疬饼",
+    "content": "生山药、蓖麻子。",
+    "source": "《青囊秘传》。",
+    "effects": "瘰疬。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "2味搅烂，摊贴之。"
+  },
+  {
+    "id": "recipe_b_99267",
+    "title": "十三太保丸",
+    "content": "川乌1两，草乌（各制）1两，麻黄1两，细辛1两，马前子（麻油烘枯）1两，羌独活1两，山甲1两，天麻1两，防风1两，白芷1两，雄黄5钱，朱砂3钱。",
+    "source": "《青囊秘传》。",
+    "effects": "筋骨疼痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服1丸，陈酒送下。取汗为度。",
+    "preparation": "上为末，饭为丸，如弹子大，每两作8丸。"
+  },
+  {
+    "id": "recipe_b_106034",
+    "title": "万应吹喉散",
+    "content": "牛黄1钱，珍珠1钱，灯草炭3钱，梅片1钱，黄柏3钱，甘草3钱，血竭3钱，乳香5分，朱砂1钱，儿茶5钱，白芷2钱，薄荷7钱，青黛3钱。",
+    "source": "《青囊秘传》。",
+    "effects": "喉痹、喉风、乳蛾、喉痈，阴虚咽痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "吹患处。",
+    "preparation": "上为细末，和匀。"
+  },
+  {
+    "id": "recipe_b_79684",
+    "title": "六神丸",
+    "content": "乳香1钱，没药1钱，熊胆1钱，鲤鱼胆3个，硇砂1钱，狗宝1钱，元寸5分，白丁香49粒，蜈蚣3钱，黄占3钱，头胎男乳1合，腰黄1钱，扫盆1钱，真西黄1钱，白粉霜3钱，杜酥2钱，乌金石1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "时邪温毒，烂喉丹痧，喉风，喉痈，双单乳蛾；疔疮，对口，痈疽，发背，肠痈，腹疽，乳痈，乳岩，一切无名肿毒；小儿急慢惊风，危在顷刻。",
+    "tags": [
+      "温里"
+    ],
+    "category": "formulas",
+    "usage": "每服10丸，开水化下。重者再进1服。",
+    "preparation": "上药各取净末，以鲤鱼胆、黄占溶化为丸。"
+  },
+  {
+    "id": "recipe_b_111089",
+    "title": "消薄一锭金",
+    "content": "羊角（瓦焙）1两，血余炭1两，贝母1两5钱，黄耆（蜜炙）2两5钱，全蝎20个，天龙4条，山甲5钱，生军5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服1钱，酒送下。",
+    "preparation": "上为末，面糊为丸，朱砂为衣。"
+  },
+  {
+    "id": "recipe_b_103035",
+    "title": "唐栖平痧丸",
+    "content": "茅术3两，大黄6两，丁香6钱，麻黄3两6钱。",
+    "source": "《青囊秘传》。",
+    "effects": "一切痧胀，山岚，霍乱。",
+    "tags": [],
+    "category": "formulas",
+    "preparation": "上为末，蟾酥火酒化为丸，如梧桐子大，辰砂为衣。"
+  },
+  {
+    "id": "recipe_b_89412",
+    "title": "青龙散",
+    "content": "月石5钱，冰片3分，青黛5分。",
+    "source": "《青囊秘传》。",
+    "effects": "无名肿毒。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外敷。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_121272",
+    "title": "朱峰散",
+    "content": "墙丁（即墙上细螺蛳，又名石壁峰）3钱，大贝1钱5分，银朱1钱5分，朱砂1钱5分。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "preparation": "上为末，和匀。"
+  },
+  {
+    "id": "recipe_b_91425",
+    "title": "去腐丹",
+    "content": "熟石膏1两，黄升1两。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "usage": "掺患处。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_102217",
+    "title": "松云散",
+    "content": "松皮炭2两，檀香2两，轻粉6钱，黄丹6钱，铜绿6钱，枯矾6钱，黄柏6钱，密陀僧6钱。",
+    "source": "《青囊秘传》。",
+    "effects": "肥疮，水疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "香油调搽。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_109108",
+    "title": "西黄丸",
+    "content": "炙净乳香1两，没药1两，麝香1钱5分，西牛黄3分，雄精5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "乳痈瘰疬，痰核流注，肺痈，小肠痈毒。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服3钱，热陈酒送下，上部临卧服，下部空心服。醉卧被覆取汗，酒醒痈消痛息。",
+    "preparation": "上为末，取饭1两，打烂，入末药，再打为丸，如萝卜子大，晒干忌烘。"
+  },
+  {
+    "id": "recipe_b_114179",
+    "title": "虚痰丸",
+    "content": "枳壳（去瓤）82个，斑蝥（去头足翅）80只，全蝎40只，蜈蚣10条，大枣半斤（煮烂，去皮核）。",
+    "source": "《青囊秘传》。",
+    "effects": "颈前瘰疬。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每日白毛夏枯草汤送下，5钱为度。未成即消，已溃即敛，然久服可痊，少者两月而愈。",
+    "preparation": "将枳壳内藏斑蝥2只，全蝎1只，对合，苎线结紧，放水中煮极烂，然后取出枳壳内斑蝥、全蝎，炙脆研细；再用炙山甲5钱，炙蜈蚣10条，共研细，入枳壳内，与枣子杵极烂；再加元米7-8合，炒黄磨末，入药共杵和，为丸如梧桐子大。"
+  },
+  {
+    "id": "recipe_b_116013",
+    "title": "一笔勾",
+    "content": "麝香1钱，藤黄1两，五倍子2两，赤豆5钱，南星5钱，白及（半炒半生）2两。",
+    "source": "《青囊秘传》。",
+    "effects": "一切痈肿。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "醋磨，笔圈四周，中空其头。",
+    "preparation": "上为末，生白及末为糊，燉熟成锭，阴干。"
+  },
+  {
+    "id": "recipe_b_90230",
+    "title": "清凉散",
+    "content": "飞月石5钱，梅片1钱，青黛（飞）3钱，轻粉1钱，明雄黄3钱，石膏2两，川黄柏5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "丹毒抓痒。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外敷。"
+  },
+  {
+    "id": "recipe_b_82992",
+    "title": "秘药方",
+    "content": "黄连1两，黄芩1两，黄柏1两，栀子1两，黄耆1两，薄荷1两，防风1两，荆芥1两，连翘1两，细辛1两，白芷1两，玄参1两，川芎1两，羌活1两，独活1两，山奈1两，槟椰1两，厚朴1两，苦参1两，甘草1两，木通1两，半夏1两，川乌1两，草乌1两，苍术1两，麻黄1两，赤芍1两，升麻1两，大黄1两，僵蚕1两，川牛膝1两，桔梗1两，射干1两，干葛1两，皂刺1两，车前1两，桑皮1两，五加皮1两，牛蒡子1两，麦冬1两，杏仁1两，地骨皮1两，山豆根1两，生地1两，归尾1两，花粉1两，生南星1两，银花参1两，三七1两，川槿皮1两，鲜车前草4两，骨牌草4两，金星草4两，五爪龙草4两，土牛膝草4两，紫背天葵草4两，地丁草4两。",
+    "source": "《青囊秘传》。",
+    "effects": "咽喉诸症。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每以铜吹筒取药少许，吹患上。预为修合，陈者愈佳。",
+    "preparation": "用新缸1只，清水浸之，日晒夜露49日，如遇风雨阴晦之日，用盖盖之，晒露须补足日期。取起滤去滓，铜锅煎之，槐柳枝搅之，煎稠如糊，再加下药：明雄黄5钱，青礞石（童便煅7次）、乳香（去油）、没药（炙）、熊胆（焙）、龙骨（煅）、玄明粉、血竭、石燕（醋煅7次）、海螵蛸（纸包，焙）、炉甘石（童便煅7次）、青黛各5分，枯矾、儿茶各1钱，轻粉、黄丹（水飞）各3分，月石7分，桑枝炭3钱。上为细末，入前膏内和匀，做成小饼，如指头大，晒露7日夜，放地上，以瓦盆盖之，1日翻1次，7日取起，置透风处阴干，收藏瓦罐内，3个月方可用之。用时为极细末，每饼2分，加后7味：冰片、珍珠、珊瑚（水飞）各4分，麝香2分，牛黄2分，轻粉1厘，月石2分，为细末，和匀，密收小瓶，封口勿令泄气。"
+  },
+  {
+    "id": "recipe_b_114577",
+    "title": "玄武丹",
+    "content": "龟版2个，白占1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "流注。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "白糖调服。",
+    "preparation": "在临煅龟版时，将白占末掺于龟版上，存性研末。"
+  },
+  {
+    "id": "recipe_b_110559",
+    "title": "香附散",
+    "content": "香附1斤，白及4两。",
+    "source": "《青囊秘传》。",
+    "effects": "皮肤色白木硬之症。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "葱白、生姜汁调服。或再将麸皮炒热熨，随症用。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_111288",
+    "title": "消风散",
+    "content": "烟胶2斤，苦参2斤，大枫子肉200粒，小麦（炒黑）8合，明矾半斤，枯矾半斤，花椒半斤，硫黄8两，樟冰4两，升药底1斤，蛇床子半斤，炒红砒1两。",
+    "source": "《青囊秘传》。",
+    "effects": "风癣远年者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_116389",
+    "title": "移毒消肿散",
+    "content": "紫槿皮（炒）5两，赤芍（炒）1两，香白芷（晒燥，不可炒）1两，独活（炒）1两5钱，石菖蒲（晒，不可炒）1两。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "usage": "以好酒和葱白5茎，煎滚。调搽，不必留顶，1日1换。以消为度。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_95419",
+    "title": "杉木乌金膏",
+    "content": "杉木炭不拘多少。",
+    "source": "《青囊秘传》。",
+    "effects": "脱壳囊痈，烂肉已脱，新肉将生。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用香油调摊纸上，贴患处。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_78621",
+    "title": "凉血散",
+    "content": "熟石膏（尿浸更佳）1两，黄丹2钱。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "usage": "干掺，或麻油调。",
+    "preparation": "上为极细末。"
+  },
+  {
+    "id": "recipe_b_93864",
+    "title": "赛金丸",
+    "content": "海金沙3钱，芜荑3钱，白蒺藜（盐水炒）3钱，龙胆草1钱，血珀1钱，松香5分。",
+    "source": "《青囊秘传》。",
+    "effects": "下疳。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "口服。",
+    "preparation": "鸡子清为丸，朱砂5分为衣服。"
+  },
+  {
+    "id": "recipe_b_83376",
+    "title": "摩风膏",
+    "content": "麻黄4钱，羌活1钱，防风2钱，升麻2钱，白及2钱，当归3钱。",
+    "source": "《青囊秘传》。",
+    "effects": "一切肌肤燥裂，游风白屑。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "候冷搽之。",
+    "preparation": "将香油10两，入药煎枯，去滓，下净黄占1两，烊化，倾入钵内。"
+  },
+  {
+    "id": "recipe_b_89083",
+    "title": "青宝丹",
+    "content": "大黄1斤，姜黄8两，黄柏8两，白芷6两，青黛4两，白及4两，花粉2两，陈皮4两，甘草2两。",
+    "source": "《青囊秘传》。",
+    "effects": "一切热毒红肿者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "如毒红肿者，野菊花捣汁，或淡茶叶泡汤候冷，或加蜜水或甜菜汁，或丝瓜叶汁，或甘露根汁，或鲜芙蓉叶汁，或夏枯草泡汤，皆可调敷，随症选用。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_114819",
+    "title": "巽灵丹",
+    "content": "柴胡3两，前胡3两，羌活3两，独活3两，防风3两，桔梗3两，枳壳3两，茯苓2两，薄荷3两，川芎3两，荆芥4钱，葛根4钱，黄芩1两，甘草1两。",
+    "source": "《青囊秘传》。",
+    "effects": "一切伤寒伤风，头痛发热。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服2、3、4、5钱不等。",
+    "preparation": "上研细，将葱1斤，生姜4两煎汁泛丸。"
+  },
+  {
+    "id": "recipe_b_105682",
+    "title": "托药",
+    "content": "木鳖子1个，香附1钱，生半夏1钱，黄连3分，冰片1分，天南星1钱（1方有大黄1钱、黄柏1钱，麝香5厘）。",
+    "source": "《青囊秘传》。",
+    "effects": "口疳疮，汤水不下。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "鸡子清调敷脚底，男左女右。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_114677",
+    "title": "癣药",
+    "content": "土槿皮1钱，樟冰1钱，花椒1钱，毛菇1钱，海桐皮1钱，海打马1钱，人言1分，硫黄1钱，麝香1分，枫子肉1钱，蛇床子1钱，明矾1钱5分，尖槟1钱，冰片1分，斑蝥1分。",
+    "source": "《青囊秘传》。",
+    "effects": "癣。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "烧酒调搽。",
+    "caution": "不可入口。",
+    "preparation": "上药共为末。"
+  },
+  {
+    "id": "recipe_b_105140",
+    "title": "透骨丹",
+    "content": "胡椒（炒黄）（1方有胆矾煅红，分量为胡椒的2分之一1",
+    "source": "《青囊秘传》。",
+    "effects": "发背溃脓，及胃寒腹痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "小膏药贴之。胃寒腹痛，研贴中脘。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_86746",
+    "title": "平嗽丸",
+    "content": "知母1两，真川母（去心）1两，巴豆霜2分。",
+    "source": "《青囊秘传》。",
+    "effects": "多年冷嗽，气逆痰多，遇寒即发。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "口服。",
+    "preparation": "上为末，用米汤浆糊为丸。"
+  },
+  {
+    "id": "recipe_b_100782",
+    "title": "束毒丹",
+    "content": "芙蓉梗1斤，地丁草1斤，花粉1斤，苍耳草12两，陈皮8两。",
+    "source": "《青囊秘传》。",
+    "effects": "一切痈疽溃后，毒将尽，肿未全消。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "敷之。",
+    "preparation": "上炒，为细末。"
+  },
+  {
+    "id": "recipe_b_117521",
+    "title": "鱼枕散",
+    "content": "江鱼枕骨（煅）1两，寸香1分。",
+    "source": "《青囊秘传》。",
+    "effects": "耳津脓水。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "吹之。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_120294",
+    "title": "止嗽散",
+    "content": "法半夏8两，冰糖6两，食盐1两。",
+    "source": "《青囊秘传》。",
+    "effects": "咳嗽。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "以开水冲服。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_108569",
+    "title": "五气朝元丹",
+    "content": "雄黄3两，雌黄3两，硫黄5钱，乌玄参4钱，青铅2两。",
+    "source": "《青囊秘传》。",
+    "effects": "半身不遂，腰疼腿痛，痨症，五淋，胃气疼痛，遗精梦泄，肛门虫积，胸腹胀满，手足浮肿，咳嗽吐血，各种痧症，癥瘕血块，痢下赤白，经侯不调，崩漏带下。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服5分，轻者3分，照症用引，慎勿错误。",
+    "preparation": "用直口香炉1个，外用细泥和铁花、头发调匀泥炉，用铜丝扎紧，以泥不燥裂为度，约厚至半寸。先将乌玄参、青铅放勺内烊化，蔑丝作圈，置于地上，将药味倾入，作饼2块，先放1块于香炉内，次将前3昧放上，再盖饼1块于上，用铁打灯盏仰盖之，用盐泥封固，用文武火煅1日，盏内以水汲之，则丹飞升于盖盏底内，以刀刮下听用。男子病症药引：左瘫右痪，黄酒；中风不语，南星；半身不遂，黄酒；腿痛难行，木瓜；腰痛挫气，肉苁蓉；虚弱痨症，人参、杏仁；五淋常流，赤苓；胃气疼痛，艾醋；遗精梦泄，龙骨；脾胃两伤，陈皮；下部痿软，归尾、牛膝；肛门虫积，槟榔；各种痧症，川椒；咳嗽吐血，青韭菜、地栗汁；水肿、膨胀，芫花；胸腹胀满，木瓜；手足浮肿，苍术；噎膈反胃，靛缸水；少腹偏坠，葫芦巴；阳事不举，枸杞子。妇人病症药引：经侯不调，当归；久无孕育，益母；崩漏带下，赤石脂；流白不止，白薇；口眼歪斜，天麻；经闭不通，红花、桃仁；癥瘕血块，莪术；阴寒肚痛，生姜、黄酒；夜间不寐，枣仁；下元虚冷，艾汤、百香汤；小肠疼痛，小茴香；咳嗽吐血，蒺藜；痢下赤白，粟壳；午后发热，黑栀；麻木不仁，黄酒；四肢木硬，黄酒；心神恍惚，枣仁、赤苓；心血不足，茯苓；左瘫右痪，黄酒。上将药丹研末，黑枣为丸，如梧桐子大。"
+  },
+  {
+    "id": "recipe_b_108169",
+    "title": "五灯头草膏",
+    "content": "五灯头草3斤（2-3月中采收，阴半干），麻油2斤，雄黄2钱，血竭2钱，麝香2钱，梅片1钱，白信2分，干姜1钱，川乌1钱，草乌1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "瘰疬不收口，肿毒湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "临用时，膏中掺入药末。",
+    "preparation": "将五灯头草入油煎枯，沥滓，熬至滴水成珠，加黄丹收膏，约油1斤，加黄丹7两。余药为末，收贮备用。"
+  },
+  {
+    "id": "recipe_b_82540",
+    "title": "梅花点舌丹",
+    "content": "轻粉1钱，梅片4分，蜈蚣10条（土炙），当门子3分，寒水石3钱，制乳香（去油）7钱，炙没药（去油）7钱，蟾酥（火酒浸，切片）2钱，雄黄5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "无名肿毒。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服1丸，入葱白内打碎，陈酒送下，取汗。无名肿毒，未成即消，已成即溃。",
+    "preparation": "上为末，用蟾酥（火酒浸烂）入药为丸，金箔20-30张为衣，宜阴干，作500丸，蜡封。"
+  },
+  {
+    "id": "recipe_b_104361",
+    "title": "铁闩散",
+    "content": "羌活3钱，独活3钱，木瓜3钱，五加皮3钱，白芷3钱，草乌3钱，明雄3钱，川乌3钱，白附子3钱，官桂3钱，木香3钱，炙乳没3钱，甲片3钱，细辛3钱，血竭3钱，胡椒3钱，荆防风3钱，红花3钱，当归3钱，樟脑3钱，丁香1钱5分，银消2钱，硫黄2钱，全蝎14个。",
+    "source": "《青囊秘传》。",
+    "effects": "风寒湿痹，及一切流痰疽毒皮色不变者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "膏药上贴之。",
+    "preparation": "上为细末，瓶贮听用。"
+  },
+  {
+    "id": "recipe_b_106801",
+    "title": "文星丹",
+    "content": "五倍子1个，乌梅肉1个，白矾1钱，南星1个，雄黄1块（皆用面裹煅，研细），大梅片3分，麝香5厘。",
+    "source": "《青囊秘传》。",
+    "effects": "走马牙疳。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "吹敷患处。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_82518",
+    "title": "眉毛脱落丹",
+    "content": "大皂角、鹿角、松毛各等分。",
+    "source": "《青囊秘传》。",
+    "effects": "毛发脱落。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "姜汁调擦，立出。",
+    "preparation": "上烧炭存性，为末。"
+  },
+  {
+    "id": "recipe_b_108586",
+    "title": "五色戒烟丸",
+    "content": "潞党参2钱，炙黄耆2钱，肥玉竹2钱，制半夏1钱5分，旋覆花2钱，薄橘红1钱2分，甘杞子2钱，云茯苓2钱，白蔻仁3分，使君子2钱，厚杜仲2钱，益智仁1钱5分，酸枣仁1钱5分，炮姜炭2钱，上肉桂5分，广木香5分，沉香片5分，罂粟壳2钱，金牛草2钱，川贝母1钱，青盐3钱，赤砂糖2两，甘草1钱，淡菜2两，红枣2两，烟灰5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_b_104345",
+    "title": "铁杉散",
+    "content": "赤石脂5钱，寸香5分，轻粉5分，乳香3钱，白丁香3钱，生砒1钱，黄丹1钱，蜈蚣（炙）1条。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每用少许，掺腐肉上。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_81109",
+    "title": "绿云膏",
+    "content": "蓖麻子（去壳）2两，松香4两，海藻（炙，研）5钱，昆布（炙，研）5钱，南星（研）5钱，半夏（研）5钱，杏仁5钱，糠青（研）1两（一方有乳香、没药）。",
+    "source": "《青囊秘传》。",
+    "effects": "痰核，鳝拱头。",
+    "tags": [],
+    "category": "formulas",
+    "preparation": "上捣成膏。"
+  },
+  {
+    "id": "recipe_b_122178",
+    "title": "竹叶膏",
+    "content": "生竹叶（去梗净）1斤，生姜4两，净白盐6两。",
+    "source": "《青囊秘传》。",
+    "effects": "牙痛；皮肤湿热疮疡。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "擦牙。",
+    "preparation": "先将竹叶熬出浓汁，又将姜捣汁，同熬沥净，将盐同熬干。"
+  },
+  {
+    "id": "recipe_b_111492",
+    "title": "消疬膏",
+    "content": "黄丹10两，乳香（去油）1两，没药（去油）1两，儿茶1两，密伦僧1两，血竭1两，麝香1钱（以上收膏时下），当归5两，甲片5两，陈酒3两，肉桂1两，木鳖子1两，蜈蚣10条，象皮1两，黄连1两，黄柏5两，黄芩5两，艾叶1两，花粉1两，银花4两。",
+    "source": "《青囊秘传》。",
+    "effects": "痰疬。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用时摊贴。",
+    "preparation": "先将当归等用香油3斤浸半月，夏5日，秋10日，熬枯去渣，入黄丹、乳没、儿茶、陀僧及麝香等药和匀成膏。"
+  },
+  {
+    "id": "recipe_b_118644",
+    "title": "枣砒丹",
+    "content": "大黑枣、白砒。",
+    "source": "《青囊秘传》。",
+    "effects": "走马牙疳。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "搽患处。立刻见功。",
+    "preparation": "用白砒嵌入枣内，火煅，研细。"
+  },
+  {
+    "id": "recipe_b_102971",
+    "title": "太乙神针",
+    "content": "艾绒3两，硫黄2钱，麝香1钱，乳香1钱，没药1钱，松香1钱，桂枝1钱，杜仲1钱，枳壳1钱，皂角1钱，细辛1钱，川芎1钱，独活1钱，雄黄1钱，山甲（炙）1钱，白芷1钱，全蝎1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上为末，和匀。预将火纸裁定，将药铺纸上，厚分许，层药层纸，卷如小竹管粗，令极坚，以桑皮纸厚包6-7层，再以鸡蛋清通刷外层，务需阴干，固藏，勿令泄气。用时燃着熏之。"
+  },
+  {
+    "id": "recipe_b_107108",
+    "title": "乌金丸",
+    "content": "陈京墨1斤，陈皮3钱，没药3钱，百草霜3钱，飞面3钱。",
+    "source": "《青囊秘传》。",
+    "effects": "妇人胎前产后三十六症。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "将墨炖软，入药，作49块，掐49丸，贮紫砂盆内，煮1日1夜不停止，阴干待用。修合时要净室。"
+  },
+  {
+    "id": "recipe_b_114061",
+    "title": "雄麝散",
+    "content": "麝香3钱，真雄精5钱，净巴豆霜3钱。",
+    "source": "《青囊秘传》。",
+    "effects": "一切痈疽发背，初溃时用之；杨梅疮亦可用。",
+    "tags": [],
+    "category": "formulas",
+    "preparation": "研细末，将瓷器收贮，勿令出气。"
+  },
+  {
+    "id": "recipe_b_110801",
+    "title": "香蒲丸",
+    "content": "松香20两（水澄化7次），草乌8两，川乌4两（上2味用水2桶，煎浓去滓），鲜菖蒲（煎浓去滓）2斤，防风1两，荆芥1两，羌活1两，甘草1两（水1桶煎浓汁，沉去滓泥脚）。",
+    "source": "《青囊秘传》。",
+    "effects": "大麻风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "初服1钱半，3日；次3日服2钱半，进2次；到7日，再服1钱5分，每日2次；到10日服2钱5分，每日2次，周而复始，空心酒送下。",
+    "preparation": "将二乌汁煎松香，干；次入防风等汁煮松香，干；又入菖蒲汁煮松香，干；又将醋1碗煮松香，干，熬之，水浸出火毒，取晒为末。病在上部醋为丸，病在下部面糊为丸。"
+  },
+  {
+    "id": "recipe_b_122720",
+    "title": "追毒散",
+    "content": "五灵脂1两，川乌头（炮）1两，僵蚕1两，全蝎5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "一切恶疮，脓水不收。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "掺之。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_86564",
+    "title": "痞块膏",
+    "content": "大黄1两，朴消1两。",
+    "source": "《青囊秘传》。",
+    "effects": "痞块。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外贴。",
+    "preparation": "上为末，以大蒜同打成膏。"
+  },
+  {
+    "id": "recipe_b_112925",
+    "title": "新吹",
+    "content": "川连3钱，黄芩3钱，黑栀3钱，月石3钱，熊胆2钱5分，枯矾2钱，青黛5钱，冰片6分，儿茶（炙）4钱，雄黄1钱，青梅干5钱，牛黄1钱，珍珠2钱5分，铜青2钱5分，中白（炙）5钱，麝香3分，牛胆消3钱，鸡内金（炙）1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "口疳疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "吹之。",
+    "preparation": "研粉。"
+  },
+  {
+    "id": "recipe_b_106782",
+    "title": "文八将丹",
+    "content": "冰片5分，麝香3分，腰黄5钱，僵蚕（炒，研）3钱，蜈蚣（沙炒）3钱，甲片（沙炒）3钱，辰砂2钱，蝉衣（沙炒）1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "无名肿毒，痈疽，疔症。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "大、小膏药均可用之。",
+    "preparation": "上为细末，贮瓶内听用。"
+  },
+  {
+    "id": "recipe_b_110150",
+    "title": "下疳八宝丹",
+    "content": "制炉甘石3钱，扫盆1钱，五倍子1钱，青黛5分。",
+    "source": "《青囊秘传》。",
+    "effects": "下疳。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "掺之。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_103437",
+    "title": "提疬丹",
+    "content": "巴豆（去壳）、白信、降药各等分。",
+    "source": "《青囊秘传》。",
+    "effects": "瘰疬。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "量核大小外用之。",
+    "preparation": "上为末，饭和为丸。"
+  },
+  {
+    "id": "recipe_b_111109",
+    "title": "消疔散",
+    "content": "川黄连5分，川黄柏5分，大黄5分，西煤灰1钱，灯心炭4分，梅片1分，荸荠粉2钱，麝香1分。",
+    "source": "《青囊秘传》。",
+    "effects": "疔疮。",
+    "tags": [],
+    "category": "formulas",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_107145",
+    "title": "乌龙膏",
+    "content": "川乌1斤，草乌1斤，天南星8两，白及4两，大黄1斤，牙皂4两，五倍子1斤，陈小粉4斤，半夏半斤。",
+    "source": "《青囊秘传》。",
+    "effects": "外症皮白及阴症。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "醋或姜汁调敷，随症用之。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_95259",
+    "title": "痧丸",
+    "content": "苍术（米泔水浸）5钱，明天麻6钱，麻黄6钱，雄黄6钱，朱砂6钱，麝香（后入）6分，丁香1钱，大黄1两，蟾酥（烧酒化）1钱5分，甘草4钱。",
+    "source": "《青囊秘传》。",
+    "effects": "一切痧胀，山岚霍乱。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服7丸。",
+    "preparation": "上药研细，入麝香和匀，烧酒泛丸，如莱菔子大，辰砂为衣。"
+  },
+  {
+    "id": "recipe_b_115472",
+    "title": "阳铁箍散",
+    "content": "降香末（炒）半斤，大黄3斤，炙乳香4两，没药4两，赤小豆3升，黄芩8两，方八1斤，生南星4两，山慈姑4两，陈小粉10斤。",
+    "source": "《青囊秘传》。",
+    "effects": "痈疽阳症。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用醋调敷。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_91434",
+    "title": "去解丹",
+    "content": "熟石膏1两，黄升1钱5分，青黛2钱。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "usage": "研掺，小膏药贴之，日1次。"
+  },
+  {
+    "id": "recipe_b_86616",
+    "title": "平安散",
+    "content": "牛黄2分，火消3钱，月石3钱，雄黄3钱，朱砂3钱，麝香2分，冰片2分。",
+    "source": "《青囊秘传》。",
+    "effects": "臀疽初起，红肿顶破，及毒蛇、疯狗咬伤。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上为细末，摊膏用。臀疽，外贴患处；毒蛇、疯狗咬伤，点目内眦。"
+  },
+  {
+    "id": "recipe_b_79349",
+    "title": "流气散",
+    "content": "广木香。",
+    "source": "《青囊秘传》。",
+    "effects": "气滞胸腹，经络作痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "口服；或摊大膏药贴之。",
+    "preparation": "晒干，研末。"
+  },
+  {
+    "id": "recipe_b_99906",
+    "title": "石珍散",
+    "content": "熟石膏2两，青黛3钱，黄柏3钱。",
+    "source": "《青囊秘传》。",
+    "effects": "一切疮痍破烂，作痛焮赤者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "香油调敷。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_118873",
+    "title": "燥湿丹",
+    "content": "蛇床子。",
+    "source": "《青囊秘传》。",
+    "effects": "浸淫疮湿烂诸症。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "干掺患处。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_80487",
+    "title": "瘘疮止水丸",
+    "content": "云母粉4两，樟冰8分（先将云母粉放一半于银碗内垫底，次入樟冰，上再以云母粉盖之，火煅樟冰，气出即止），黑铅6钱（铁勺内化开，入铜绿6钱，立取出）。",
+    "source": "《青囊秘传》。",
+    "effects": "瘘疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服3分。",
+    "preparation": "先将上药依方配好，两味和匀，开水为丸。"
+  },
+  {
+    "id": "recipe_b_108176",
+    "title": "五毒膏",
+    "content": "赤炼蛇盘癞蟾1条，穿山甲3两，壁虎（须用全者）20-30条，蜈蚣20条。",
+    "source": "《青囊秘传》。",
+    "effects": "一切无名肿毒。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "摊贴。",
+    "preparation": "用麻油3斤，黄丹3包，煎至滴水成珠，入丹再煎，看老嫩，倾入瓦缸盆内，水浸去火气。"
+  },
+  {
+    "id": "recipe_b_80156",
+    "title": "龙虎丹",
+    "content": "蝙蝠（煅）少许，冰片少许。",
+    "source": "《青囊秘传》。",
+    "effects": "瘰疬已溃，或未成脓者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上为细末。外敷。"
+  },
+  {
+    "id": "recipe_b_111110",
+    "title": "消疔散",
+    "content": "斑蝥3钱，蟾酥5分，赤芍6分，血竭5分，麝香2分5厘，梅片2分5厘，全蝎2分5厘，蜈蚣1条，乳香（炙）1钱5分，没药（炙）1钱5分，玄参2分5厘。",
+    "source": "《青囊秘传》。",
+    "effects": "疔疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "放小膏药内贴之。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_116264",
+    "title": "一笑散",
+    "content": "玄明粉。",
+    "source": "《青囊秘传》。",
+    "effects": "火牙疼。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "搽痛处。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_95920",
+    "title": "蛇咬解毒丹",
+    "content": "野三七1两，胆矾1钱，麝香3分，白芷5钱，五灵脂5钱，雄黄5钱，雄鼠粪3钱，千金霜2钱，小茴1钱，白枯矾2钱，川贝母1两。",
+    "source": "《青囊秘传》。",
+    "effects": "蛇伤溃烂。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用掺之。神效。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_116396",
+    "title": "遗花散",
+    "content": "轻粉、飞东丹、牙皂各等分。",
+    "source": "《青囊秘传》。",
+    "effects": "小儿痘出目中。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "天花出在左眼，吹右耳；天花出在右眼，吹左耳。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_96118",
+    "title": "麝香散",
+    "content": "丁香2钱，肉桂2钱，乳香2钱，没药2钱，附子2钱，细辛2钱，良姜2钱，川乌2钱，草乌2钱，麝香5分。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "usage": "大膏药内用。"
+  },
+  {
+    "id": "recipe_b_101714",
+    "title": "四胜散",
+    "content": "大黄3两，蛇床子3两，熟虎3两，黄柏1两。",
+    "source": "《青囊秘传》。",
+    "effects": "一切湿毒臁疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上为末。小青油调搽。"
+  },
+  {
+    "id": "recipe_b_81240",
+    "title": "瘰疬膏",
+    "content": "没药（炙，末）2钱，乳香（炙，末）2钱，血余炭（研，末）2钱，穿山甲（炙，末）3片，番木鳖（去皮，切片）8个，东丹2两，麻油3两，麝香（俟膏冷调入）1分。",
+    "source": "《青囊秘传》。",
+    "effects": "瘰疬。",
+    "tags": [],
+    "category": "formulas",
+    "preparation": "先将木鳖肉入麻油熬枯取出，并各药研细，俟油熬至滴水成珠，入各药末，令和匀，后起锅放地下，入东丹，将柳枝不住手搅，膏老嫩得中。如老，丹少入，嫩，丹多入，候冷，入踌香末和匀，起锅，入冷水三日，退火气，方可摊贴。"
+  },
+  {
+    "id": "recipe_b_107093",
+    "title": "乌金散",
+    "content": "栝楼（杵碎）9个，没药（研）1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "肾囊破烂，下疳。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用甘草酒煎去滓，取液调服。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_106088",
+    "title": "万应灵膏",
+    "content": "当归1两，赤芍1两，川军1两，白及1两，白蔹1两，羌活1两，乌药1两，木鳖子1两，苦参1两，连翘1两，皂角1两，生地1两，防风1两，甘草1两，山柰1两，五灵脂1两，半夏1两，槐枝1两，柳枝1两，桃枝1两，枣枝1两，桑枝1两。",
+    "source": "《青囊秘传》。",
+    "effects": "筋骨疼痛，跌打损伤，一切泻痢，妇人赤白带下，肚痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "红布摊贴。",
+    "preparation": "麻油5斤，入药煎枯去渣，下净血余2两，烊化，再入炒过广丹2斤，熬成膏，入后细料药：细辛1两，附子1两，良姜1两，官桂1两，乳香1两，没药1两，丁香1两，甲片1两，洋樟1两，川草乌1两，阿魏1两；麝香1钱，研末，调入膏内。"
+  },
+  {
+    "id": "recipe_b_77826",
+    "title": "立消散",
+    "content": "赤小豆不拘多少。",
+    "source": "《青囊秘传》。",
+    "effects": "一切痰毒时毒，不论初起、将溃诸疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "鸡子白调敷。",
+    "preparation": "晒磨为末。"
+  },
+  {
+    "id": "recipe_b_90698",
+    "title": "清胃散",
+    "content": "僵蚕、白芷、细辛、川芎各等分。",
+    "source": "《青囊秘传》。",
+    "effects": "风牙作痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上为细末，吹患处。"
+  },
+  {
+    "id": "recipe_b_115136",
+    "title": "消痞膏",
+    "content": "香油半斤，密陀僧3两，阿魏2钱5分，水红花子1钱5分，麝香1钱5分，羌活5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "痰疬、痰块。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "先将羌活、水红花子熬枯去滓，熬至滴水成珠，入僧、魏、麝令匀。或作末药摊膏用。",
+    "caution": "忌房色49日。",
+    "preparation": "上细切。"
+  },
+  {
+    "id": "recipe_b_95466",
+    "title": "伤丸",
+    "content": "淮牛膝1两，参三七3钱，当归1两，落得打1两，杜仲1两，骨碎补1两，血竭5钱，山羊血2钱，自然铜2钱，儿茶3钱，甜瓜子2两，厚朴3钱，乳香3钱，木瓜5钱，肉桂3钱，川断1两，红花5钱，朱砂3钱，原寸香6分。",
+    "source": "《青囊秘传》。",
+    "effects": "跌打损伤。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服1丸，陈酒送下。",
+    "preparation": "上为末，稀粥糊为丸，如弹子大，朱砂为衣。"
+  },
+  {
+    "id": "recipe_b_81126",
+    "title": "绿枣丹",
+    "content": "大红枣（去核）、铜绿1块（包在枣内煅红），冰片少许。",
+    "source": "《青囊秘传》。",
+    "effects": "下疳，龟头烂去一半者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "掺之。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_87445",
+    "title": "七香丸",
+    "content": "香附3两，麦芽2两，砂仁1两，甘松1两，甘草2两5钱，陈皮2两5钱，丁香1两，檀香2两，官桂2两5钱，乌药2两，藿香3两，木香2两。",
+    "source": "《青囊秘传》。",
+    "effects": "胃痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服1丸。",
+    "preparation": "上药为末，水叠为丸，如弹子大，降香1两研末为衣。"
+  },
+  {
+    "id": "recipe_b_104971",
+    "title": "通圣丸",
+    "content": "防风2两，当归2两，白芍（酒炒）2两，白术（土炒）2两，黑栀2两，荆芥2两，干姜2两。",
+    "source": "《青囊秘传》。",
+    "effects": "一切阳毒，小儿秃疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服3钱。小儿酌减。",
+    "preparation": "上为细末，水泛为丸，如绿豆大。"
+  },
+  {
+    "id": "recipe_b_107001",
+    "title": "乌金膏",
+    "content": "桐油1斤（入锅熬，起白星为度），黄蜡1两5钱（熔化）。",
+    "source": "《青囊秘传》。",
+    "effects": "足三阴湿热，腿脚红肿皮破，脂脓浸淫不止，痛痒非常者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "摊贴。",
+    "preparation": "入研细大黄末1斤，搅匀，再入冰片2分。"
+  },
+  {
+    "id": "recipe_b_106022",
+    "title": "万寿香盒",
+    "content": "桂枝2钱，五加皮2钱，排草香4钱、春花4钱，小茴香2钱，公丁香3钱，苍术2钱，粉丹皮3钱，甘松香5钱，白芷3钱，大茴香2钱，广湘黄2钱，灵草（即神护草）3钱，高良姜4钱，大山柰3钱。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用时焚烧。",
+    "preparation": "上为细末；做成线香，或装入芸香盒中。"
+  },
+  {
+    "id": "recipe_b_82536",
+    "title": "梅花丹",
+    "content": "麝香3分，冰片3分，乳香（炙去油）7钱，蜈蚣5条，寒水石3钱。",
+    "source": "《青囊秘传》。",
+    "effects": "一切痈肿，对口疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服1分半，多至3分。研末，又能敷对口疮。",
+    "preparation": "上为末，用烧酒浸烂，打腻如浆为丸，如黄豆大，用轻粉1钱，腰黄1两，炙没药7钱，血竭3钱，杜蟾酥3钱，金箔10张为衣。"
+  },
+  {
+    "id": "recipe_b_111519",
+    "title": "消痞丹",
+    "content": "阿魏、水红花子、三棱、莪术、肉桂各等分。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "usage": "掺膏药内贴之。",
+    "preparation": "上药为末。"
+  },
+  {
+    "id": "recipe_b_95921",
+    "title": "蛇咬解毒丸",
+    "content": "白矾1两，雄黄1两，三七1两，白芷1两，川贝1两，五灵脂1两，甘草5钱，青木香5钱，朱砂5钱，麝香1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "蛇咬伤。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "内服。",
+    "preparation": "上为细末，饭糊为丸，朱砂为衣。"
+  },
+  {
+    "id": "recipe_b_93839",
+    "title": "塞鼻丹",
+    "content": "麝香2分5厘，辛荑3分，巴豆（即净江子，去油）4分，西牛黄2分，细辛4分，牙皂角4分，蟾酥7分，冰片2分5厘，朱砂3分，生半夏3分，雄黄4分。",
+    "source": "《青囊秘传》。",
+    "effects": "乳症。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每用2厘，红枣包，塞鼻孔，左乳塞左，右乳塞右。一周时得涕即愈。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_114865",
+    "title": "牙痛散",
+    "content": "荜茇、石膏。",
+    "source": "《青囊秘传》。",
+    "effects": "牙痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "掺。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_92738",
+    "title": "壬癸散",
+    "content": "坏油船灰（名水龙骨，煅）。",
+    "source": "《青囊秘传》。",
+    "effects": "脚丫湿痒。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "掺之。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_123861",
+    "title": "自制霹雳丸",
+    "content": "桂枝3两，川椒2两5钱，良姜1两5钱，雄黄2钱5分，附子1两5钱，薤白头2两，槟榔1两，五灵脂1两，干姜1两5钱，苡仁2两5钱，小茴香2两，公丁香2两，防风1两5钱，防己1两5钱，乌药1两5钱，木香2两，荜澄茄2两，草果1两，吴萸2两，菖蒲1两，细辛1两。",
+    "source": "《青囊秘传》。",
+    "effects": "一切吐泻，冷气麻痧。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服3钱，开水送下。小儿1钱半。",
+    "caution": "孕妇忌服。",
+    "preparation": "上药并生为末，水为丸。"
+  },
+  {
+    "id": "recipe_b_86128",
+    "title": "暖脐膏",
+    "content": "母丁香2钱，白胡椒2钱，倭硫黄3钱，绿豆粉3钱，吴茱萸1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "寒邪入里，太阴受病，脘腹胀痛，大便泄泻。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "贴于脐上。",
+    "preparation": "上为末，用太乙膏4两，隔水炖化，将药末和入令匀。"
+  },
+  {
+    "id": "recipe_b_106359",
+    "title": "胃灵丹",
+    "content": "广木香、延胡各等分。",
+    "source": "《青囊秘传》。",
+    "effects": "胃痛。跌伤。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "可内服，或外入大膏药内贴之。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_121694",
+    "title": "诸毒一笔消",
+    "content": "真碱1茶盅，矿灰（即陈石灰）1两，川山甲（去筋）7钱，藤黄1两，大黄（末）1两，血竭（研细）5钱，雄黄3钱，蟾酥1线5分，麝香1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "诸毒肿痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用井水调稀，以新笔圈点涂敷，不空头围。药现配现用，不可多日存量。",
+    "caution": "忌入口中，孕妇忌用。",
+    "preparation": "上先将石灰、山甲入碱中化7日，次下藤黄、大黄、血竭、雄黄（边研边下）、蟾酥（乳汁浸化和入）、麝香，共和匀如稀糊状。"
+  },
+  {
+    "id": "recipe_b_83008",
+    "title": "秘制白龙丹",
+    "content": "真川贝母1斤。",
+    "source": "《青囊秘传》。",
+    "effects": "肺痈。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "口服。",
+    "preparation": "蜜水为丸服。"
+  },
+  {
+    "id": "recipe_b_85839",
+    "title": "牛皮癣药酒",
+    "content": "木鳖子6个，土槿皮2两，槟榔7个，防风2钱，麝香3分，冰片3分，土螺蛳（即蜗牛）7个。",
+    "source": "《青囊秘传》。",
+    "effects": "牛皮癣。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "烧酒3斤浸。搽。"
+  },
+  {
+    "id": "recipe_b_116100",
+    "title": "一粒金丹",
+    "content": "沉香2钱，木香2钱，檀香7钱5分，大黄7钱5分，巴豆霜7钱5分，乳香2钱，没药2钱，麝香少许。",
+    "source": "《青囊秘传》。",
+    "effects": "无名肿毒。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服5-7丸，酒送下。",
+    "preparation": "上为末，面糊为丸，如黄豆大，朱砂为衣，金箔贴匀。"
+  },
+  {
+    "id": "recipe_b_80375",
+    "title": "龙尾神针",
+    "content": "麝香、肉桂、乳香（炙）、没药（炙）、朱砂、雄黄、白蒺藜、川乌、草乌、川芎、良姜、苍术、独活、威灵仙、白芷、天麻、羌活、细辛、藁本、白花蛇各等分。",
+    "source": "《青囊秘传》。",
+    "effects": "寒湿气痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "将纸1张，艾绒铺遍，将药铺艾上，卷紧如管大，外用乌金纸贴好，以火燃着，隔布熨于患处。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_98033",
+    "title": "生地膏",
+    "content": "细生地4两，白蜡1两5钱，麻油8两。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "preparation": "将生地入油熬枯，沥净渣，熬至滴水成珠，离火入蜡，溶化和匀。"
+  },
+  {
+    "id": "recipe_b_106053",
+    "title": "万应膏",
+    "content": "制南星4钱，大黄3钱，川乌4钱，桃仁3钱，红花3钱，羌活1钱5分，当归5钱，独活3钱，半夏4钱，草乌3钱，生姜2两，松香末3斤，密陀僧（研末）3两，硫黄（研末）8两，葱白不拘。",
+    "source": "《青囊秘传》。",
+    "effects": "阴症。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "摊膏用。",
+    "preparation": "麻油1斤，浸上药5天，熬枯去滓，麻布2层沥净，熬至滴水成珠，入松香、陀僧、硫黄，搅匀，换微火。"
+  },
+  {
+    "id": "recipe_b_106271",
+    "title": "围药",
+    "content": "牛皮胶、五倍子。",
+    "source": "《青囊秘传》。",
+    "effects": "一切肿毒。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用醋煮化。摊贴。"
+  },
+  {
+    "id": "recipe_b_101421",
+    "title": "四宝丹",
+    "content": "黄柏、赤石脂、大贝母、青黛各等分。",
+    "source": "《青囊秘传》。",
+    "effects": "臁疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "掺之。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_110155",
+    "title": "下疳珍珠散",
+    "content": "珍珠1钱，乳香2钱，没药2钱，儿茶2钱，牡蛎（煅）2钱，龙骨2钱，象皮2钱，轻粉5分，蛤粉3钱，枯矾3钱，冰片5分。",
+    "source": "《青囊秘传》。",
+    "effects": "下疳。此由妇人交接不禁，秽浊败精臭气所致，初起奇痒，茎头起粟。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "四边白腐之上，贴真金箔。或用葱、椒汤洗净后掺药。",
+    "preparation": "上为末，干掺之。"
+  },
+  {
+    "id": "recipe_b_108953",
+    "title": "五香丸",
+    "content": "广木香1两，沉香2两，降香2两，肉桂6钱，檀香1两。",
+    "source": "《青囊秘传》。",
+    "effects": "腹痛。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_b_104375",
+    "title": "铁屑丸",
+    "content": "针砂1两（醋淬7次，去砂存醋），黑枣5两（饭锅蒸2次，连皮去核捣若干，另加醋），茵陈蒿酌加分量（梗叶连用），皂矾（净）7钱（铜锅煅透）。",
+    "source": "《青囊秘传》。",
+    "effects": "黄疸，皮水，水肿。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "服至1料，小便多，为得力，4-5料绝根。",
+    "caution": "忌腥、盐、濡润助水之品。",
+    "preparation": "后2味为细末，以黑枣肉打烂，针砂醋和入为丸。"
+  },
+  {
+    "id": "recipe_b_106787",
+    "title": "文蛤散",
+    "content": "五倍子（新瓦上焙干，研末）。",
+    "source": "《青囊秘传》。",
+    "effects": "横痃便毒，烂久不收口。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "摊布贴之，布上加纸1层，过夜即消。",
+    "preparation": "好陈醋调。"
+  },
+  {
+    "id": "recipe_b_81253",
+    "title": "瘰疬痰核膏",
+    "content": "生甲片2两，海藻4两，当归2两，白芷2两，黄连2两，黄柏2两，黄芩2两，番木鳖1两，全蝎2两，生地1两，赤芍1两，官桂4两，麻油2斤半。",
+    "source": "《青囊秘传》。",
+    "effects": "瘰疬，痰核。",
+    "tags": [],
+    "category": "formulas",
+    "preparation": "熬枯去滓，熬至滴水成珠，加黄丹10两，黄蜡7两，白蜡3钱，粉锡2两收成膏，再加后药：乳香（炙）、没药（炙）、阿魏各6钱，轻粉6钱，麝香2钱，血竭4两，燕窝泥1两，雄黄2钱，朱砂2钱，雄鼠粪1两，（均研末）和匀。"
+  },
+  {
+    "id": "recipe_b_97163",
+    "title": "神效伤膏",
+    "content": "片松香（葱叶汁煮）2两，乳香1两5钱，没药1两5钱，儿茶1两5钱，血竭1两5钱，阿魏1两5钱，洋樟（冲入）1两5钱，龙骨1两5钱，轻粉（次入）1两5钱，黄占1两5钱，白占1两5钱，降香3两。",
+    "source": "《青囊秘传》。",
+    "effects": "跌打损伤，瘀血停滞，作痛难忍者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "摊贴。",
+    "preparation": "上为末，将猪板油1斤，熬去滓，入黄、白占烊化，再入余药，搅匀，候凝。"
+  },
+  {
+    "id": "recipe_b_93247",
+    "title": "如意铁箍散",
+    "content": "大黄4两，陈皮2两，南星2两，白及2两，姜黄4两，白芷3两，毛菇2两，厚朴4两，花粉4两，甘草1两，血竭2两，芙蓉叶4两，五倍子（炒）半斤，陈小粉（炒黑）1斤。",
+    "source": "《青囊秘传》。",
+    "effects": "一切痈疽，红白相兼之症。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "鸡子清或醋调敷。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_96461",
+    "title": "神金散",
+    "content": "川草乌、白芷、赤芍、芙蓉叶、枇杷叶各等分。",
+    "source": "《青囊秘传》。",
+    "effects": "跌打损伤，肿痛难忍者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "韭菜叶捣汁调敷。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_87896",
+    "title": "千金散",
+    "content": "升药底、西丁。",
+    "source": "《青囊秘传》。",
+    "effects": "疥疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用板猪油去膜，和药打烂，扎于夏布内。不拘时候搽之。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_80547",
+    "title": "芦甘石散",
+    "content": "上甘石1钱，黄连1钱（煎汁）。",
+    "source": "《青囊秘传》。",
+    "effects": "下疳。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用猪油调甘石末，敷之。立愈。原方每甘石1钱，加珠粉1分更妙。",
+    "preparation": "先将甘石煅透，研细，入黄连水收干。"
+  },
+  {
+    "id": "recipe_b_112445",
+    "title": "哮吼丸",
+    "content": "杏仁3钱，马兜铃3钱，蝉衣2钱，桑皮2钱5分，白果肉2钱5分，白矾5钱，白信3分。",
+    "source": "《青囊秘传》。",
+    "effects": "哮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服男7丸，女6丸，食后以冷茶送下。",
+    "preparation": "上为末，红枣肉为丸，如绿豆大。"
+  },
+  {
+    "id": "recipe_b_114859",
+    "title": "牙疼药",
+    "content": "月石、火消、青盐、洋冰各等分。",
+    "source": "《青囊秘传》。",
+    "effects": "牙疼。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "搽之。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_78414",
+    "title": "敛疳丹",
+    "content": "真西黄1钱，血珀2钱，大濂珠1钱，青龙骨3钱，鸡内金1钱，梅片8分。",
+    "source": "《青囊秘传》。",
+    "effects": "走马牙疳，腐肉不脱。",
+    "tags": [],
+    "category": "formulas",
+    "preparation": "上研用。"
+  },
+  {
+    "id": "recipe_b_89566",
+    "title": "青消散",
+    "content": "洋樟1两，青黛3钱。",
+    "source": "《青囊秘传》。",
+    "effects": "牙痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "搽牙。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_96996",
+    "title": "神效疔毒丸",
+    "content": "雄黄3钱，大黄3钱，巴豆3钱。",
+    "source": "《青囊秘传》。",
+    "effects": "疔毒。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "轻者每服9丸，重者21丸，极重者30丸。",
+    "caution": "宜慎用。",
+    "preparation": "杵烂，面糊为丸，如风仙花子大。"
+  },
+  {
+    "id": "recipe_b_121059",
+    "title": "致和丸",
+    "content": "熟地5两，厚朴2两，胡桃肉12两，茅术2两，胡椒1两，当归2两，甘草2两，砂仁1两，广皮1两，香附4两。",
+    "source": "《青囊秘传》。",
+    "effects": "脾虚作肿，及气肿者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服2钱。",
+    "preparation": "上为末，黑枣煮烂为丸。"
+  },
+  {
+    "id": "recipe_b_116112",
+    "title": "一粒珠",
+    "content": "全川山甲（炙）1只，原寸香5分。",
+    "source": "《青囊秘传》。",
+    "effects": "一切痈肿流注，及小儿惊风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "口服。",
+    "preparation": "上为末，面糊为丸服。"
+  },
+  {
+    "id": "recipe_b_90889",
+    "title": "清阳散",
+    "content": "月石2钱，飞朱砂2分，梅片5厘。",
+    "source": "《青囊秘传》。",
+    "effects": "咽喉肿痛、胀痛者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "吹口。"
+  },
+  {
+    "id": "recipe_b_104198",
+    "title": "贴散膏",
+    "content": "升麻3钱，甘遂3钱，白芷3钱，贯众3钱，苦参3钱，昆布3钱，羌活3钱，全蝎3钱，蜂房3钱，商陆3钱，海藻3钱，白及3钱，赤芍3钱，瞿麦3钱，竹箸3钱，白蔹3钱，大蓟3钱，蛇蜕3钱，花粉3钱，苍术3钱，防风3钱，荆芥3钱，姜黄3钱，细辛3钱，泽兰3钱，香附3钱，远志3钱，官桂3钱，延胡3钱，河车3钱，角针3钱，防己3钱，川椒3钱，归尾3钱，紫草3钱，僵蚕3钱，斑蝥20只，川乌3钱，草乌3钱，三棱3钱，莪术3钱，蓖麻子3钱，金星草3钱，蒲公英3钱，地丁草3钱，牛蒡3钱，夏枯草3钱，巴豆肉3钱，野菊花3钱，苍耳子3钱，血见愁3钱，桑寄生3钱，草大戟3钱，白鲜皮3钱，威灵仙3钱，五灵脂3钱，王不留行3钱水仙根7钱，生首乌5钱，野蔷薇根7钱，皂荚2块，忍冬藤7钱，芙蓉花20朵，木鳖子1两，童子发3钱，透骨草3钱，生姜3钱。",
+    "source": "《青囊秘传》。",
+    "effects": "一切热毒疮疖。",
+    "tags": [],
+    "category": "formulas",
+    "preparation": "用大麻油15斤，浸7日，下锅内，熬至药滓枯，滤去滓，再熬至滴水成珠，然后投下炒黄丹6斤收膏。"
+  },
+  {
+    "id": "recipe_b_91427",
+    "title": "去腐定痛生肌散",
+    "content": "生石膏（用甘草水飞7次）3两，辰砂3钱，冰片3分，硼砂5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "usage": "掺之。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_85506",
+    "title": "牛黄口疳丹",
+    "content": "牛黄1钱，梅片1钱，朱砂1钱，月石1钱，明雄2钱，青黛2钱，黄连1钱，黄柏1钱，玄明粉1钱5分。",
+    "source": "《青囊秘传》。",
+    "effects": "大人、小儿口舌喉等疳腐烂，牙岩。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "吹入。",
+    "preparation": "上为细末，瓶贮。"
+  },
+  {
+    "id": "recipe_b_96412",
+    "title": "神功一圣膏",
+    "content": "硇砂、蓖麻子（去壳）各等分。",
+    "source": "《青囊秘传》。",
+    "effects": "诸毒。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水调，外敷。"
+  },
+  {
+    "id": "recipe_b_123368",
+    "title": "紫金膏",
+    "content": "土朱、松香各等分。",
+    "source": "《青囊秘传》。",
+    "effects": "结毒臁疮，日久紫色。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外敷。",
+    "preparation": "上为末，香油调敷。"
+  },
+  {
+    "id": "recipe_b_87120",
+    "title": "普济丹",
+    "content": "硫黄2钱，川椒2钱，樟水2钱，明矾3钱，枯矾3钱。",
+    "source": "《青囊秘传》。",
+    "effects": "疥疮脓窠作痒。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "猪板油调，布包擦。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_99157",
+    "title": "十陈夹纸膏",
+    "content": "豆油8两，黄占5两，水龙骨2两5钱，铜青（研末）2两5钱。",
+    "source": "《青囊秘传》。",
+    "effects": "一切腿脚臁疮腐烂，或痒或痛，久不收口者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "先将豆油煎至滴水成珠，下黄占烊化，次下龙骨、铜青搅匀，摊油纸，用针刺孔，扎之。"
+  },
+  {
+    "id": "recipe_b_99692",
+    "title": "石黄散",
+    "content": "熟石膏、黄柏各等分。",
+    "source": "《青囊秘传》。",
+    "effects": "湿疮发痒。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "可掺，可油调。",
+    "preparation": "上为细末，和匀。"
+  },
+  {
+    "id": "recipe_b_122011",
+    "title": "铢魔丹",
+    "content": "大枫子（麻黄、闹羊花各4两，酒煮1昼夜）1斤，苦参皮（酒蒸9次，晒干）1斤，荆芥1斤，蒺藜1斤，胡麻（炒）1斤。",
+    "source": "《青囊秘传》。",
+    "effects": "诸般风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服100丸，温酒送下，日3次。",
+    "preparation": "上为末，酒糊为丸，如梧桐子大。"
+  },
+  {
+    "id": "recipe_b_80757",
+    "title": "录元散",
+    "content": "生绿豆（晒干）不拘多少。",
+    "source": "《青囊秘传》。",
+    "effects": "湿热疮痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "香油调搽。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_97222",
+    "title": "神效消痞散",
+    "content": "白信块。",
+    "source": "《青囊秘传》。",
+    "effects": "疟母。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "大者多至5分，小者减之，入大布膏药内，将药位于中心，再将小纸膏剪去边，刺小孔，满贴布膏上，然后贴上患处。不令白信着肉，防皮肤起泡。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_111346",
+    "title": "消疳丹",
+    "content": "胡连5分，胆矾3分，儿茶5分，铜绿5分，麝香1分，绿矾1钱，滑石1钱，杏仁霜5分，西黄5分，青黛1钱，鸡内金5分，葶苈子5分，雄黄1钱。",
+    "source": "《青囊秘传》。",
+    "effects": "一切牙疳，臭烂不止。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "吹之。",
+    "preparation": "上为细末。"
+  }
+]

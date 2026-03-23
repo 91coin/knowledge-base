@@ -1,0 +1,1910 @@
+[
+  {
+    "id": "recipe_a_40461",
+    "title": "安神丸",
+    "content": "辰砂5分，当归5钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "怔忡。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_45904",
+    "title": "卜子散",
+    "content": "萝卜子1合（炒，研）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "胸不快。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_46812",
+    "title": "擦牙散",
+    "content": "生石膏、生明矾各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_69844",
+    "title": "急痛煎",
+    "content": "陈皮、香附、吴萸、良姜、石菖蒲各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "真急心疼。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_73463",
+    "title": "椒硼散",
+    "content": "川椒（去白，炒出汗）1钱半，铜青1钱，硼砂1钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "牙疳。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_63229",
+    "title": "海蛤散",
+    "content": "蛤蜊壳（醋炙5次）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "胃气痛。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64864",
+    "title": "喉蛾煎",
+    "content": "石膏（煅）5钱，菊花5钱，杏仁5钱，麦冬1两，苦参4钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "单、双蛾并喉闭。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_77367",
+    "title": "劳痛饮",
+    "content": "黄耆5钱，杜仲1钱，故纸1钱，核桃肉8个，红花5分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "劳伤腰痛。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_50737",
+    "title": "吹喉散",
+    "content": "冰片3分，朱砂3分，珍珠3分，枯矾3分，硼砂5分，孩儿茶1钱，龙骨（煅）1钱，寒水石2钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "咽喉诸症。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_69005",
+    "title": "回音饮",
+    "content": "甘草、桔梗、乌梅、乌药各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "声音哑。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_72075",
+    "title": "加味四物汤",
+    "content": "当归1钱，川芎1钱，芍药1钱，生地1钱，山栀（炒）1钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "因怒气逆甚，先恶心，继而呕血成升成碗者。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64868",
+    "title": "喉疳丸",
+    "content": "槐花3钱，牛膝1钱，孩儿茶1钱，黄连1钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "喉烂。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64873",
+    "title": "喉痛饮",
+    "content": "甘草1钱，贝母1钱，黄芩1钱，黄连1钱，薄荷1钱，川芎1钱，桔梗3钱，玄参2钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "喉肿痛。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_48449",
+    "title": "缠喉散",
+    "content": "白僵蚕（研细末）、生姜汁少许。",
+    "source": "《仙拈集》卷二。",
+    "effects": "缠喉风。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_69572",
+    "title": "鸡金散",
+    "content": "鸡肫皮1钱，青盐1钱，细辛5分，川椒5分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "牙疼。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_51099",
+    "title": "葱白熨",
+    "content": "葱白。",
+    "source": "《仙拈集》卷二。",
+    "effects": "闪挫打伤不出血，三月、半年不愈者。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_51167",
+    "title": "葱汁油",
+    "content": "老葱白5根（去皮须，捣汁）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "虫积暴痛，牙关紧闭欲绝者。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_69511",
+    "title": "鸡蛋油",
+    "content": "鸡蛋。",
+    "source": "《仙拈集》卷二。",
+    "effects": "肾囊风；诸疮破烂，痒不可忍，或不收口者；及癣疥诸疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_49427",
+    "title": "陈甘散",
+    "content": "广皮5钱，生甘草5钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "暴吐血。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_67753",
+    "title": "黄连丸",
+    "content": "黄连（酒炒）4两，槐花4两。",
+    "source": "《仙拈集》卷二。",
+    "effects": "肠风脏毒，痔漏下血。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_51069",
+    "title": "葱白煎",
+    "content": "葱白5-6根，盐1撮。",
+    "source": "《仙拈集》卷二。",
+    "effects": "赤白浊。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_44575",
+    "title": "鼻痔丸",
+    "content": "瓜蒂（炒）4钱，甘遂（炒）4钱，枯矾5分，松香（为衣）5分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "鼻痔。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_42024",
+    "title": "白马饮",
+    "content": "白马粪（入微水，绞汁）半碗。",
+    "source": "《仙拈集》卷二。",
+    "effects": "吐利腹痛，绞肠痧，一切难辨之症。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_56652",
+    "title": "独乳延生丸",
+    "content": "茯苓1斤（打碎）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "痨症。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_68820",
+    "title": "灰水膏",
+    "content": "木炭灰（择净细者）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "牙痛。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_49855",
+    "title": "赤金膏",
+    "content": "海螵蛸（河水煮7次，内外极淡）2钱，白硼砂2钱，炉甘石（煅红，淬童便内7次）3钱，冰片1钱，龙胆草2两（水洗净，入磁壶内，水5钟，煎至2钟，滤过，再熬成膏）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "一切暴发障翳。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_58930",
+    "title": "风热散",
+    "content": "川芎、白芷、石膏（煅）、荆芥穗各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "因风热而头痛者。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_57446",
+    "title": "二妙散",
+    "content": "荔枝核（炮）、小茴香（炒）各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "寒疝偏坠肿痛。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_50467",
+    "title": "川椒丸",
+    "content": "川椒（焙干）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_59711",
+    "title": "茯神散",
+    "content": "茯神。",
+    "source": "《仙拈集》卷二。",
+    "effects": "头风连筋极痛者。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_68900",
+    "title": "回生膏",
+    "content": "人乳（男用女胎乳，女用男胎乳）、藕汁、白蜜、白酒头浆、童便（后入）各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "血虚火旺，消补两难者。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_76786",
+    "title": "宽膈散",
+    "content": "山栀仁（炒黑）1钱半，川芎1钱半，枳实1钱半，桔梗7分，甘草5分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "胸满。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_41149",
+    "title": "巴豆蒜",
+    "content": "大蒜1瓣，巴豆1粒（去皮膜，慢火炮极热）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "耳聋。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_74188",
+    "title": "金白散",
+    "content": "鸡内金（焙干）1两，白芷5钱，铜绿1钱，麝香1分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "牙根臭烂、黑色，有虫。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_60352",
+    "title": "复音丸",
+    "content": "硼砂1两，玄明粉1钱，胆星1钱，诃子肉1钱，百药煎3个，冰片3分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "哑喉。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_68845",
+    "title": "回疳散",
+    "content": "鹿角（煅）1两，白矾（枯）1两，头发5钱（烧存性）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "疳烂通鼻孔。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_40818",
+    "title": "八宝散",
+    "content": "珍珠、冰片、牛黄、象牙、枯矾、枯盐、铜绿、银珠、轻粉、鸡内金各等分，金箔7张。",
+    "source": "《仙拈集》卷二。",
+    "effects": "大人、小儿口疮牙疳，久不愈者。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64875",
+    "title": "喉癣散",
+    "content": "头胎黄牛屎。",
+    "source": "《仙拈集》卷二。",
+    "effects": "喉癣。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_69362",
+    "title": "火眼煎",
+    "content": "当归1钱，生甘草1钱，防风1钱，杏仁7枚（泡，去皮尖），铜绿5分，枯矾5分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "风火眼。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_54070",
+    "title": "盗汗汤",
+    "content": "当归1钱，熟地1钱，人参1钱，白术1钱，黄耆1钱，茯苓1钱，陈皮1钱，白芍5分，黄柏5分，知母5分，甘草5分，枣2枚，浮小麦1撮。",
+    "source": "《仙拈集》卷二。",
+    "effects": "气血两虚盗汗。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_55604",
+    "title": "丁香颗",
+    "content": "白丁香不拘多少。",
+    "source": "《仙拈集》卷二。",
+    "effects": "目中胬肉，瞳神障蔽，面生雀斑、酒刺。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64215",
+    "title": "黑豆酒",
+    "content": "黑豆2合（拭净），黄耆2钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "虚汗。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64432",
+    "title": "黑神散",
+    "content": "川山甲2两（烧存性）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "一切脚气。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_75324",
+    "title": "净容散",
+    "content": "川山甲（炒）10片，生姜4两，野大黄4两（捣汁），川椒（去目）5钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "满面紫块如钱大者。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_46791",
+    "title": "步利丸",
+    "content": "山楂肉、白蒺藜各等分（蒸晒）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "腿膝疼痛，不能举步。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_59188",
+    "title": "伏龙浆",
+    "content": "伏龙肝（即灶心红土）3钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "暴热心痛。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_63452",
+    "title": "寒痛散",
+    "content": "荔枝核（炮焦）1两，小茴香（炒）1两，吴茱萸1钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "疝气腹痛。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_66660",
+    "title": "槐花丸",
+    "content": "槐花（炒焦）1两，元胡（炒）1两，地榆（焙）1两，乌梅肉1两。",
+    "source": "《仙拈集》卷二。",
+    "effects": "肠风下血，红白痢疾。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_57421",
+    "title": "二灵散",
+    "content": "当归、白芷各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "大便闭。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_67921",
+    "title": "黄梅丸",
+    "content": "雄黄1钱，乌梅肉3钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "心胃虫痛。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_77307",
+    "title": "烂眼煎",
+    "content": "胆矾1钱，防风1钱，独活1钱，僵蚕1钱，桑皮1钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "赤红烂眼。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_50938",
+    "title": "磁石引",
+    "content": "上好新铁片3块。",
+    "source": "《仙拈集》卷二。",
+    "effects": "耳聋。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_61294",
+    "title": "鸽粪包",
+    "content": "鸽粪3-5合。",
+    "source": "《仙拈集》卷二。",
+    "effects": "传尸劳病。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_59294",
+    "title": "茯莲煎",
+    "content": "莲肉、白茯苓各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "白浊，遗精。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_73904",
+    "title": "解毒汤",
+    "content": "黄连1钱，当归1钱，苦参2钱，荆芥2钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "肠风下血，不论粪前粪后。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_44566",
+    "title": "鼻疳散",
+    "content": "乳香1钱，没药1钱，孩儿茶1钱，鸡膍胵（焙黄）1钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "鼻颡诸疳。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_44403",
+    "title": "贝莲猪肺",
+    "content": "健猪肺1个，贝母2钱，莲肉4两。",
+    "source": "《仙拈集》卷二。",
+    "effects": "骨蒸劳热，咳嗽不止。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_69101",
+    "title": "茴消散",
+    "content": "朴消5钱，茴香（炒）2钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "膀胱热而不通者。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_63429",
+    "title": "寒湿煎",
+    "content": "紫苏、川芎、花椒、雨前茶。",
+    "source": "《仙拈集》卷二。",
+    "effects": "因风湿而头痛者。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_67152",
+    "title": "黄甘散",
+    "content": "黄连6钱，甘草1钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "多食炙煿，郁热当心而痛。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_44940",
+    "title": "碧霞丹",
+    "content": "千年石灰、独蒜。",
+    "source": "《仙拈集》卷二。",
+    "effects": "九种心痛。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_51121",
+    "title": "葱豆酒",
+    "content": "赤小豆3合（微炒）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "热淋，血淋。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_74686",
+    "title": "金粟丸",
+    "content": "沉香2钱，丁香2钱，木香2钱，青皮（醋炒）5钱，陈皮5钱，莪术5钱，槟榔5钱，巴霜5钱，乌梅肉5钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "九种心胃疼痛，两胁胀满。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_54018",
+    "title": "导痰汤",
+    "content": "南星1钱，半夏1钱，陈皮1钱，茯苓1钱，瓜蒌仁1钱，枳实1钱，桔梗1钱，山栀1钱，黄芩1钱，黄连1钱，甘草2分，木香（另研）2分，辰砂2分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "痫，痰壅。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_72935",
+    "title": "健猪肚",
+    "content": "猪肚1具（洗净）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "消渴。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_69530",
+    "title": "鸡肝散",
+    "content": "鸡肝（不落水）1个，芙蓉叶（烘燥）1钱，肉果5分，龙胆草7分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "眼痛难开者。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_40449",
+    "title": "安神汤",
+    "content": "人参、石莲肉、莲须、麦冬、茯神、远志、甘草、芡实。",
+    "source": "《仙拈集》卷二。",
+    "effects": "遗精。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_57698",
+    "title": "二仙膏",
+    "content": "牛乳10斤，福圆10斤。",
+    "source": "《仙拈集》卷二。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64412",
+    "title": "黑神散",
+    "content": "牙皂（烧存性，以烟尽为度）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "胃脘剧痛，诸药不效。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_63210",
+    "title": "过夜消",
+    "content": "冰片1分，牛黄1分，硼破8分，雄黄8分，孩儿茶8分，山豆根2钱，胆矾3分，陈霜梅（去核）3个。",
+    "source": "《仙拈集》卷二。",
+    "effects": "一切喉证。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_40799",
+    "title": "八宝膏",
+    "content": "蕤仁2两（去油净，每料用5钱），熊胆5分，硼砂5分，乳香3分，没药（各去油）3分，珍珠（豆腐内煮过，研末）3分，冰片1钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "目中障翳。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_72403",
+    "title": "加味羊肝丸",
+    "content": "羌活1两，川芎1两，蒙花1两，木贼1两，谷精草1两，菟丝子1两，草决明1两，或加青盐3钱，人参3钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "因怒障翳遮睛。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_72376",
+    "title": "加味辛夷散",
+    "content": "辛夷1钱，黄耆1钱，人参1钱，当归1钱，白芍1钱，川芎1钱，白芷1钱，细辛1钱，黄芩1钱，甘草6分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "鼻中流出臭脓，名曰脑漏。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_72936",
+    "title": "健猪肺",
+    "content": "健猪肺。",
+    "source": "《仙拈集》卷二。",
+    "effects": "久嗽劳病。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_48887",
+    "title": "车莲饮",
+    "content": "旱莲草、车前草。",
+    "source": "《仙拈集》卷二。",
+    "effects": "溺血。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64860",
+    "title": "喉闭饮",
+    "content": "巴豆7粒（3生，4炒存性），雄黄、郁金1个。",
+    "source": "《仙拈集》卷二。",
+    "effects": "缠喉风，单双蛾。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_59935",
+    "title": "附栀煎",
+    "content": "栀子（姜汁炒黑）15粒，香附（童便炒）1钱，川芎1钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "因郁火而心胃痛者。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_b_108845",
+    "title": "五仙散",
+    "content": "天麻、白附、僵蚕、乳香、没药。",
+    "source": "《仙拈集》卷二。",
+    "effects": "脚气。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服5分，酒调下。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_100469",
+    "title": "熟地酒",
+    "content": "熟地4两（捣汁）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "手足骨骱疼痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "俟冷定随虚日饮至愈。",
+    "preparation": "入滴花烧酒2斤，隔阳炖热，竹箸搅匀。"
+  },
+  {
+    "id": "recipe_b_95140",
+    "title": "扫虫煎",
+    "content": "陈皮1钱，半夏1钱，茯苓1钱，枳实1钱，槟榔1钱，使君子肉1钱半，干姜（炮）5分，花椒5分，苦楝根皮（去粗皮）3钱，乌梅3个。",
+    "source": "《仙拈集》卷二。",
+    "effects": "诸虫。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，露1宿，次日五更空心服，先吃白糖数口后服药。凡打虫，俱要上半个月服药。"
+  },
+  {
+    "id": "recipe_b_85293",
+    "title": "宁神饮",
+    "content": "茯苓8分，陈皮8分，瓜蒌8分，黄芩6分，远志6分，枣仁6分，半夏1钱，贝母1钱，甘草5分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "风狂痰迷心窍。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "生姜3片为引，水2钟煎，食远服。先服化痰丸，后服本方。"
+  },
+  {
+    "id": "recipe_b_108641",
+    "title": "五圣丸",
+    "content": "五灵脂2钱，肉桂1钱，乳香1钱，没药1钱，木香5分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "心气胃痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服1丸，热酒送下。",
+    "preparation": "上为末，醋糊为丸，如梧桐子大。"
+  },
+  {
+    "id": "recipe_b_91365",
+    "title": "祛痫散",
+    "content": "皂矾（煅红）1两，鱼鳔（切断，面炒）1两，铅粉（炒黄）1两，朱砂3钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "猪羊儿风，时常跌倒，不省人事。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服3钱，空心酒调下。即愈。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_82583",
+    "title": "梅砂丸",
+    "content": "霜梅肉1个，硼砂少许。",
+    "source": "《仙拈集》卷二。",
+    "effects": "咽喉肿痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "将砂纳梅，含口中。酸水下，毒自解。或为丸如龙眼大，口中噙化更妙。"
+  },
+  {
+    "id": "recipe_b_89669",
+    "title": "轻硫散",
+    "content": "硫黄1钱，轻粉3分，杏仁14粒（去皮尖）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "酒渣鼻，及妇人面上粉刺。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "临卧涂鼻，早洗去。",
+    "preparation": "上为末，杏仁研膏。"
+  },
+  {
+    "id": "recipe_b_106515",
+    "title": "温解散",
+    "content": "良姜1两5钱，吴萸4两，胡椒2两。",
+    "source": "《仙拈集》卷二。",
+    "effects": "心胃因冷气刺痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服重者5分，轻者3分，温酒送下。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_90754",
+    "title": "清香散",
+    "content": "小茴香、荔枝核、青皮各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "外肾肿大如斗。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服2钱，酒调下。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_101520",
+    "title": "四精膏",
+    "content": "蜂蜜、熊胆、人乳、青鱼胆各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "风热时眼。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "点眼。",
+    "preparation": "入铜勺熬成膏，加冰片少许，入瓷器收贮。"
+  },
+  {
+    "id": "recipe_b_85990",
+    "title": "牛膝丸",
+    "content": "牛膝5两（锉末），生地黄5斤。",
+    "source": "《仙拈集》卷二。",
+    "effects": "消渴不止，下元虚损。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服30丸，空心酒送下。",
+    "preparation": "上为末，炼蜜为丸，如梧桐子大。"
+  },
+  {
+    "id": "recipe_b_79373",
+    "title": "硫矾散",
+    "content": "硫黄、枯矾各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "面紫风刺瘾疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用蜜调涂面部。",
+    "preparation": "上为散。"
+  },
+  {
+    "id": "recipe_b_120188",
+    "title": "脂蜜膏",
+    "content": "猪脂1斤。",
+    "source": "《仙拈集》卷二。",
+    "effects": "失音。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "不时挑服1匙，滚水送下。",
+    "preparation": "上入锅先炼成油，捞去滓，入白蜜1斤再炼1时，滤入瓷罐内收，冷定成膏封固。"
+  },
+  {
+    "id": "recipe_b_95592",
+    "title": "烧盐散",
+    "content": "食盐（烧研）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "上腭肿硬。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "以箸蘸，频点硬处，再以盐汤漱口。"
+  },
+  {
+    "id": "recipe_b_95103",
+    "title": "桑消煎",
+    "content": "皮消6钱，桑皮8分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "火眼，并老年红花眼。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上用水1钟半，煎8分。冷定洗眼，1日数次。"
+  },
+  {
+    "id": "recipe_b_104855",
+    "title": "通气丸",
+    "content": "甘草5分，甘遂5分，麝香1分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "气闭耳聋。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "入葱管内，塞耳中。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_95118",
+    "title": "桑枣酒",
+    "content": "桑叶（9月经霜者，阴干）1斤，红枣1斤，好酒5斤。",
+    "source": "《仙拈集》卷二。",
+    "effects": "虚劳痰嗽。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上药入坛内，煮2炷香。空心服3小钟。不可多饮。"
+  },
+  {
+    "id": "recipe_b_103956",
+    "title": "天仙烟",
+    "content": "天仙子（即韭菜子）1撮。",
+    "source": "《仙拈集》卷二。",
+    "effects": "虫牙。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水1大瓷盏，1碗覆水中，置韭子于瓷盏底内，点火烧之，水盆上盖酒漏斗1个，烟从孔出，将痛牙熏之，虫自水中出。",
+    "caution": "不可多熏，恐致牙动。"
+  },
+  {
+    "id": "recipe_b_86267",
+    "title": "螃蟹散",
+    "content": "鲜螃蟹。",
+    "source": "《仙拈集》卷二。",
+    "effects": "手指缝肿痛不可忍，若不早治，即烂入手。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "敷上即愈。如无鲜者，以蟹黄蜜调涂。",
+    "preparation": "捣烂。"
+  },
+  {
+    "id": "recipe_b_89443",
+    "title": "青盲散",
+    "content": "雄鼠胆2枚，鲤鱼胆2枚。",
+    "source": "《仙拈集》卷二。",
+    "effects": "青盲眼。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "滴之。",
+    "preparation": "和匀。"
+  },
+  {
+    "id": "recipe_b_85270",
+    "title": "宁神丹",
+    "content": "莲须1斤，石莲肉1斤，芡实12两，麦冬4两。",
+    "source": "《仙拈集》卷二。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服100丸，空心莲须汤送下。",
+    "preparation": "用公猪肚1个，入家莲肉1斤，放砂锅内，水煮烂，去肚，将莲肉晒干，同前药为细末，炼蜜为丸，如梧桐子大。"
+  },
+  {
+    "id": "recipe_b_95525",
+    "title": "上清散",
+    "content": "白芷（炒）2两半，川芎1两，生甘草1两，草乌（半生半熟）1两。",
+    "source": "《仙拈集》卷二。",
+    "effects": "偏正头风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服1钱，细茶或薄荷汤下。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_83316",
+    "title": "明目散",
+    "content": "归身1钱，川芎1钱，生地1钱，白蒺藜1钱，菊花8分，防风8分，薄荷8分，荆芥穗8分，柴胡8分，枳壳8分，灯心3根。",
+    "source": "《仙拈集》卷二。",
+    "effects": "一切眼疾。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，食远服。"
+  },
+  {
+    "id": "recipe_b_114039",
+    "title": "雄姜散",
+    "content": "干姜1两，雄黄3钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "牙疼。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "搽之。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_86576",
+    "title": "偏痛饮",
+    "content": "白芷、南星、半夏、川乌、甘草各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "半边头痛，并治年久头风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服2钱，水调服。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_85191",
+    "title": "拈痧丸",
+    "content": "丁香、雄黄、苍术、朱砂、蟾酥（切片，酒浸）各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "绞肠痧，一切腹痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服7丸，温茶送下。立醒。",
+    "preparation": "上为末，为丸如芥子大，晒干密藏。"
+  },
+  {
+    "id": "recipe_b_106981",
+    "title": "乌椒煎",
+    "content": "乌梅、花椒。",
+    "source": "《仙拈集》卷二。",
+    "effects": "口吐清涎，恐系虫症。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "加生姜，水煎服。"
+  },
+  {
+    "id": "recipe_b_89696",
+    "title": "清臭饮",
+    "content": "赤芍、黄芩、藁本、生地、黄连、石菖蒲、远志各等分，甘草3分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "鼻中臭气。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_97923",
+    "title": "升气汤",
+    "content": "当归1两，川芎5钱，柴胡3钱半，升麻3钱半。",
+    "source": "《仙拈集》卷二。",
+    "effects": "大小便气闭。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水2碗，煎8分。1服即通。"
+  },
+  {
+    "id": "recipe_b_90820",
+    "title": "清心丸",
+    "content": "白矾1两（半生半熟），荆芥穗2两。",
+    "source": "《仙拈集》卷二。",
+    "effects": "一切癫痫。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服20丸，空心生姜汤送下。",
+    "preparation": "上为末，面糊为丸，如粟米大，朱砂为衣。"
+  },
+  {
+    "id": "recipe_b_94593",
+    "title": "三仙膏",
+    "content": "百合4两，蜜半斤，梨汁1碗。",
+    "source": "《仙拈集》卷二。",
+    "effects": "劳嗽。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "早、晚服数匙。",
+    "preparation": "炼蜜成珠，将百合研末熬透，入梨汁搅匀。"
+  },
+  {
+    "id": "recipe_b_94650",
+    "title": "三消汤",
+    "content": "人参1钱，白术1钱，茯苓1钱，当归1钱，生地1钱，黄柏7分，知母7分，黄连7分，麦冬7分，天花粉7分，黄芩7分，甘草5分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "三消。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_109018",
+    "title": "五汁膏",
+    "content": "蜂蜜4两，姜汁4两，白萝卜汁半斤，梨汁半斤，人乳1碗。",
+    "source": "《仙拈集》卷二。",
+    "effects": "劳嗽。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "早晚滚汤服数匙。二料除根。",
+    "preparation": "共熬成膏。"
+  },
+  {
+    "id": "recipe_b_107224",
+    "title": "乌梅散",
+    "content": "胎发（烧存性），乌梅（焙）1个。",
+    "source": "《仙拈集》卷二。",
+    "effects": "鼻衄。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "吹鼻。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_102226",
+    "title": "松脂条",
+    "content": "巴豆、菖蒲、松脂、黄蜡。",
+    "source": "《仙拈集》卷二。",
+    "effects": "耳聋。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "纳耳中，抽之。",
+    "preparation": "上为末，和调。"
+  },
+  {
+    "id": "recipe_b_94314",
+    "title": "三妙丸",
+    "content": "黄连2两（切片，煎汁），木香4两（用黄连汁浸，慢火焙干），乌梅肉。",
+    "source": "《仙拈集》卷二。",
+    "effects": "肠风脏毒。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服50-60丸，空心白滚水送下。",
+    "preparation": "上为丸，如梧桐子大。"
+  },
+  {
+    "id": "recipe_b_109824",
+    "title": "洗面玉容方",
+    "content": "甘松、三柰、香薷、白芷、白及、白敛、防风、藁本、白僵蚕、白附子、天花粉、零陵香、绿豆粉、肥皂（煨）各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每早洗面。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_95050",
+    "title": "桑皮煎",
+    "content": "桑白皮（炒）8钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "鼻不闻香臭。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上水煎，早、晚温服。",
+    "caution": "忌椒辛鱼腥。"
+  },
+  {
+    "id": "recipe_b_101647",
+    "title": "四神煎",
+    "content": "生黄耆半斤，远志肉3两，牛膝3两，石斛4两。",
+    "source": "《仙拈集》卷二。",
+    "effects": "鹤膝风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用水10碗，煎2碗，再入金银花1两，煎1碗，一气服之。服后觉两腿如火之热，即盖暖睡，汗如涌泉，待汗散后，徐徐去被。1服病去大半，再服除根，不分久暂。"
+  },
+  {
+    "id": "recipe_b_90805",
+    "title": "清心汤",
+    "content": "人参1钱，白术1钱，茯苓1钱，远志1钱，枣仁1钱，川芎1钱，生地1钱，石菖蒲1钱，当归1钱半，麦冬1钱半，甘草5分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "癫狂。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_103047",
+    "title": "糖杏饮",
+    "content": "杏仁1两。",
+    "source": "《仙拈集》卷二。",
+    "effects": "劳嗽。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服内加冰糖3钱，共入盖碗内，用滚水冲，盖片时，俟温，连仁末服下，早、晚各1次。三服而愈，如以杏仁煎则无效。",
+    "preparation": "净器捣烂如泥，分为3服。"
+  },
+  {
+    "id": "recipe_b_105303",
+    "title": "吐津丸",
+    "content": "雄黄3钱，巴豆3钱，木香3钱，白矾3钱，公丁香5钱，肉桂5钱，胡椒5钱，五灵脂（去砂石，醋炒）1两。",
+    "source": "《仙拈集》卷二。",
+    "effects": "九种心痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服15丸，虚弱与小儿减半，烧酒送下，不拘时候。",
+    "preparation": "上为细末，烧酒打糊为丸，如芥菜子大。"
+  },
+  {
+    "id": "recipe_b_123841",
+    "title": "自汗汤",
+    "content": "黄耆1钱，人参1钱，白术1钱，茯苓1钱，当归1钱，白芍1钱，熟地1钱，五味10粒，肉桂5分，甘草（炙）5分，枣2枚。",
+    "source": "《仙拈集》卷二。",
+    "effects": "自汗属阳虚者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，温服。"
+  },
+  {
+    "id": "recipe_b_94699",
+    "title": "三汁饮",
+    "content": "生地黄汁半钟，生姜汁半钟，蜜半钟。",
+    "source": "《仙拈集》卷二。",
+    "effects": "溺血，口鼻出血。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "和匀，空心热服。"
+  },
+  {
+    "id": "recipe_b_85206",
+    "title": "拈痛丸",
+    "content": "胡黄连1两，吴茱萸1两。",
+    "source": "《仙拈集》卷二。",
+    "effects": "脊臂气疼，夜间更甚，鸡鸣即止。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服1钱，空心淡盐汤送下。",
+    "preparation": "上为末，饭为丸，如梧桐子大。"
+  },
+  {
+    "id": "recipe_b_83468",
+    "title": "母鸡散",
+    "content": "肥母鸡1只。",
+    "source": "《仙拈集》卷二。",
+    "effects": "五劳七伤，诸虚百损。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "分为3服，黄酒调下。",
+    "preparation": "用绳将鸡吊死，去毛净，用竹刀剖开，取肠屎，不可入水，用阴阳瓦焙干，以烟尽为度，可重6-7钱，为末。"
+  },
+  {
+    "id": "recipe_b_100068",
+    "title": "柿精散",
+    "content": "谷精草5钱，柿饼1个。",
+    "source": "《仙拈集》卷二。",
+    "effects": "障翳。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每日水煎，并柿饼同食。"
+  },
+  {
+    "id": "recipe_b_104749",
+    "title": "通淋散",
+    "content": "海金沙1两，滑石1两，甘草2钱半。",
+    "source": "《仙拈集》卷二。",
+    "effects": "膏淋如油。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服2钱，麦冬煎汤调下，日服2次。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_86829",
+    "title": "婆婆奶",
+    "content": "家园生地黄（北人呼为婆婆奶）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "吐血不止。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "重汤煮1沸，温服。",
+    "preparation": "洗净，捣汁半钟，入童便半钟，和匀。"
+  },
+  {
+    "id": "recipe_b_97184",
+    "title": "神效汤",
+    "content": "人参1钱，防风1钱，白术1钱，黄耆1钱，甘草1钱，熟地1钱，当归1钱，白芍1钱，羌活1钱，附子1钱，牛膝1钱，杜仲1钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "鹤膝风、附骨疽、腿肿痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "加生姜3片，水煎服。"
+  },
+  {
+    "id": "recipe_b_79772",
+    "title": "六仙散",
+    "content": "五灵脂2钱，枯矾1钱半，生矾1钱半，元胡1钱半，木香、丁香。",
+    "source": "《仙拈集》卷二。",
+    "effects": "胃气痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服1钱，姜汤送下。",
+    "preparation": "上为末，醋糊为丸，如绿豆大。"
+  },
+  {
+    "id": "recipe_b_106513",
+    "title": "温解散",
+    "content": "荔枝核（炒黄）、陈皮、硫黄（火中熔化，投水中去毒，研细）各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "疝气上冲，如有物筑心脏，欲死，手足厥冷者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服15丸，其疼立止。若痛甚，略加5-6丸，不要再多了。",
+    "preparation": "上为末，饭和为丸，如梧桐子大。"
+  },
+  {
+    "id": "recipe_b_83266",
+    "title": "明矾散",
+    "content": "明矾3钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "绞肠痧，霍乱腹痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "滚水调服。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_110090",
+    "title": "细辛丸",
+    "content": "细辛1分，石菖蒲1分，木通1分，麝香1厘。",
+    "source": "《仙拈集》卷二。",
+    "effects": "耳闭。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "棉裹塞耳中。即愈。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_102632",
+    "title": "缩汗煎",
+    "content": "黄耆5钱，白芍5钱，桂枝3钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "自汗、盗汗。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，入酒温服。"
+  },
+  {
+    "id": "recipe_b_89055",
+    "title": "噙化丸",
+    "content": "山豆根1两，硼砂2钱，冰片少许，麝香少许。",
+    "source": "《仙拈集》卷二。",
+    "effects": "喉痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服3-5丸，噙化咽下。",
+    "preparation": "上为末，用青鱼胆为丸，如弹子大。"
+  },
+  {
+    "id": "recipe_b_101579",
+    "title": "四妙煎",
+    "content": "槐花子5钱，桃核仁5钱，细茶叶5钱，芝麻5钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "肩臂筋骨疼痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "瓦罐盛药，用水6-7碗，熬折一半，热服。"
+  },
+  {
+    "id": "recipe_b_101764",
+    "title": "四圣散",
+    "content": "苍术、白术、牛膝、木瓜各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "脚气。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服1两，酒煎数滚，食前热服。得汗即愈。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_118855",
+    "title": "皂糖膏",
+    "content": "肥皂（去核，捶烂）半斤，红糖半斤。",
+    "source": "《仙拈集》卷二。",
+    "effects": "杉木腿，自膝至脚面肿如吊桶。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上捣如泥。先将甘草汤半桶，浸洗腿部，敷药，以绵纸裹扎，不要走动，过数日再洗敷。3次愈。"
+  },
+  {
+    "id": "recipe_b_95424",
+    "title": "闪痛煎",
+    "content": "枳壳8分，桔梗8分，防风1钱，乌药1钱，当归1钱，杏仁1钱，半夏1钱，木通1钱，甘草5分，红花5分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "闪挫腰痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_82698",
+    "title": "米猪肚",
+    "content": "肥猪肚1具。",
+    "source": "《仙拈集》卷二。",
+    "effects": "虚劳吐血；诸汗。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "入江米一茶钟，线缝严密。煮极烂吃，连汤饮。"
+  },
+  {
+    "id": "recipe_b_89694",
+    "title": "清齿汤",
+    "content": "薄荷1钱，花粉1钱，连翘1钱，桔梗1钱，玄参1钱，木通1钱，干葛1钱，甘草5分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "齿缝出血。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_100549",
+    "title": "熟猪肚方",
+    "content": "木耳、青菜、猪肚。",
+    "source": "《仙拈集》卷二。",
+    "effects": "肠风下血。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "共煮常食。木耳入猪大肠内煮食。猪肚1个，洗净，槐花（炒，为末）入肠内，扎两头，加醋入砂锅内煮烂吃。或为丸如梧桐子大，每服30丸，温酒送下。"
+  },
+  {
+    "id": "recipe_b_95879",
+    "title": "蛇退散",
+    "content": "蛇蜕。",
+    "source": "《仙拈集》卷二。",
+    "effects": "耳大痛，或流血，或干痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "吹入耳中。",
+    "preparation": "焙末。"
+  },
+  {
+    "id": "recipe_b_107793",
+    "title": "无忧散",
+    "content": "人参1钱，石膏3钱，陈皮钱半，半夏（制）钱半，茯苓钱半，枳实钱半，麦冬（去心）钱半，枣仁钱半，甘草钱半。",
+    "source": "《仙拈集》卷二。",
+    "effects": "心胆虚怯，昼夜不寐，百方不效者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "加龙眼5个，水煎服。"
+  },
+  {
+    "id": "recipe_b_113347",
+    "title": "杏仁丸",
+    "content": "杏仁1升（泡，去皮尖），酥油1两。",
+    "source": "《仙拈集》卷二。",
+    "effects": "失音。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服15丸，米汤送下。",
+    "preparation": "炼蜜为丸，如梧桐子大。"
+  },
+  {
+    "id": "recipe_b_94595",
+    "title": "三仙酒",
+    "content": "荔枝核（烧存性）3钱，小茴香钱半，川楝肉钱半。",
+    "source": "《仙拈集》卷二。",
+    "effects": "疝。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "入盐少许，热服。再以葱汤催汗出为妙。",
+    "preparation": "上为末，酒调。"
+  },
+  {
+    "id": "recipe_b_104757",
+    "title": "通灵散",
+    "content": "山羊粪7个（烧烟尽，闷熄），头发1团（烧存性）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "心胃痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "烧酒送下，不论远年近日，永不再发。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_101745",
+    "title": "四圣散",
+    "content": "生白矾1两，萆麻子7粒，乌梅5个，麝香少许。",
+    "source": "《仙拈集》卷二。",
+    "effects": "鼻痔。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "塞鼻内。息肉自消。",
+    "preparation": "上为末，丝绵裹。"
+  },
+  {
+    "id": "recipe_b_114035",
+    "title": "雄鸡酒",
+    "content": "雄鸡1只（白毛黑骨）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "五劳七伤，并妇人赤白带下。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "将鸡用绳吊死，退去毛、屎，切作4块，入生姜4两，胶枣半斤，陈酒6斤，装入大坛内，泥封口，重汤煮1日，凉水拔去火毒，空心连姜、枣食之。"
+  },
+  {
+    "id": "recipe_b_101635",
+    "title": "四润煎",
+    "content": "火麻仁1盏（研，浸取汁），芝麻半盏（研，水浸取汁），桃仁1两（去皮尖），荆芥穗（炒）1两。",
+    "source": "《仙拈集》卷二。",
+    "effects": "老年大便闭涩不通。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "入盐少许，同煎服。"
+  },
+  {
+    "id": "recipe_b_114879",
+    "title": "牙皂散",
+    "content": "猪牙皂角、紫背浮萍、白梅肉各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "雀斑。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每洗面时搽洗其斑。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_115891",
+    "title": "药母鸡",
+    "content": "母鸡１只。",
+    "source": "《仙拈集》卷二。",
+    "effects": "年久头风，妇人多有之。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "去毛肠，入当归3钱，白芷、羌活各2钱，细辛1钱，同好酒煮食。不可入盐醋，2-3服痊愈。"
+  },
+  {
+    "id": "recipe_b_97999",
+    "title": "升阳汤",
+    "content": "人参1钱，黄耆1钱半，川芎1钱半，当归1钱半，升麻5分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "气虚脱肛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水2碗，煎8分，食前服。"
+  },
+  {
+    "id": "recipe_b_90994",
+    "title": "清浊饮",
+    "content": "木通7钱，滑石3钱，粉草4钱，黄荆子2钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "赤白浊。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，空心服。"
+  },
+  {
+    "id": "recipe_b_81207",
+    "title": "萝卜汁",
+    "content": "生萝卜。",
+    "source": "《仙拈集》卷二。",
+    "effects": "头疼年久。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上捣计一蜕壳，仰卧，随左右注鼻中，加冰片少许更妙。"
+  },
+  {
+    "id": "recipe_b_90157",
+    "title": "清咳汤",
+    "content": "款冬花、百合、百部（蒸，焙）各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "痰内有血。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每卧时嚼1丸，生姜汤送下。",
+    "preparation": "上为末，炼蜜为丸，如龙眼大。"
+  },
+  {
+    "id": "recipe_b_115866",
+    "title": "药核桃",
+    "content": "核桃1个，芝麻1把，马齿苋1撮。",
+    "source": "《仙拈集》卷二。",
+    "effects": "血淋，沙淋。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "共捣烂，滚酒服。"
+  },
+  {
+    "id": "recipe_b_83088",
+    "title": "蜜萝卜",
+    "content": "大萝卜不拘多少。",
+    "source": "《仙拈集》卷二。",
+    "effects": "肠风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "早、晚任服。",
+    "preparation": "蜜浸。"
+  },
+  {
+    "id": "recipe_b_83599",
+    "title": "牡蛎散",
+    "content": "牡蛎（煅）、小麦面（炒黄）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "诸汗。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "猪胆汁调服。",
+    "preparation": "研末。"
+  },
+  {
+    "id": "recipe_b_122568",
+    "title": "转筋饮",
+    "content": "木瓜2钱，吴茱萸2钱，食盐5分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "腿痛转筋，上冲入腹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_103492",
+    "title": "天赐膏",
+    "content": "好焰消1两（铜器熔化），黄丹（飞）2分，冰片2分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "眼目障翳。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每点少许。",
+    "preparation": "铜匙急抄，入罐内收之。"
+  },
+  {
+    "id": "recipe_b_120363",
+    "title": "止消丸",
+    "content": "菟丝子（酒浸，焙干）10两，茯苓3两，莲肉3两，五味子1两。",
+    "source": "《仙拈集》卷二。",
+    "effects": "三消，并遗精白浊。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服50丸，空心米汤送下。",
+    "preparation": "上为末。另研干山药末6两，将酒煮糊为丸，如梧桐子大。"
+  },
+  {
+    "id": "recipe_b_94300",
+    "title": "三妙散",
+    "content": "轻粉2钱，白矾5钱，杏仁7粒（去皮）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "鼻痔。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "吹鼻中。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_95603",
+    "title": "蛸矾散",
+    "content": "海螵蛸1钱，枯矾1钱，麝香1分，干胭脂5分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "耳出脓水。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "吹耳内。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_118623",
+    "title": "枣豆膏",
+    "content": "巴豆3粒，红枣1枚。",
+    "source": "《仙拈集》卷二。",
+    "effects": "腰胁痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "捣烂，夹缚脐上。"
+  },
+  {
+    "id": "recipe_b_113187",
+    "title": "杏姜酒",
+    "content": "姜汁、杏仁汁。",
+    "source": "《仙拈集》卷二。",
+    "effects": "一切胸膈结实。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "酒调下。",
+    "preparation": "煎成膏。"
+  },
+  {
+    "id": "recipe_b_107776",
+    "title": "无上神丹",
+    "content": "沉香3钱，木香3钱，乳香3钱，没药3钱，丁香3钱，牙皂3钱，明雄3钱，黑丑1钱，槟榔1钱，三棱1钱，巴豆仁2钱半。",
+    "source": "《仙拈集》卷二。",
+    "effects": "因积聚心胃疼痛者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上为末，枣肉为丸，如小豆大。每服5-7丸。"
+  },
+  {
+    "id": "recipe_b_110233",
+    "title": "仙传生牙丹",
+    "content": "鼠骨4两（人乳浸1日，阴干为末），柏子仁8两（去油），枸杞8两，山萸8两（酒蒸），血余8两（少壮者佳，皂角水洗净，入罐，煅成灰），鹿角霜8两，远志4两（甘草水泡，去骨），菖蒲4两，灵砂（人乳煮过）4两。",
+    "source": "《仙拈集》卷二。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服100丸，子时酒送下。",
+    "preparation": "上为末，鹿角胶4两为丸，如梧桐子大。"
+  },
+  {
+    "id": "recipe_b_87668",
+    "title": "杞菊散",
+    "content": "枸杞子3钱，菊花1钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每早水煎服。"
+  },
+  {
+    "id": "recipe_b_82588",
+    "title": "梅柿丸",
+    "content": "乌梅2两，柿饼4两。",
+    "source": "《仙拈集》卷二。",
+    "effects": "便血。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服5钱，1-2口吞下。2-3次愈。",
+    "preparation": "加水少许，饭上蒸熟，捣烂为丸，如梧桐子大。"
+  },
+  {
+    "id": "recipe_b_97066",
+    "title": "神效煎",
+    "content": "薏苡仁（炒熟）1两，柴胡（炒黑）5钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "劳症吐血。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_89188",
+    "title": "青蛾丸",
+    "content": "破故纸4两，巴戟4两，大茴4两，杜仲8两，胡桃肉10两。",
+    "source": "《仙拈集》卷二。",
+    "effects": "肾虚腰痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服30-50丸，空心温酒送下，随症用引煎送更妙。",
+    "preparation": "上为末，酒糊为丸，如梧桐子大。"
+  },
+  {
+    "id": "recipe_b_105041",
+    "title": "通瘀锭",
+    "content": "巴豆1个，斑蝥3个，麝香少许，冰片少许。",
+    "source": "《仙拈集》卷二。",
+    "effects": "耳聋。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "以新绵裹，置耳中。响声如雷，勿得惊恐，待21日方可去锭。",
+    "preparation": "上为末，以葱汁蜂蜜和捻如麦粒形。"
+  },
+  {
+    "id": "recipe_b_95110",
+    "title": "桑叶煎",
+    "content": "桑叶（霜后取）。",
+    "source": "《仙拈集》卷二。",
+    "effects": "迎风流泪，并眼目赤肿翳障、疼痛诸疾。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上煎水，洗眼。"
+  },
+  {
+    "id": "recipe_b_118888",
+    "title": "泽附煎",
+    "content": "大附子（炮，去皮尖）1两，泽泻1两。",
+    "source": "《仙拈集》卷二。",
+    "effects": "阴分虚寒，小便不通，误服寒凉不应者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "加灯心7根，水2钟，煎7分，食远服。",
+    "preparation": "上锉4剂。"
+  },
+  {
+    "id": "recipe_b_82389",
+    "title": "茅姜煎",
+    "content": "茅根3钱，干姜（炒）3钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "劳伤溺血。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "加蜜1匙，水煎服。"
+  },
+  {
+    "id": "recipe_b_103039",
+    "title": "糖贝饮",
+    "content": "贝母2两，冰糖2两。",
+    "source": "《仙拈集》卷二。",
+    "effects": "劳嗽。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每早用13，白滚汤调鸡子清1个同服。"
+  },
+  {
+    "id": "recipe_b_85199",
+    "title": "拈痛散",
+    "content": "樟脑1钱，硼砂1钱，青盐1钱，火消1钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "风火虫牙。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "敷之。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_78456",
+    "title": "楝椒煎",
+    "content": "苦楝根皮（去粗皮）5钱，川椒5钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "虫积作痛者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，露1宿，次日五更先以猪肉臭其气，然后服药。其虫尽下。"
+  },
+  {
+    "id": "recipe_b_111827",
+    "title": "消肿散",
+    "content": "槐花（烧酒略炮，晒干）3钱，牛膝3钱，木瓜3钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "腿肿痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服2钱，黄酒送下。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_114043",
+    "title": "雄硫散",
+    "content": "雄黄1钱，铅粉1钱，硫黄5分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "面上鼻渣、酒刺。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "乳汁调涂，次日温水洗去。如此3上即愈。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_94407",
+    "title": "三神饮",
+    "content": "大黄、皮消、牙皂各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "大肠实热，大便不通。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_94382",
+    "title": "三神煎",
+    "content": "官桂1钱半，白芍（酒炒）2钱，甘草5分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "心腹疼痛，不论寒热新久。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_100543",
+    "title": "熟寐丸",
+    "content": "人参3两，乳香3两，朱砂3两，枣仁（炒黑）5钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "不寐。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "临卧龙眼汤送下。",
+    "preparation": "上为末，炼蜜为丸，如弹子大。"
+  },
+  {
+    "id": "recipe_b_110144",
+    "title": "下虫煎",
+    "content": "乌梅1个，老姜3片，榧子7个，花椒14粒。",
+    "source": "《仙拈集》卷二。",
+    "effects": "腹内诸虫。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "加黑糖少许同煎，空心服。"
+  },
+  {
+    "id": "recipe_b_120271",
+    "title": "止衄汤",
+    "content": "人乳、童便、好酒各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "衄血。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "碗盛，重汤煮，热饮之。"
+  },
+  {
+    "id": "recipe_b_104916",
+    "title": "通神散",
+    "content": "五灵脂3钱，枯矾3钱，干姜3钱，木香5分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "心胃痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服1钱，烧酒调下。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_110371",
+    "title": "仙雪丸",
+    "content": "陈石灰（水澄清，去粗渣泥垢）1两，生白矾5钱，熟白矾5钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "9种心痛。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服5丸，烧酒送下。",
+    "preparation": "上为末，姜汁为丸，如绿豆大。"
+  },
+  {
+    "id": "recipe_b_115871",
+    "title": "药鸡蛋",
+    "content": "鸡蛋1个，熟大黄末3钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "血淋。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "将鸡蛋顶开1孔，以熟大黄末3钱入蛋内，银簪搅匀，蒸熟，黄酒下。"
+  },
+  {
+    "id": "recipe_b_108374",
+    "title": "五加皮酒",
+    "content": "五加皮3钱，胡椒7粒，鼠屎7粒，姜3片。",
+    "source": "《仙拈集》卷二。",
+    "effects": "骨节痛，腰疼不拘何时。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用好烧酒1斤，煮1炷香。食饱略后尽量饮，取微汗，轻者1次，重者2-3次。以愈为度。"
+  },
+  {
+    "id": "recipe_b_81644",
+    "title": "麻前饮",
+    "content": "升麻2钱，车前子（炒）2钱。",
+    "source": "《仙拈集》卷二。",
+    "effects": "大小便闭。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "以黄酒2钟，煎8分服。"
+  },
+  {
+    "id": "recipe_b_78347",
+    "title": "莲藕汁",
+    "content": "莲藕、生葛根。",
+    "source": "《仙拈集》卷二。",
+    "effects": "热毒下血。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "各捣汁1钟，和服。"
+  },
+  {
+    "id": "recipe_b_119706",
+    "title": "怔忡饮",
+    "content": "半夏、茯苓、人参各等分。",
+    "source": "《仙拈集》卷二。",
+    "effects": "心惧怯，如人欲捕之状。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  }
+]

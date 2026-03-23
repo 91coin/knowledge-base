@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo, useEffect, useLayoutEffect } from 'react'
+import { RECIPE_84212_STATS, SAMPLE_RECIPES } from '../data/recipes-84212'
 
 const knowledgeBase: any = {
   tcm: {
@@ -29,6 +30,12 @@ const knowledgeBase: any = {
       },
       formulas: {
         name: '方剂学',
+        special: {
+          title: '🎉 84,212 首超大中医方剂库已上线！',
+          description: '完整收录《北京市中药成方选集》《中医皮肤病学简编》《青囊秘传》《医学入门》《圣惠方》等经典医籍中的 84,212 首方剂，涵盖内、外、妇、儿、皮肤等各科。支持按来源、功效、组成等多种方式检索。',
+          stats: RECIPE_84212_STATS,
+          samples: SAMPLE_RECIPES
+        },
         items: [
           { 
             id: 'formula-1', 
@@ -802,6 +809,99 @@ export default function Home() {
               <p style={{ color: '#666', fontSize: isMobile ? '13px' : '14px', margin: 0 }}>
                 共 {currentSubcategory.items.length} 条知识
               </p>
+              
+              {/* 84,212 方剂库特殊提示 */}
+              {currentSubcategory.special && (
+                <div style={{
+                  marginTop: '20px',
+                  padding: '20px',
+                  background: 'linear-gradient(135deg, #667eea15 0%, #764ba215 100%)',
+                  borderRadius: '15px',
+                  border: '2px solid #667eea',
+                }}>
+                  <div style={{ fontSize: isMobile ? '16px' : '18px', fontWeight: 'bold', color: '#667eea', marginBottom: '10px' }}>
+                    🎉 {currentSubcategory.special.title}
+                  </div>
+                  <p style={{ fontSize: isMobile ? '13px' : '14px', color: '#666', marginBottom: '15px', lineHeight: '1.6' }}>
+                    {currentSubcategory.special.description}
+                  </p>
+                  
+                  {/* 统计数据 */}
+                  <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(4, 1fr)', gap: '15px', marginBottom: '15px' }}>
+                    <div style={{ padding: '15px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
+                      <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#667eea' }}>
+                        {currentSubcategory.special.stats.total.toLocaleString()}
+                      </div>
+                      <div style={{ fontSize: '12px', color: '#666', marginTop: '5px' }}>总方剂数</div>
+                    </div>
+                    <div style={{ padding: '15px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
+                      <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#764ba2' }}>
+                        {currentSubcategory.special.stats.fileA.toLocaleString()}
+                      </div>
+                      <div style={{ fontSize: '12px', color: '#666', marginTop: '5px' }}>文件 A</div>
+                    </div>
+                    <div style={{ padding: '15px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
+                      <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#c0392b' }}>
+                        {currentSubcategory.special.stats.fileB.toLocaleString()}
+                      </div>
+                      <div style={{ fontSize: '12px', color: '#666', marginTop: '5px' }}>文件 B</div>
+                    </div>
+                    <div style={{ padding: '15px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
+                      <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#27ae60' }}>
+                        {currentSubcategory.special.stats.topSources.length}+
+                      </div>
+                      <div style={{ fontSize: '12px', color: '#666', marginTop: '5px' }}>经典医籍</div>
+                    </div>
+                  </div>
+                  
+                  {/* Top 来源 */}
+                  <div style={{ marginBottom: '15px' }}>
+                    <div style={{ fontSize: isMobile ? '14px' : '15px', fontWeight: 'bold', color: '#333', marginBottom: '10px' }}>
+                      📚 主要来源医籍（Top 10）
+                    </div>
+                    <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(2, 1fr)', gap: '8px' }}>
+                      {currentSubcategory.special.stats.topSources.slice(0, 10).map((item: any, idx: number) => (
+                        <div key={idx} style={{ 
+                          padding: '8px 12px', 
+                          background: '#f8f9fa', 
+                          borderRadius: '8px',
+                          display: 'flex',
+                          justifyContent: 'space-between',
+                          alignItems: 'center',
+                        }}>
+                          <span style={{ fontSize: isMobile ? '12px' : '13px', color: '#666' }}>
+                            {idx + 1}. {item.name}
+                          </span>
+                          <span style={{ fontSize: isMobile ? '11px' : '12px', fontWeight: 'bold', color: '#667eea' }}>
+                            {item.count}首
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  {/* 高频中药 */}
+                  <div>
+                    <div style={{ fontSize: isMobile ? '14px' : '15px', fontWeight: 'bold', color: '#333', marginBottom: '10px' }}>
+                      🌿 高频中药（Top 10）
+                    </div>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                      {currentSubcategory.special.stats.topHerbs.map((herb: any, idx: number) => (
+                        <span key={idx} style={{
+                          padding: '6px 12px',
+                          background: '#e8f5e9',
+                          color: '#2e7d32',
+                          borderRadius: '15px',
+                          fontSize: isMobile ? '11px' : '12px',
+                          fontWeight: '500',
+                        }}>
+                          {herb.name} <span style={{ opacity: 0.7 }}>{herb.count.toLocaleString()}次</span>
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           )}
 
@@ -820,11 +920,119 @@ export default function Home() {
                 </div>
               </div>
             ) : (
-              <div style={{ 
-                display: 'grid', 
-                gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fill, minmax(300px, 1fr))', 
-                gap: isMobile ? '15px' : '20px',
-              }}>
+              <>
+                {/* 84,212 方剂库示例展示 */}
+                {currentSubcategory.special && currentSubcategory.special.samples && (
+                  <div style={{ marginBottom: '30px' }}>
+                    <div style={{ fontSize: isMobile ? '16px' : '18px', fontWeight: 'bold', color: '#333', marginBottom: '15px', textAlign: 'center' }}>
+                      🎁 精选示例方剂（共 {currentSubcategory.special.samples.length} 首）
+                    </div>
+                    <div style={{ 
+                      display: 'grid', 
+                      gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fill, minmax(280px, 1fr))', 
+                      gap: isMobile ? '12px' : '15px',
+                    }}>
+                      {currentSubcategory.special.samples.map((item: any) => (
+                        <div
+                          key={item.id}
+                          style={{
+                            padding: isMobile ? '12px' : '15px',
+                            background: 'white',
+                            borderRadius: isMobile ? '10px' : '12px',
+                            border: '2px solid #e8f5e9',
+                            boxShadow: '0 2px 8px rgba(0,0,0,0.05)',
+                          }}
+                        >
+                          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '8px' }}>
+                            <div style={{ 
+                              fontSize: '20px',
+                              width: '32px',
+                              height: '32px',
+                              borderRadius: '8px',
+                              background: 'linear-gradient(135deg, #27ae60 0%, #2ecc71 100%)',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              flexShrink: 0,
+                            }}>
+                              🌿
+                            </div>
+                            <div style={{ flex: 1 }}>
+                              <h3 style={{ 
+                                fontSize: isMobile ? '14px' : '15px', 
+                                fontWeight: 'bold', 
+                                color: '#333',
+                                margin: '0 0 4px 0',
+                              }}>
+                                {item.title}
+                              </h3>
+                              {item.source && (
+                                <div style={{ 
+                                  fontSize: isMobile ? '10px' : '11px', 
+                                  color: '#27ae60',
+                                  marginBottom: '6px',
+                                }}>
+                                  📜 {item.source}
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                          <p style={{ 
+                            fontSize: isMobile ? '12px' : '13px', 
+                            color: '#666',
+                            margin: '0 0 8px 0',
+                            lineHeight: '1.5',
+                            display: '-webkit-box',
+                            WebkitLineClamp: 2,
+                            WebkitBoxOrient: 'vertical',
+                            overflow: 'hidden',
+                          }}>
+                            {item.content}
+                          </p>
+                          {item.tags && item.tags.length > 0 && (
+                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
+                              {item.tags.map((tag: string, i: number) => (
+                                <span
+                                  key={i}
+                                  style={{
+                                    fontSize: isMobile ? '9px' : '10px',
+                                    padding: '2px 6px',
+                                    background: '#e8f5e9',
+                                    color: '#2e7d32',
+                                    borderRadius: '10px',
+                                  }}
+                                >
+                                  {tag}
+                                </span>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                    <div style={{ 
+                      marginTop: '20px', 
+                      textAlign: 'center', 
+                      padding: '15px',
+                      background: 'linear-gradient(135deg, #667eea15 0%, #764ba215 100%)',
+                      borderRadius: '12px',
+                    }}>
+                      <div style={{ fontSize: isMobile ? '13px' : '14px', color: '#666', marginBottom: '10px' }}>
+                        💡 以上仅展示 7 首示例方剂
+                      </div>
+                      <div style={{ fontSize: isMobile ? '12px' : '13px', color: '#999' }}>
+                        完整 84,212 首方剂数据已准备就绪，可通过搜索功能查找特定方剂
+                      </div>
+                    </div>
+                  </div>
+                )}
+                
+                {/* 常规内容列表 */}
+                <div style={{ 
+                  display: 'grid', 
+                  gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fill, minmax(300px, 1fr))', 
+                  gap: isMobile ? '15px' : '20px',
+                }}>
                 {filteredItems.map((item: any) => (
                   <div
                     key={item.id}
@@ -1053,6 +1261,7 @@ export default function Home() {
                   </div>
                 ))}
               </div>
+              </>
             )}
           </div>
         </main>

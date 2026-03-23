@@ -1,0 +1,3091 @@
+[
+  {
+    "id": "recipe_a_69846",
+    "title": "急性子洗剂",
+    "content": "石菖蒲9g，艾叶15g，生川乌9g，独活15g，急性子9g，麻黄9g，桂枝9g，羌活9g，透骨草9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "鸡眼。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_42974",
+    "title": "百部洗剂",
+    "content": "生草乌10g，西部10g，土槿皮10g，白鲜皮10g，威灵仙10g，猪牙皂10g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "体癣。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_70988",
+    "title": "加味白虎汤",
+    "content": "生石膏12g，连翘9g，知母6g，黄连3g，黄柏6g，元参9g，蝉蜕6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "漆性皮炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_67007",
+    "title": "黄柏红升散",
+    "content": "黄柏62g，煅石膏62g，轻粉12g，红升丹12g，枯矾6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "黄水疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_40313",
+    "title": "艾叶洗剂",
+    "content": "艾叶62g，雄黄6g，防风62g，花椒6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹、过敏性皮炎、泛发性神经皮炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_75677",
+    "title": "菊花辛夷散",
+    "content": "白菊花9g，辛夷9g，包谷粉60g，滑石粉30g，冰片6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "腋臭。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_59271",
+    "title": "芙蓉软膏",
+    "content": "芙蓉叶30克，泽兰叶30克，黄芩30克，大黄30克，黄连30克，黄柏30克。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "淋巴腺结核。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_54749",
+    "title": "地龙浸液",
+    "content": "活蚯蚓。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "带状疱疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_60818",
+    "title": "甘草水",
+    "content": "甘草（切碎）40g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "急性湿疹，湿润糜烂，流水淋漓。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_76703",
+    "title": "苦楝子膏",
+    "content": "苦楝子粉50g，糠油50g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "头癣。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_76671",
+    "title": "苦参苡米洗剂",
+    "content": "苦参15g，苡米12g，甘草12g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "黄水疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64248",
+    "title": "黑矾甘油",
+    "content": "黑矾（硫酸亚铁）20g，槐米（槐花）60g，甘油适量。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "下肢溃疡。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64194",
+    "title": "黑布药膏",
+    "content": "老黑醋250g，五倍子100g，蜈蚣1条，蜂蜜100g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "瘢痕疙瘩。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_77275",
+    "title": "蓝药膏",
+    "content": "青黛15g，海螵蛸68g，石膏末125g，冰片3g，凡士林936g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "神经性皮炎，慢性湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_45758",
+    "title": "冰片散",
+    "content": "冰片1.5g，煅明矾6g，黄柏6g，小麦面（烧灰）10g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "口炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_61061",
+    "title": "甘石散",
+    "content": "炉甘石31g，石决明31g，煅龙骨31g，熟石膏31g，松花粉62g，枯矾15g，冰片6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "足跟溃疡。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_53211",
+    "title": "蛋黄油搽剂",
+    "content": "羊油1公斤，鸡蛋20个，丁香100g，黑种草籽100g，红芥子100g，黑芝麻100g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "白癜风。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_47736",
+    "title": "草乌复方洗剂",
+    "content": "生草乌9g，百部9g，土槿皮9g，白鲜皮9g，猪牙皂9g，威灵仙9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "手癣。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_54814",
+    "title": "地榆合剂",
+    "content": "地榆33g，黄连33g，黄柏33g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "烫伤。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_57078",
+    "title": "鹅黄散",
+    "content": "熟石膏62g，黄柏15g，青黛9g，轻粉3g，六一散。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "湿疹，皮炎，烧伤，溃疡。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_75113",
+    "title": "荆防化疹汤",
+    "content": "荆芥9g，防风9g，白芷9g，白鲜皮15g，炒牛蒡子9g，苦参12g，蝉蜕9g，地肤子9g，茯苓6g，甘草9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "荨麻疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_50847",
+    "title": "慈航膏",
+    "content": "侧柏叶125g，大黄31g，当归31g，地榆31g，血余46g，露蜂房10g，黄蜡93g，香油500ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "烫火伤。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_74183",
+    "title": "疥癣散",
+    "content": "寒水石9g，密陀僧9g，雄黄9g，钟乳石9g，硫黄9g，蛤粉9g，川心莲9g，蛇床子9g，樟脑9g，苦参9g，羌活6g，轻粉6g，百部6g，细辛5g，枯矾6g，黄柏6g，川楝皮6g，苍术4g，生半夏15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "疥癣。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_75156",
+    "title": "荆芥蝉蜕汤",
+    "content": "荆芥9g，蝉蜕9g，银花9-15g，川柏9g，茯苓9g，丹皮9g，白薇9g，赤芍9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_47350",
+    "title": "蚕沙饮",
+    "content": "蚕沙（布包）31g，重楼15g，丹参31g，白鲜皮9g，地肤子6g，蝉蜕6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "虚热型荨麻疹。疹色淡红，稀疏分布，日晡潮热，多在夜间发生，舌质红，苦薄，脉弦。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_59817",
+    "title": "浮萍地肤汤",
+    "content": "浮萍草9g，净麻黄2g，净蝉蜕2g，地肤子9g，苦参片4g，白僵蚕9g，白蒺藜9g，豨莶草9g，生苡仁12g，粉丹皮4g，白鲜皮9g，生甘草2g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "风寒型荨麻疹。疹出色白，碎小微红，冷时发作，遇热则轻，畏风，兼以表症，苔薄白，脉浮紧。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_47753",
+    "title": "草乌洗剂",
+    "content": "川乌9g，草乌9g，当归9g，透骨草12g，红花6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "冻疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_58632",
+    "title": "飞蛇散",
+    "content": "蛇总管9g，乌桕叶9g，芙蓉叶9g，蒲公英9g，银花叶9g，荆芥9g，黄柏9g，薄荷9g，枯矾9g，樟脑3g，冰片3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "急性湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_48426",
+    "title": "柴芍饮",
+    "content": "柴胡9g，赤芍9g，丹皮9g，桑叶9g，防风6g，银花15g，连翘12g，苦参4g，白鲜皮9g，生甘草6g，土茯苓12g，苍术6g，黄耆9g，当归6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "带状疮疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_41392",
+    "title": "白驳片",
+    "content": "紫草50g，降香50g，重楼50g，白药子50g，白薇50g，红花50g，桃仁50g，生首乌50g，刺蒺藜50g，海螵蛸30g，甘草35g，龙胆草20g，苍术20g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "白癜风。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_44010",
+    "title": "保肤膏",
+    "content": "煅石膏31g，白及粉15g，密佗僧3g，轻粉3g，枯白矾6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_66538",
+    "title": "化雪丹",
+    "content": "桃油30ml，五倍子30g，枯矾30g，冰片1g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "鹅口疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_56144",
+    "title": "东矾散",
+    "content": "生明矾100g，飞黄丹10g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "手癣。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_65989",
+    "title": "花斑癣特灵",
+    "content": "雌黄（雄黄代亦可）9g，石硫黄9g，煅明矾4g，蜜陀僧6-15g，红砒石2g，轻粉3g，蛇床子6g，海浮石4g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "花斑癣。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_60285",
+    "title": "复方黄连散",
+    "content": "黄连31g，青黛6g，马牙消1.5g，冰片1.5g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "鹅口疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_75621",
+    "title": "菊花散",
+    "content": "甘菊花9g，防风9g，枳壳5g，羌活6g，旋覆花9g，生石膏15g，荆芥6g，甘草6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "急性湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_60291",
+    "title": "复方墨旱莲软膏",
+    "content": "墨旱莲8kg（干品3kg）。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "稻田皮炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_59030",
+    "title": "凤雏膏",
+    "content": "龙骨3g，没药3g，血竭3g，轻粉1.5g，冰片1.5g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "下腿溃疡。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_54254",
+    "title": "地肤子洗剂",
+    "content": "地肤子12g，防风10g，独活10g，荆荠10g，白芷10g，赤芍10g，川椒10g，桑白皮10g，苦参10g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "皮肤瘙痒症，荨麻疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_56402",
+    "title": "豆青软膏",
+    "content": "巴豆油4ml，白降丹3g，青黛10g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "银屑病。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_60276",
+    "title": "复方补骨脂酊",
+    "content": "补骨脂30g，菟丝子20g，栀子20g，75%酒精200ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "白癜风。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_66032",
+    "title": "花叶洗剂",
+    "content": "野菊花1500g，千里光1000g，土荆芥500g，食盐30g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "湿润糜烂性皮肤病。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_74277",
+    "title": "金蝉蜕衣汤",
+    "content": "桂枝9g，防风9g，蝉蜕9g，苍术6g，苡仁6g，茵陈12g，猪苓9g，银花15g，连翘15g，郁金6g，大枣6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "药物性皮炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_66553",
+    "title": "化瘀解毒汤",
+    "content": "牛蒡子9g，连翘9g，元参9g，知母9g，黄连6g，生石膏31g，鲜生地31g，制首乌31g，银花9g，紫草9g，白薇9g，竹叶6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "藜日光皮炎，颜面、手、足背发痒刺痛，随即高度浮肿，颜面肿大，眼合成线，唇口外翻，指不能屈；且皮肤暗红发亮，起瘀斑浆疮，低热倦怠。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_75691",
+    "title": "菊藻丸",
+    "content": "菊花62g，海藻62g，三棱62g，蚤休62g，制马钱子62g，银花93g，漏芦93g，马蔺子93g，山慈菇93g，蜈蚣31g，首乌125g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "皮肤癌。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_40968",
+    "title": "八味消风饮",
+    "content": "生地9g，连翘9g，红花6g，桃仁6g，白鲜皮15g，地肤子6g，僵蚕9g，蝉蜕9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "荨麻疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_73786",
+    "title": "解毒丹",
+    "content": "熟石膏62g，黄柏15g，青黛9g，轻粉3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "湿疹，皮炎，烧伤，溃疡。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_77311",
+    "title": "狼毒浸剂",
+    "content": "黄柏500g，龙骨500g，狼毒500g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "稻田皮炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_67051",
+    "title": "黄柏散",
+    "content": "黄柏78g，青黛6g，肉桂3g，冰片1g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "口炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_60284",
+    "title": "复方红砒膏",
+    "content": "红砒4g，轻粉4g，雄黄3g，冰片3g，液体石蜡10-20ml，凡土林100g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "银屑病。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_77010",
+    "title": "溃疡散",
+    "content": "雄黄9g，乳香15g，没药15g，儿茶15g，黄柏18g，青黛15g，白及31g，人工牛黄6g，冰片9g，硼酸6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "口炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_76482",
+    "title": "克银癣软膏",
+    "content": "红粉5g，秦皮乙醇流浸膏15g，川槿皮乙醇流浸膏10g，补骨脂乙醇流浸膏10g，加亲水性软膏基质60g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "银屑病。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_67109",
+    "title": "黄丹软膏",
+    "content": "黄丹12g，黄柏粉12g，枯矾6g，凡土林70g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "神经性皮炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_54228",
+    "title": "地丁汤",
+    "content": "地丁31g，连翘12g，蒲公英31g，黄柏9g，黄芩9g，生苡仁12g，苍术12g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "脓疱疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_47387",
+    "title": "苍柏饮",
+    "content": "苍术皮6g，黄柏6g，蒲公英15g，茵陈15g，山栀9g，苦参片12g，茯苓12g，地肤子12g，生甘草3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "皮肤瘙痒证。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_65698",
+    "title": "虎杖液",
+    "content": "虎杖根500g（洗净，切片）。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "烧伤。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64249",
+    "title": "黑矾洗剂",
+    "content": "蛇床子30g，苦参30g，黑矾30g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "阴部瘙痒。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_45766",
+    "title": "冰石散",
+    "content": "煅石膏31g，冰片1g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "疮疡糜烂。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_57139",
+    "title": "耳疖散",
+    "content": "老生姜5g，雄黄5g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "耳疖。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_59866",
+    "title": "釜底抽薪散",
+    "content": "吴茱萸15g，胡黄连9g，大黄9g，生南星15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "口炎，虚火者。口色淡红，满口白斑微点，轻度溃烂，显露裂纹，夜间潮热，不渴，便溏尿数，舌质红无苔，脉虚。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_63056",
+    "title": "桂枝加当归汤",
+    "content": "桂枝9g，赤芍9g，当归12g，甘草4g，生姜4g，红枣6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "冻疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_47427",
+    "title": "苍耳子洗剂",
+    "content": "苍耳子茎叶250-500g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "癣、疥。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_77329",
+    "title": "狼毒洗剂",
+    "content": "狼毒6g，苦参62g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_73518",
+    "title": "疖肿膏",
+    "content": "香油500g，樟丹125-187g，蜈蚣（焙干，研末）10条，黄连（烘干，研末）9g，蛇蜕（用蜂蜜炒干，研末）10g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "疖。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_73823",
+    "title": "解毒利湿汤",
+    "content": "银花31g，炒苡仁31g，生黄耆3g，连翘15g，茯苓15g，汉防己12g，猪苓12g，泽泻12g，桂枝9g，甘草3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "剥脱性皮炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_75592",
+    "title": "菊虫汤",
+    "content": "菊花125g，蝉蜕31g，麦冬18g，花粉9g，木香3g，明雄黄3g，香附9g，白蒺藜15g，防风6g，杏仁9g，桔梗9g，甘草3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "皮肤癌。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_57128",
+    "title": "儿茶五倍散",
+    "content": "儿茶6g，五倍子6g，冰片0.6g，马钱子6g，炉甘石粉6g，黄连末1g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "带状疱疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64820",
+    "title": "红药膏",
+    "content": "生石膏3500g，樟丹1500g，芥子气1ml，凡士林5000g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "银屑病。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64325",
+    "title": "黑了脱敏洗剂",
+    "content": "黑面神62g，了哥王62g，蛇泡勒62g，乌桕叶62g，地胆头62g，十大功劳62g，明矾25g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "漆性皮炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_51327",
+    "title": "痤愈汤",
+    "content": "荆芥12g，防风9g，川芎6g，白芷4g，桔梗9g，枳壳9g，黄连6g，黄芩6g，栀子9g，连翘9g，当归9g，薄荷3g，甘草6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "痤疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_47707",
+    "title": "草决明合剂",
+    "content": "草决明根50g，磨盘草（全株）50g，马缨丹根50g，苦参（或丹参）5g，川连5g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "麻风。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_57967",
+    "title": "矾石软膏",
+    "content": "熟石膏6g，苦矾2g，雄黄7g，冰片1g，凡士林加至200g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "婴儿湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_74816",
+    "title": "金银花汤",
+    "content": "银花62g，菊花62g，黄连9g，土茯苓31g，玉米仁15g，防风15g，蝉蜕9g，甘草9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "急性湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_41180",
+    "title": "巴豆油膏",
+    "content": "巴豆4g，蛇床子4g，大黄4g，海桐皮4g，羊蹄根4g，胡麻油10ml，凡士林20g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "神经性皮炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_74855",
+    "title": "金玉膏",
+    "content": "当归身31g，白芷9g，甘草31g，姜黄9g，轻粉6g，冰片3g，白蜡93g（夏）-125g（冬），胡麻油1250ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "神经性皮炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_66996",
+    "title": "黄柏苍术汤",
+    "content": "黄柏9g，苍术9g，蒲公英9g，滑石15g，龙胆草15g，生地15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_57292",
+    "title": "二号扫风丸",
+    "content": "大风子（土炒，去毛）62g，何首乌31g，白蒺藜31g，菊花15g，橘红15g，防风15g，牛膝15g，全蝎15g，当归尾15g，黄连15g，车前子15g，金银花15g，马钱子4g（土炒，去毛，用香油拌，另研），黄芩6g，苦参7g，麝香6g，红白12g，胡麻12g，全蛇皮1条。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "麻风。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_43469",
+    "title": "斑蝥酊",
+    "content": "斑蝥15g，70%酒精100ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "神经性皮炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_54406",
+    "title": "地黄膏",
+    "content": "生地1000g，藤黄15g，红粉9g，冰片3g，广丹12g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "淋巴腺结核。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_53288",
+    "title": "当归膏",
+    "content": "当归1000g，香油500g（一方加生地）。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "烫火伤。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_63324",
+    "title": "海桐皮洗剂",
+    "content": "海桐皮60g，透骨草30g，乳香10g，没药10g，当归15g，花椒15g，红花15g，威灵仙30g，白芷15g，防风15g，甘草15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "皮肤瘙痒症。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_50172",
+    "title": "臭梧桐洗剂",
+    "content": "臭梧桐31g，野菊花31g，地肤子31g，明矾10g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_47425",
+    "title": "苍耳子软膏",
+    "content": "苍耳子（炒黄，研细末）60g，猪脂120g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "臁疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_41490",
+    "title": "白矾酊",
+    "content": "白矾粉10g，酒精90ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "癣。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_41909",
+    "title": "白簕洗剂",
+    "content": "白簕15g，水杨梅15g，三角泡15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_63288",
+    "title": "海蛸散",
+    "content": "乌贼骨（焙为黄色，去壳）。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "鼻疮疳(匿虫)，阴囊湿痒，阴蚀肿痛，疮多脓汁，溃疡不敛，蝎螫痛楚。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_60293",
+    "title": "复方青黛糊剂",
+    "content": "青黛粉31g，黄柏粉31g，生甘草粉31g，生石膏粉31g，薄荷脑（研细末）1.5g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "漆性皮炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_42590",
+    "title": "白头翁酒",
+    "content": "白头翁156g，白酒1升。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "淋巴腺结核。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_57310",
+    "title": "二黄丹",
+    "content": "硫黄31g，雄黄31g，冰片1.5g，樟脑1.5g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "疥。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_69935",
+    "title": "己戍丹",
+    "content": "麝香1g，牛黄1g，炉甘石1g，雄黄1g，火消1g，黄丹1g，冰片1g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "毒蛇咬伤。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_43472",
+    "title": "斑蝥粉",
+    "content": "斑蝥3个，枯矾3g，硫黄3g，密陀僧3g，三仙丹2g，冰片1g，砒霜1.5g，硼砂2g，麝香0.15g，甘油50ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "体癣。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_61186",
+    "title": "岗稔根汤",
+    "content": "岗稔根31g，川萆薢31g，土茯苓31g，荆芥6g，防风6g，白芷4g，川芎6g，当归12g，生地15g，白鲜皮9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "皮肤瘙痒症。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_52569",
+    "title": "大蒜糊剂",
+    "content": "独头蒜10g，豆豉2g，精食盐0.5g，5%醋酸（食用醋）2ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "神经性皮炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_43153",
+    "title": "百药煎油膏",
+    "content": "百药煎15g，白矾6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "小儿湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_67215",
+    "title": "黄金霜合剂",
+    "content": "黄金霜灵药15g，黄金霜药渣31g，珍珠黄金丹长药31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "白癜风。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_49659",
+    "title": "赤参汤",
+    "content": "当归15g，蝉蜕15g，赤芍9g，苍术9g，乌蛇6g，防风9g，红花9g，黄柏9g，丹参31g，公英15g，地丁15g，金钱草31g，甘草6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "银屑病。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_76607",
+    "title": "苦参水",
+    "content": "苦参93g，野菊花15g，白鲜皮9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "脂溢性皮炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_67126",
+    "title": "黄丹油膏",
+    "content": "松香6g，黄丹6g，硫黄6g，黄柏6g，铝粉1g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_57080",
+    "title": "鹅黄散",
+    "content": "绿豆粉31g，黄柏93g，轻粉6g，滑石粉15g，冰片3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "痱子。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_73376",
+    "title": "椒柏洗剂",
+    "content": "川椒15g，黄柏15g，蛇床子15g，生苍术12g，石菖蒲12g，荆芥9g，银花9g，连翘9g，白芷6g，明矾6g，刺蒺藜6g，生甘草6g，蝉蜕9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "急性湿疹，初见皮肤潮红赤热，继起粟粒丘疹，易于湿润流水。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_47556",
+    "title": "苍松烘疗条",
+    "content": "苍术12g，松香31g，枫子仁62g，蛤壳粉31g，白鲜皮31g，黄柏31g，鹤虱15g，防风15g，苦参15g，硫黄31g，红砒3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_54909",
+    "title": "地榆油膏",
+    "content": "地榆粉31g，冰片2g，麻油60ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "胎火丹毒。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_54242",
+    "title": "地肤子煎剂",
+    "content": "地肤子15g，蛇床子15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "毛囊炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_57124",
+    "title": "儿茶轻粉散",
+    "content": "儿茶3g，鸡内金3g，轻粉1.5g，冰片1g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "女阴溃疡。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_71381",
+    "title": "加味甘桔汤",
+    "content": "生地15g，元参15g，桔梗9g，枳壳9g，银花31g，连翘31g，丹皮9g，蒲公英31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "口炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_60311",
+    "title": "复黄片",
+    "content": "黄鳝藤46g，白及15g，白茅根15g，丹参9g，红枣62g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "紫斑。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_45880",
+    "title": "薄荷牛蒡汤",
+    "content": "薄荷叶12g，牛蒡子9g，焦马勃9g，连翘壳9g，京玄参12g，西赤芍12g，板兰根12g，大青叶12g，炒僵蚕9g，玉桔梗6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "荨麻疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_71110",
+    "title": "加味苍柏汤",
+    "content": "苍术皮9g，黄柏9g，银花9g，连翘9g，萆薢12g，山栀9g，牛膝9g，防己9g，米仁12g，甘草3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "足癣。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_58893",
+    "title": "粉霜散",
+    "content": "粉霜6g，砒霜1g，黄丹（飞过）10g，天南星10g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "足跟溃疡。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_43487",
+    "title": "斑蝥水",
+    "content": "砒霜0.5g，枯矾5g，斑蝥3g，白醋50ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "体癣。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_71645",
+    "title": "加味六一散",
+    "content": "生地31g，连翘9g，银花9g，六一散9g，苡仁9g，丹皮6g，赤芍4g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "皮肤瘙痒症。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_47761",
+    "title": "侧柏酊",
+    "content": "鲜侧柏枝叶（包括新鲜种子，切碎）35g，75%酒精100ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "斑秃。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_42678",
+    "title": "白鲜皮汤",
+    "content": "白鲜皮15g，粉丹皮9g，怀山药9g，薏仁米15g，木通9g，大豆黄卷9g，龙胆草9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "女阴溃疡。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_55580",
+    "title": "丁香酊",
+    "content": "丁香15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "体癣。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_44930",
+    "title": "碧桃浸液",
+    "content": "青嫩碧桃叶50g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "荨麻疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_61895",
+    "title": "骨碎补散",
+    "content": "骨碎补9g，萆薢9g，牛膝9g，桃仁3g，海桐皮9g，当归9g，桂心6g，槟榔3-9g，赤芍3g，附子3g，川芎3g，枳壳3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "足跟溃疡。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_75253",
+    "title": "荆芥洗剂",
+    "content": "荆芥9g，防风9g，枫子仁9g，土槿皮9g，五骨皮9g，地骨皮9g，皂角10g，陈醋500ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "手足癣。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_50851",
+    "title": "磁贝合剂",
+    "content": "灵磁石31g，代赭石31g，紫贝齿31g，生石决明12g，生白芍6g，紫草31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "青年扁平疣。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_77529",
+    "title": "藜芦软膏",
+    "content": "藜芦10g，硫黄20g，凡士林加至100g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "癣疥。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64804",
+    "title": "红香粉",
+    "content": "红粉5g，冰片4g，薄荷脑37g，香脂100g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "酒渣鼻。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_66980",
+    "title": "黄白膏",
+    "content": "炉甘石31g，赤石脂31g，枯矾9g，香白芷9g，松香6g，冰片9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "脓疱疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_76667",
+    "title": "苦参洗剂",
+    "content": "苦参62g，银花31g，黄柏31g，蛇床子15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "瘙痒性及炎症性皮肤病。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_60275",
+    "title": "复方白藓皮煎剂",
+    "content": "白鲜皮15g，赤芍9g，赤苓9g，炒僵蚕9g，银花15g，连翘15g，蛇床子9g，生地9g，丹皮6g，防风6g，白芷4g，生甘草3g，黄耆15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "药物性皮炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_43502",
+    "title": "板蓝根复方",
+    "content": "板蓝根15g，蒲公英15g，连翘15g，黄芩9g，朱茯神9g，柏子仁9g，茯苓9g，甘草9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "带状疱疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_66278",
+    "title": "化毒解毒汤",
+    "content": "升麻4g，石膏15g，连翘子9g，牛蒡子9g，黄连6g，知母6g，元参9g，竹叶7g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "药物性皮炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_67529",
+    "title": "黄连散",
+    "content": "黄连15g，黄柏15g，轻粉6g，枯矾3g，黄丹3g，冰片2g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "女阴溃疡。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_44989",
+    "title": "碧玉散",
+    "content": "黄柏（研末）20g，香油40ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "婴儿耳、鼻、口围湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64725",
+    "title": "红炉散",
+    "content": "红东丹12g，煅炉甘石12g，血竭12g，象皮12g，松香12g，煅龙骨12g，氧化锌125g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "下肢溃疡。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_41188",
+    "title": "巴黄散",
+    "content": "巴豆（去外壳）15g，雄黄1g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "神经性皮炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_64524",
+    "title": "黑油膏",
+    "content": "龙骨9g，五倍子18g，轻粉6g，枯矾9g，生石膏18g，寒水石18g，蛤壳粉18g，冰片1g，薄荷脑9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "婴儿湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_57095",
+    "title": "鹅掌风浸剂",
+    "content": "斑蝥1g，蜈蚣4条，砒霜3g，樟脑9g，白及9g，土槿皮9g，大黄9g，马钱子9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "手癣。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_67046",
+    "title": "黄柏散",
+    "content": "黄柏31g，黄连31g，大黄31g，黄芩31g，川山甲31g，木鳖子（去壳）31g，槐枝63g，香油500ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_61602",
+    "title": "公英汤",
+    "content": "蒲公英31g，一见喜6g，淡黄芩9g，二宝花9g，野菊花9g，车前草12g，龙胆草3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "脓疱疮。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_47429",
+    "title": "苍矾洗剂",
+    "content": "苍耳子31g，明矾15g，苦参15g，蛇床子15g，黄柏15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "足癣。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_67292",
+    "title": "黄连酊",
+    "content": "黄连25g，花椒10g，70%酒精100ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "体癣。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_41426",
+    "title": "白疔散",
+    "content": "海螵蛸21g，滑石9g，寒水石9g，煅石膏9g，青黛3g，冰片1g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_50852",
+    "title": "磁贝合剂",
+    "content": "灵磁石31g，紫齿贝31g，代赭石31g，生牡蛎31g，地骨皮31g，红花6g，桃仁9g，怀牛膝9g，白芍9g，黄柏4g，山慈菇4g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "跖疣。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_50658",
+    "title": "疮疖汤",
+    "content": "生地15g，甘草9g，白蔹9g，土茯苓15g，入地金牛6g，甘菊9g，苦参6g，土兔冬6g，地肤子9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "疮疖。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_76668",
+    "title": "苦参洗剂",
+    "content": "苦参31g，蛇床子31g，苏叶31g，薄荷15g，苍耳草31g，枯矾15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "赤肿性皮肤病。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_67214",
+    "title": "黄金霜",
+    "content": "水银31g，白矾31g，火消63g，白砒1g，轻粉31g，（石[文凵]）砂3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "银屑病，湿疹、白癜风。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_59257",
+    "title": "芙蓉膏",
+    "content": "木芙蓉（叶、花）。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "外科感染。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_43504",
+    "title": "板蓝根汤",
+    "content": "板蓝根12g，银花12g，连翘12g，蒲公英15g，车前子12g，泽泻6g，黄芩3g，夏枯草9g，薄荷4g，茯芩9g，冬瓜皮12g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "日光皮炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_71647",
+    "title": "加味六一散",
+    "content": "生地30g，六一散9g，石决明9g，忍冬藤9g，茯神6g，当归9g，茯芩9g，赤芍6g，山栀4g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "皮肤瘙痒症。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_67851",
+    "title": "黄连油膏",
+    "content": "黄连25g，蓖麻油75g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "急性湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_42657",
+    "title": "白鲜皮酊",
+    "content": "白鲜皮15g，鲜生地31g，高粱酒150ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "脂溢性皮炎。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_51600",
+    "title": "大飞扬洗剂",
+    "content": "大飞扬500g，青凡本1000g，毛麝香12g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_a_54872",
+    "title": "地榆水",
+    "content": "地榆31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "急性湿疹，湿润糜烂，流水淋漓。",
+    "tags": [],
+    "category": "formulas"
+  },
+  {
+    "id": "recipe_b_90443",
+    "title": "清热解毒汤",
+    "content": "银花藤18g，板蓝根15g，一点红15g，旱莲草12g，地头胆12g，白茅根25g，野甘草13g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "漆性皮炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_79291",
+    "title": "羚羊三黄汤",
+    "content": "羚羊角1-1.5g，生地12g，生黄柏9g，黄连6g，黑栀子12g，白芍9g，金银花18g，丹皮9g，陈皮6g，白茅根15g，甘草2g，阿胶12g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "紫斑，火热型者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_81306",
+    "title": "麻黄蝉蜕汤",
+    "content": "麻黄6g，蝉蜕9g，槐花6g，黄连3g，浮萍9g，甘草3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "荨麻疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_91471",
+    "title": "全虫散",
+    "content": "全蝎15g，白矾62g，冰片3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用于小面积奇痒不止，撒播，外敷藤黄软膏。",
+    "preparation": "将白矾入锅内化开后，加入全蝎煅枯，待冷后，与冰片共为细末即成。"
+  },
+  {
+    "id": "recipe_b_81744",
+    "title": "马齿苋粉",
+    "content": "蛇床子20g，马齿苋20g，侧柏叶粉20g，丝瓜叶20g，芙蓉叶20g，蚌壳粉20g，苦参20g，大黄20g，陈小麦粉20g，枯矾10g，炉甘石10g，甘草10g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "急性湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "急性水疱渗液，以干末直接撒布；无渗液，以植物油或凡士林调，外用。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_98335",
+    "title": "生肌膏",
+    "content": "制乳香15g，制没药15g，儿茶15g，血竭15g，青花蛇蜕（煅）15g，碎琥珀15g，合欢皮15g，净轻粉12g，净红粉3g，川蜈蚣（焙焦）10条，冰片6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "下肢溃疡。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "用凡士林156g、白蜡15g、黄蜡15g，入锅内熔化后，离火待温，将药末加入搅和即成。"
+  },
+  {
+    "id": "recipe_b_115937",
+    "title": "野茴香膏",
+    "content": "野首香222g，除虫菊根44g，白鲜皮44g，干姜44g，蜂蜜1062g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "白癜风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每日3次，每服15g。10天后，每贴加5g，一直加至30g（日量90g），直至痊愈。",
+    "preparation": "将蜂蜜倒入容器，置沸水中熔化（水浴）搅拌除沫，将上药共研细过筛的药面；徐徐倒入蜜内，充分搅拌成稀糊状，放量即成膏状。"
+  },
+  {
+    "id": "recipe_b_121006",
+    "title": "治痈丹",
+    "content": "白芷10g，生半夏10g，槟榔10g，枳壳10g，黄升丹10g，粉霜6g，冰片4g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "痈疖。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "作搽药；或配为油膏外用。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_119589",
+    "title": "镇痛消炎散",
+    "content": "栀子125g，丹皮93g，白芷93g，血竭15g，冰片9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "因输液引起的静脉炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外敷。",
+    "preparation": "先将血竭于乳钵内研细，再加入冰片共研细，后与前三味药末和匀，用50％酒精调成糊状。"
+  },
+  {
+    "id": "recipe_b_77820",
+    "title": "立消散",
+    "content": "赤小豆15g，风化消15g，赤芍15g，枳壳15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "女阴溃疡。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "口服。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_111278",
+    "title": "消风清热汤",
+    "content": "防风9g，荆芥9g，蒺藜6g，蝉蜕9g，当归9g，赤芍9g，生地12g，川芎6g，桃仁6g，红花6g，银花15g，连翘15g，蛇蜕3g，生石膏15g，大祯子6-15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "荨麻疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，内服。"
+  },
+  {
+    "id": "recipe_b_120486",
+    "title": "婴儿湿疹软膏",
+    "content": "轻粉10g，黄丹10g，苦矾10g，松香10g，烟粉10g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "婴儿湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用于干型湿疹；渗出型湿疹，用粉末外敷（不拌香油）。",
+    "preparation": "上为末，放入香油，配成油膏。"
+  },
+  {
+    "id": "recipe_b_105371",
+    "title": "菟丝子水",
+    "content": "干菟丝子31g，鹤虱31g，蛇床子31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "肛门瘙痒症。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，熏洗。"
+  },
+  {
+    "id": "recipe_b_107690",
+    "title": "乌贼骨散",
+    "content": "乌贼骨30g，朱砂3g，冰片1g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "耳道湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用撒布。",
+    "preparation": "上为极细末。"
+  },
+  {
+    "id": "recipe_b_79374",
+    "title": "硫矾散",
+    "content": "硫黄93g，枯矾93g，煅石膏500g，青黛31g，冰片6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "急性湿疹，初起(疒咅)疱，继之破裂，溃烂流水，浸淫成片，瘙痒异常。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "菜油调涂于患处。",
+    "preparation": "共为细末。"
+  },
+  {
+    "id": "recipe_b_108046",
+    "title": "蜈蚣油膏",
+    "content": "蜈蚣1条（焙干，去头足）。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "淋巴腺结核。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外敷患处。",
+    "preparation": "上为细末，用植物油20毫升搅拌均匀。"
+  },
+  {
+    "id": "recipe_b_119204",
+    "title": "樟脑油",
+    "content": "硫酸镁10g，甘草10g，樟脑油10ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "带状泡疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上药置于乳钵内，研至液化。外用。"
+  },
+  {
+    "id": "recipe_b_123472",
+    "title": "紫萍合剂",
+    "content": "紫背浮萍草500g（用新鲜的，晒干备用，贮藏超过一年失效，不可使用，且影响他药的协同作用），夏枯草500g，海桐皮250g，老鹳草250g，当归300g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "麻风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每次10-20毫升，1日3次。",
+    "preparation": "切碎洗净，煎煮，浓缩至1．5升（每10毫升含原生药12.5～15.5g），起锅后，每1000毫升加五十七度白酒200毫升，搅匀，装瓶备用。"
+  },
+  {
+    "id": "recipe_b_95915",
+    "title": "蛇蝎散",
+    "content": "全蝎40g，祁蛇40g，蜈蚣20g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "麻风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "分作30包，每包3g。每次1包，日3次。",
+    "preparation": "上为粉末，混合均匀。"
+  },
+  {
+    "id": "recipe_b_102192",
+    "title": "松香膏",
+    "content": "松香500g，乳香62g，没药62g，黄丹62g，葱白根（捣汁过滤）2kg，凡士林适量。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "疖肿，化脓性皮肤病。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用时视病灶大小，取膏温热软化贴敷，纱布外敷，2-3日换药1次。",
+    "preparation": "先将乳香捣细后，与葱汁置铁勺中，用文火加热同煎，使药溶化后，加入黄丹搅匀，再加入适量凡土林，乘其膏未冻结之前，作成各块如饼状，备用。"
+  },
+  {
+    "id": "recipe_b_83267",
+    "title": "明矾散",
+    "content": "明矾31g，松香31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "脓疱疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "调油外搽。",
+    "preparation": "上药放入锅内化开，取出待冷后研粉。"
+  },
+  {
+    "id": "recipe_b_98200",
+    "title": "生发酊",
+    "content": "侧柏叶15g，芝麻根31g，杨柳梗31g，墨旱莲15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "脂溢性脱发。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "以60％酒精浸后外用。",
+    "preparation": "上为粗末。"
+  },
+  {
+    "id": "recipe_b_94305",
+    "title": "三妙散",
+    "content": "黄连30g，苍术30g，姜黄30g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "急性湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "撤布或水调外敷。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_111266",
+    "title": "消风导赤汤",
+    "content": "生地9g，赤芍9g，牛蒡子9g，白鲜皮9g，银花9g，薄荷6g，木通7g，黄连6g，甘草6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "急性湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，内服。"
+  },
+  {
+    "id": "recipe_b_111269",
+    "title": "消风膏",
+    "content": "生草乌31g，生南星31g，黄柏31g，苏木31g，白芥子6g，五倍子6g，生栀子6g，干姜15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "足跟溃疡。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外敷。",
+    "preparation": "先将适量之薯粉煮成糊状，再将上药并研为细末，加入拌匀，即成软膏样。"
+  },
+  {
+    "id": "recipe_b_117231",
+    "title": "银屑病药丸",
+    "content": "乳香15g，没药15g，红花15g，制大黄15g，莪术15g，秦艽15g，甲片56g，雄黄4g，地鳖虫15g，石菖蒲15g，桃仁霜7g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "银屑病。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每服3-4g，日3次。",
+    "preparation": "上为末，炼蜜为丸。"
+  },
+  {
+    "id": "recipe_b_103120",
+    "title": "桃红洗剂",
+    "content": "桃仁90g，桂枝90g，红花30g，川芎30g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "冻疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，熏洗。"
+  },
+  {
+    "id": "recipe_b_99451",
+    "title": "石膏白及膏",
+    "content": "煅石膏62g，白及末31g，密陀僧21g，轻粉15g，枯矾9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "阴囊湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上为极细末，加凡士林125g，调成泥膏。"
+  },
+  {
+    "id": "recipe_b_113766",
+    "title": "雄黄斑蝥酊",
+    "content": "斑蝥6g，雄黄2g，鲜山楂31g，95%酒精260ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "神经性皮炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上药浸于酒精内1周后，过滤，外用。"
+  },
+  {
+    "id": "recipe_b_120191",
+    "title": "蜘蛛枯矾散",
+    "content": "蜘蛛（腹大色黑）1个，白矾12g，明雄黄3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "鹅口疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用少许吹入口内，日2次。",
+    "preparation": "将白矾放入铁勺内，再将蜘蛛打死，放在白矾上面，用火烧炼，使白矾无稀液，蜘蛛干为度，凉后取出，加入明雄黄，共为细末，贮好。"
+  },
+  {
+    "id": "recipe_b_110524",
+    "title": "香儿粉",
+    "content": "麝香0.3g，儿茶15g，轻粉6g，冰片6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "麻风溃疡。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "配成软膏。"
+  },
+  {
+    "id": "recipe_b_116417",
+    "title": "苡仁煎",
+    "content": "生苡仁9g，陈皮9g，猪苓9g，半夏4g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "冻疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，代茶饮。"
+  },
+  {
+    "id": "recipe_b_95585",
+    "title": "烧伤散",
+    "content": "寒水石156g，炉甘石156g，赤石脂156g，生石膏156g，冰片6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "烫火伤。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用香油调，外涂。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_112964",
+    "title": "新光一号",
+    "content": "薄荷脑（研细）8g，冰片（研细）8g，95%酒精100ml，石炭酸3ml，饱和明矾液55ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "稻田皮炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "如合并细菌感染时，痒甚，可先涂本药，待干后，再涂如意金黄散软膏（金黄散40g，凡士林100g，调成软膏），包扎即可。",
+    "preparation": "将薄荷脑及冰片置于酒精中溶解，再入它药，即成乳白色混悬液体。"
+  },
+  {
+    "id": "recipe_b_100193",
+    "title": "首乌汤",
+    "content": "首乌18g，生地15-31g，丹皮9g，赤芍9g，当归9g，旱莲草31g，女贞子9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "脂溢性皮炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_110795",
+    "title": "香木洗剂",
+    "content": "香附30g，木贼36g，板兰根30g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "青年扁平疣。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，洗患处。"
+  },
+  {
+    "id": "recipe_b_121008",
+    "title": "治疣汤",
+    "content": "熟地12g，杜仲6g，赤小豆9g，牛膝9g，丹皮9g，红花9g，白术9g，桃仁9g，赤芍9g，白芍12g，穿山甲3g，何首乌6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "寻常疣，扁平疣，瘢痕疙瘩，瘙痒证，硬皮病，银屑病，症见皮肤干燥，刺瘊或扁平瘊，有厚鳞屑性皮疹，脉滑，舌质紫红，或有瘀斑。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，分两次服，每次用烧酒30毫升作引子。"
+  },
+  {
+    "id": "recipe_b_83037",
+    "title": "密陀僧复方",
+    "content": "雄黄31g，硫黄31g，密陀僧31g，黄丹31g，生南星31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "白癜风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用生姜蘸药粉搽。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_109053",
+    "title": "五枝洗剂",
+    "content": "榆树枝、柳树枝、桑树枝、槐树枝、桃树枝。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "急性湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "适量水煎，熏洗。",
+    "preparation": "各取半尺长，如筷子粗细，剪碎。"
+  },
+  {
+    "id": "recipe_b_102196",
+    "title": "松香合剂",
+    "content": "肉桂50g，松香粉100g，樟脑25g，95%酒精500ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "冻疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "caution": "溃烂者不用。",
+    "preparation": "先将肉桂浸于酒精内，历3-5日后，再加其余2味药。"
+  },
+  {
+    "id": "recipe_b_94302",
+    "title": "三妙散",
+    "content": "黄柏31g，寒水石156g，青黛31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "急性湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "花生油调，外涂。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_108307",
+    "title": "五黄青白散",
+    "content": "牛黄1g，黄柏15g，大黄15g，儿茶15g，川连9g，雄黄9g，青黛9g，枯矾9g，人中白15g，冰片1g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "脓疱疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上为细末。香油调，外敷。"
+  },
+  {
+    "id": "recipe_b_81483",
+    "title": "麻黄蛇床子粉",
+    "content": "麻黄根31g，蛇床子31g，牡蛎31g，炉甘石31g，干姜31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "多汗症，痱子，荨麻疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外扑。",
+    "preparation": "上为细粉。"
+  },
+  {
+    "id": "recipe_b_95823",
+    "title": "蛇床子软膏",
+    "content": "蛇床子（粉末）30g，白凡士林70g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "调成软膏外用。"
+  },
+  {
+    "id": "recipe_b_101095",
+    "title": "水银膏",
+    "content": "核桃仁12g，大风子仁12g，蓖麻仁12g，水银3g，黄丹3g，冰片0.6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "神经性皮炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "即将此油涂患处，每日数次。",
+    "preparation": "上药混合，共捣烂如泥，用白布包好，在木炭火上烤热，发现布外有油即止。"
+  },
+  {
+    "id": "recipe_b_109968",
+    "title": "细辛醋糊剂",
+    "content": "细辛（细末）3-6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "鹅口疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "敷于脐上。",
+    "preparation": "上药加醋调，捏成小饼。"
+  },
+  {
+    "id": "recipe_b_80731",
+    "title": "炉赤洗剂",
+    "content": "炉甘石（黄连水飞）15g，赤石脂粉15g，甘油15ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "药物性皮炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上药加水和成100毫升。"
+  },
+  {
+    "id": "recipe_b_107840",
+    "title": "吴茱萸软膏",
+    "content": "吴茱萸粉1g，凡士林9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "黄水疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "调匀外用。"
+  },
+  {
+    "id": "recipe_b_108246",
+    "title": "五根饮",
+    "content": "过江龙28g，虎黄波31g，钉地根21g，埔银根18g，穿山龙31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "麻风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，内服。"
+  },
+  {
+    "id": "recipe_b_112992",
+    "title": "新消风散",
+    "content": "全蝎9g，僵蚕9g，薄荷6g，生地15g，苦参6g，荆芥6g，防风6g，牛蒡子9g，蝉蜕4g，甘草3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "皮肤瘙痒症。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，内服。"
+  },
+  {
+    "id": "recipe_b_93884",
+    "title": "三白散",
+    "content": "煅石膏31g，轻粉（炒）3g，冰片1.5g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹，局部溃疡及搔痒者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "撤布，外敷藤黄软膏。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_89382",
+    "title": "青凉膏",
+    "content": "煅石膏250g，青黛9g，冰片3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "烫火伤。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "油调外用。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_123471",
+    "title": "紫泡散",
+    "content": "石青3g，青黛3g，朱砂3g，硼砂3g，冰片15g，明矾15g，人中白15g，元明粉15g，山豆根15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "下肢溃疡。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外撤创面，或外掺。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_82572",
+    "title": "梅片点舌丹",
+    "content": "朱砂15g，血竭15g，硼砂15g，雄黄15g，乳香25g，没药25g，葶苈子25g，沉香7g，牛黄6g，麝香4g，蟾酥4g，熊胆4g，冰片4g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "疖。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "内服。亦可取1粒加盐水或酒精调成糊状，外用。",
+    "preparation": "用人乳先将蟾酥化开，再将全部药物研细和匀，加入适量糯米粉，做成绿豆大小药丸备用。"
+  },
+  {
+    "id": "recipe_b_113794",
+    "title": "雄黄膏",
+    "content": "雄黄10g，硫黄10g，氧化锌10g，凡士林加至100g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "头癣。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "调膏外用。"
+  },
+  {
+    "id": "recipe_b_123243",
+    "title": "紫草油膏",
+    "content": "紫草根20g，当归20g，胡麻油200ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "剥脱性皮炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上药用文火煎枯，去滓，再加黄蜡30～40g成膏。"
+  },
+  {
+    "id": "recipe_b_94067",
+    "title": "三黄汤",
+    "content": "银花31g，连翘31g，黄芩9g，黄连9g，黄柏9g，紫草9g，栀子9g，蒲公英15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "疖。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，内服。"
+  },
+  {
+    "id": "recipe_b_86463",
+    "title": "皮湿二号膏",
+    "content": "地榆粉46g，密陀僧（研匀）62g，凡士林125g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "调膏。外用。"
+  },
+  {
+    "id": "recipe_b_119308",
+    "title": "珍珠八宝丹",
+    "content": "赤石脂9g，制甘石9g，乳香2g，海螵蛸9g，血竭2g，没药2g，珠粉2g（后下），冰片2g（后下）。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "硬结红斑溃疡型。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_108107",
+    "title": "五倍子散",
+    "content": "五倍子15g，生甘草15g，乌梅15g，黄柏15g，枯矾15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "女阴溃疡。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_123847",
+    "title": "自然铜膏",
+    "content": "自然铜（煅，末）31g，硼砂末15g，凡士林156g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "神经性皮炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "调软膏。"
+  },
+  {
+    "id": "recipe_b_99112",
+    "title": "湿疹合剂",
+    "content": "白鲜皮9g，秦艽9g，苍术9g，紫草根9g，银花9g，黄芩9g，赤茯苓6g，野菊花6g，赤芍药6g，黄连3g，生甘草4g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "婴儿湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎。内服。"
+  },
+  {
+    "id": "recipe_b_117200",
+    "title": "银翘解毒汤",
+    "content": "银花15g，公英15g，白菊花15g，连翘15g，贝母9g，生地9g，赤芍9g，丹皮9g，木通6g，栀子6g，大黄1g，紫花地丁31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "药物性皮炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_109864",
+    "title": "洗癣酊",
+    "content": "土荆皮3g，百部3g，槟榔3g，川椒3g，斑蝥4个，醋200ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "灰指甲。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上药浸1天，早晨用此浸灰指甲，再用皮可净药水（成药。内含柳酸，安息香酸）涂后，用纱布包；晚上只浸洗癣酊，纱布包。连续7天，指甲即脱落。如有化脓溃烂，涂消治龙药膏（成药）。"
+  },
+  {
+    "id": "recipe_b_98214",
+    "title": "生发软膏",
+    "content": "雄黄15g，硫黄15g，凤凰衣15g，穿山甲（炮制）9g，滑石粉31g，生猪板油31g，鲜猪苦胆1个。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "斑秃。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用时纱布包好，轻轻用力搽抹患处，每日2-3次。",
+    "preparation": "以上前5味中药，共研为细末，用猪板油、猪苦胆汁调和药末，捣如泥即成。"
+  },
+  {
+    "id": "recipe_b_101490",
+    "title": "四黄散",
+    "content": "黄连31g，黄柏31g，黄芩31g，大黄31g，寒水石31g，生地榆31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "烫火伤。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "先以1％冰片液（冰片0．3g，冷开水加至100毫升）浸渍创面3-5分钟后，涂药膏。暴露创面。",
+    "preparation": "上为细末，以香油（炸开后放冷再用）调和成泥膏；或以40％药粉配60％麻油，调成糊状。"
+  },
+  {
+    "id": "recipe_b_115400",
+    "title": "羊蹄草合剂",
+    "content": "羊蹄草31g，盆上芫茜31g，崩大碗31g，白花蛇舌草31g，金银花31g，鬼针草31g，旱莲草31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "鹅口疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上药可采新鲜全草，水煎服。"
+  },
+  {
+    "id": "recipe_b_78147",
+    "title": "连柏湿疹膏",
+    "content": "黄连31g，黄柏31g，白芷31g，轻粉3g，冰片3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "前三味药，共研为细末，再加后二味研匀，最后加蛋黄油调成油膏。"
+  },
+  {
+    "id": "recipe_b_95870",
+    "title": "蛇芩汤",
+    "content": "乌梢蛇9g，淡黄芩9g，焦荆芥9g，川柏片9g，根生地31g，粉丹皮12g，苦参片12g，白鲜皮12g，地肤子12g，粉萆薢12g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "急性湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，内服。"
+  },
+  {
+    "id": "recipe_b_114184",
+    "title": "徐长卿洗剂",
+    "content": "徐长卿31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "牛皮癣，带状疱疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎。内服或外洗。"
+  },
+  {
+    "id": "recipe_b_99471",
+    "title": "石膏枯矾膏",
+    "content": "煅石膏18g，枯矾18g，雄黄6g，冰片1g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "阴囊湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上为极细末，加凡士林187g，调成软膏。"
+  },
+  {
+    "id": "recipe_b_95846",
+    "title": "蛇床子洗剂",
+    "content": "蛇床子31g，苦参31g，威灵仙9g，苍术9g，黄柏9g，明矾9g（一方加荆芥、防风、五倍子）。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "急性湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，熏洗。"
+  },
+  {
+    "id": "recipe_b_94586",
+    "title": "三仙丹药膏",
+    "content": "狼毒187g，枳壳93g，烟叶9g，花椒9g，川乌25g，草乌25g，川羌6g，防风25g，南星12g，五倍子46g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "白癜风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上药加水3升，煎至500毫升，捞出药渣，用药液加硫黄（研）25g，樟脑（研）20g，白矾（研）25g，同醋1．5毫升，熬成膏状，然后放入三仙丹15g搅匀。"
+  },
+  {
+    "id": "recipe_b_87974",
+    "title": "千里光洗剂",
+    "content": "千里光31～93g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "湿疹，皮炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用纱布捆包，加水1～1．5升，煎煮5至10分钟，熏洗。"
+  },
+  {
+    "id": "recipe_b_86964",
+    "title": "蒲黄膏",
+    "content": "鲜蒲公英（洗净，捣泥状）125g，雄黄10g，冰片3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "急性炎症非化脓期及淋巴腺结核。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "caution": "药物保存时间，不要超过二十四小时。",
+    "preparation": "上药混合均匀。"
+  },
+  {
+    "id": "recipe_b_113180",
+    "title": "杏矾汤",
+    "content": "杏仁15g，白矾15g，蛇床子10g，五倍子10g，黄连10g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "阴部瘙痒。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，熏洗。"
+  },
+  {
+    "id": "recipe_b_99107",
+    "title": "湿痒油膏",
+    "content": "三黄末6g，青黛3g，紫金锭1g，无名异3g，黄丹1g，煅石膏9g，密陀僧1g，寒水石6g，铜绿3g，烟胶3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用麻油调成糊状油膏。外用。",
+    "preparation": "上药共为细末。"
+  },
+  {
+    "id": "recipe_b_109973",
+    "title": "细辛甘油",
+    "content": "细辛（研粉末）10-20g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "复发性口腔溃疡。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用水调成糊剂，加甘油10～20毫升（蜂蜜亦可），放置纱布中（约7平方厘米），用绞布密封，贴于脐部3天。"
+  },
+  {
+    "id": "recipe_b_83038",
+    "title": "密陀僧膏",
+    "content": "密陀僧31g，硫黄15g，斑蝥3-5个，轻粉9g，水银9g，江米面适量，冰片9g，木香3g，雄黄3g，枯矾9g，米醋1000g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "皮肤癌。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "按常法熬膏。"
+  },
+  {
+    "id": "recipe_b_114893",
+    "title": "烟胶轻粉液",
+    "content": "烟胶60g，轻粉3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "鹅掌风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "麻油调。外搽。"
+  },
+  {
+    "id": "recipe_b_89448",
+    "title": "青梅散",
+    "content": "青梅31g，明矾6g，冰片1g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "鹅口疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外涂。",
+    "preparation": "将青梅与明矾一齐放入铁锅内，微火炒，待明矾化为液体，并渐渐被青梅吸收，将青梅炒焦存性，去核，研极细末，过筛，加入冰片，瓷瓶收贮。"
+  },
+  {
+    "id": "recipe_b_115941",
+    "title": "野菊煎剂",
+    "content": "野菊花750g，千里光500g，侧柏叶500g，土荆芥250g，食盐15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "藜日光皮炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "加水至药面，煎至三分之一量。湿敷外用。"
+  },
+  {
+    "id": "recipe_b_88098",
+    "title": "铅粉膏",
+    "content": "铅粉（煅黄）9g，松香9g，黄丹3g，香油60ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "疖。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "常法熬膏。"
+  },
+  {
+    "id": "recipe_b_117197",
+    "title": "银翘败毒汤",
+    "content": "银花15g，连翘15g，地丁12g，蒲公英9g，菊花9g，贝母9g，花粉9g，丹皮6g，赤芍6g，木通6g，生地9g，栀子9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "漆性皮炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_115775",
+    "title": "养阴生肌散",
+    "content": "雄黄20g，青黛20g，甘草20g，冰片2g，牛黄10g，黄柏10g，龙胆草10g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "口炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上为末。"
+  },
+  {
+    "id": "recipe_b_88831",
+    "title": "芩连解毒汤",
+    "content": "黄连6g，黄芩9g，丹皮9g，赤芍9g，银花15g，连翘9g，山栀6g，甘草3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "疖。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_108049",
+    "title": "蜈蝎散",
+    "content": "全蝎1个，蜈蚣2条。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "疖。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每日1个（剂量为2g），睡前服用。小儿体弱者，分2次内服。",
+    "preparation": "上共捣碎，装入核桃空壳（去仁）内，用线缠紧，黄土泥封，文火上烧至泥壳有声为止，亦可用陶器焙烤，取出研为细末。"
+  },
+  {
+    "id": "recipe_b_114054",
+    "title": "雄麝散",
+    "content": "雄黄30g，麝香3g，肉桂3g，胡椒3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "疖，毛囊炎，疽，流注。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用时掺在膏药内，外敷。",
+    "preparation": "上药共研极细末，装入瓶内，密封。"
+  },
+  {
+    "id": "recipe_b_99398",
+    "title": "石柏散",
+    "content": "煅石膏15g，黄柏9g，蛤壳粉9g，白芷9g，黄丹3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "带状疱疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "调油外敷。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_100388",
+    "title": "舒筋活络汤",
+    "content": "鸡血藤9g，黄耆5g，木瓜12g，牛膝12g，当归6g，川芎6g，白芍9g，山甲6g，续断9g，威灵仙6g，独活6g，松节9g，生地12g，寄生12g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "麻风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_86464",
+    "title": "皮湿一号膏",
+    "content": "地榆粉93g，煅石膏93g，枯矾3g，凡士林31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "调膏。外用。"
+  },
+  {
+    "id": "recipe_b_95809",
+    "title": "蛇床鹤虱粉",
+    "content": "蛇床子10g，鹤虱10g，黄柏10g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "足癣糜烂型。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "撒布，干包。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_105080",
+    "title": "铜绿软膏",
+    "content": "铜绿30g，密陀僧30g，铅粉30g，松香30g，黄蜡30g，香油500g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹，神经性皮炎。",
+    "tags": [],
+    "category": "formulas",
+    "preparation": "常法炼膏。"
+  },
+  {
+    "id": "recipe_b_120487",
+    "title": "婴儿湿疹软膏",
+    "content": "煅蛤粉5g，煅石膏5g，枯矾5g，青黛5g，冰片1g，黄丹1g，蜂蜜30g，凡士林40g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "婴儿湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上为细末，调膏。"
+  },
+  {
+    "id": "recipe_b_102302",
+    "title": "苏矾洗剂",
+    "content": "苏花15g，甘草6g，明矾6g，黄柏9g，茶叶15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "急性湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "将上药用开水冲后，洗涤。"
+  },
+  {
+    "id": "recipe_b_114031",
+    "title": "雄黄油",
+    "content": "雄黄（研末）6g，甘油20ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "女阴溃疡。",
+    "tags": [],
+    "category": "formulas",
+    "preparation": "混合均匀，外涂。"
+  },
+  {
+    "id": "recipe_b_100197",
+    "title": "首乌丸",
+    "content": "首乌62g，当归62g，女贞子62g，旱莲草62g，菟丝子62g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "斑秃。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "1日服2-3丸。",
+    "preparation": "上为细末，以炼蜜为粘合剂，压制成0.5g片剂。每服5～7片，日3次，或炼蜜为丸，每丸7g。"
+  },
+  {
+    "id": "recipe_b_113809",
+    "title": "雄黄合剂",
+    "content": "雄黄9g，吴萸9g，贝母12g，威灵仙12g，五灵脂9g，白芷9g，细辛3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "毒蛇咬伤。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每次服9g，1日3次，用开水及酒送下。",
+    "preparation": "上共研为细末。"
+  },
+  {
+    "id": "recipe_b_108704",
+    "title": "五味去湿散",
+    "content": "黄柏31g，蛤粉62g，轻粉31g，白芷3l克，石膏62g，冰片6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上为极细末，和匀；亦可调成油膏。"
+  },
+  {
+    "id": "recipe_b_120406",
+    "title": "止痒汤",
+    "content": "皮胶125g，白矾（研末）31g，硫黄31g，蛤蟆草31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "皮肤瘙痒症。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上药放入砂锅内，加水1升，煮沸熏洗。"
+  },
+  {
+    "id": "recipe_b_113802",
+    "title": "雄黄膏",
+    "content": "雄黄精9g，羌黄6g，滑石粉18g，儿茶5g，漳丹9g，黄柏9g，黄连3g，甘草3g，冰片2g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "取其1份，与蜜陀僧3份，混合均匀，外用。",
+    "preparation": "上药共研细末。"
+  },
+  {
+    "id": "recipe_b_83557",
+    "title": "牡黄二子煎",
+    "content": "煅牡蛎31g，大黄31g，地肤子31g，蛇床子31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "足癣。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "加水2升，煎至1升，浸洗再湿敷。"
+  },
+  {
+    "id": "recipe_b_117177",
+    "title": "银花丹皮汤",
+    "content": "银花9-15g，丹皮9g，青蝉蜕9g，黄柏9g，茯苓9g，白鲜皮9-15g，黑山栀6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，内服。"
+  },
+  {
+    "id": "recipe_b_81296",
+    "title": "麻桂各半汤",
+    "content": "桂枝6g，麻黄3g，赤芍9g，杏仁6g，生甘草4g，大枣6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "皮肤瘙痒症。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_79581",
+    "title": "六和膏",
+    "content": "海螵蛸10g，煅龙骨10g，象皮6g，血竭6g，木香6g，没药6g，轻粉6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "冻疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "撒布患处。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_108181",
+    "title": "五蜂石软膏",
+    "content": "蜂蜜25-30g，五倍子10g，炉甘石10g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "氢氟酸灼伤。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "先将蜂蜜烧后溶化至沸。再将五倍子、炉甘石共碾碎过筛，即加入搅拌和匀。"
+  },
+  {
+    "id": "recipe_b_83063",
+    "title": "密陀僧油剂",
+    "content": "密陀僧1000g（碾成细粉末，除净杂物）。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用桐油500毫升调成稀糊状，用毛笔蘸于下水部，历1-2小时形成薄膜。"
+  },
+  {
+    "id": "recipe_b_111281",
+    "title": "消风清燥汤",
+    "content": "当归9g，威灵仙6g，防风9g，虫蜕9g，川芎9g，黄连6g，花粉6g，苦参9g，白芍6g，生地21g，黄芩21g，生石膏12g，甘草6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "脂溢性皮炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，内服。"
+  },
+  {
+    "id": "recipe_b_94028",
+    "title": "三黄地榆油",
+    "content": "黄柏31g，黄芩31g，大黄31g，地榆15g，五倍子15g，罂粟壳15g，冰片1g，香油500ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "烫火伤。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "文火煎熬至药呈焦黄色，滤渣，放入冰片，装瓶外用。"
+  },
+  {
+    "id": "recipe_b_80729",
+    "title": "炉倍油膏",
+    "content": "炉甘石9g，五倍子9g，冰片3g，黄连15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上为细末，油调成膏。外用。"
+  },
+  {
+    "id": "recipe_b_78116",
+    "title": "栗树叶洗剂",
+    "content": "鲜板栗树叶250g，生甘草31g，雄黄粉15g，铁锈粉31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "漆性皮炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，外洗。"
+  },
+  {
+    "id": "recipe_b_119202",
+    "title": "樟脑酊",
+    "content": "土槿皮6g，樟脑6g，斑蝥1.5g，酒精60ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "神经性皮炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "每日外搽1次，用消毒纱布包，以起水疱结痂自愈。",
+    "preparation": "先将土槿皮、斑蝥研成粉，加入酒精浸3天。过滤后，滤液加樟脑备用。"
+  },
+  {
+    "id": "recipe_b_108266",
+    "title": "五虎丹",
+    "content": "水银62g，白矾62g，青矾62g，牙消62g，食盐31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "皮肤癌。痈疽疔疮，慢性瘘管，淋巴结核等需要腐蚀脱落者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "先将水银与矾磨研，以不见水银为度，再将余药加入共研细末。将上药末置入小铁锅内，盖大碗1只，用泥土密糊封闭，文火炼2-3小时，待冷却，轻轻除去泥土，将碗取出，碗底附着如霜之白色结晶，即为五虎丹。糊剂：五虎丹结晶体18g，熔炼0.5g，红娘0.5g，斑蝥0.5g，羊金花粉1g，用浆糊调成糊状，粘涂肿块上面，以普通膏药贴之；钉剂：药物份量同上，用米饭赋形。搓成两头尖的梭状条，每支长2～3cm，重0.65g，阴干，用时插入癌组织。肿块脱落坏死后，改用红升丹细粉末撒布，贴膏药至疮面愈合。",
+    "caution": "不可口服。"
+  },
+  {
+    "id": "recipe_b_123216",
+    "title": "紫草软膏",
+    "content": "紫草根100g（切碎）。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "剥脱性唇炎。",
+    "tags": [],
+    "category": "formulas",
+    "preparation": "浸于450毫升菜油或麻油中，经24小时，待油液呈紫色，过滤去滓，滤液加凡士林100g，加热至沸点，溶化搅匀，冷却即可。"
+  },
+  {
+    "id": "recipe_b_87969",
+    "title": "千里光白及膏",
+    "content": "50%千里光溶液500ml，白及粉200g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "烫火伤。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外搽创面。",
+    "preparation": "麻油调匀。"
+  },
+  {
+    "id": "recipe_b_80545",
+    "title": "芦矾洗剂",
+    "content": "芦荟9g，明矾9g，黄柏31g，苦参31g，蛇床子31g，荆芥15g，防风15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "赤肿性皮肤病。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，熏洗。"
+  },
+  {
+    "id": "recipe_b_121010",
+    "title": "治疣汤",
+    "content": "桃仁9g，红花9g，熟地9g，归尾9g，赤芍9g，川芎6g，白术6g，炮山甲6g，首乌6g，板蓝根15g，夏枯草15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "寻常疣。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_114834",
+    "title": "鸦胆子粉",
+    "content": "鸦胆子（剥去外皮）。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "寻常疣。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "患处消毒后，用小刀刮破，以见出血为止，将此药粉敷上，用纱布、胶布固定。1周即可脱落。未脱落涂硼酸软膏类即脱落。",
+    "preparation": "用鸦胆子仁压碎，置小瓶内高压消毒。"
+  },
+  {
+    "id": "recipe_b_77830",
+    "title": "立消汤",
+    "content": "银花15-31g，当归9g，蒲公英9-15g，玄参9g，苡仁12g，茯苓12g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "下肢溃疡。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，内服。"
+  },
+  {
+    "id": "recipe_b_97484",
+    "title": "肾囊风油膏",
+    "content": "吴萸15g，樟脑15g，蛇床子15g，黄柏7g，轻粉3g，寒水石9g，白矾9g，白芷9g，槟榔9g，硫黄6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上为细末，配成油膏。"
+  },
+  {
+    "id": "recipe_b_98477",
+    "title": "生姜酒",
+    "content": "生姜250g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "鹅掌风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上药浸于50-60度酒500毫升中。外治。"
+  },
+  {
+    "id": "recipe_b_113773",
+    "title": "雄黄酊",
+    "content": "雄黄粉50g，冰片0.5g，酒精100ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "带状疱疹，单纯疱疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "混合外用。"
+  },
+  {
+    "id": "recipe_b_112462",
+    "title": "蝎蚣散",
+    "content": "全蝎1个，蜈蚣1条。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "淋巴腺结核。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上研细粉，以鸡蛋1个搅拌，用香油或豆油炒熟吃下，每晨1个，不用铁锅，铝锅可用。"
+  },
+  {
+    "id": "recipe_b_79394",
+    "title": "硫黄膏",
+    "content": "硫黄20g，猪脂（或凡士林）80-100g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "头癣，疥疮，玫瑰糠疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "搽擦患处。",
+    "preparation": "将硫黄研细，与猪脂或凡士林调匀成膏。"
+  },
+  {
+    "id": "recipe_b_86472",
+    "title": "枇杷地榆液",
+    "content": "枇杷叶31g，地榆31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "急性渗出性湿疹、皮炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，热溻患部，罨包外用。"
+  },
+  {
+    "id": "recipe_b_119324",
+    "title": "珍珠黄金丹长药",
+    "content": "五倍子31g，硫黄46g，珍珠3g，金箔125张，樟脑31g，枳壳62g，雄黄31g，白矾3g，炒樗根白皮（臭椿）25g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "白癜风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_87166",
+    "title": "七宝丹",
+    "content": "老烟膏31g，生地榆（先研细末）31g，寒水石31g，淡秋石31g，血余炭31g，胡黄连（先研细末）31g，血竭31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "下肢溃疡。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "撒于疮面；或麻油调敷。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_104732",
+    "title": "通经逐瘀汤",
+    "content": "刺猬皮9g，薄荷9g，地龙9g，皂刺6g，赤芍6g，桃仁6g，连翘9g，银花9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "慢性顽固性荨麻疹；瘀血阻于经隧，营卫之气不得宣通，风邪久郁而致风痞痛日久发作之证。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_98191",
+    "title": "生地玄参汤",
+    "content": "生地15g，玄参15g，甘草31g，板兰根31g，银花15g，石斛31g，北沙参31g，紫草31g，莲子心9g，当归15g，丹参31g，桃仁15g，山萸肉15g，山甲9g，全虫9g，蜈蚣2条，大白花蛇6g，秦艽15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "系统性红斑狼疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，内服。"
+  },
+  {
+    "id": "recipe_b_95918",
+    "title": "蛇蝎液",
+    "content": "蛇皮60g，全蝎15g，蜂房15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "疖。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "浸泡于食醋200ml中，历24小时。外用。"
+  },
+  {
+    "id": "recipe_b_79477",
+    "title": "硫椒蛋油",
+    "content": "生硫黄9g，花椒9g，鸡蛋1个。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "银屑病。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "将鸡蛋一头打开，去蛋清，留蛋黄，将药装入鸡蛋内，混合搅拌，放瓦上慢火焙干，连壳研成细粉，以细罗罗去渣滓，用香油拌和，成褐色糊状软膏。"
+  },
+  {
+    "id": "recipe_b_114835",
+    "title": "鸦胆子仁软膏",
+    "content": "鸦胆子仁（研碎）30g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "瘢痕疙瘩。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用时胶布剪洞，如病灶大贴上，再敷药膏，上盖纱布，每2天换1次。",
+    "preparation": "凡土林加至100g，调匀外用。"
+  },
+  {
+    "id": "recipe_b_111713",
+    "title": "消炎止痛膏",
+    "content": "麝香0.25g，蟾酥3g，肉桂10g，当归10g，皂荚20g，芒消30g，滑石粉50g，薄荷油2g，血竭2g，山慈菇5g，白芥子（研细，放温水内发酵）4g，穿山甲4g，橄榄油50g，饴糖（后加）100g，水50ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "丹毒。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外敷。",
+    "preparation": "配制成膏。"
+  },
+  {
+    "id": "recipe_b_121644",
+    "title": "珠蛤散",
+    "content": "熟石膏62g，煅蛤粉31g，黄柏15g，冰片。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "湿疹、皮炎、烧伤、溃疡。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "麻油调敷。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_112963",
+    "title": "新光二号",
+    "content": "凡士林100g，松香80g，明矾适量。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "稻田皮炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "下水前涂肤。",
+    "preparation": "凡士林放入锅内熔化后，加入松香，待其熔化后，趁热用三层纱布过滤，待药液冷却至36℃时，加入明矾细粉（过120目筛），随下随搅，以免成块，完全搅匀后，分装待用。"
+  },
+  {
+    "id": "recipe_b_117346",
+    "title": "婴儿湿疹洗剂",
+    "content": "制甘石8g，赤石脂10g，滑石粉7g，煅石膏7g，甘油8ml，氢氧化钙溶液加至200ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "婴儿湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上为细末，再加入适量氢氧化钙溶液研成薄糊状，然后加入甘油及氢氧化钙溶液，使成200毫升，摇匀即成。"
+  },
+  {
+    "id": "recipe_b_81171",
+    "title": "苦参子仁酊",
+    "content": "苦参子仁31g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "青年扁平疣。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "以75％乙醇100毫升浸。"
+  },
+  {
+    "id": "recipe_b_95807",
+    "title": "蛇",
+    "content": "生地31g，山栀6g，连翘15g，银花15g，碧玉散9g，丹皮9g，赤芍6g，黄芩9g，丝瓜络4g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "带状疱疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，内服。"
+  },
+  {
+    "id": "recipe_b_108089",
+    "title": "五倍子复方",
+    "content": "五倍子（文火炙黄）15g，人中白9g，青黛1.5g，精梅片1g，煅石膏10g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "鹅口疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "吹口腔内，1日4-5次。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_85049",
+    "title": "硇砂搽剂",
+    "content": "硇砂10g，蜂蜜30g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "白癜风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外搽。可使皮肤发赤、起泡及色素沉着。",
+    "preparation": "将硇砂研细过筛后，放入加热溶化的蜂蜜内，边加边搅拌，调匀即成。"
+  },
+  {
+    "id": "recipe_b_120412",
+    "title": "止痒永安汤",
+    "content": "苍术12g，麻黄6g，白芷9g，蝉蜕9g，薄荷6g，独活6g，赤芍6g，天麻9g，桃仁6g，甘草6g，荆芥穗9g，当归尾6g，僵蚕9g，藏红花4g（另冲服）。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "皮肤瘙痒症。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_89097",
+    "title": "青黛膏",
+    "content": "青黛31g，蛤壳粉9g，石决明粉6g，冰片1g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "下腿溃疡。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "油调外用。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_114105",
+    "title": "熊胆酊",
+    "content": "熊胆15g，樟脑10g，儿茶10g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "",
+    "tags": [],
+    "category": "formulas",
+    "preparation": "先将儿茶用开水煮后，加樟脑，熊胆，浸于90％酒精500毫升内，制成酊剂。"
+  },
+  {
+    "id": "recipe_b_80400",
+    "title": "龙衣粉",
+    "content": "蛇皮100g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "下腿溃疡。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "微炒黑后，研细粉外用。"
+  },
+  {
+    "id": "recipe_b_111778",
+    "title": "消疹汤",
+    "content": "杏仁9g，桑白皮12g，连翘9g，蝉蜕6g，赤小豆31g，公英12g，紫花地丁12g，甘草6g，浮萍9g，防风6g，赤芍9g，白术6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "荨麻疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，内服。"
+  },
+  {
+    "id": "recipe_b_108474",
+    "title": "五灵脂散",
+    "content": "五灵脂（水飞）31g，雄黄15g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "毒蛇咬伤。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "用酒调服6g，再将药末敷患部。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_111705",
+    "title": "消炎合剂",
+    "content": "银花31g，连翘31g，黄芩9g，桔梗9g，草河车9g，紫草6g，赤芍9g，生地15g，元参15g，大青叶31g，野菊花31g，蒲公英31g，当归9g，大黄6-9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "口炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，内服。"
+  },
+  {
+    "id": "recipe_b_105283",
+    "title": "土槿皮酊",
+    "content": "土槿皮30g，斑蝥10g，高粱酒100ml。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "体癣。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "浸出过滤，再加升华硫黄5g及樟脑5g混合。"
+  },
+  {
+    "id": "recipe_b_115936",
+    "title": "野胡萝卜糊剂",
+    "content": "鲜生姜50g，生半夏30g，野胡萝卜15g，蜘蛛香5g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "斑秃。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "患者剃光头后，涂上药用绷带包扎，5天换药1次，需5个疗程。同时内服赤芍3g，川芎3g，桃仁9g，红花9g，鲜姜9g，红枣6g，葱白6g。",
+    "preparation": "各药洗净，捣烂如泥，用适量面粉调匀。"
+  },
+  {
+    "id": "recipe_b_90198",
+    "title": "清凉膏",
+    "content": "石膏156g，青黛6g，冰片3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "下肢溃疡。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "以凡士林或麻油调匀，贴创口。",
+    "preparation": "共研为细末。"
+  },
+  {
+    "id": "recipe_b_86412",
+    "title": "砒石膏",
+    "content": "红砒石3g，水银3g，生明矾15g，硫黄15g，花椒15g，蛇床子15g，大风子油肉15g，升药底15g，老烟膏9g，樟脑9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "银屑病。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上药各为极细末，用生猪油或麻油调成油剂或膏剂。"
+  },
+  {
+    "id": "recipe_b_119194",
+    "title": "樟辣酊",
+    "content": "纯樟脑10g，新鲜红辣（洗净，切碎）5～10g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "冻疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外涂。",
+    "preparation": "先将樟脑溶于酒精内，再将红辣泡入酒精内，历5-7日，最后加甘油。"
+  },
+  {
+    "id": "recipe_b_94280",
+    "title": "三黄散糊剂",
+    "content": "大黄62g，黄芩62g，黄柏62g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "汤火伤。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "将消毒纱布在糊剂中浸透，稍捻干，外敷。",
+    "preparation": "加开水2升，浓缩煎至1升；继取石灰500g，筛取细末200g，放入三黄滤液中；不断搅拌，使成饱和状态后，用滤纸过滤，即成红褐色三黄石灰混和液；同时加入适量香油（高压消毒更好），即可。"
+  },
+  {
+    "id": "recipe_b_120488",
+    "title": "婴儿湿疹软膏",
+    "content": "煅蛤粉5g，煅石膏5g，枯矾5g，青黛5g，轻粉5g，硫黄3g，冰片1g，黄丹1g，川椒0.1g，蜂蜜30g，凡士林40g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "婴儿湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上为细末，调膏。"
+  },
+  {
+    "id": "recipe_b_105360",
+    "title": "菟丝子酊",
+    "content": "新鲜菟丝子93g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "白癜风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "将上药浸于酒精内，1-2日后过滤，用酊外涂。"
+  },
+  {
+    "id": "recipe_b_81759",
+    "title": "马齿苋洗剂",
+    "content": "马齿苋31g，苍术9g，苦参15g，细辛6g，陈皮15g，蜂房9g，蛇床子12g，白芷9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "青年扁平疣。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，熏洗。"
+  },
+  {
+    "id": "recipe_b_86951",
+    "title": "蒲公汤",
+    "content": "薏仁31g，地丁15g，蒲公英15g，当归15g，牛膝9g，茯苓9g，紫背天葵9g，贝母6g，甘草6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "足跟溃疡。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎，内服。"
+  },
+  {
+    "id": "recipe_b_113746",
+    "title": "雄白醋糊剂",
+    "content": "雄黄9g，白及粉9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "带状疱疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "上药与食醋调成糊状，外涂。"
+  },
+  {
+    "id": "recipe_b_98350",
+    "title": "生肌散",
+    "content": "姜黄46g，甘草25g，雄黄25g，大海马31g，川黄柏31g，黄丹31g，炮山甲31g，生大黄15g，全蝎15g，冰片4g，麝香3g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "皮肤癌用白降丹后肿瘤脱落或消失，创面肉芽新鲜，活检病理切片报告阴性者。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_91739",
+    "title": "人参赤芍汤",
+    "content": "人参3-15g，赤芍9g，白术6g，甘草15g，阿胶6g，丹参9g，大蓟9g，当归9g，木香6g，茯苓9g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "紫斑。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_108077",
+    "title": "五倍苦矾散",
+    "content": "五倍子10g，枯矾10g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "足癣。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_108652",
+    "title": "五石软膏",
+    "content": "制甘石31g，煅石膏46g，飞滑石9g，明矾4g，青黛4g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "婴儿湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上为细末后。取31g，用凡士林46g，麻油30ml，放入铜锅内，加热搅匀后即成。"
+  },
+  {
+    "id": "recipe_b_95808",
+    "title": "蛇床百部酊",
+    "content": "蛇床子200g，百部200g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "皮肤搔痒症，神经性皮炎。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "上为粗末，用75％酒精浸。"
+  },
+  {
+    "id": "recipe_b_100186",
+    "title": "首乌合剂",
+    "content": "何首乌18g，黑脂麻12g，赤芍12g，白芍12g，合欢皮12g，红花9g，远志9g，夏枯草12g，当归12g，沙苑子12g，生地12g，熟地12g，丹参12g，龙胆草12g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "白癜风。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  },
+  {
+    "id": "recipe_b_79517",
+    "title": "柳酸乌梅膏",
+    "content": "乌梅30g，水杨酸2g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "鸡眼。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "外用。",
+    "preparation": "取食盐10g，用开水50毫升，溶化后，将乌梅放入，浸泡1日，去核，放入乳钵加食醋15毫升，捣烂，最后，加水杨酸混合即成。"
+  },
+  {
+    "id": "recipe_b_107849",
+    "title": "吴茱萸散",
+    "content": "炒吴茱萸45g，乌贼骨45g，硫黄10g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "湿疹。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "湿疹渗液多者，撒干粉；无渗液者，用蓖麻油或猪板油调敷。",
+    "preparation": "上为细末。"
+  },
+  {
+    "id": "recipe_b_117181",
+    "title": "银花解毒汤",
+    "content": "银花15g，紫菀9g，地丁15g，夏枯草9g，丹皮9g，连翘15g，茯苓9g，黄连3g，甘草6g。",
+    "source": "《中医皮肤病学简编》。",
+    "effects": "痤疮。",
+    "tags": [],
+    "category": "formulas",
+    "usage": "水煎服。"
+  }
+]
