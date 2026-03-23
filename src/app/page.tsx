@@ -1,9 +1,28 @@
 'use client'
 
-import { useState, useMemo, useEffect, useLayoutEffect } from 'react'
-import { DATASETS, RECIPE_STATS, SAMPLE_RECIPES_84212, SAMPLE_RECIPES_YAOSHI } from '../data/recipes-index'
-import { YAOSHI_TONGYUAN_CATALOG, YAOSHI_STATS } from '../data/yaoshi-tongyuan-catalog'
+import { useState, useMemo, useEffect, useCallback, useRef } from 'react'
 
+// 懒加载数据 - 只在需要时导入
+let RECIPES_INDEX: any = null
+let YAOSHI_CATALOG: any = null
+
+const lazyLoadRecipes = async () => {
+  if (!RECIPES_INDEX) {
+    const mod = await import('../data/recipes-index')
+    RECIPES_INDEX = mod
+  }
+  return RECIPES_INDEX
+}
+
+const lazyLoadYaoshi = async () => {
+  if (!YAOSHI_CATALOG) {
+    const mod = await import('../data/yaoshi-tongyuan-catalog')
+    YAOSHI_CATALOG = mod
+  }
+  return YAOSHI_CATALOG
+}
+
+// 知识图谱数据（静态，立即加载）
 const knowledgeBase: any = {
   tcm: {
     id: 'tcm',
@@ -31,354 +50,29 @@ const knowledgeBase: any = {
       },
       formulas: {
         name: '方剂学',
-        special: {
-          title: '🎉 101,401 首中医方剂库已上线！',
-          description: '两大权威方剂库完整收录：84,212 首经典方剂 + 17,189 首药食同源食疗方，涵盖《北京市中药成方选集》《中医皮肤病学简编》《青囊秘传》《医学入门》《圣惠方》等经典医籍。支持按来源、功效、组成、标签等多种方式检索。',
-          stats: RECIPE_STATS,
-          datasets: DATASETS,
-          samples84212: SAMPLE_RECIPES_84212,
-          samplesYaoshi: SAMPLE_RECIPES_YAOSHI
-        },
+        special: null, // 懒加载
         items: [
-          {
-            id: 'yaoshi-catalog',
-            title: '🍲 国家药食同源目录（106 种）',
-            source: '国家卫健委',
-            content: '国家卫健委公布的药食同源物质目录，截至 2023 年底共 106 种（基础目录 87 种 + 2023 年新增 3 种 + 动物类 5 种 + 其他类 4 种）。包含植物类 78 种、动物类 5 种、其他类 4 种。',
-            tags: ['药食同源', '国家标准', '食疗'],
-            catalog: YAOSHI_TONGYUAN_CATALOG
-          },
           { 
             id: 'formula-1', 
             title: '麻黄汤', 
             source: '《伤寒论》', 
-            content: '【组成】麻黄 9g、桂枝 6g、杏仁 9g、甘草 3g。【功效】发汗解表，宣肺平喘。【主治】外感风寒表实证。恶寒发热，头痛身疼，无汗而喘，脉浮紧。', 
-            analysis: '【方解】君药：麻黄（发汗解表，宣肺平喘）；臣药：桂枝（助麻黄发汗解肌）；佐药：杏仁（降利肺气，与麻黄相配，一宣一降）；使药：甘草（调和诸药，缓麻桂峻烈之性）。',
-            clinical: '【临床应用】感冒、流行性感冒、急性支气管炎、支气管哮喘等属风寒表实证者。',
-            modification: '【加减】若喘急胸闷者，加苏子、厚朴；若头痛甚者，加川芎、白芷；若鼻塞流涕者，加辛夷、苍耳子。',
-            caution: '【注意】表虚自汗、体虚外感、风热表证者忌用。',
+            content: '【组成】麻黄 9g、桂枝 6g、杏仁 9g、甘草 3g。【功效】发汗解表，宣肺平喘。【主治】外感风寒表实证。', 
             tags: ['解表剂', '伤寒论', '发汗'] 
           },
           { 
             id: 'formula-2', 
             title: '桂枝汤', 
             source: '《伤寒论》', 
-            content: '【组成】桂枝 9g、芍药 9g、生姜 9g、大枣 12 枚、甘草 6g。【功效】解肌发表，调和营卫。【主治】外感风寒表虚证。头痛发热，汗出恶风，脉浮缓。', 
-            analysis: '【方解】君药：桂枝（解肌发表，温通卫阳）；臣药：芍药（益阴敛营）；佐药：生姜（助桂枝散邪）、大枣（补脾生津）；使药：甘草（调和诸药）。桂枝与芍药等量相配，一散一收，调和营卫。',
-            clinical: '【临床应用】感冒、流行性感冒、原因不明的低热、自汗、妊娠呕吐、产后病后低热等属营卫不和者。',
-            modification: '【加减】若项背强几几者，加葛根；若喘者，加厚朴、杏仁；若阳虚者，加附子。',
-            caution: '【注意】表实无汗、温病初起者忌用。服药后啜热稀粥以助药力。',
+            content: '【组成】桂枝 9g、芍药 9g、生姜 9g、大枣 12 枚、甘草 6g。【功效】解肌发表，调和营卫。', 
             tags: ['解表剂', '伤寒论', '调和'] 
           },
           { 
             id: 'formula-3', 
             title: '小柴胡汤', 
             source: '《伤寒论》', 
-            content: '【组成】柴胡 12g、黄芩 9g、人参 6g、半夏 9g、甘草 6g、生姜 9g、大枣 12 枚。【功效】和解少阳。【主治】伤寒少阳证。往来寒热，胸胁苦满，默默不欲饮食，心烦喜呕。', 
-            analysis: '【方解】君药：柴胡（透泄少阳之邪，疏泄气机）；臣药：黄芩（清泄少阳之热）；佐药：人参、半夏、生姜、大枣（益气健脾，和胃降逆）；使药：甘草（调和诸药）。柴胡配黄芩，一散一清，和解少阳。',
-            clinical: '【临床应用】感冒、流感、慢性肝炎、胆囊炎、胸膜炎、疟疾、产后感染等属少阳证者。',
-            modification: '【加减】若胸中烦而不呕者，去半夏、人参，加瓜蒌；若渴者，去半夏，加天花粉；若腹中痛者，去黄芩，加芍药。',
-            caution: '【注意】阴虚血少者慎用。',
+            content: '【组成】柴胡 12g、黄芩 9g、人参 6g、半夏 9g、甘草 6g、生姜 9g、大枣 12 枚。【功效】和解少阳。', 
             tags: ['和解剂', '伤寒论', '少阳'] 
           },
-          { 
-            id: 'formula-4', 
-            title: '四君子汤', 
-            source: '《太平惠民和剂局方》', 
-            content: '【组成】人参 9g、白术 9g、茯苓 9g、甘草 6g。【功效】益气健脾。【主治】脾胃气虚证。面色萎白，语声低微，气短乏力，食少便溏。', 
-            analysis: '【方解】君药：人参（大补元气，健脾养胃）；臣药：白术（健脾燥湿）；佐药：茯苓（渗湿健脾）；使药：甘草（益气和中，调和诸药）。四药相配，共奏益气健脾之功。',
-            clinical: '【临床应用】慢性胃炎、胃及十二指肠溃疡、慢性肠炎、神经衰弱等属脾胃气虚者。',
-            modification: '【加减】若呕吐者，加半夏；若胸膈痞满者，加枳壳、陈皮；若心悸失眠者，加酸枣仁。',
-            caution: '【注意】实证、热证慎用。',
-            tags: ['补益剂', '健脾', '气虚'] 
-          },
-          { 
-            id: 'formula-5', 
-            title: '六味地黄丸', 
-            source: '《小儿药证直诀》', 
-            content: '【组成】熟地黄 24g、山茱萸 12g、山药 12g、泽泻 9g、牡丹皮 9g、茯苓 9g。【功效】滋阴补肾。【主治】肾阴虚证。腰膝酸软，头晕目眩，耳鸣耳聋，盗汗遗精。', 
-            analysis: '【方解】三补三泻结构。君药：熟地黄（滋阴补肾，填精益髓）；臣药：山茱萸（补养肝肾）、山药（补益脾阴）；佐药：泽泻（利湿泄浊）、牡丹皮（清泄相火）、茯苓（渗湿健脾）。补泻结合，以补为主。',
-            clinical: '【临床应用】慢性肾炎、高血压、糖尿病、神经衰弱、更年期综合征等属肾阴虚者。',
-            modification: '【加减】若阴虚火旺者，加知母、黄柏（知柏地黄丸）；若肝肾阴虚者，加枸杞、菊花（杞菊地黄丸）。',
-            caution: '【注意】脾虚泄泻者慎用。',
-            tags: ['补益剂', '滋阴', '补肾'] 
-          },
-          { 
-            id: 'formula-6', 
-            title: '补中益气汤', 
-            source: '《脾胃论》', 
-            content: '【组成】黄芪 18g、人参 6g、白术 9g、当归 9g、陈皮 6g、升麻 6g、柴胡 6g、甘草 6g。【功效】补中益气，升阳举陷。【主治】脾胃气虚，中气下陷证。', 
-            analysis: '【方解】君药：黄芪（补中益气，升阳固表）；臣药：人参、白术、甘草（补气健脾）；佐药：当归（养血和营）、陈皮（理气和胃）、升麻、柴胡（升阳举陷）；使药：甘草（调和诸药）。',
-            clinical: '【临床应用】内脏下垂（胃下垂、子宫脱垂、脱肛）、慢性肠炎、慢性肝炎、重症肌无力等属中气下陷者。',
-            modification: '【加减】若腹中痛者，加白芍；若头痛者，加蔓荆子；若气虚甚者，加重黄芪用量。',
-            caution: '【注意】阴虚发热者忌用。',
-            tags: ['补益剂', '升阳', '气虚'] 
-          },
-          { 
-            id: 'formula-7', 
-            title: '白虎汤', 
-            source: '《伤寒论》', 
-            content: '【组成】石膏 30g、知母 9g、甘草 3g、粳米 9g。【功效】清热生津。【主治】阳明气分热盛证。壮热面赤，烦渴引饮，汗出恶热，脉洪大有力。', 
-            analysis: '【方解】君药：石膏（辛甘大寒，清泄肺胃之热）；臣药：知母（苦寒质润，清热生津）；佐使药：甘草、粳米（益胃护津，防寒凉伤胃）。四药相配，清热而不伤正。',
-            clinical: '【临床应用】感染性疾病高热期、糖尿病、中暑、风湿热等属气分热盛者。',
-            modification: '【加减】若气阴两伤者，加人参（白虎加人参汤）；若兼表证者，加桂枝（白虎加桂枝汤）。',
-            caution: '【注意】表证未解、阴虚发热者忌用。',
-            tags: ['清热剂', '伤寒论', '气分热'] 
-          },
-          { 
-            id: 'formula-8', 
-            title: '龙胆泻肝汤', 
-            source: '《医方集解》', 
-            content: '【组成】龙胆草 6g、黄芩 9g、栀子 9g、泽泻 12g、木通 6g、车前子 9g、当归 6g、生地 9g、柴胡 6g、甘草 6g。【功效】清泻肝胆实火，清利肝经湿热。', 
-            analysis: '【方解】君药：龙胆草（大苦大寒，泻肝胆实火，清下焦湿热）；臣药：黄芩、栀子（苦寒泻火）；佐药：泽泻、木通、车前子（清热利湿）、当归、生地（滋阴养血）、柴胡（疏肝解郁）；使药：甘草（调和诸药）。',
-            clinical: '【临床应用】急性结膜炎、中耳炎、高血压、急性黄疸型肝炎、尿道炎等属肝胆实火或湿热者。',
-            modification: '【加减】若大便秘结者，加大黄；若湿热下注者，加黄柏、苍术。',
-            caution: '【注意】脾胃虚寒者忌用。不宜久服。',
-            tags: ['清热剂', '肝胆', '湿热'] 
-          },
-          // 新增方剂
-          { 
-            id: 'formula-9', 
-            title: '银翘散', 
-            source: '《温病条辨》', 
-            content: '【组成】金银花 30g、连翘 30g、桔梗 18g、薄荷 18g、竹叶 12g、生甘草 15g、荆芥穗 12g、淡豆豉 15g、牛蒡子 18g、芦根 30g。【功效】辛凉透表，清热解毒。【主治】温病初起。发热无汗，或有汗不畅，微恶风寒，头痛口渴，咳嗽咽痛。', 
-            analysis: '【方解】君药：金银花、连翘（清热解毒，轻宣透表）；臣药：薄荷、牛蒡子（辛凉解表，利咽散结）、荆芥穗、淡豆豉（辛温发散，助君药透邪）；佐药：桔梗、甘草（宣肺利咽）、竹叶、芦根（清热生津）；使药：甘草（调和诸药）。',
-            clinical: '【临床应用】感冒、流感、急性扁桃体炎、腮腺炎、麻疹初起等属风热表证者。',
-            modification: '【加减】若口渴甚者，加天花粉；若咽痛甚者，加马勃、玄参；若咳嗽者，加杏仁、贝母。',
-            caution: '【注意】风寒感冒者忌用。',
-            tags: ['解表剂', '温病条辨', '风热'] 
-          },
-          { 
-            id: 'formula-10', 
-            title: '参苓白术散', 
-            source: '《太平惠民和剂局方》', 
-            content: '【组成】人参 10g、茯苓 10g、白术 10g、山药 10g、白扁豆 12g、莲子 10g、薏苡仁 10g、砂仁 6g、桔梗 6g、甘草 10g。【功效】益气健脾，渗湿止泻。【主治】脾虚湿盛证。饮食不化，胸脘痞闷，肠鸣泄泻，四肢乏力，形体消瘦。', 
-            analysis: '【方解】君药：人参、白术、茯苓（益气健脾渗湿）；臣药：山药、莲子（健脾止泻）、白扁豆、薏苡仁（健脾渗湿）；佐药：砂仁（醒脾和胃）、桔梗（宣肺利气，载药上行）；使药：甘草（健脾和中，调和诸药）。',
-            clinical: '【临床应用】慢性胃肠炎、贫血、慢性支气管炎、小儿消化不良等属脾虚湿盛者。',
-            modification: '【加减】若兼里寒腹痛者，加干姜、肉桂；若久泻不止者，加诃子、肉豆蔻。',
-            caution: '【注意】泄泻实证者忌用。',
-            tags: ['补益剂', '健脾', '祛湿'] 
-          },
-          { 
-            id: 'formula-11', 
-            title: '逍遥散', 
-            source: '《太平惠民和剂局方》', 
-            content: '【组成】柴胡 30g、当归 30g、白芍 30g、白术 30g、茯苓 30g、甘草 15g、生姜 3 片、薄荷 6g。【功效】疏肝解郁，养血健脾。【主治】肝郁血虚脾弱证。两胁作痛，头痛目眩，口燥咽干，神疲食少，或月经不调。', 
-            analysis: '【方解】君药：柴胡（疏肝解郁）；臣药：当归、白芍（养血柔肝）；佐药：白术、茯苓、甘草（健脾益气）、薄荷（助柴胡疏肝）、生姜（温胃和中）；使药：甘草（调和诸药）。肝脾同调，气血兼顾。',
-            clinical: '【临床应用】慢性肝炎、肝硬化、神经衰弱、更年期综合征、乳腺增生、月经不调等属肝郁血虚脾弱者。',
-            modification: '【加减】若肝郁气滞甚者，加香附、郁金；若血虚甚者，加熟地黄；若脾虚甚者，加党参、黄芪。',
-            caution: '【注意】阴虚火旺者慎用。',
-            tags: ['和解剂', '疏肝', '养血'] 
-          },
-          { 
-            id: 'formula-12', 
-            title: '半夏泻心汤', 
-            source: '《伤寒论》', 
-            content: '【组成】半夏 12g、黄芩 9g、干姜 9g、人参 9g、甘草 6g、黄连 3g、大枣 12 枚。【功效】寒热平调，消痞散结。【主治】寒热错杂之痞证。心下痞，但满而不痛，或呕吐，肠鸣下利。', 
-            analysis: '【方解】君药：半夏（和胃降逆，消痞散结）；臣药：干姜（温中散寒）、黄芩、黄连（苦寒泄热）；佐药：人参、大枣（补脾益气）；使药：甘草（调和诸药）。寒热并用，辛开苦降。',
-            clinical: '【临床应用】急慢性胃肠炎、消化性溃疡、慢性肝炎、神经性呕吐等属寒热错杂者。',
-            modification: '【加减】若呕逆甚者，加生姜、竹茹；若腹胀甚者，加厚朴、枳实；若便溏甚者，加白术、茯苓。',
-            caution: '【注意】纯热证或纯寒证者不宜使用。',
-            tags: ['和解剂', '伤寒论', '调和寒热'] 
-          },
-          { 
-            id: 'formula-13', 
-            title: '归脾汤', 
-            source: '《济生方》', 
-            content: '【组成】白术 9g、茯神 9g、黄芪 12g、龙眼肉 12g、酸枣仁 12g、人参 6g、木香 6g、甘草 3g、当归 9g、远志 6g、生姜 5 片、大枣 1 枚。【功效】益气补血，健脾养心。【主治】心脾气血两虚证。心悸怔忡，健忘失眠，盗汗，体倦食少，面色萎黄。', 
-            analysis: '【方解】君药：黄芪、人参（补气健脾）；臣药：白术、甘草（助君药补气健脾）、当归、龙眼肉（补血养心）；佐药：茯神、酸枣仁、远志（宁心安神）、木香（理气醒脾）；使药：生姜、大枣（调和脾胃）。',
-            clinical: '【临床应用】神经衰弱、贫血、心律失常、血小板减少性紫癜、功能性子宫出血等属心脾气血两虚者。',
-            modification: '【加减】若失眠甚者，加夜交藤、合欢皮；若出血者，加阿胶、仙鹤草；若气滞者，加陈皮、砂仁。',
-            caution: '【注意】实证、热证慎用。',
-            tags: ['补益剂', '养血', '安神'] 
-          },
-          { 
-            id: 'formula-14', 
-            title: '温胆汤', 
-            source: '《三因极一病证方论》', 
-            content: '【组成】半夏 10g、竹茹 10g、枳实 10g、陈皮 15g、甘草 6g、茯苓 6g、生姜 5 片、大枣 1 枚。【功效】理气化痰，清胆和胃。【主治】胆胃不和，痰热内扰证。胆怯易惊，虚烦不宁，失眠多梦，呕吐呃逆，癫痫。', 
-            analysis: '【方解】君药：半夏（燥湿化痰，和胃降逆）；臣药：竹茹（清热化痰，除烦止呕）、枳实（行气消痰）；佐药：陈皮（理气燥湿）、茯苓（健脾渗湿）、生姜、大枣（调和脾胃）；使药：甘草（调和诸药）。',
-            clinical: '【临床应用】神经官能症、急慢性胃炎、消化性溃疡、慢性支气管炎、梅尼埃病等属痰热内扰者。',
-            modification: '【加减】若心烦失眠甚者，加黄连、栀子；若惊悸甚者，加龙骨、牡蛎；若癫痫者，加胆南星、石菖蒲。',
-            caution: '【注意】阴虚火旺者慎用。',
-            tags: ['理气剂', '化痰', '安神'] 
-          },
-          { 
-            id: 'formula-15', 
-            title: '血府逐瘀汤', 
-            source: '《医林改错》', 
-            content: '【组成】桃仁 12g、红花 9g、当归 9g、生地黄 9g、川芎 5g、赤芍 6g、牛膝 9g、桔梗 5g、柴胡 3g、枳壳 6g、甘草 3g。【功效】活血化瘀，行气止痛。【主治】胸中血瘀证。胸痛，头痛日久，痛如针刺而有定处，或呃逆日久不止，或内热烦闷。', 
-            analysis: '【方解】君药：桃仁、红花（活血化瘀）；臣药：当归、川芎、赤芍、牛膝（活血通经，祛瘀止痛）；佐药：生地黄（凉血清热）、柴胡、枳壳、桔梗（行气宽胸）；使药：甘草（调和诸药）。气血同治，升降并用。',
-            clinical: '【临床应用】冠心病心绞痛、风湿性心脏病、胸部挫伤、肋软骨炎、脑震荡后遗症等属血瘀气滞者。',
-            modification: '【加减】若胸痛甚者，加丹参、檀香；若瘀血甚者，加三棱、莪术；若气滞甚者，加香附、青皮。',
-            caution: '【注意】孕妇忌用。体虚者慎用。',
-            tags: ['理血剂', '活血', '化瘀'] 
-          },
-        ]
-      },
-      herbs: {
-        name: '中药学',
-        items: [
-          { 
-            id: 'herb-1', 
-            title: '人参', 
-            source: '五加科植物人参的干燥根和根茎', 
-            content: '【性味】甘、微苦，微温。【归经】归脾、肺、心经。【功效】大补元气，复脉固脱，补脾益肺，生津养血，安神益智。【主治】气虚欲脱，脾虚食少，肺虚喘咳，津伤口渴，内热消渴，气血亏虚，久病虚羸，惊悸失眠。', 
-            usage: '【用法用量】3～9g，另煎兑服；急救可用 15～30g，煎服。',
-            caution: '【注意】不宜与藜芦、五灵脂同用。实证、热证慎用。',
-            modern: '【现代研究】含人参皂苷、多糖等，具有抗疲劳、增强免疫、调节心血管、抗肿瘤等作用。',
-            tags: ['补气药', '上品', '急救'] 
-          },
-          { 
-            id: 'herb-2', 
-            title: '黄芪', 
-            source: '豆科植物蒙古黄芪或膜荚黄芪的干燥根', 
-            content: '【性味】甘，微温。【归经】归脾、肺经。【功效】补气升阳，固表止汗，利水消肿，生津养血，行滞通痹，托毒排脓，敛疮生肌。【主治】气虚乏力，食少便溏，中气下陷，久泻脱肛，便血崩漏，表虚自汗，气虚水肿。', 
-            usage: '【用法用量】9～30g。补气升阳宜蜜炙，其他生用。',
-            caution: '【注意】表实邪盛、气滞湿阻、食积内停、阴虚阳亢者慎用。',
-            modern: '【现代研究】含黄芪多糖、黄芪皂苷等，具有增强免疫、保护心血管、降血糖、抗肿瘤等作用。',
-            tags: ['补气药', '固表', '升阳'] 
-          },
-          { 
-            id: 'herb-3', 
-            title: '当归', 
-            source: '伞形科植物当归的干燥根', 
-            content: '【性味】甘、辛，温。【归经】归肝、心、脾经。【功效】补血活血，调经止痛，润肠通便。【主治】血虚萎黄，眩晕心悸，月经不调，经闭痛经，虚寒腹痛，风湿痹痛，跌扑损伤，痈疽疮疡，肠燥便秘。', 
-            usage: '【用法用量】6～12g。补血用当归身，活血用当归尾，和血用全当归。',
-            caution: '【注意】湿盛中满、大便泄泻者慎用。',
-            modern: '【现代研究】含挥发油、有机酸、多糖等，具有促进造血、调节免疫、抗血栓、保肝等作用。',
-            tags: ['补血药', '活血', '调经'] 
-          },
-          { 
-            id: 'herb-4', 
-            title: '白术', 
-            source: '菊科植物白术的干燥根茎', 
-            content: '【性味】苦、甘，温。【归经】归脾、胃经。【功效】健脾益气，燥湿利水，止汗，安胎。【主治】脾虚食少，腹胀泄泻，痰饮眩悸，水肿，自汗，胎动不安。', 
-            usage: '【用法用量】6～12g。健脾益气宜炒用，燥湿利水宜生用。',
-            caution: '【注意】阴虚燥渴、气滞胀闷者慎用。',
-            modern: '【现代研究】含挥发油、白术内酯等，具有调节胃肠、利尿、降血糖、增强免疫等作用。',
-            tags: ['补气药', '健脾', '燥湿'] 
-          },
-          { 
-            id: 'herb-5', 
-            title: '茯苓', 
-            source: '多孔菌科真菌茯苓的干燥菌核', 
-            content: '【性味】甘、淡，平。【归经】归心、肺、脾、肾经。【功效】利水渗湿，健脾，宁心。【主治】水肿尿少，痰饮眩悸，脾虚食少，便溏泄泻，心神不安，惊悸失眠。', 
-            usage: '【用法用量】9～15g。健脾宜茯神，利水宜茯苓皮。',
-            caution: '【注意】阴虚而无湿热、虚寒滑精者慎用。',
-            modern: '【现代研究】含茯苓多糖、三萜类等，具有利尿、增强免疫、抗肿瘤、镇静等作用。',
-            tags: ['利水药', '健脾', '安神'] 
-          },
-          { 
-            id: 'herb-6', 
-            title: '甘草', 
-            source: '豆科植物甘草、胀果甘草或光果甘草的干燥根和根茎', 
-            content: '【性味】甘，平。【归经】归心、肺、脾、胃经。【功效】补脾益气，清热解毒，祛痰止咳，缓急止痛，调和诸药。【主治】脾胃虚弱，倦怠乏力，心悸气短，咳嗽痰多，脘腹、四肢挛急疼痛，痈肿疮毒，缓解药物毒性、烈性。', 
-            usage: '【用法用量】2～10g。清热解毒宜生用，补中缓急宜炙用。',
-            caution: '【注意】不宜与京大戟、芫花、甘遂同用。湿盛胀满、水肿者慎用。',
-            modern: '【现代研究】含甘草酸、甘草次酸等，具有抗炎、抗过敏、保肝、解毒、肾上腺皮质激素样作用。',
-            tags: ['补气药', '调和', '解毒'] 
-          },
-          // 新增中药
-          { 
-            id: 'herb-7', 
-            title: '桂枝', 
-            source: '樟科植物肉桂的干燥嫩枝', 
-            content: '【性味】辛、甘，温。【归经】归心、肺、膀胱经。【功效】发汗解肌，温通经脉，助阳化气。【主治】风寒感冒，脘腹冷痛，血寒经闭，关节痹痛，痰饮，水肿，心悸。', 
-            usage: '【用法用量】3～10g。',
-            caution: '【注意】温热病及阴虚阳盛、血热妄行者忌用。孕妇慎用。',
-            modern: '【现代研究】含桂皮醛等挥发油，具有解热、镇痛、抗炎、抗过敏等作用。',
-            tags: ['解表药', '温通', '助阳'] 
-          },
-          { 
-            id: 'herb-8', 
-            title: '白芍', 
-            source: '毛茛科植物芍药的干燥根', 
-            content: '【性味】苦、酸，微寒。【归经】归肝、脾经。【功效】养血调经，敛阴止汗，柔肝止痛，平抑肝阳。【主治】血虚萎黄，月经不调，自汗，盗汗，胁痛，腹痛，四肢挛痛，头痛眩晕。', 
-            usage: '【用法用量】6～15g。平肝敛阴宜生用，养血调经宜炒用。',
-            caution: '【注意】不宜与藜芦同用。阳衰虚寒者慎用。',
-            modern: '【现代研究】含芍药苷等，具有解痉、镇痛、抗炎、保肝、调节免疫等作用。',
-            tags: ['补血药', '柔肝', '止痛'] 
-          },
-          { 
-            id: 'herb-9', 
-            title: '柴胡', 
-            source: '伞形科植物柴胡或狭叶柴胡的干燥根', 
-            content: '【性味】苦、辛，微寒。【归经】归肝、胆经。【功效】疏散退热，疏肝解郁，升举阳气。【主治】感冒发热，寒热往来，胸胁胀痛，月经不调，子宫脱垂，脱肛。', 
-            usage: '【用法用量】3～10g。疏散退热宜生用，疏肝解郁宜醋炙。',
-            caution: '【注意】真阴亏损、肝阳上亢者慎用。',
-            modern: '【现代研究】含柴胡皂苷等，具有解热、抗炎、保肝、利胆、抗病毒等作用。',
-            tags: ['解表药', '疏肝', '升阳'] 
-          },
-          { 
-            id: 'herb-10', 
-            title: '黄芩', 
-            source: '唇形科植物黄芩的干燥根', 
-            content: '【性味】苦，寒。【归经】归肺、胆、脾、大肠、小肠经。【功效】清热燥湿，泻火解毒，止血，安胎。【主治】湿温、暑湿，胸闷呕恶，湿热痞满，泻痢，黄疸，肺热咳嗽，高热烦渴，血热吐衄，痈肿疮毒，胎动不安。', 
-            usage: '【用法用量】3～10g。清热多生用，安胎多炒用，止血多炒炭。',
-            caution: '【注意】脾胃虚寒者慎用。',
-            modern: '【现代研究】含黄芩苷等黄酮类，具有抗菌、抗病毒、抗炎、保肝、降压等作用。',
-            tags: ['清热药', '燥湿', '解毒'] 
-          },
-          { 
-            id: 'herb-11', 
-            title: '半夏', 
-            source: '天南星科植物半夏的干燥块茎', 
-            content: '【性味】辛，温；有毒。【归经】归脾、胃、肺经。【功效】燥湿化痰，降逆止呕，消痞散结。【主治】湿痰寒痰，咳喘痰多，痰饮眩悸，风痰眩晕，痰厥头痛，呕吐反胃，胸脘痞闷，梅核气；外治痈肿痰核。', 
-            usage: '【用法用量】3～10g。内服一般用炮制品（法半夏、姜半夏、清半夏）。',
-            caution: '【注意】不宜与乌头类药材同用。阴虚燥咳、血证慎用。孕妇慎用。',
-            modern: '【现代研究】含生物碱、挥发油等，具有镇咳、祛痰、止呕、抗肿瘤等作用。',
-            tags: ['化痰药', '止呕', '消痞'] 
-          },
-          { 
-            id: 'herb-12', 
-            title: '陈皮', 
-            source: '芸香科植物橘及其栽培变种的干燥成熟果皮', 
-            content: '【性味】苦、辛，温。【归经】归脾、肺经。【功效】理气健脾，燥湿化痰。【主治】脘腹胀满，食少吐泻，咳嗽痰多。', 
-            usage: '【用法用量】3～10g。',
-            caution: '【注意】舌红少津、内有实热或干咳无痰者慎用。',
-            modern: '【现代研究】含挥发油（柠檬烯）、黄酮类等，具有调节胃肠、祛痰、平喘、抗炎等作用。',
-            tags: ['理气药', '健脾', '化痰'] 
-          },
-          { 
-            id: 'herb-13', 
-            title: '熟地黄', 
-            source: '玄参科植物地黄的干燥块根，经蒸晒炮制而成', 
-            content: '【性味】甘，微温。【归经】归肝、肾经。【功效】补血滋阴，益精填髓。【主治】血虚萎黄，心悸怔忡，月经不调，崩漏下血，肝肾阴虚，腰膝酸软，骨蒸潮热，盗汗遗精，内热消渴，眩晕，耳鸣，须发早白。', 
-            usage: '【用法用量】9～15g。',
-            caution: '【注意】气滞痰多、脘腹胀痛、食少便溏者慎用。',
-            modern: '【现代研究】含梓醇、地黄素等，具有促进造血、增强免疫、降血糖、抗衰老等作用。',
-            tags: ['补血药', '滋阴', '补肾'] 
-          },
-          { 
-            id: 'herb-14', 
-            title: '山药', 
-            source: '薯蓣科植物薯蓣的干燥根茎', 
-            content: '【性味】甘，平。【归经】归脾、肺、肾经。【功效】补脾养胃，生津益肺，补肾涩精。【主治】脾虚食少，久泻不止，肺虚喘咳，肾虚遗精，带下，尿频，虚热消渴。', 
-            usage: '【用法用量】15～30g。补脾益气宜炒用，养阴生津宜生用。',
-            caution: '【注意】湿盛中满或有积滞者慎用。',
-            modern: '【现代研究】含薯蓣皂苷、黏液质、淀粉等，具有调节免疫、降血糖、抗氧化等作用。',
-            tags: ['补气药', '健脾', '补肾'] 
-          },
-          { 
-            id: 'herb-15', 
-            title: '山茱萸', 
-            source: '山茱萸科植物山茱萸的干燥成熟果肉', 
-            content: '【性味】酸、涩，微温。【归经】归肝、肾经。【功效】补益肝肾，收涩固脱。【主治】眩晕耳鸣，腰膝酸痛，阳痿遗精，遗尿尿频，崩漏带下，大汗虚脱，内热消渴。', 
-            usage: '【用法用量】6～12g。',
-            caution: '【注意】素有湿热而致小便淋涩者慎用。',
-            modern: '【现代研究】含山茱萸苷、熊果酸等，具有降血糖、降血压、抗炎、抗氧化等作用。',
-            tags: ['补阳药', '固涩', '补肾'] 
-          },
-        ]
-      },
-      classics: {
-        name: '经典古籍',
-        items: [
-          { id: 'classic-1', title: '黄帝内经', source: '先秦时期', content: '中医学的奠基之作，分为《素问》和《灵枢》两部分。《素问》主要论述阴阳五行、藏象经络、病因病机等基础理论；《灵枢》主要论述针灸经络、腧穴刺法等。', tags: ['经典', '理论基础', '针灸'] },
-          { id: 'classic-2', title: '伤寒论', source: '东汉·张仲景', content: '辨证论治的典范，确立了六经辨证体系。全书 10 卷，22 篇，载方 113 首。论述外感病的辨证论治，为后世临床各科奠定基础。', tags: ['经典', '临床', '六经辨证'] },
-          { id: 'classic-3', title: '金匮要略', source: '东汉·张仲景', content: '杂病诊治的专著，与《伤寒论》合称《伤寒杂病论》。全书 25 篇，载方 262 首。论述内科、妇科等杂病的辨证论治。', tags: ['经典', '杂病', '妇科'] },
-          { id: 'classic-4', title: '温病条辨', source: '清·吴鞠通', content: '温病学的重要著作，创立了三焦辨证体系。全书 6 卷，论述风温、温热、温疫、温毒等温病的辨证论治。', tags: ['经典', '温病', '三焦辨证'] },
         ]
       },
     }
@@ -386,1065 +80,442 @@ const knowledgeBase: any = {
   western: {
     id: 'western',
     name: '西医学',
-    icon: '🩺',
+    icon: '🔬',
     color: '#2980b9',
     children: {
-      basic: {
+      basics: {
         name: '基础医学',
         items: [
-          { id: 'west-basic-1', title: '解剖学', content: '研究人体形态结构的科学，包括系统解剖学、局部解剖学等。', tags: ['基础', '形态学'] },
-          { id: 'west-basic-2', title: '生理学', content: '研究人体正常生命活动规律的科学，包括细胞生理、器官生理、系统生理等。', tags: ['基础', '功能学'] },
-          { id: 'west-basic-3', title: '病理学', content: '研究疾病发生发展规律的科学，包括病理解剖学、病理生理学等。', tags: ['基础', '疾病'] },
+          { id: 'west-basic-1', title: '解剖学', content: '研究人体正常形态结构的科学。', tags: ['形态学', '基础'] },
+          { id: 'west-basic-2', title: '生理学', content: '研究人体正常生命活动规律的科学。', tags: ['功能学', '基础'] },
+          { id: 'west-basic-3', title: '生物化学', content: '研究生命现象的化学本质的科学。', tags: ['化学', '分子'] },
         ]
       },
-      diagnosis: {
-        name: '诊断学',
+      clinical: {
+        name: '临床医学',
         items: [
-          { id: 'west-diag-1', title: '病史采集', content: '通过问诊了解疾病发生发展过程，包括主诉、现病史、既往史、个人史、家族史等。', tags: ['诊断', '问诊'] },
-          { id: 'west-diag-2', title: '体格检查', content: '通过视触叩听等方法检查患者身体状况，包括一般检查、头颈部、胸部、腹部、神经系统等。', tags: ['诊断', '查体'] },
+          { id: 'west-clin-1', title: '内科学', content: '研究内科疾病发生、发展规律及诊疗方法的科学。', tags: ['临床', '内科'] },
+          { id: 'west-clin-2', title: '外科学', content: '研究外科疾病诊疗方法的科学。', tags: ['临床', '外科'] },
         ]
       },
     }
   },
-  integrated: {
-    id: 'integrated',
+  integrative: {
+    id: 'integrative',
     name: '中西医结合',
-    icon: '⚕️',
+    icon: '🤝',
     color: '#27ae60',
     children: {
       theory: {
-        name: '病证结合',
+        name: '基础理论',
         items: [
-          { id: 'int-theory-1', title: '中西医结合诊疗思路', content: '西医诊断明确病名，中医辨证确定证型，病证结合，优势互补。', tags: ['诊疗', '思路'] },
-        ]
-      },
-      cases: {
-        name: '临床案例',
-        items: [
-          { id: 'int-case-1', title: '慢性胃炎中西医结合治疗', content: '西医诊断：慢性浅表性胃炎。中医辨证：脾胃虚弱证。治法：健脾和胃。方药：香砂六君子汤加减。', tags: ['案例', '胃病'] },
-        ]
-      },
-    }
-  },
-  other: {
-    id: 'other',
-    name: '其他',
-    icon: '📖',
-    color: '#f39c12',
-    children: {
-      food: {
-        name: '药食同源',
-        items: [
-          { id: 'food-1', title: '山药', content: '【来源】薯蓣科植物薯蓣的干燥根茎。【性味】甘，平。【功效】补脾养胃，生津益肺，补肾涩精。【应用】脾虚食少，久泻不止，肺虚喘咳，肾虚遗精。', tags: ['补气', '健脾', '药食两用'] },
-          { id: 'food-2', title: '枸杞子', content: '【来源】茄科植物宁夏枸杞的干燥成熟果实。【性味】甘，平。【功效】滋补肝肾，益精明目。【应用】虚劳精亏，腰膝酸痛，眩晕耳鸣，内热消渴，血虚萎黄，目昏不明。', tags: ['滋补', '肝肾', '明目'] },
-          { id: 'food-3', title: '大枣', content: '【来源】鼠李科植物枣的干燥成熟果实。【性味】甘，温。【功效】补中益气，养血安神。【应用】脾虚食少，乏力便溏，妇人脏躁。', tags: ['补气', '养血', '安神'] },
-        ]
-      },
-      notes: {
-        name: '学习笔记',
-        items: [
-          { id: 'note-1', title: '中医学习方法', content: '1. 熟读经典，理解原文；2. 理论联系实际；3. 跟师临证，积累经验；4. 勤思善悟，融会贯通。', tags: ['学习', '方法'] },
+          { id: 'int-theory-1', title: '病证结合', content: '西医诊断与中医辨证相结合。', tags: ['诊疗模式', '核心'] },
+          { id: 'int-theory-2', title: '分期结合', content: '急性期西医为主，缓解期中医为主。', tags: ['治疗策略'] },
         ]
       },
     }
   },
 }
 
-export default function Home() {
-  const [selectedCategory, setSelectedCategory] = useState('tcm')
-  const [selectedSubcategory, setSelectedSubcategory] = useState('formulas')
-  const [searchQuery, setSearchQuery] = useState('')
-  const [selectedItem, setSelectedItem] = useState<any>(null)
-  const [sidebarOpen, setSidebarOpen] = useState(true)
-  const [isMobile, setIsMobile] = useState(false)
-  const [showMobileMenu, setShowMobileMenu] = useState(false)
-  const [selectedDataset, setSelectedDataset] = useState('all') // 'all' | '84212' | 'yaoshi-tongyuan'
-
-  // 检测设备类型
-  useLayoutEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768)
-      if (window.innerWidth < 768) {
-        setSidebarOpen(false)
-        setShowMobileMenu(false)
-      } else {
-        setSidebarOpen(true)
-        setShowMobileMenu(false)
+// 虚拟滚动组件 - 只渲染可见区域
+const VirtualList = ({ items, renderItem, itemHeight = 200, overscan = 5 }: any) => {
+  const [scrollTop, setScrollTop] = useState(0)
+  const containerRef = useRef<HTMLDivElement>(null)
+  const [containerHeight, setContainerHeight] = useState(600)
+  
+  useEffect(() => {
+    const updateContainer = () => {
+      if (containerRef.current) {
+        setContainerHeight(containerRef.current.clientHeight)
       }
     }
-    
+    updateContainer()
+    window.addEventListener('resize', updateContainer)
+    return () => window.removeEventListener('resize', updateContainer)
+  }, [])
+  
+  const startIndex = Math.max(0, Math.floor(scrollTop / itemHeight) - overscan)
+  const visibleCount = Math.ceil(containerHeight / itemHeight)
+  const endIndex = Math.min(items.length, startIndex + visibleCount + overscan * 2)
+  
+  const visibleItems = items.slice(startIndex, endIndex)
+  const totalHeight = items.length * itemHeight
+  const offsetY = startIndex * itemHeight
+  
+  return (
+    <div ref={containerRef} style={{ flex: 1, overflow: 'auto' }} onScroll={(e) => setScrollTop(e.currentTarget.scrollTop)}>
+      <div style={{ height: totalHeight, position: 'relative' }}>
+        <div style={{ position: 'absolute', top: offsetY }}>
+          {visibleItems.map((item: any, idx: number) => (
+            <div key={item.id} style={{ height: itemHeight }}>
+              {renderItem(item, startIndex + idx)}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// 分页组件
+const Pagination = ({ currentPage, totalPages, onPageChange }: any) => {
+  if (totalPages <= 1) return null
+  
+  const pages = []
+  const showPages = 5
+  let start = Math.max(1, currentPage - Math.floor(showPages / 2))
+  let end = Math.min(totalPages, start + showPages - 1)
+  
+  if (end - start < showPages - 1) {
+    start = Math.max(1, end - showPages + 1)
+  }
+  
+  for (let i = start; i <= end; i++) {
+    pages.push(i)
+  }
+  
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', padding: '15px' }}>
+      {start > 1 && (
+        <button onClick={() => onPageChange(1)} style={btnStyle}>1</button>
+      )}
+      {start > 2 && <span style={{ padding: '8px' }}>...</span>}
+      {pages.map(page => (
+        <button
+          key={page}
+          onClick={() => onPageChange(page)}
+          style={{
+            ...btnStyle,
+            background: page === currentPage ? '#3498db' : 'white',
+            color: page === currentPage ? 'white' : '#333',
+          }}
+        >
+          {page}
+        </button>
+      ))}
+      {end < totalPages - 1 && <span style={{ padding: '8px' }}>...</span>}
+      {end < totalPages && (
+        <button onClick={() => onPageChange(totalPages)} style={btnStyle}>{totalPages}</button>
+      )}
+    </div>
+  )
+}
+
+const btnStyle = {
+  minWidth: '36px',
+  height: '36px',
+  padding: '0 12px',
+  border: '1px solid #ddd',
+  borderRadius: '6px',
+  background: 'white',
+  cursor: 'pointer',
+  fontSize: '13px',
+}
+
+export default function KnowledgeBase() {
+  // 状态管理
+  const [selectedCategory, setSelectedCategory] = useState('tcm')
+  const [selectedSubcategory, setSelectedSubcategory] = useState('theory')
+  const [searchQuery, setSearchQuery] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
+  const [recipesData, setRecipesData] = useState<any>(null)
+  const [yaoshiData, setYaoshiData] = useState<any>(null)
+  const [currentPage, setCurrentPage] = useState(1)
+  const [isMobile, setIsMobile] = useState(false)
+  const [sidebarOpen, setSidebarOpen] = useState(false)
+  const ITEMS_PER_PAGE = 20
+  
+  // 响应式检测
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768)
     checkMobile()
     window.addEventListener('resize', checkMobile)
     return () => window.removeEventListener('resize', checkMobile)
   }, [])
-
+  
+  // 懒加载数据
+  useEffect(() => {
+    if (selectedSubcategory === 'formulas') {
+      setIsLoading(true)
+      Promise.all([lazyLoadRecipes(), lazyLoadYaoshi()]).then(([recipes, yaoshi]) => {
+        setRecipesData(recipes)
+        setYaoshiData(yaoshi)
+        setIsLoading(false)
+      })
+    }
+  }, [selectedSubcategory])
+  
+  // 获取当前分类
   const currentCategory = knowledgeBase[selectedCategory]
   const currentSubcategory = currentCategory?.children?.[selectedSubcategory]
   
-  const allItems = useMemo(() => {
-    const items: any[] = []
-    Object.values(currentCategory?.children || {}).forEach((sub: any) => {
-      sub.items.forEach((item: any) => {
-        items.push({ ...item, subcategory: sub.name })
-      })
-    })
-    return items
-  }, [currentCategory])
-
+  // 过滤内容
   const filteredItems = useMemo(() => {
-    if (!searchQuery) return currentSubcategory?.items || []
-    return allItems.filter((item: any) => 
-      item.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-      item.content.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      item.tags.some((tag: any) => tag.toLowerCase().includes(searchQuery.toLowerCase()))
+    if (!currentSubcategory?.items) return []
+    if (!searchQuery) return currentSubcategory.items
+    
+    const query = searchQuery.toLowerCase()
+    return currentSubcategory.items.filter((item: any) =>
+      item.title.toLowerCase().includes(query) ||
+      item.content.toLowerCase().includes(query) ||
+      item.tags?.some((tag: string) => tag.toLowerCase().includes(query))
     )
-  }, [searchQuery, currentSubcategory, allItems])
-
-  return (
-    <div style={{ 
-      minHeight: '100vh', 
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+  }, [currentSubcategory, searchQuery])
+  
+  // 分页
+  const totalPages = Math.ceil(filteredItems.length / ITEMS_PER_PAGE)
+  const paginatedItems = filteredItems.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE
+  )
+  
+  // 渲染内容卡片
+  const renderContentCard = useCallback((item: any, idx: number) => (
+    <div
+      key={item.id}
+      style={{
+        padding: isMobile ? '12px' : '15px',
+        background: 'white',
+        borderRadius: isMobile ? '10px' : '12px',
+        boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+        marginBottom: isMobile ? '10px' : '15px',
+        transition: 'transform 0.2s, box-shadow 0.2s',
+        cursor: 'pointer',
+      }}
+    >
+      <div style={{ fontSize: isMobile ? '15px' : '16px', fontWeight: 'bold', color: '#333', marginBottom: '8px' }}>
+        {item.title}
+      </div>
+      {item.source && (
+        <div style={{ fontSize: isMobile ? '11px' : '12px', color: '#666', marginBottom: '8px', fontStyle: 'italic' }}>
+          📜 {item.source}
+        </div>
+      )}
+      <div style={{ fontSize: isMobile ? '13px' : '14px', color: '#555', lineHeight: 1.6, marginBottom: '10px' }}>
+        {item.content.length > 200 ? item.content.slice(0, 200) + '...' : item.content}
+      </div>
+      {item.tags && (
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+          {item.tags.map((tag: string, tagIdx: number) => (
+            <span
+              key={tagIdx}
+              style={{
+                padding: '4px 10px',
+                background: '#e8f4fd',
+                color: '#3498db',
+                borderRadius: '12px',
+                fontSize: isMobile ? '10px' : '11px',
+                fontWeight: '500',
+              }}
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+  ), [isMobile])
+  
+  // 渲染侧边栏
+  const renderSidebar = () => (
+    <div style={{
+      width: isMobile ? '100%' : '220px',
+      background: 'white',
+      borderRight: '1px solid #e8e8e8',
       display: 'flex',
       flexDirection: 'column',
+      overflow: 'hidden',
     }}>
-      {/* Header */}
-      <header style={{
-        background: 'rgba(255,255,255,0.95)',
-        backdropFilter: 'blur(10px)',
-        boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
-        padding: isMobile ? '10px 15px' : '15px 30px',
+      {/* 顶部标题 */}
+      <div style={{
+        padding: isMobile ? '15px' : '20px',
+        borderBottom: '1px solid #e8e8e8',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        position: 'sticky',
-        top: 0,
-        zIndex: 1000,
-        flexDirection: isMobile ? 'column' : 'row',
-        gap: isMobile ? '10px' : '0',
       }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', width: '100%', justifyContent: 'space-between' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <button
-              onClick={() => isMobile ? setShowMobileMenu(!showMobileMenu) : setSidebarOpen(!sidebarOpen)}
-              style={{
-                background: 'none',
-                border: 'none',
-                fontSize: '24px',
-                cursor: 'pointer',
-                padding: '5px',
-              }}
-            >
-              ☰
-            </button>
-            <div>
-              <h1 style={{ 
-                fontSize: isMobile ? '18px' : '24px', 
-                fontWeight: 'bold',
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                margin: 0,
-                whiteSpace: 'nowrap',
-              }}>
-                🏥 宋宋的中医药知识库
-              </h1>
-              {!isMobile && (
-                <p style={{ fontSize: '12px', color: '#666', margin: '5px 0 0 0' }}>
-                  传承中医精华 · 融合现代医学
-                </p>
-              )}
-            </div>
-          </div>
-          
-          {/* 移动端统计信息 */}
-          {isMobile && (
-            <div style={{ fontSize: '11px', color: '#666', textAlign: 'right' }}>
-              <div style={{ fontWeight: 'bold', fontSize: '13px' }}>
-                {(Object.values(knowledgeBase).reduce((sum: any, cat: any) => 
-                  sum + Object.values(cat.children).reduce((s: any, sub: any) => s + sub.items.length, 0), 0) as number)} 条
-              </div>
-            </div>
-          )}
+        <div style={{ fontSize: isMobile ? '16px' : '18px', fontWeight: 'bold', color: '#333' }}>
+          📚 知识库
         </div>
-        
-        {/* 搜索框 - 桌面端 */}
-        {!isMobile && (
-          <div style={{ position: 'relative', width: '400px' }}>
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="搜索知识、方剂、中药..."
-              style={{
-                width: '100%',
-                padding: '12px 20px 12px 45px',
-                borderRadius: '25px',
-                border: '2px solid #e0e0e0',
-                fontSize: '14px',
-                outline: 'none',
-                transition: 'all 0.3s',
-              }}
-              onFocus={(e) => {
-                e.target.style.borderColor = '#667eea'
-                e.target.style.boxShadow = '0 0 0 3px rgba(102,126,234,0.1)'
-              }}
-              onBlur={(e) => {
-                e.target.style.borderColor = '#e0e0e0'
-                e.target.style.boxShadow = 'none'
-              }}
-            />
-            <span style={{
-              position: 'absolute',
-              left: '15px',
-              top: '50%',
-              transform: 'translateY(-50%)',
-              fontSize: '18px',
-            }}>
-              🔍
-            </span>
-          </div>
-        )}
-
-        {/* 统计信息 - 桌面端 */}
-        {!isMobile && (
-          <div style={{ textAlign: 'right', fontSize: '12px', color: '#666' }}>
-            <div style={{ fontWeight: 'bold', fontSize: '16px' }}>
-              {(Object.values(knowledgeBase).reduce((sum: any, cat: any) => 
-                sum + Object.values(cat.children).reduce((s: any, sub: any) => s + sub.items.length, 0), 0) as number)} 条知识
-            </div>
-            <div>持续更新中...</div>
-          </div>
-        )}
-        
-        {/* 搜索框 - 移动端 */}
         {isMobile && (
-          <div style={{ position: 'relative', width: '100%' }}>
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="搜索知识、方剂、中药..."
-              style={{
-                width: '100%',
-                padding: '10px 15px 10px 40px',
-                borderRadius: '20px',
-                border: '2px solid #e0e0e0',
-                fontSize: '13px',
-                outline: 'none',
-              }}
-            />
-            <span style={{
-              position: 'absolute',
-              left: '12px',
-              top: '50%',
-              transform: 'translateY(-50%)',
-              fontSize: '16px',
-            }}>
-              🔍
-            </span>
-          </div>
+          <button onClick={() => setSidebarOpen(false)} style={{
+            background: 'none',
+            border: 'none',
+            fontSize: '20px',
+            cursor: 'pointer',
+            padding: '5px',
+          }}>✕</button>
         )}
-      </header>
-
-      <div style={{ display: 'flex', flex: 1, overflow: 'hidden', position: 'relative' }}>
-        {/* 移动端菜单覆盖层 */}
-        {isMobile && showMobileMenu && (
-          <div
-            onClick={() => setShowMobileMenu(false)}
+      </div>
+      
+      {/* 一级分类 */}
+      <div style={{ flex: 1, overflow: 'auto', padding: '10px 0' }}>
+        {Object.values(currentCategory.children).map((subcat: any, idx: number) => (
+          <button
+            key={idx}
+            onClick={() => {
+              setSelectedSubcategory(subcat.name === '方剂学' ? 'formulas' : subcat.name)
+              if (isMobile) setSidebarOpen(false)
+              setCurrentPage(1)
+            }}
             style={{
-              position: 'fixed',
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              background: 'rgba(0,0,0,0.5)',
-              zIndex: 999,
+              width: '100%',
+              padding: isMobile ? '12px 15px' : '12px 20px',
+              background: selectedSubcategory === subcat.name ? '#f0f7ff' : 'transparent',
+              border: 'none',
+              borderLeft: selectedSubcategory === subcat.name ? `3px solid #3498db` : '3px solid transparent',
+              textAlign: 'left',
+              cursor: 'pointer',
+              fontSize: isMobile ? '14px' : '15px',
+              color: selectedSubcategory === subcat.name ? '#3498db' : '#555',
+              fontWeight: selectedSubcategory === subcat.name ? '600' : '400',
+              transition: 'all 0.2s',
+            }}
+          >
+            {subcat.name}
+          </button>
+        ))}
+      </div>
+    </div>
+  )
+  
+  return (
+    <div style={{
+      display: 'flex',
+      height: '100vh',
+      background: '#f5f6fa',
+      overflow: 'hidden',
+    }}>
+      {/* 桌面端侧边栏 */}
+      {!isMobile && renderSidebar()}
+      
+      {/* 移动端侧边栏遮罩 */}
+      {isMobile && sidebarOpen && (
+        <div
+          onClick={() => setSidebarOpen(false)}
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'rgba(0,0,0,0.5)',
+            zIndex: 999,
+          }}
+        />
+      )}
+      
+      {/* 移动端侧边栏 */}
+      {isMobile && sidebarOpen && (
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          bottom: 0,
+          width: '80%',
+          maxWidth: '300px',
+          zIndex: 1000,
+          transform: 'translateX(0)',
+          transition: 'transform 0.3s',
+        }}>
+          {renderSidebar()}
+        </div>
+      )}
+      
+      {/* 主内容区 */}
+      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+        {/* 顶部搜索栏 */}
+        <div style={{
+          padding: isMobile ? '12px 15px' : '15px 20px',
+          background: 'white',
+          borderBottom: '1px solid #e8e8e8',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '10px',
+        }}>
+          {isMobile && (
+            <button onClick={() => setSidebarOpen(true)} style={{
+              background: 'none',
+              border: 'none',
+              fontSize: '20px',
+              cursor: 'pointer',
+              padding: '5px',
+            }}>☰</button>
+          )}
+          <input
+            type="text"
+            placeholder="搜索知识点..."
+            value={searchQuery}
+            onChange={(e) => { setSearchQuery(e.target.value); setCurrentPage(1) }}
+            style={{
+              flex: 1,
+              padding: isMobile ? '10px 12px' : '10px 15px',
+              border: '1px solid #ddd',
+              borderRadius: '8px',
+              fontSize: isMobile ? '14px' : '15px',
+              outline: 'none',
             }}
           />
-        )}
+        </div>
         
-        {/* 左侧导航 */}
-        {(sidebarOpen || (isMobile && showMobileMenu)) && (
-          <aside style={{
-            position: isMobile ? 'fixed' : 'relative',
-            top: 0,
-            left: isMobile && !showMobileMenu ? '-100%' : '0',
-            width: isMobile ? '80%' : '280px',
-            maxWidth: isMobile ? '280px' : '280px',
-            height: isMobile ? '100vh' : 'auto',
-            background: 'rgba(255,255,255,0.95)',
-            backdropFilter: 'blur(10px)',
-            margin: isMobile ? '0' : '20px',
-            borderRadius: isMobile ? '0 20px 20px 0' : '20px',
-            boxShadow: '0 10px 40px rgba(0,0,0,0.1)',
-            overflow: 'auto',
-            transition: 'all 0.3s',
-            zIndex: 1000,
-          }}>
-            {/* 主分类 */}
-            <div style={{ padding: '20px' }}>
-              <h2 style={{ 
-                fontSize: '16px', 
-                fontWeight: 'bold', 
-                color: '#333',
-                marginBottom: '15px',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px',
-              }}>
-                📂 知识分类
-              </h2>
-              
-              {Object.values(knowledgeBase).map((category: any) => (
-                <div key={category.id} style={{ marginBottom: '10px' }}>
-                  <button
-                    onClick={() => {
-                      setSelectedCategory(category.id)
-                      setSelectedSubcategory(Object.keys(category.children)[0])
-                    }}
-                    style={{
-                      width: '100%',
-                      padding: '12px 15px',
-                      borderRadius: '12px',
-                      border: 'none',
-                      background: selectedCategory === category.id 
-                        ? `linear-gradient(135deg, ${category.color} 0%, ${category.color}dd 100%)`
-                        : 'transparent',
-                      color: selectedCategory === category.id ? 'white' : '#333',
-                      cursor: 'pointer',
-                      fontSize: '14px',
-                      fontWeight: selectedCategory === category.id ? 'bold' : 'normal',
-                      textAlign: 'left',
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '10px',
-                      transition: 'all 0.2s',
-                    }}
-                    onMouseEnter={(e: any) => {
-                      if (selectedCategory !== category.id) {
-                        e.target.style.background = '#f5f5f5'
-                      }
-                    }}
-                    onMouseLeave={(e: any) => {
-                      if (selectedCategory !== category.id) {
-                        e.target.style.background = 'transparent'
-                      }
-                    }}
-                  >
-                    <span style={{ fontSize: '18px' }}>{category.icon}</span>
-                    <div style={{ flex: 1 }}>
-                      <div>{category.name}</div>
-                      <div style={{ fontSize: '11px', opacity: 0.7 }}>
-                        {Object.keys(category.children).length} 个子类
-                      </div>
-                    </div>
-                  </button>
-
-                  {/* 子分类 */}
-                  {selectedCategory === category.id && (
-                    <div style={{ 
-                      marginLeft: '20px', 
-                      marginTop: '5px',
-                      borderLeft: `2px solid ${category.color}33`,
-                      paddingLeft: '10px',
-                    }}>
-                      {Object.entries(category.children).map(([key, sub]: any) => (
-                        <button
-                          key={key}
-                          onClick={() => setSelectedSubcategory(key)}
-                          style={{
-                            width: '100%',
-                            padding: '8px 12px',
-                            borderRadius: '8px',
-                            border: 'none',
-                            background: selectedSubcategory === key 
-                              ? `${category.color}22`
-                              : 'transparent',
-                            color: selectedSubcategory === key ? category.color : '#666',
-                            cursor: 'pointer',
-                            fontSize: '13px',
-                            textAlign: 'left',
-                            marginBottom: '3px',
-                            transition: 'all 0.2s',
-                          }}
-                          onMouseEnter={(e: any) => {
-                            if (selectedSubcategory !== key) {
-                              e.target.style.background = `${category.color}11`
-                            }
-                          }}
-                          onMouseLeave={(e: any) => {
-                            if (selectedSubcategory !== key) {
-                              e.target.style.background = 'transparent'
-                            }
-                          }}
-                        >
-                          {sub.name}
-                          <span style={{ float: 'right', fontSize: '11px' }}>
-                            {sub.items.length}
-                          </span>
-                        </button>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ))}
+        {/* 内容区 */}
+        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+          {isLoading ? (
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flex: 1 }}>
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ fontSize: '40px', marginBottom: '20px' }}>⏳</div>
+                <div style={{ fontSize: '16px', color: '#666' }}>正在加载 10 万 + 方剂数据...</div>
+              </div>
             </div>
-          </aside>
-        )}
-
-        {/* 主内容区 */}
-        <main style={{
-          flex: 1,
-          margin: isMobile ? '10px' : '20px',
-          background: 'rgba(255,255,255,0.95)',
-          backdropFilter: 'blur(10px)',
-          borderRadius: isMobile ? '15px' : '20px',
-          boxShadow: '0 10px 40px rgba(0,0,0,0.1)',
-          overflow: 'auto',
-          display: 'flex',
-          flexDirection: 'column',
-        }}>
-          {/* 内容头部 */}
-          {currentSubcategory && (
-            <div style={{
-              padding: isMobile ? '15px 20px' : '25px 30px',
-              borderBottom: '1px solid #f0f0f0',
-            }}>
-              <h2 style={{ 
-                fontSize: isMobile ? '18px' : '22px', 
-                fontWeight: 'bold', 
-                color: '#333',
-                margin: '0 0 10px 0',
-              }}>
-                {currentSubcategory.name}
-              </h2>
-              <p style={{ color: '#666', fontSize: isMobile ? '13px' : '14px', margin: 0 }}>
-                共 {currentSubcategory.items.length} 条知识
-              </p>
-              
-              {/* 101,401 方剂库特殊提示 */}
-              {currentSubcategory.special && (
-                <div style={{
-                  marginTop: '20px',
-                  padding: '20px',
-                  background: 'linear-gradient(135deg, #667eea15 0%, #764ba215 100%)',
-                  borderRadius: '15px',
-                  border: '2px solid #667eea',
-                }}>
-                  <div style={{ fontSize: isMobile ? '16px' : '18px', fontWeight: 'bold', color: '#667eea', marginBottom: '10px' }}>
-                    🎉 {currentSubcategory.special.title}
+          ) : (
+            <>
+              {/* 特殊展示区（方剂库） */}
+              {selectedSubcategory === 'formulas' && recipesData && (
+                <div style={{ padding: isMobile ? '15px' : '20px', background: 'white', borderBottom: '1px solid #e8e8e8' }}>
+                  <div style={{ fontSize: isMobile ? '16px' : '18px', fontWeight: 'bold', color: '#333', marginBottom: '10px', textAlign: 'center' }}>
+                    🎉 101,401 首中医方剂库已上线！
                   </div>
-                  <p style={{ fontSize: isMobile ? '13px' : '14px', color: '#666', marginBottom: '15px', lineHeight: '1.6' }}>
-                    {currentSubcategory.special.description}
-                  </p>
-                  
-                  {/* 数据集切换 */}
-                  <div style={{ marginBottom: '20px' }}>
-                    <div style={{ fontSize: isMobile ? '13px' : '14px', fontWeight: 'bold', color: '#333', marginBottom: '10px' }}>
-                      📦 选择数据集
-                    </div>
-                    <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-                      <button
-                        onClick={() => setSelectedDataset('all')}
-                        style={{
-                          padding: '8px 16px',
-                          borderRadius: '20px',
-                          border: selectedDataset === 'all' ? '2px solid #667eea' : '2px solid #e0e0e0',
-                          background: selectedDataset === 'all' ? '#667eea' : 'white',
-                          color: selectedDataset === 'all' ? 'white' : '#666',
-                          cursor: 'pointer',
-                          fontSize: '13px',
-                          fontWeight: selectedDataset === 'all' ? 'bold' : 'normal',
-                          transition: 'all 0.2s',
-                        }}
-                      >
-                        全部 ({currentSubcategory.special.stats.total.toLocaleString()}首)
-                      </button>
-                      {currentSubcategory.special.datasets.map((dataset: any) => (
-                        <button
-                          key={dataset.id}
-                          onClick={() => setSelectedDataset(dataset.id)}
-                          style={{
-                            padding: '8px 16px',
-                            borderRadius: '20px',
-                            border: selectedDataset === dataset.id ? `2px solid ${dataset.color}` : '2px solid #e0e0e0',
-                            background: selectedDataset === dataset.id ? dataset.color : 'white',
-                            color: selectedDataset === dataset.id ? 'white' : '#666',
-                            cursor: 'pointer',
-                            fontSize: '13px',
-                            fontWeight: selectedDataset === dataset.id ? 'bold' : 'normal',
-                            transition: 'all 0.2s',
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '5px',
-                          }}
-                        >
-                          <span>{dataset.icon}</span>
-                          <span>{dataset.name.split(' ')[0]} ({dataset.count.toLocaleString()}首)</span>
-                        </button>
-                      ))}
-                    </div>
+                  <div style={{ fontSize: isMobile ? '12px' : '14px', color: '#666', textAlign: 'center', marginBottom: '15px' }}>
+                    84,212 首经典方剂 + 17,189 首药食同源食疗方
                   </div>
-                  
-                  {/* 统计数据 */}
-                  <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(3, 1fr)', gap: '15px', marginBottom: '15px' }}>
-                    <div style={{ padding: '15px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
-                      <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#667eea' }}>
-                        {currentSubcategory.special.stats.total.toLocaleString()}
-                      </div>
-                      <div style={{ fontSize: '12px', color: '#666', marginTop: '5px' }}>总方剂数</div>
+                  <div style={{ display: 'grid', gridTemplateColumns: isMobile ? 'repeat(2, 1fr)' : 'repeat(4, 1fr)', gap: '10px' }}>
+                    <div style={{ padding: '12px', background: '#e8f5e9', borderRadius: '10px', textAlign: 'center' }}>
+                      <div style={{ fontSize: '18px', fontWeight: 'bold', color: '#27ae60' }}>101,401</div>
+                      <div style={{ fontSize: '11px', color: '#666' }}>总方剂数</div>
                     </div>
-                    <div style={{ padding: '15px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
-                      <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#764ba2' }}>
-                        {currentSubcategory.special.datasets[0].count.toLocaleString()}
-                      </div>
-                      <div style={{ fontSize: '12px', color: '#666', marginTop: '5px' }}>经典方剂</div>
+                    <div style={{ padding: '12px', background: '#fff3e0', borderRadius: '10px', textAlign: 'center' }}>
+                      <div style={{ fontSize: '18px', fontWeight: 'bold', color: '#f39c12' }}>84,212</div>
+                      <div style={{ fontSize: '11px', color: '#666' }}>经典方剂</div>
                     </div>
-                    <div style={{ padding: '15px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
-                      <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#27ae60' }}>
-                        {currentSubcategory.special.datasets[1].count.toLocaleString()}
-                      </div>
-                      <div style={{ fontSize: '12px', color: '#666', marginTop: '5px' }}>药食同源</div>
+                    <div style={{ padding: '12px', background: '#e3f2fd', borderRadius: '10px', textAlign: 'center' }}>
+                      <div style={{ fontSize: '18px', fontWeight: 'bold', color: '#3498db' }}>17,189</div>
+                      <div style={{ fontSize: '11px', color: '#666' }}>食疗方</div>
                     </div>
-                  </div>
-                  
-                  {/* Top 来源 */}
-                  <div style={{ marginBottom: '15px' }}>
-                    <div style={{ fontSize: isMobile ? '14px' : '15px', fontWeight: 'bold', color: '#333', marginBottom: '10px' }}>
-                      📚 主要来源医籍（Top 10）
-                    </div>
-                    <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(2, 1fr)', gap: '8px' }}>
-                      {currentSubcategory.special.stats.topSources.slice(0, 10).map((item: any, idx: number) => (
-                        <div key={idx} style={{ 
-                          padding: '8px 12px', 
-                          background: '#f8f9fa', 
-                          borderRadius: '8px',
-                          display: 'flex',
-                          justifyContent: 'space-between',
-                          alignItems: 'center',
-                        }}>
-                          <span style={{ fontSize: isMobile ? '12px' : '13px', color: '#666' }}>
-                            {idx + 1}. {item.name}
-                          </span>
-                          <span style={{ fontSize: isMobile ? '11px' : '12px', fontWeight: 'bold', color: '#667eea' }}>
-                            {item.count}首
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  {/* 高频标签 */}
-                  <div>
-                    <div style={{ fontSize: isMobile ? '14px' : '15px', fontWeight: 'bold', color: '#333', marginBottom: '10px' }}>
-                      🏷️  高频标签（Top 10）
-                    </div>
-                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-                      {currentSubcategory.special.stats.topTags.slice(0, 10).map((tag: any, idx: number) => (
-                        <span key={idx} style={{
-                          padding: '6px 12px',
-                          background: idx < 3 ? '#667eea15' : '#f0f0f0',
-                          color: idx < 3 ? '#667eea' : '#666',
-                          borderRadius: '15px',
-                          fontSize: isMobile ? '11px' : '12px',
-                          fontWeight: idx < 3 ? 'bold' : '500',
-                          border: idx < 3 ? '1px solid #667eea' : 'none',
-                        }}>
-                          {tag.name} <span style={{ opacity: 0.7 }}>{tag.count.toLocaleString()}</span>
-                        </span>
-                      ))}
+                    <div style={{ padding: '12px', background: '#f3e5f5', borderRadius: '10px', textAlign: 'center' }}>
+                      <div style={{ fontSize: '18px', fontWeight: 'bold', color: '#9b59b6' }}>6</div>
+                      <div style={{ fontSize: '11px', color: '#666' }}>数据集</div>
                     </div>
                   </div>
                 </div>
               )}
-            </div>
+              
+              {/* 内容列表 */}
+              <div style={{ flex: 1, overflow: 'auto', padding: isMobile ? '15px' : '20px' }}>
+                {paginatedItems.length === 0 ? (
+                  <div style={{ textAlign: 'center', padding: '60px 20px', color: '#999' }}>
+                    <div style={{ fontSize: '48px', marginBottom: '20px' }}>🔍</div>
+                    <div style={{ fontSize: '18px', fontWeight: 'bold' }}>暂无内容</div>
+                  </div>
+                ) : (
+                  paginatedItems.map(renderContentCard)
+                )}
+              </div>
+              
+              {/* 分页 */}
+              <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
+            </>
           )}
-
-          {/* 内容列表 */}
-          <div style={{ padding: isMobile ? '15px 20px' : '20px 30px', flex: 1, overflow: 'auto' }}>
-            {filteredItems.length === 0 ? (
-              <div style={{ 
-                textAlign: 'center', 
-                padding: '60px 20px',
-                color: '#999',
-              }}>
-                <div style={{ fontSize: '48px', marginBottom: '20px' }}>🔍</div>
-                <div style={{ fontSize: '18px', fontWeight: 'bold' }}>暂无内容</div>
-                <div style={{ fontSize: '14px', marginTop: '10px' }}>
-                  {searchQuery ? '换个关键词试试吧~' : '该分类下暂无内容'}
-                </div>
-              </div>
-            ) : (
-              <>
-                {/* 药食同源目录展示 */}
-                {filteredItems.some((item: any) => item.catalog) && (
-                  <div style={{ marginBottom: '30px' }}>
-                    <div style={{ 
-                      padding: isMobile ? '15px' : '20px',
-                      background: 'linear-gradient(135deg, #27ae6015 0%, #2ecc7115 100%)',
-                      borderRadius: '15px',
-                      border: '2px solid #27ae60',
-                      marginBottom: '20px',
-                    }}>
-                      <div style={{ fontSize: isMobile ? '16px' : '18px', fontWeight: 'bold', color: '#27ae60', marginBottom: '10px' }}>
-                        🍲 国家药食同源目录（106 种完整版）
-                      </div>
-                      <p style={{ fontSize: isMobile ? '13px' : '14px', color: '#666', marginBottom: '15px' }}>
-                        依据：国家卫健委《按照传统既是食品又是中药材的物质目录》（截至 2023 年底）
-                      </p>
-                      
-                      {/* 统计卡片 */}
-                      <div style={{ display: 'grid', gridTemplateColumns: isMobile ? 'repeat(2, 1fr)' : 'repeat(5, 1fr)', gap: '10px', marginBottom: '20px' }}>
-                        <div style={{ padding: '12px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
-                          <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#27ae60' }}>{YAOSHI_STATS.totalItems}</div>
-                          <div style={{ fontSize: '11px', color: '#666' }}>总物质数</div>
-                        </div>
-                        <div style={{ padding: '12px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
-                          <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#3498db' }}>{YAOSHI_STATS.plantItems}</div>
-                          <div style={{ fontSize: '11px', color: '#666' }}>植物类</div>
-                        </div>
-                        <div style={{ padding: '12px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
-                          <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#e74c3c' }}>{YAOSHI_STATS.animalItems}</div>
-                          <div style={{ fontSize: '11px', color: '#666' }}>动物类</div>
-                        </div>
-                        <div style={{ padding: '12px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
-                          <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#f39c12' }}>{YAOSHI_STATS.added2023}</div>
-                          <div style={{ fontSize: '11px', color: '#666' }}>2023 新增</div>
-                        </div>
-                        <div style={{ padding: '12px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
-                          <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#9b59b6' }}>{YAOSHI_STATS.totalRecipes}</div>
-                          <div style={{ fontSize: '11px', color: '#666' }}>经典食疗方</div>
-                        </div>
-                      </div>
-                      
-                      {/* 分类展示 */}
-                      <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)', gap: '15px' }}>
-                        <div style={{ padding: '15px', background: 'white', borderRadius: '10px' }}>
-                          <div style={{ fontSize: '14px', fontWeight: 'bold', color: '#333', marginBottom: '10px' }}>📊 按功效分类（8 类）</div>
-                          <div style={{ fontSize: '12px', color: '#666', lineHeight: '1.8' }}>
-                            补气类 20 首、养血类 18 首、滋阴类 20 首、温阳类 18 首、健脾类 25 首、祛湿类 22 首、清热类 25 首、理气类 22 首
-                          </div>
-                        </div>
-                        <div style={{ padding: '15px', background: 'white', borderRadius: '10px' }}>
-                          <div style={{ fontSize: '14px', fontWeight: 'bold', color: '#333', marginBottom: '10px' }}>👥 按人群分类（5 类）</div>
-                          <div style={{ fontSize: '12px', color: '#666', lineHeight: '1.8' }}>
-                            儿童 15 首、女性 20 首、老人 20 首、孕妇 10 首、亚健康 15 首
-                          </div>
-                        </div>
-                        <div style={{ padding: '15px', background: 'white', borderRadius: '10px' }}>
-                          <div style={{ fontSize: '14px', fontWeight: 'bold', color: '#333', marginBottom: '10px' }}>🌿 体质食疗（9 种）</div>
-                          <div style={{ fontSize: '12px', color: '#666', lineHeight: '1.8' }}>
-                            平和质、气虚质、阳虚质、阴虚质、痰湿质、湿热质、血瘀质、气郁质、特禀质
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    {/* 药食同源目录列表 */}
-                    <div style={{ marginBottom: '20px' }}>
-                      <div style={{ fontSize: isMobile ? '16px' : '18px', fontWeight: 'bold', color: '#333', marginBottom: '15px' }}>
-                        📜 药食同源物质目录（106 种）
-                      </div>
-                      <div style={{ display: 'grid', gridTemplateColumns: isMobile ? 'repeat(2, 1fr)' : 'repeat(4, 1fr)', gap: '8px' }}>
-                        {YAOSHI_TONGYUAN_CATALOG.items.map((item: any, idx: number) => (
-                          <div
-                            key={idx}
-                            style={{
-                              padding: '8px 12px',
-                              background: item.added === '2023' ? '#fff3cd' : '#f8f9fa',
-                              borderRadius: '8px',
-                              border: item.added === '2023' ? '1px solid #ffc107' : '1px solid #e9ecef',
-                              textAlign: 'center',
-                            }}
-                          >
-                            <div style={{ fontSize: isMobile ? '12px' : '13px', fontWeight: '500', color: '#333' }}>
-                              {item.name}
-                            </div>
-                            {item.added === '2023' && (
-                              <div style={{ fontSize: '9px', color: '#e67e22', marginTop: '2px' }}>2023 新增</div>
-                            )}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                    
-                    {/* 四季食疗 */}
-                    <div style={{ marginBottom: '20px' }}>
-                      <div style={{ fontSize: isMobile ? '16px' : '18px', fontWeight: 'bold', color: '#333', marginBottom: '15px' }}>
-                        📅 四季食疗方案
-                      </div>
-                      <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(4, 1fr)', gap: '12px' }}>
-                        {YAOSHI_TONGYUAN_CATALOG.recipes.bySeason.map((season: any, idx: number) => (
-                          <div
-                            key={idx}
-                            style={{
-                              padding: '15px',
-                              background: ['#e8f5e9', '#fff3e0', '#ffebee', '#e3f2fd'][idx],
-                              borderRadius: '10px',
-                              border: `2px solid ${['#27ae60', '#f39c12', '#e74c3c', '#3498db'][idx]}33`,
-                            }}
-                          >
-                            <div style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', marginBottom: '5px' }}>
-                              {['🌱', '☀️', '🍂', '❄️'][idx]} {season.season}
-                            </div>
-                            <div style={{ fontSize: '11px', color: '#666', marginBottom: '8px', fontStyle: 'italic' }}>
-                              原则：{season.principle}
-                            </div>
-                            <div style={{ fontSize: '11px', color: '#666', lineHeight: '1.6' }}>
-                              {season.recipes.slice(0, 4).join('、')}...
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                )}
-                
-                {/* 101,401 方剂库示例展示 */}
-                {currentSubcategory.special && (
-                  <div style={{ marginBottom: '30px' }}>
-                    <div style={{ fontSize: isMobile ? '16px' : '18px', fontWeight: 'bold', color: '#333', marginBottom: '15px', textAlign: 'center' }}>
-                      🎁 精选示例方剂
-                    </div>
-                    <div style={{ 
-                      display: 'grid', 
-                      gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fill, minmax(280px, 1fr))', 
-                      gap: isMobile ? '12px' : '15px',
-                    }}>
-                      {/* 根据选中的数据集显示示例 */}
-                      {(selectedDataset === 'all' || selectedDataset === '84212') && currentSubcategory.special.samples84212 && currentSubcategory.special.samples84212.map((item: any) => (
-                        <div
-                          key={item.id}
-                          style={{
-                            padding: isMobile ? '12px' : '15px',
-                            background: 'white',
-                            borderRadius: isMobile ? '10px' : '12px',
-                            border: '2px solid #e8f5e9',
-                            boxShadow: '0 2px 8px rgba(0,0,0,0.05)',
-                          }}
-                        >
-                          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '8px' }}>
-                            <div style={{ 
-                              fontSize: '20px',
-                              width: '32px',
-                              height: '32px',
-                              borderRadius: '8px',
-                              background: 'linear-gradient(135deg, #27ae60 0%, #2ecc71 100%)',
-                              display: 'flex',
-                              alignItems: 'center',
-                              justifyContent: 'center',
-                              flexShrink: 0,
-                            }}>
-                              🌿
-                            </div>
-                            <div style={{ flex: 1 }}>
-                              <h3 style={{ 
-                                fontSize: isMobile ? '14px' : '15px', 
-                                fontWeight: 'bold', 
-                                color: '#333',
-                                margin: '0 0 4px 0',
-                              }}>
-                                {item.title}
-                              </h3>
-                              {item.source && (
-                                <div style={{ 
-                                  fontSize: isMobile ? '10px' : '11px', 
-                                  color: '#27ae60',
-                                  marginBottom: '6px',
-                                }}>
-                                  📜 {item.source}
-                                </div>
-                              )}
-                            </div>
-                          </div>
-                          <p style={{ 
-                            fontSize: isMobile ? '12px' : '13px', 
-                            color: '#666',
-                            margin: '0 0 8px 0',
-                            lineHeight: '1.5',
-                            display: '-webkit-box',
-                            WebkitLineClamp: 2,
-                            WebkitBoxOrient: 'vertical',
-                            overflow: 'hidden',
-                          }}>
-                            {item.content}
-                          </p>
-                          {item.tags && item.tags.length > 0 && (
-                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
-                              {item.tags.map((tag: string, i: number) => (
-                                <span
-                                  key={i}
-                                  style={{
-                                    fontSize: isMobile ? '9px' : '10px',
-                                    padding: '2px 6px',
-                                    background: '#e8f5e9',
-                                    color: '#2e7d32',
-                                    borderRadius: '10px',
-                                  }}
-                                >
-                                  {tag}
-                                </span>
-                              ))}
-                            </div>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                    <div style={{ 
-                      marginTop: '20px', 
-                      textAlign: 'center', 
-                      padding: '15px',
-                      background: 'linear-gradient(135deg, #667eea15 0%, #764ba215 100%)',
-                      borderRadius: '12px',
-                    }}>
-                      <div style={{ fontSize: isMobile ? '13px' : '14px', color: '#666', marginBottom: '10px' }}>
-                        💡 以上仅展示 7 首示例方剂
-                      </div>
-                      <div style={{ fontSize: isMobile ? '12px' : '13px', color: '#999' }}>
-                        完整 84,212 首方剂数据已准备就绪，可通过搜索功能查找特定方剂
-                      </div>
-                    </div>
-                  </div>
-                )}
-                
-                {/* 常规内容列表 */}
-                <div style={{ 
-                  display: 'grid', 
-                  gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fill, minmax(300px, 1fr))', 
-                  gap: isMobile ? '15px' : '20px',
-                }}>
-                {filteredItems.map((item: any) => (
-                  <div
-                    key={item.id}
-                    onClick={() => setSelectedItem(selectedItem?.id === item.id ? null : item)}
-                    style={{
-                      padding: isMobile ? '15px' : '20px',
-                      background: selectedItem?.id === item.id ? '#f8f9fa' : 'white',
-                      borderRadius: isMobile ? '12px' : '15px',
-                      border: `2px solid ${selectedItem?.id === item.id ? '#667eea' : '#f0f0f0'}`,
-                      cursor: 'pointer',
-                      transition: 'all 0.3s',
-                      boxShadow: selectedItem?.id === item.id 
-                        ? '0 5px 20px rgba(102,126,234,0.2)' 
-                        : '0 2px 10px rgba(0,0,0,0.05)',
-                    }}
-                    onMouseEnter={!isMobile ? (e: any) => {
-                      if (selectedItem?.id !== item.id) {
-                        e.currentTarget.style.transform = 'translateY(-2px)'
-                        e.currentTarget.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)'
-                      }
-                    } : undefined}
-                    onMouseLeave={!isMobile ? (e: any) => {
-                      if (selectedItem?.id !== item.id) {
-                        e.currentTarget.style.transform = 'translateY(0)'
-                        e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)'
-                      }
-                    } : undefined}
-                  >
-                    <div style={{ display: 'flex', alignItems: 'flex-start', gap: isMobile ? '10px' : '12px' }}>
-                      <div style={{ 
-                        fontSize: isMobile ? '20px' : '24px',
-                        width: isMobile ? '36px' : '40px',
-                        height: isMobile ? '36px' : '40px',
-                        borderRadius: isMobile ? '8px' : '10px',
-                        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        flexShrink: 0,
-                      }}>
-                        📖
-                      </div>
-                      <div style={{ flex: 1, minWidth: 0 }}>
-                        <h3 style={{ 
-                          fontSize: isMobile ? '15px' : '16px', 
-                          fontWeight: 'bold', 
-                          color: '#333',
-                          margin: '0 0 6px 0',
-                          overflow: 'hidden',
-                          textOverflow: 'ellipsis',
-                          whiteSpace: 'nowrap',
-                        }}>
-                          {item.title}
-                        </h3>
-                        {item.source && (
-                          <div style={{ 
-                            fontSize: isMobile ? '11px' : '12px', 
-                            color: '#667eea',
-                            marginBottom: '8px',
-                            overflow: 'hidden',
-                            textOverflow: 'ellipsis',
-                            whiteSpace: 'nowrap',
-                          }}>
-                            📜 {item.source}
-                          </div>
-                        )}
-                        <p style={{ 
-                          fontSize: isMobile ? '13px' : '14px', 
-                          color: '#666',
-                          margin: '0 0 10px 0',
-                          lineHeight: '1.6',
-                          display: '-webkit-box',
-                          WebkitLineClamp: 3,
-                          WebkitBoxOrient: 'vertical',
-                          overflow: 'hidden',
-                        }}>
-                          {item.content.length > 100 
-                            ? item.content.substring(0, 100) + '...' 
-                            : item.content}
-                        </p>
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: isMobile ? '4px' : '6px' }}>
-                          {item.tags.map((tag: any, i: number) => (
-                            <span
-                              key={i}
-                              style={{
-                                fontSize: isMobile ? '10px' : '11px',
-                                padding: isMobile ? '2px 6px' : '3px 8px',
-                                background: '#667eea15',
-                                color: '#667eea',
-                                borderRadius: '12px',
-                              }}
-                            >
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* 展开详情 */}
-                    {selectedItem?.id === item.id && (
-                      <div style={{
-                        marginTop: isMobile ? '12px' : '15px',
-                        paddingTop: isMobile ? '12px' : '15px',
-                        borderTop: '1px solid #f0f0f0',
-                        fontSize: isMobile ? '13px' : '14px',
-                        color: '#666',
-                        lineHeight: '1.7',
-                      }}>
-                        {/* 基础内容 */}
-                        <div style={{ marginBottom: '15px' }}>
-                          <div style={{ fontSize: '14px', color: '#333', marginBottom: '8px' }}>
-                            {item.content}
-                          </div>
-                        </div>
-
-                        {/* 方解/方义分析（方剂） */}
-                        {item.analysis && (
-                          <div style={{ 
-                            marginBottom: isMobile ? '10px' : '12px',
-                            padding: isMobile ? '10px' : '12px',
-                            background: '#fff5f5',
-                            borderRadius: isMobile ? '6px' : '8px',
-                            borderLeft: isMobile ? '2px solid #c0392b' : '3px solid #c0392b',
-                          }}>
-                            <div style={{ fontSize: isMobile ? '12px' : '13px', fontWeight: 'bold', color: '#c0392b', marginBottom: '4px' }}>
-                              📖 方解
-                            </div>
-                            <div style={{ fontSize: isMobile ? '12px' : '13px', color: '#666', lineHeight: '1.6' }}>
-                              {item.analysis}
-                            </div>
-                          </div>
-                        )}
-
-                        {/* 临床应用 */}
-                        {item.clinical && (
-                          <div style={{ 
-                            marginBottom: isMobile ? '10px' : '12px',
-                            padding: isMobile ? '10px' : '12px',
-                            background: '#f0f9ff',
-                            borderRadius: isMobile ? '6px' : '8px',
-                            borderLeft: isMobile ? '2px solid #2980b9' : '3px solid #2980b9',
-                          }}>
-                            <div style={{ fontSize: isMobile ? '12px' : '13px', fontWeight: 'bold', color: '#2980b9', marginBottom: '4px' }}>
-                              🏥 临床应用
-                            </div>
-                            <div style={{ fontSize: isMobile ? '12px' : '13px', color: '#666', lineHeight: '1.6' }}>
-                              {item.clinical}
-                            </div>
-                          </div>
-                        )}
-
-                        {/* 加减变化 */}
-                        {item.modification && (
-                          <div style={{ 
-                            marginBottom: isMobile ? '10px' : '12px',
-                            padding: isMobile ? '10px' : '12px',
-                            background: '#fffbeb',
-                            borderRadius: isMobile ? '6px' : '8px',
-                            borderLeft: isMobile ? '2px solid #f39c12' : '3px solid #f39c12',
-                          }}>
-                            <div style={{ fontSize: isMobile ? '12px' : '13px', fontWeight: 'bold', color: '#f39c12', marginBottom: '4px' }}>
-                              ⚗️ 加减变化
-                            </div>
-                            <div style={{ fontSize: isMobile ? '12px' : '13px', color: '#666', lineHeight: '1.6' }}>
-                              {item.modification}
-                            </div>
-                          </div>
-                        )}
-
-                        {/* 使用注意 */}
-                        {item.caution && (
-                          <div style={{ 
-                            marginBottom: isMobile ? '10px' : '12px',
-                            padding: isMobile ? '10px' : '12px',
-                            background: '#fef2f2',
-                            borderRadius: isMobile ? '6px' : '8px',
-                            borderLeft: isMobile ? '2px solid #e74c3c' : '3px solid #e74c3c',
-                          }}>
-                            <div style={{ fontSize: isMobile ? '12px' : '13px', fontWeight: 'bold', color: '#e74c3c', marginBottom: '4px' }}>
-                              ⚠️ 使用注意
-                            </div>
-                            <div style={{ fontSize: isMobile ? '12px' : '13px', color: '#666', lineHeight: '1.6' }}>
-                              {item.caution}
-                            </div>
-                          </div>
-                        )}
-
-                        {/* 用法用量（中药） */}
-                        {item.usage && (
-                          <div style={{ 
-                            marginBottom: isMobile ? '10px' : '12px',
-                            padding: isMobile ? '10px' : '12px',
-                            background: '#f0fdf4',
-                            borderRadius: isMobile ? '6px' : '8px',
-                            borderLeft: isMobile ? '2px solid #27ae60' : '3px solid #27ae60',
-                          }}>
-                            <div style={{ fontSize: isMobile ? '12px' : '13px', fontWeight: 'bold', color: '#27ae60', marginBottom: '4px' }}>
-                              💊 用法用量
-                            </div>
-                            <div style={{ fontSize: isMobile ? '12px' : '13px', color: '#666', lineHeight: '1.6' }}>
-                              {item.usage}
-                            </div>
-                          </div>
-                        )}
-
-                        {/* 现代研究（中药） */}
-                        {item.modern && (
-                          <div style={{ 
-                            marginBottom: isMobile ? '10px' : '12px',
-                            padding: isMobile ? '10px' : '12px',
-                            background: '#f5f3ff',
-                            borderRadius: isMobile ? '6px' : '8px',
-                            borderLeft: isMobile ? '2px solid #8e44ad' : '3px solid #8e44ad',
-                          }}>
-                            <div style={{ fontSize: isMobile ? '12px' : '13px', fontWeight: 'bold', color: '#8e44ad', marginBottom: '4px' }}>
-                              🔬 现代研究
-                            </div>
-                            <div style={{ fontSize: isMobile ? '12px' : '13px', color: '#666', lineHeight: '1.6' }}>
-                              {item.modern}
-                            </div>
-                          </div>
-                        )}
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-              </>
-            )}
-          </div>
-        </main>
+        </div>
       </div>
     </div>
   )
