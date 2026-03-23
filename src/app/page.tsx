@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect, useLayoutEffect } from 'react'
 
 const knowledgeBase: any = {
   tcm: {
@@ -438,6 +438,26 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedItem, setSelectedItem] = useState<any>(null)
   const [sidebarOpen, setSidebarOpen] = useState(true)
+  const [isMobile, setIsMobile] = useState(false)
+  const [showMobileMenu, setShowMobileMenu] = useState(false)
+
+  // 检测设备类型
+  useLayoutEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+      if (window.innerWidth < 768) {
+        setSidebarOpen(false)
+        setShowMobileMenu(false)
+      } else {
+        setSidebarOpen(true)
+        setShowMobileMenu(false)
+      }
+    }
+    
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
 
   const currentCategory = knowledgeBase[selectedCategory]
   const currentSubcategory = currentCategory?.children?.[selectedSubcategory]
@@ -473,102 +493,174 @@ export default function Home() {
         background: 'rgba(255,255,255,0.95)',
         backdropFilter: 'blur(10px)',
         boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
-        padding: '15px 30px',
+        padding: isMobile ? '10px 15px' : '15px 30px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
         position: 'sticky',
         top: 0,
         zIndex: 1000,
+        flexDirection: isMobile ? 'column' : 'row',
+        gap: isMobile ? '10px' : '0',
       }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-          <button
-            onClick={() => setSidebarOpen(!sidebarOpen)}
-            style={{
-              background: 'none',
-              border: 'none',
-              fontSize: '24px',
-              cursor: 'pointer',
-              padding: '5px',
-            }}
-          >
-            {sidebarOpen ? '📚' : '📖'}
-          </button>
-          <div>
-            <h1 style={{ 
-              fontSize: '24px', 
-              fontWeight: 'bold',
-              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              margin: 0,
-            }}>
-              🏥 宋宋的中医药知识库
-            </h1>
-            <p style={{ fontSize: '12px', color: '#666', margin: '5px 0 0 0' }}>
-              传承中医精华 · 融合现代医学
-            </p>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', width: '100%', justifyContent: 'space-between' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <button
+              onClick={() => isMobile ? setShowMobileMenu(!showMobileMenu) : setSidebarOpen(!sidebarOpen)}
+              style={{
+                background: 'none',
+                border: 'none',
+                fontSize: '24px',
+                cursor: 'pointer',
+                padding: '5px',
+              }}
+            >
+              ☰
+            </button>
+            <div>
+              <h1 style={{ 
+                fontSize: isMobile ? '18px' : '24px', 
+                fontWeight: 'bold',
+                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                margin: 0,
+                whiteSpace: 'nowrap',
+              }}>
+                🏥 宋宋的中医药知识库
+              </h1>
+              {!isMobile && (
+                <p style={{ fontSize: '12px', color: '#666', margin: '5px 0 0 0' }}>
+                  传承中医精华 · 融合现代医学
+                </p>
+              )}
+            </div>
           </div>
+          
+          {/* 移动端统计信息 */}
+          {isMobile && (
+            <div style={{ fontSize: '11px', color: '#666', textAlign: 'right' }}>
+              <div style={{ fontWeight: 'bold', fontSize: '13px' }}>
+                {(Object.values(knowledgeBase).reduce((sum: any, cat: any) => 
+                  sum + Object.values(cat.children).reduce((s: any, sub: any) => s + sub.items.length, 0), 0) as number)} 条
+              </div>
+            </div>
+          )}
         </div>
         
-        {/* 搜索框 */}
-        <div style={{ position: 'relative', width: '400px' }}>
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="搜索知识、方剂、中药..."
-            style={{
-              width: '100%',
-              padding: '12px 20px 12px 45px',
-              borderRadius: '25px',
-              border: '2px solid #e0e0e0',
-              fontSize: '14px',
-              outline: 'none',
-              transition: 'all 0.3s',
-            }}
-            onFocus={(e) => {
-              e.target.style.borderColor = '#667eea'
-              e.target.style.boxShadow = '0 0 0 3px rgba(102,126,234,0.1)'
-            }}
-            onBlur={(e) => {
-              e.target.style.borderColor = '#e0e0e0'
-              e.target.style.boxShadow = 'none'
-            }}
-          />
-          <span style={{
-            position: 'absolute',
-            left: '15px',
-            top: '50%',
-            transform: 'translateY(-50%)',
-            fontSize: '18px',
-          }}>
-            🔍
-          </span>
-        </div>
-
-        {/* 统计信息 */}
-        <div style={{ textAlign: 'right', fontSize: '12px', color: '#666' }}>
-          <div style={{ fontWeight: 'bold', fontSize: '16px' }}>
-            {(Object.values(knowledgeBase).reduce((sum: any, cat: any) => 
-              sum + Object.values(cat.children).reduce((s: any, sub: any) => s + sub.items.length, 0), 0) as number)} 条知识
+        {/* 搜索框 - 桌面端 */}
+        {!isMobile && (
+          <div style={{ position: 'relative', width: '400px' }}>
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="搜索知识、方剂、中药..."
+              style={{
+                width: '100%',
+                padding: '12px 20px 12px 45px',
+                borderRadius: '25px',
+                border: '2px solid #e0e0e0',
+                fontSize: '14px',
+                outline: 'none',
+                transition: 'all 0.3s',
+              }}
+              onFocus={(e) => {
+                e.target.style.borderColor = '#667eea'
+                e.target.style.boxShadow = '0 0 0 3px rgba(102,126,234,0.1)'
+              }}
+              onBlur={(e) => {
+                e.target.style.borderColor = '#e0e0e0'
+                e.target.style.boxShadow = 'none'
+              }}
+            />
+            <span style={{
+              position: 'absolute',
+              left: '15px',
+              top: '50%',
+              transform: 'translateY(-50%)',
+              fontSize: '18px',
+            }}>
+              🔍
+            </span>
           </div>
-          <div>持续更新中...</div>
-        </div>
+        )}
+
+        {/* 统计信息 - 桌面端 */}
+        {!isMobile && (
+          <div style={{ textAlign: 'right', fontSize: '12px', color: '#666' }}>
+            <div style={{ fontWeight: 'bold', fontSize: '16px' }}>
+              {(Object.values(knowledgeBase).reduce((sum: any, cat: any) => 
+                sum + Object.values(cat.children).reduce((s: any, sub: any) => s + sub.items.length, 0), 0) as number)} 条知识
+            </div>
+            <div>持续更新中...</div>
+          </div>
+        )}
+        
+        {/* 搜索框 - 移动端 */}
+        {isMobile && (
+          <div style={{ position: 'relative', width: '100%' }}>
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="搜索知识、方剂、中药..."
+              style={{
+                width: '100%',
+                padding: '10px 15px 10px 40px',
+                borderRadius: '20px',
+                border: '2px solid #e0e0e0',
+                fontSize: '13px',
+                outline: 'none',
+              }}
+            />
+            <span style={{
+              position: 'absolute',
+              left: '12px',
+              top: '50%',
+              transform: 'translateY(-50%)',
+              fontSize: '16px',
+            }}>
+              🔍
+            </span>
+          </div>
+        )}
       </header>
 
-      <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
+      <div style={{ display: 'flex', flex: 1, overflow: 'hidden', position: 'relative' }}>
+        {/* 移动端菜单覆盖层 */}
+        {isMobile && showMobileMenu && (
+          <div
+            onClick={() => setShowMobileMenu(false)}
+            style={{
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              background: 'rgba(0,0,0,0.5)',
+              zIndex: 999,
+            }}
+          />
+        )}
+        
         {/* 左侧导航 */}
-        {sidebarOpen && (
+        {(sidebarOpen || (isMobile && showMobileMenu)) && (
           <aside style={{
-            width: '280px',
+            position: isMobile ? 'fixed' : 'relative',
+            top: 0,
+            left: isMobile && !showMobileMenu ? '-100%' : '0',
+            width: isMobile ? '80%' : '280px',
+            maxWidth: isMobile ? '280px' : '280px',
+            height: isMobile ? '100vh' : 'auto',
             background: 'rgba(255,255,255,0.95)',
             backdropFilter: 'blur(10px)',
-            margin: '20px',
-            borderRadius: '20px',
+            margin: isMobile ? '0' : '20px',
+            borderRadius: isMobile ? '0 20px 20px 0' : '20px',
             boxShadow: '0 10px 40px rgba(0,0,0,0.1)',
             overflow: 'auto',
             transition: 'all 0.3s',
+            zIndex: 1000,
           }}>
             {/* 主分类 */}
             <div style={{ padding: '20px' }}>
@@ -684,11 +776,10 @@ export default function Home() {
         {/* 主内容区 */}
         <main style={{
           flex: 1,
-          margin: '20px',
-          marginRight: sidebarOpen ? '20px' : '20px',
+          margin: isMobile ? '10px' : '20px',
           background: 'rgba(255,255,255,0.95)',
           backdropFilter: 'blur(10px)',
-          borderRadius: '20px',
+          borderRadius: isMobile ? '15px' : '20px',
           boxShadow: '0 10px 40px rgba(0,0,0,0.1)',
           overflow: 'auto',
           display: 'flex',
@@ -697,25 +788,25 @@ export default function Home() {
           {/* 内容头部 */}
           {currentSubcategory && (
             <div style={{
-              padding: '25px 30px',
+              padding: isMobile ? '15px 20px' : '25px 30px',
               borderBottom: '1px solid #f0f0f0',
             }}>
               <h2 style={{ 
-                fontSize: '22px', 
+                fontSize: isMobile ? '18px' : '22px', 
                 fontWeight: 'bold', 
                 color: '#333',
                 margin: '0 0 10px 0',
               }}>
                 {currentSubcategory.name}
               </h2>
-              <p style={{ color: '#666', fontSize: '14px', margin: 0 }}>
+              <p style={{ color: '#666', fontSize: isMobile ? '13px' : '14px', margin: 0 }}>
                 共 {currentSubcategory.items.length} 条知识
               </p>
             </div>
           )}
 
           {/* 内容列表 */}
-          <div style={{ padding: '20px 30px', flex: 1, overflow: 'auto' }}>
+          <div style={{ padding: isMobile ? '15px 20px' : '20px 30px', flex: 1, overflow: 'auto' }}>
             {filteredItems.length === 0 ? (
               <div style={{ 
                 textAlign: 'center', 
@@ -731,17 +822,17 @@ export default function Home() {
             ) : (
               <div style={{ 
                 display: 'grid', 
-                gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', 
-                gap: '20px',
+                gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fill, minmax(300px, 1fr))', 
+                gap: isMobile ? '15px' : '20px',
               }}>
                 {filteredItems.map((item: any) => (
                   <div
                     key={item.id}
                     onClick={() => setSelectedItem(selectedItem?.id === item.id ? null : item)}
                     style={{
-                      padding: '20px',
+                      padding: isMobile ? '15px' : '20px',
                       background: selectedItem?.id === item.id ? '#f8f9fa' : 'white',
-                      borderRadius: '15px',
+                      borderRadius: isMobile ? '12px' : '15px',
                       border: `2px solid ${selectedItem?.id === item.id ? '#667eea' : '#f0f0f0'}`,
                       cursor: 'pointer',
                       transition: 'all 0.3s',
@@ -749,25 +840,25 @@ export default function Home() {
                         ? '0 5px 20px rgba(102,126,234,0.2)' 
                         : '0 2px 10px rgba(0,0,0,0.05)',
                     }}
-                    onMouseEnter={(e: any) => {
+                    onMouseEnter={!isMobile ? (e: any) => {
                       if (selectedItem?.id !== item.id) {
                         e.currentTarget.style.transform = 'translateY(-2px)'
                         e.currentTarget.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)'
                       }
-                    }}
-                    onMouseLeave={(e: any) => {
+                    } : undefined}
+                    onMouseLeave={!isMobile ? (e: any) => {
                       if (selectedItem?.id !== item.id) {
                         e.currentTarget.style.transform = 'translateY(0)'
                         e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)'
                       }
-                    }}
+                    } : undefined}
                   >
-                    <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
+                    <div style={{ display: 'flex', alignItems: 'flex-start', gap: isMobile ? '10px' : '12px' }}>
                       <div style={{ 
-                        fontSize: '24px',
-                        width: '40px',
-                        height: '40px',
-                        borderRadius: '10px',
+                        fontSize: isMobile ? '20px' : '24px',
+                        width: isMobile ? '36px' : '40px',
+                        height: isMobile ? '36px' : '40px',
+                        borderRadius: isMobile ? '8px' : '10px',
                         background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
                         display: 'flex',
                         alignItems: 'center',
@@ -776,41 +867,51 @@ export default function Home() {
                       }}>
                         📖
                       </div>
-                      <div style={{ flex: 1 }}>
+                      <div style={{ flex: 1, minWidth: 0 }}>
                         <h3 style={{ 
-                          fontSize: '16px', 
+                          fontSize: isMobile ? '15px' : '16px', 
                           fontWeight: 'bold', 
                           color: '#333',
-                          margin: '0 0 8px 0',
+                          margin: '0 0 6px 0',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          whiteSpace: 'nowrap',
                         }}>
                           {item.title}
                         </h3>
                         {item.source && (
                           <div style={{ 
-                            fontSize: '12px', 
+                            fontSize: isMobile ? '11px' : '12px', 
                             color: '#667eea',
                             marginBottom: '8px',
+                            overflow: 'hidden',
+                            textOverflow: 'ellipsis',
+                            whiteSpace: 'nowrap',
                           }}>
                             📜 {item.source}
                           </div>
                         )}
                         <p style={{ 
-                          fontSize: '14px', 
+                          fontSize: isMobile ? '13px' : '14px', 
                           color: '#666',
-                          margin: '0 0 12px 0',
+                          margin: '0 0 10px 0',
                           lineHeight: '1.6',
+                          display: '-webkit-box',
+                          WebkitLineClamp: 3,
+                          WebkitBoxOrient: 'vertical',
+                          overflow: 'hidden',
                         }}>
                           {item.content.length > 100 
                             ? item.content.substring(0, 100) + '...' 
                             : item.content}
                         </p>
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: isMobile ? '4px' : '6px' }}>
                           {item.tags.map((tag: any, i: number) => (
                             <span
                               key={i}
                               style={{
-                                fontSize: '11px',
-                                padding: '3px 8px',
+                                fontSize: isMobile ? '10px' : '11px',
+                                padding: isMobile ? '2px 6px' : '3px 8px',
                                 background: '#667eea15',
                                 color: '#667eea',
                                 borderRadius: '12px',
@@ -826,12 +927,12 @@ export default function Home() {
                     {/* 展开详情 */}
                     {selectedItem?.id === item.id && (
                       <div style={{
-                        marginTop: '15px',
-                        paddingTop: '15px',
+                        marginTop: isMobile ? '12px' : '15px',
+                        paddingTop: isMobile ? '12px' : '15px',
                         borderTop: '1px solid #f0f0f0',
-                        fontSize: '14px',
+                        fontSize: isMobile ? '13px' : '14px',
                         color: '#666',
-                        lineHeight: '1.8',
+                        lineHeight: '1.7',
                       }}>
                         {/* 基础内容 */}
                         <div style={{ marginBottom: '15px' }}>
@@ -843,16 +944,16 @@ export default function Home() {
                         {/* 方解/方义分析（方剂） */}
                         {item.analysis && (
                           <div style={{ 
-                            marginBottom: '12px',
-                            padding: '12px',
+                            marginBottom: isMobile ? '10px' : '12px',
+                            padding: isMobile ? '10px' : '12px',
                             background: '#fff5f5',
-                            borderRadius: '8px',
-                            borderLeft: '3px solid #c0392b',
+                            borderRadius: isMobile ? '6px' : '8px',
+                            borderLeft: isMobile ? '2px solid #c0392b' : '3px solid #c0392b',
                           }}>
-                            <div style={{ fontSize: '13px', fontWeight: 'bold', color: '#c0392b', marginBottom: '6px' }}>
+                            <div style={{ fontSize: isMobile ? '12px' : '13px', fontWeight: 'bold', color: '#c0392b', marginBottom: '4px' }}>
                               📖 方解
                             </div>
-                            <div style={{ fontSize: '13px', color: '#666', lineHeight: '1.7' }}>
+                            <div style={{ fontSize: isMobile ? '12px' : '13px', color: '#666', lineHeight: '1.6' }}>
                               {item.analysis}
                             </div>
                           </div>
@@ -861,16 +962,16 @@ export default function Home() {
                         {/* 临床应用 */}
                         {item.clinical && (
                           <div style={{ 
-                            marginBottom: '12px',
-                            padding: '12px',
+                            marginBottom: isMobile ? '10px' : '12px',
+                            padding: isMobile ? '10px' : '12px',
                             background: '#f0f9ff',
-                            borderRadius: '8px',
-                            borderLeft: '3px solid #2980b9',
+                            borderRadius: isMobile ? '6px' : '8px',
+                            borderLeft: isMobile ? '2px solid #2980b9' : '3px solid #2980b9',
                           }}>
-                            <div style={{ fontSize: '13px', fontWeight: 'bold', color: '#2980b9', marginBottom: '6px' }}>
+                            <div style={{ fontSize: isMobile ? '12px' : '13px', fontWeight: 'bold', color: '#2980b9', marginBottom: '4px' }}>
                               🏥 临床应用
                             </div>
-                            <div style={{ fontSize: '13px', color: '#666', lineHeight: '1.7' }}>
+                            <div style={{ fontSize: isMobile ? '12px' : '13px', color: '#666', lineHeight: '1.6' }}>
                               {item.clinical}
                             </div>
                           </div>
@@ -879,16 +980,16 @@ export default function Home() {
                         {/* 加减变化 */}
                         {item.modification && (
                           <div style={{ 
-                            marginBottom: '12px',
-                            padding: '12px',
+                            marginBottom: isMobile ? '10px' : '12px',
+                            padding: isMobile ? '10px' : '12px',
                             background: '#fffbeb',
-                            borderRadius: '8px',
-                            borderLeft: '3px solid #f39c12',
+                            borderRadius: isMobile ? '6px' : '8px',
+                            borderLeft: isMobile ? '2px solid #f39c12' : '3px solid #f39c12',
                           }}>
-                            <div style={{ fontSize: '13px', fontWeight: 'bold', color: '#f39c12', marginBottom: '6px' }}>
+                            <div style={{ fontSize: isMobile ? '12px' : '13px', fontWeight: 'bold', color: '#f39c12', marginBottom: '4px' }}>
                               ⚗️ 加减变化
                             </div>
-                            <div style={{ fontSize: '13px', color: '#666', lineHeight: '1.7' }}>
+                            <div style={{ fontSize: isMobile ? '12px' : '13px', color: '#666', lineHeight: '1.6' }}>
                               {item.modification}
                             </div>
                           </div>
@@ -897,16 +998,16 @@ export default function Home() {
                         {/* 使用注意 */}
                         {item.caution && (
                           <div style={{ 
-                            marginBottom: '12px',
-                            padding: '12px',
+                            marginBottom: isMobile ? '10px' : '12px',
+                            padding: isMobile ? '10px' : '12px',
                             background: '#fef2f2',
-                            borderRadius: '8px',
-                            borderLeft: '3px solid #e74c3c',
+                            borderRadius: isMobile ? '6px' : '8px',
+                            borderLeft: isMobile ? '2px solid #e74c3c' : '3px solid #e74c3c',
                           }}>
-                            <div style={{ fontSize: '13px', fontWeight: 'bold', color: '#e74c3c', marginBottom: '6px' }}>
+                            <div style={{ fontSize: isMobile ? '12px' : '13px', fontWeight: 'bold', color: '#e74c3c', marginBottom: '4px' }}>
                               ⚠️ 使用注意
                             </div>
-                            <div style={{ fontSize: '13px', color: '#666', lineHeight: '1.7' }}>
+                            <div style={{ fontSize: isMobile ? '12px' : '13px', color: '#666', lineHeight: '1.6' }}>
                               {item.caution}
                             </div>
                           </div>
@@ -915,16 +1016,16 @@ export default function Home() {
                         {/* 用法用量（中药） */}
                         {item.usage && (
                           <div style={{ 
-                            marginBottom: '12px',
-                            padding: '12px',
+                            marginBottom: isMobile ? '10px' : '12px',
+                            padding: isMobile ? '10px' : '12px',
                             background: '#f0fdf4',
-                            borderRadius: '8px',
-                            borderLeft: '3px solid #27ae60',
+                            borderRadius: isMobile ? '6px' : '8px',
+                            borderLeft: isMobile ? '2px solid #27ae60' : '3px solid #27ae60',
                           }}>
-                            <div style={{ fontSize: '13px', fontWeight: 'bold', color: '#27ae60', marginBottom: '6px' }}>
+                            <div style={{ fontSize: isMobile ? '12px' : '13px', fontWeight: 'bold', color: '#27ae60', marginBottom: '4px' }}>
                               💊 用法用量
                             </div>
-                            <div style={{ fontSize: '13px', color: '#666', lineHeight: '1.7' }}>
+                            <div style={{ fontSize: isMobile ? '12px' : '13px', color: '#666', lineHeight: '1.6' }}>
                               {item.usage}
                             </div>
                           </div>
@@ -933,16 +1034,16 @@ export default function Home() {
                         {/* 现代研究（中药） */}
                         {item.modern && (
                           <div style={{ 
-                            marginBottom: '12px',
-                            padding: '12px',
+                            marginBottom: isMobile ? '10px' : '12px',
+                            padding: isMobile ? '10px' : '12px',
                             background: '#f5f3ff',
-                            borderRadius: '8px',
-                            borderLeft: '3px solid #8e44ad',
+                            borderRadius: isMobile ? '6px' : '8px',
+                            borderLeft: isMobile ? '2px solid #8e44ad' : '3px solid #8e44ad',
                           }}>
-                            <div style={{ fontSize: '13px', fontWeight: 'bold', color: '#8e44ad', marginBottom: '6px' }}>
+                            <div style={{ fontSize: isMobile ? '12px' : '13px', fontWeight: 'bold', color: '#8e44ad', marginBottom: '4px' }}>
                               🔬 现代研究
                             </div>
-                            <div style={{ fontSize: '13px', color: '#666', lineHeight: '1.7' }}>
+                            <div style={{ fontSize: isMobile ? '12px' : '13px', color: '#666', lineHeight: '1.6' }}>
                               {item.modern}
                             </div>
                           </div>
