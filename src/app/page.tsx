@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useMemo, useEffect, useLayoutEffect } from 'react'
-import { RECIPE_84212_STATS, SAMPLE_RECIPES } from '../data/recipes-84212'
+import { DATASETS, RECIPE_STATS, SAMPLE_RECIPES_84212, SAMPLE_RECIPES_YAOSHI } from '../data/recipes-index'
 
 const knowledgeBase: any = {
   tcm: {
@@ -31,10 +31,12 @@ const knowledgeBase: any = {
       formulas: {
         name: '方剂学',
         special: {
-          title: '🎉 84,212 首超大中医方剂库已上线！',
-          description: '完整收录《北京市中药成方选集》《中医皮肤病学简编》《青囊秘传》《医学入门》《圣惠方》等经典医籍中的 84,212 首方剂，涵盖内、外、妇、儿、皮肤等各科。支持按来源、功效、组成等多种方式检索。',
-          stats: RECIPE_84212_STATS,
-          samples: SAMPLE_RECIPES
+          title: '🎉 101,401 首中医方剂库已上线！',
+          description: '两大权威方剂库完整收录：84,212 首经典方剂 + 17,189 首药食同源食疗方，涵盖《北京市中药成方选集》《中医皮肤病学简编》《青囊秘传》《医学入门》《圣惠方》等经典医籍。支持按来源、功效、组成、标签等多种方式检索。',
+          stats: RECIPE_STATS,
+          datasets: DATASETS,
+          samples84212: SAMPLE_RECIPES_84212,
+          samplesYaoshi: SAMPLE_RECIPES_YAOSHI
         },
         items: [
           { 
@@ -447,6 +449,7 @@ export default function Home() {
   const [sidebarOpen, setSidebarOpen] = useState(true)
   const [isMobile, setIsMobile] = useState(false)
   const [showMobileMenu, setShowMobileMenu] = useState(false)
+  const [selectedDataset, setSelectedDataset] = useState('all') // 'all' | '84212' | 'yaoshi-tongyuan'
 
   // 检测设备类型
   useLayoutEffect(() => {
@@ -810,7 +813,7 @@ export default function Home() {
                 共 {currentSubcategory.items.length} 条知识
               </p>
               
-              {/* 84,212 方剂库特殊提示 */}
+              {/* 101,401 方剂库特殊提示 */}
               {currentSubcategory.special && (
                 <div style={{
                   marginTop: '20px',
@@ -826,8 +829,56 @@ export default function Home() {
                     {currentSubcategory.special.description}
                   </p>
                   
+                  {/* 数据集切换 */}
+                  <div style={{ marginBottom: '20px' }}>
+                    <div style={{ fontSize: isMobile ? '13px' : '14px', fontWeight: 'bold', color: '#333', marginBottom: '10px' }}>
+                      📦 选择数据集
+                    </div>
+                    <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                      <button
+                        onClick={() => setSelectedDataset('all')}
+                        style={{
+                          padding: '8px 16px',
+                          borderRadius: '20px',
+                          border: selectedDataset === 'all' ? '2px solid #667eea' : '2px solid #e0e0e0',
+                          background: selectedDataset === 'all' ? '#667eea' : 'white',
+                          color: selectedDataset === 'all' ? 'white' : '#666',
+                          cursor: 'pointer',
+                          fontSize: '13px',
+                          fontWeight: selectedDataset === 'all' ? 'bold' : 'normal',
+                          transition: 'all 0.2s',
+                        }}
+                      >
+                        全部 ({currentSubcategory.special.stats.total.toLocaleString()}首)
+                      </button>
+                      {currentSubcategory.special.datasets.map((dataset: any) => (
+                        <button
+                          key={dataset.id}
+                          onClick={() => setSelectedDataset(dataset.id)}
+                          style={{
+                            padding: '8px 16px',
+                            borderRadius: '20px',
+                            border: selectedDataset === dataset.id ? `2px solid ${dataset.color}` : '2px solid #e0e0e0',
+                            background: selectedDataset === dataset.id ? dataset.color : 'white',
+                            color: selectedDataset === dataset.id ? 'white' : '#666',
+                            cursor: 'pointer',
+                            fontSize: '13px',
+                            fontWeight: selectedDataset === dataset.id ? 'bold' : 'normal',
+                            transition: 'all 0.2s',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '5px',
+                          }}
+                        >
+                          <span>{dataset.icon}</span>
+                          <span>{dataset.name.split(' ')[0]} ({dataset.count.toLocaleString()}首)</span>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                  
                   {/* 统计数据 */}
-                  <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(4, 1fr)', gap: '15px', marginBottom: '15px' }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(3, 1fr)', gap: '15px', marginBottom: '15px' }}>
                     <div style={{ padding: '15px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
                       <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#667eea' }}>
                         {currentSubcategory.special.stats.total.toLocaleString()}
@@ -836,21 +887,15 @@ export default function Home() {
                     </div>
                     <div style={{ padding: '15px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
                       <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#764ba2' }}>
-                        {currentSubcategory.special.stats.fileA.toLocaleString()}
+                        {currentSubcategory.special.datasets[0].count.toLocaleString()}
                       </div>
-                      <div style={{ fontSize: '12px', color: '#666', marginTop: '5px' }}>文件 A</div>
-                    </div>
-                    <div style={{ padding: '15px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
-                      <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#c0392b' }}>
-                        {currentSubcategory.special.stats.fileB.toLocaleString()}
-                      </div>
-                      <div style={{ fontSize: '12px', color: '#666', marginTop: '5px' }}>文件 B</div>
+                      <div style={{ fontSize: '12px', color: '#666', marginTop: '5px' }}>经典方剂</div>
                     </div>
                     <div style={{ padding: '15px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
                       <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#27ae60' }}>
-                        {currentSubcategory.special.stats.topSources.length}+
+                        {currentSubcategory.special.datasets[1].count.toLocaleString()}
                       </div>
-                      <div style={{ fontSize: '12px', color: '#666', marginTop: '5px' }}>经典医籍</div>
+                      <div style={{ fontSize: '12px', color: '#666', marginTop: '5px' }}>药食同源</div>
                     </div>
                   </div>
                   
@@ -880,22 +925,23 @@ export default function Home() {
                     </div>
                   </div>
                   
-                  {/* 高频中药 */}
+                  {/* 高频标签 */}
                   <div>
                     <div style={{ fontSize: isMobile ? '14px' : '15px', fontWeight: 'bold', color: '#333', marginBottom: '10px' }}>
-                      🌿 高频中药（Top 10）
+                      🏷️  高频标签（Top 10）
                     </div>
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-                      {currentSubcategory.special.stats.topHerbs.map((herb: any, idx: number) => (
+                      {currentSubcategory.special.stats.topTags.slice(0, 10).map((tag: any, idx: number) => (
                         <span key={idx} style={{
                           padding: '6px 12px',
-                          background: '#e8f5e9',
-                          color: '#2e7d32',
+                          background: idx < 3 ? '#667eea15' : '#f0f0f0',
+                          color: idx < 3 ? '#667eea' : '#666',
                           borderRadius: '15px',
                           fontSize: isMobile ? '11px' : '12px',
-                          fontWeight: '500',
+                          fontWeight: idx < 3 ? 'bold' : '500',
+                          border: idx < 3 ? '1px solid #667eea' : 'none',
                         }}>
-                          {herb.name} <span style={{ opacity: 0.7 }}>{herb.count.toLocaleString()}次</span>
+                          {tag.name} <span style={{ opacity: 0.7 }}>{tag.count.toLocaleString()}</span>
                         </span>
                       ))}
                     </div>
@@ -921,18 +967,19 @@ export default function Home() {
               </div>
             ) : (
               <>
-                {/* 84,212 方剂库示例展示 */}
-                {currentSubcategory.special && currentSubcategory.special.samples && (
+                {/* 101,401 方剂库示例展示 */}
+                {currentSubcategory.special && (
                   <div style={{ marginBottom: '30px' }}>
                     <div style={{ fontSize: isMobile ? '16px' : '18px', fontWeight: 'bold', color: '#333', marginBottom: '15px', textAlign: 'center' }}>
-                      🎁 精选示例方剂（共 {currentSubcategory.special.samples.length} 首）
+                      🎁 精选示例方剂
                     </div>
                     <div style={{ 
                       display: 'grid', 
                       gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fill, minmax(280px, 1fr))', 
                       gap: isMobile ? '12px' : '15px',
                     }}>
-                      {currentSubcategory.special.samples.map((item: any) => (
+                      {/* 根据选中的数据集显示示例 */}
+                      {(selectedDataset === 'all' || selectedDataset === '84212') && currentSubcategory.special.samples84212 && currentSubcategory.special.samples84212.map((item: any) => (
                         <div
                           key={item.id}
                           style={{
