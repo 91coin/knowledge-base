@@ -1,0 +1,450 @@
+{
+  "meta": {
+    "name": "古籍经典食疗方",
+    "version": "1.0",
+    "updateTime": "2026-03-23",
+    "source": "《黄帝内经》《伤寒论》《本草纲目》等 105 部中医古籍",
+    "totalCount": 150,
+    "basedOn": "国家药食同源目录（106 种）"
+  },
+  "categories": {
+    "byFunction": {
+      "name": "按功效分类",
+      "groups": [
+        {
+          "name": "补气类",
+          "count": 20,
+          "recipes": [
+            {"name": "四君子汤", "ingredients": ["人参", "白术", "茯苓", "甘草"], "effect": "益气健脾"},
+            {"name": "参苓白术散", "ingredients": ["人参", "茯苓", "白术", "山药", "莲子", "薏苡仁", "砂仁", "桔梗", "甘草"], "effect": "健脾益气，和胃渗湿"},
+            {"name": "补中益气汤", "ingredients": ["黄芪", "人参", "白术", "当归", "陈皮", "升麻", "柴胡", "甘草"], "effect": "补中益气，升阳举陷"},
+            {"name": "山药粥", "ingredients": ["山药", "粳米"], "effect": "健脾益胃，补肾涩精"},
+            {"name": "黄芪炖鸡", "ingredients": ["黄芪", "母鸡"], "effect": "补气养血，健脾益肺"},
+            {"name": "人参粥", "ingredients": ["人参", "粳米"], "effect": "大补元气，健脾益肺"},
+            {"name": "白术猪肚汤", "ingredients": ["白术", "猪肚", "生姜"], "effect": "健脾益气，和胃消食"},
+            {"name": "茯苓粥", "ingredients": ["茯苓", "粳米"], "effect": "健脾宁心，利水渗湿"},
+            {"name": "大枣粥", "ingredients": ["大枣", "粳米"], "effect": "补中益气，养血安神"},
+            {"name": "莲子粥", "ingredients": ["莲子", "粳米"], "effect": "健脾止泻，益肾固精，养心安神"},
+            {"name": "芡实粥", "ingredients": ["芡实", "粳米"], "effect": "益肾固精，健脾止泻"},
+            {"name": "扁豆粥", "ingredients": ["白扁豆", "粳米"], "effect": "健脾化湿，和中消暑"},
+            {"name": "黄芪茶", "ingredients": ["黄芪"], "effect": "补气升阳，固表止汗"},
+            {"name": "党参粥", "ingredients": ["党参", "粳米"], "effect": "补中益气，健脾益肺"},
+            {"name": "太子参茶", "ingredients": ["太子参"], "effect": "益气健脾，生津润肺"},
+            {"name": "灵芝茶", "ingredients": ["灵芝"], "effect": "补气安神，止咳平喘"},
+            {"name": "西洋参茶", "ingredients": ["西洋参"], "effect": "补气养阴，清热生津"},
+            {"name": "甘草茶", "ingredients": ["甘草"], "effect": "补脾益气，清热解毒"},
+            {"name": "蜂蜜水", "ingredients": ["蜂蜜"], "effect": "补中润燥，止痛解毒"},
+            {"name": "龙眼肉粥", "ingredients": ["龙眼肉", "粳米"], "effect": "补益心脾，养血安神"}
+          ]
+        },
+        {
+          "name": "养血类",
+          "count": 18,
+          "recipes": [
+            {"name": "红枣花生汤", "ingredients": ["大枣", "花生"], "effect": "补血止血，健脾益胃"},
+            {"name": "桑椹膏", "ingredients": ["桑椹", "蜂蜜"], "effect": "滋阴补血，生津润燥"},
+            {"name": "枸杞粥", "ingredients": ["枸杞子", "粳米"], "effect": "滋补肝肾，益精明目"},
+            {"name": "黑芝麻糊", "ingredients": ["黑芝麻", "糯米"], "effect": "补肝肾，益精血，润肠燥"},
+            {"name": "红枣粥", "ingredients": ["大枣", "粳米"], "effect": "补中益气，养血安神"},
+            {"name": "桂圆鸡蛋汤", "ingredients": ["龙眼肉", "鸡蛋"], "effect": "补益心脾，养血安神"},
+            {"name": "花生衣汤", "ingredients": ["花生衣"], "effect": "补血止血"},
+            {"name": "葡萄干粥", "ingredients": ["葡萄干", "粳米"], "effect": "补气血，强筋骨"},
+            {"name": "樱桃酒", "ingredients": ["樱桃", "白酒"], "effect": "益气健脾，祛风除湿"},
+            {"name": "阿胶糕", "ingredients": ["阿胶", "黑芝麻", "核桃", "黄酒"], "effect": "补血滋阴，润燥止血"},
+            {"name": "丹参茶", "ingredients": ["丹参"], "effect": "活血祛瘀，通经止痛"},
+            {"name": "玫瑰花茶", "ingredients": ["玫瑰花"], "effect": "行气解郁，和血止痛"},
+            {"name": "木瓜粥", "ingredients": ["木瓜", "粳米"], "effect": "舒筋活络，和胃化湿"},
+            {"name": "桃仁粥", "ingredients": ["桃仁", "粳米"], "effect": "活血祛瘀，润肠通便"},
+            {"name": "山楂茶", "ingredients": ["山楂"], "effect": "消食健胃，行气散瘀"},
+            {"name": "黑木耳汤", "ingredients": ["黑木耳"], "effect": "补气养血，润肺止咳"},
+            {"name": "红糖水", "ingredients": ["红糖"], "effect": "补中缓急，活血化瘀"},
+            {"name": "当归生姜羊肉汤", "ingredients": ["当归", "姜", "羊肉"], "effect": "温中补血，祛寒止痛"}
+          ]
+        },
+        {
+          "name": "滋阴类",
+          "count": 20,
+          "recipes": [
+            {"name": "百合粥", "ingredients": ["百合", "粳米"], "effect": "养阴润肺，清心安神"},
+            {"name": "梨膏", "ingredients": ["梨", "蜂蜜"], "effect": "润肺止咳，生津利咽"},
+            {"name": "玉竹粥", "ingredients": ["玉竹", "粳米"], "effect": "养阴润燥，生津止渴"},
+            {"name": "石斛茶", "ingredients": ["铁皮石斛"], "effect": "益胃生津，滋阴清热"},
+            {"name": "鸭肉冬瓜汤", "ingredients": ["鸭肉", "冬瓜"], "effect": "滋阴清热，利水消肿"},
+            {"name": "猪皮冻", "ingredients": ["猪皮"], "effect": "滋阴润燥，养血止血"},
+            {"name": "藕粉", "ingredients": ["藕"], "effect": "益胃健脾，养血补虚"},
+            {"name": "麦冬茶", "ingredients": ["麦冬"], "effect": "养阴生津，润肺清心"},
+            {"name": "天麻茶", "ingredients": ["天麻"], "effect": "息风止痉，平抑肝阳"},
+            {"name": "五味子茶", "ingredients": ["五味子"], "effect": "收敛固涩，益气生津，补肾宁心"},
+            {"name": "黄精粥", "ingredients": ["黄精", "粳米"], "effect": "补气养阴，健脾润肺"},
+            {"name": "葛根茶", "ingredients": ["葛根"], "effect": "解肌退热，生津止渴"},
+            {"name": "芦根茶", "ingredients": ["鲜芦根"], "effect": "清热泻火，生津止渴"},
+            {"name": "白茅根茶", "ingredients": ["鲜白茅根"], "effect": "凉血止血，清热利尿"},
+            {"name": "菊花茶", "ingredients": ["菊花"], "effect": "疏散风热，平抑肝阳，清肝明目"},
+            {"name": "枸杞茶", "ingredients": ["枸杞子"], "effect": "滋补肝肾，益精明目"},
+            {"name": "桑椹茶", "ingredients": ["桑椹"], "effect": "滋阴补血，生津润燥"},
+            {"name": "银耳羹", "ingredients": ["银耳", "冰糖"], "effect": "滋阴润肺，养胃生津"},
+            {"name": "甲鱼汤", "ingredients": ["甲鱼"], "effect": "滋阴凉血，补肾健骨"}
+          ]
+        },
+        {
+          "name": "温阳类",
+          "count": 18,
+          "recipes": [
+            {"name": "姜枣茶", "ingredients": ["姜", "大枣"], "effect": "温中散寒，补血益气"},
+            {"name": "肉桂粥", "ingredients": ["肉桂", "粳米"], "effect": "补火助阳，散寒止痛"},
+            {"name": "羊肉汤", "ingredients": ["羊肉", "姜", "葱"], "effect": "温中暖下，益气补虚"},
+            {"name": "韭菜炒鸡蛋", "ingredients": ["韭菜", "鸡蛋"], "effect": "温肾助阳，行气活血"},
+            {"name": "核桃仁粥", "ingredients": ["核桃仁", "粳米"], "effect": "补肾温肺，润肠通便"},
+            {"name": "小茴香粥", "ingredients": ["小茴香", "粳米"], "effect": "散寒止痛，理气和胃"},
+            {"name": "丁香茶", "ingredients": ["丁香"], "effect": "温中降逆，补肾助阳"},
+            {"name": "胡椒猪肚汤", "ingredients": ["黑胡椒", "猪肚"], "effect": "温中散寒，健脾和胃"},
+            {"name": "高良姜粥", "ingredients": ["高良姜", "粳米"], "effect": "温胃止呕，散寒止痛"},
+            {"name": "桂皮茶", "ingredients": ["肉桂"], "effect": "补火助阳，散寒止痛"},
+            {"name": "八角茶", "ingredients": ["八角茴香"], "effect": "温阳散寒，理气止痛"},
+            {"name": "花椒茶", "ingredients": ["花椒"], "effect": "温中止痛，杀虫止痒"},
+            {"name": "荜茇茶", "ingredients": ["荜茇"], "effect": "温中散寒，下气止痛"},
+            {"name": "姜黄茶", "ingredients": ["姜黄"], "effect": "破血行气，通经止痛"},
+            {"name": "酒酿", "ingredients": ["糯米", "酒曲"], "effect": "益气生津，活血通经"},
+            {"name": "红曲酒", "ingredients": ["红曲", "白酒"], "effect": "活血化瘀，健脾消食"},
+            {"name": "虫草茶", "ingredients": ["冬虫夏草"], "effect": "补肾益肺，止血化痰"},
+            {"name": "藏红花茶", "ingredients": ["藏红花"], "effect": "活血化瘀，凉血解毒"}
+          ]
+        },
+        {
+          "name": "健脾类",
+          "count": 25,
+          "recipes": [
+            {"name": "四神汤", "ingredients": ["山药", "莲子", "芡实", "茯苓"], "effect": "健脾祛湿，益气养胃"},
+            {"name": "薏米红豆粥", "ingredients": ["薏苡仁", "赤小豆"], "effect": "健脾祛湿，利水消肿"},
+            {"name": "茯苓饼", "ingredients": ["茯苓", "面粉"], "effect": "健脾宁心，利水渗湿"},
+            {"name": "麦芽山楂饮", "ingredients": ["麦芽", "山楂"], "effect": "消食化积，行气散瘀"},
+            {"name": "鸡内金饼", "ingredients": ["鸡内金", "面粉"], "effect": "健胃消食，涩精止遗"},
+            {"name": "萝卜粥", "ingredients": ["莱菔子", "粳米"], "effect": "消食除胀，降气化痰"},
+            {"name": "陈皮粥", "ingredients": ["橘皮", "粳米"], "effect": "理气健脾，燥湿化痰"},
+            {"name": "砂仁粥", "ingredients": ["砂仁", "粳米"], "effect": "化湿开胃，温脾止泻"},
+            {"name": "木瓜粥", "ingredients": ["木瓜", "粳米"], "effect": "舒筋活络，和胃化湿"},
+            {"name": "荷叶粥", "ingredients": ["荷叶", "粳米"], "effect": "清暑化湿，升发清阳"},
+            {"name": "冬瓜粥", "ingredients": ["冬瓜", "粳米"], "effect": "清热利水，消肿解毒"},
+            {"name": "玉米须茶", "ingredients": ["玉米须"], "effect": "利水消肿，利湿退黄"},
+            {"name": "赤小豆汤", "ingredients": ["赤小豆"], "effect": "利水消肿，解毒排脓"},
+            {"name": "鲤鱼汤", "ingredients": ["鲤鱼"], "effect": "利水消肿，下气通乳"},
+            {"name": "鲫鱼汤", "ingredients": ["鲫鱼"], "effect": "健脾利湿，和中开胃"},
+            {"name": "南瓜粥", "ingredients": ["南瓜", "粳米"], "effect": "补中益气，健脾和胃"},
+            {"name": "小米粥", "ingredients": ["小米"], "effect": "健脾和胃，补益虚损"},
+            {"name": "锅巴粥", "ingredients": ["锅巴", "粳米"], "effect": "健脾消食，止泻"},
+            {"name": "山药茯苓粥", "ingredients": ["山药", "茯苓", "粳米"], "effect": "健脾益胃，利水渗湿"},
+            {"name": "白术茶", "ingredients": ["白术"], "effect": "健脾益气，燥湿利水"},
+            {"name": "党参茶", "ingredients": ["党参"], "effect": "补中益气，健脾益肺"},
+            {"name": "甘草大枣汤", "ingredients": ["甘草", "大枣"], "effect": "补脾益气，养血安神"},
+            {"name": "莲子山药粥", "ingredients": ["莲子", "山药", "粳米"], "effect": "健脾止泻，益肾固精"},
+            {"name": "芡实莲子粥", "ingredients": ["芡实", "莲子", "粳米"], "effect": "益肾固精，健脾止泻"},
+            {"name": "扁豆山药粥", "ingredients": ["白扁豆", "山药", "粳米"], "effect": "健脾化湿，补肾涩精"}
+          ]
+        },
+        {
+          "name": "祛湿类",
+          "count": 22,
+          "recipes": [
+            {"name": "薏苡仁粥", "ingredients": ["薏苡仁", "粳米"], "effect": "利水渗湿，健脾止泻"},
+            {"name": "赤小豆汤", "ingredients": ["赤小豆"], "effect": "利水消肿，解毒排脓"},
+            {"name": "冬瓜汤", "ingredients": ["冬瓜"], "effect": "清热利水，消肿解毒"},
+            {"name": "荷叶茶", "ingredients": ["荷叶"], "effect": "清暑化湿，升发清阳"},
+            {"name": "绿豆汤", "ingredients": ["绿豆"], "effect": "清热解毒，消暑利水"},
+            {"name": "苦瓜炒蛋", "ingredients": ["苦瓜", "鸡蛋"], "effect": "清热解暑，明目解毒"},
+            {"name": "黄瓜凉拌", "ingredients": ["黄瓜"], "effect": "清热利水，解毒消肿"},
+            {"name": "芹菜汁", "ingredients": ["芹菜"], "effect": "清热平肝，祛风利湿"},
+            {"name": "马齿苋粥", "ingredients": ["马齿苋", "粳米"], "effect": "清热解毒，凉血止血"},
+            {"name": "鱼腥草茶", "ingredients": ["鱼腥草"], "effect": "清热解毒，消痈排脓"},
+            {"name": "蒲公英茶", "ingredients": ["蒲公英"], "effect": "清热解毒，消肿散结"},
+            {"name": "菊花茶", "ingredients": ["菊花"], "effect": "疏散风热，平抑肝阳"},
+            {"name": "金银花茶", "ingredients": ["金银花"], "effect": "清热解毒，疏散风热"},
+            {"name": "栀子茶", "ingredients": ["栀子"], "effect": "泻火除烦，清热利湿"},
+            {"name": "淡竹叶茶", "ingredients": ["淡竹叶"], "effect": "清热泻火，除烦止渴"},
+            {"name": "西瓜汁", "ingredients": ["西瓜"], "effect": "清热解暑，除烦止渴"},
+            {"name": "香蕉", "ingredients": ["香蕉"], "effect": "清热润肠，通便解毒"},
+            {"name": "茯苓茶", "ingredients": ["茯苓"], "effect": "利水渗湿，健脾宁心"},
+            {"name": "薏苡仁茶", "ingredients": ["薏苡仁"], "effect": "利水渗湿，健脾止泻"},
+            {"name": "茵陈茶", "ingredients": ["茵陈"], "effect": "清利湿热，利胆退黄"},
+            {"name": "车前草茶", "ingredients": ["车前草"], "effect": "清热利尿，凉血解毒"}
+          ]
+        },
+        {
+          "name": "清热类",
+          "count": 25,
+          "recipes": [
+            {"name": "菊花茶", "ingredients": ["菊花"], "effect": "疏散风热，平抑肝阳，清肝明目"},
+            {"name": "金银花茶", "ingredients": ["金银花"], "effect": "清热解毒，疏散风热"},
+            {"name": "薄荷茶", "ingredients": ["薄荷"], "effect": "疏散风热，清利头目"},
+            {"name": "桑叶茶", "ingredients": ["桑叶"], "effect": "疏散风热，清肺润燥"},
+            {"name": "葛根茶", "ingredients": ["葛根"], "effect": "解肌退热，生津止渴"},
+            {"name": "黄芩茶", "ingredients": ["黄芩"], "effect": "清热燥湿，泻火解毒"},
+            {"name": "栀子茶", "ingredients": ["栀子"], "effect": "泻火除烦，清热利湿"},
+            {"name": "蒲公英茶", "ingredients": ["蒲公英"], "effect": "清热解毒，消肿散结"},
+            {"name": "鱼腥草茶", "ingredients": ["鱼腥草"], "effect": "清热解毒，消痈排脓"},
+            {"name": "马齿苋粥", "ingredients": ["马齿苋", "粳米"], "effect": "清热解毒，凉血止血"},
+            {"name": "绿豆汤", "ingredients": ["绿豆"], "effect": "清热解毒，消暑利水"},
+            {"name": "西瓜汁", "ingredients": ["西瓜"], "effect": "清热解暑，除烦止渴"},
+            {"name": "苦瓜炒蛋", "ingredients": ["苦瓜", "鸡蛋"], "effect": "清热解暑，明目解毒"},
+            {"name": "黄瓜凉拌", "ingredients": ["黄瓜"], "effect": "清热利水，解毒消肿"},
+            {"name": "芹菜汁", "ingredients": ["芹菜"], "effect": "清热平肝，祛风利湿"},
+            {"name": "冬瓜汤", "ingredients": ["冬瓜"], "effect": "清热利水，消肿解毒"},
+            {"name": "荷叶茶", "ingredients": ["荷叶"], "effect": "清暑化湿，升发清阳"},
+            {"name": "淡竹叶茶", "ingredients": ["淡竹叶"], "effect": "清热泻火，除烦止渴"},
+            {"name": "白茅根茶", "ingredients": ["鲜白茅根"], "effect": "凉血止血，清热利尿"},
+            {"name": "芦根茶", "ingredients": ["鲜芦根"], "effect": "清热泻火，生津止渴"},
+            {"name": "板蓝根茶", "ingredients": ["板蓝根"], "effect": "清热解毒，凉血利咽"},
+            {"name": "大青叶茶", "ingredients": ["大青叶"], "effect": "清热解毒，凉血消斑"},
+            {"name": "野菊花茶", "ingredients": ["野菊花"], "effect": "清热解毒，泻火平肝"},
+            {"name": "紫花地丁茶", "ingredients": ["紫花地丁"], "effect": "清热解毒，凉血消肿"},
+            {"name": "黄连茶", "ingredients": ["黄连"], "effect": "清热燥湿，泻火解毒"}
+          ]
+        },
+        {
+          "name": "理气类",
+          "count": 22,
+          "recipes": [
+            {"name": "陈皮茶", "ingredients": ["橘皮"], "effect": "理气健脾，燥湿化痰"},
+            {"name": "佛手茶", "ingredients": ["佛手"], "effect": "疏肝解郁，理气和中"},
+            {"name": "香橼茶", "ingredients": ["香橼"], "effect": "疏肝解郁，理气宽中"},
+            {"name": "玫瑰花茶", "ingredients": ["玫瑰花"], "effect": "行气解郁，和血止痛"},
+            {"name": "茉莉花茶", "ingredients": ["茉莉花"], "effect": "理气开郁，辟秽和中"},
+            {"name": "薄荷茶", "ingredients": ["薄荷"], "effect": "疏散风热，清利头目"},
+            {"name": "紫苏茶", "ingredients": ["紫苏"], "effect": "解表散寒，行气和胃"},
+            {"name": "砂仁茶", "ingredients": ["砂仁"], "effect": "化湿开胃，温脾止泻"},
+            {"name": "丁香茶", "ingredients": ["丁香"], "effect": "温中降逆，补肾助阳"},
+            {"name": "八角茶", "ingredients": ["八角茴香"], "effect": "温阳散寒，理气止痛"},
+            {"name": "小茴香茶", "ingredients": ["小茴香"], "effect": "散寒止痛，理气和胃"},
+            {"name": "花椒茶", "ingredients": ["花椒"], "effect": "温中止痛，杀虫止痒"},
+            {"name": "胡椒茶", "ingredients": ["黑胡椒"], "effect": "温中散寒，下气消痰"},
+            {"name": "姜茶", "ingredients": ["姜"], "effect": "解表散寒，温中止呕"},
+            {"name": "枣茶", "ingredients": ["大枣"], "effect": "补中益气，养血安神"},
+            {"name": "甘草茶", "ingredients": ["甘草"], "effect": "补脾益气，清热解毒"},
+            {"name": "蜂蜜水", "ingredients": ["蜂蜜"], "effect": "补中润燥，止痛解毒"},
+            {"name": "芝麻糊", "ingredients": ["黑芝麻", "糯米"], "effect": "补肝肾，益精血"},
+            {"name": "核桃仁粥", "ingredients": ["核桃仁", "粳米"], "effect": "补肾温肺，润肠通便"},
+            {"name": "松子仁粥", "ingredients": ["松子仁", "粳米"], "effect": "润燥滑肠，补虚养液"},
+            {"name": "桃仁粥", "ingredients": ["桃仁", "粳米"], "effect": "活血祛瘀，润肠通便"},
+            {"name": "山楂茶", "ingredients": ["山楂"], "effect": "消食健胃，行气散瘀"}
+          ]
+        }
+      ]
+    },
+    "byPeople": {
+      "name": "按人群分类",
+      "groups": [
+        {
+          "name": "儿童食疗",
+          "count": 15,
+          "recipes": [
+            {"name": "鸡内金饼", "effect": "健胃消食", "note": "适用于小儿食积"},
+            {"name": "麦芽山楂饮", "effect": "消食化积", "note": "适用于小儿厌食"},
+            {"name": "山药粥", "effect": "健脾益胃", "note": "适用于小儿脾虚"},
+            {"name": "莲子粥", "effect": "健脾止泻", "note": "适用于小儿腹泻"},
+            {"name": "南瓜粥", "effect": "健脾和胃", "note": "适用于小儿消化不良"},
+            {"name": "小米粥", "effect": "健脾和胃", "note": "适用于小儿病后体虚"},
+            {"name": "萝卜粥", "effect": "消食除胀", "note": "适用于小儿腹胀"},
+            {"name": "大枣粥", "effect": "补中益气", "note": "适用于小儿体虚"},
+            {"name": "茯苓粥", "effect": "健脾宁心", "note": "适用于小儿脾虚湿盛"},
+            {"name": "扁豆粥", "effect": "健脾化湿", "note": "适用于小儿暑湿泄泻"},
+            {"name": "陈皮粥", "effect": "理气健脾", "note": "适用于小儿气滞"},
+            {"name": "砂仁粥", "effect": "化湿开胃", "note": "适用于小儿湿困脾胃"},
+            {"name": "荷叶粥", "effect": "清暑化湿", "note": "适用于小儿暑热"},
+            {"name": "冬瓜粥", "effect": "清热利水", "note": "适用于小儿水肿"},
+            {"name": "玉米须茶", "effect": "利水消肿", "note": "适用于小儿小便不利"}
+          ]
+        },
+        {
+          "name": "女性食疗",
+          "count": 20,
+          "recipes": [
+            {"name": "红枣花生汤", "effect": "补血止血", "note": "适用于月经不调"},
+            {"name": "龙眼肉粥", "effect": "补益心脾", "note": "适用于心血不足"},
+            {"name": "玫瑰花茶", "effect": "行气解郁", "note": "适用于肝气郁结"},
+            {"name": "枸杞粥", "effect": "滋补肝肾", "note": "适用于肝肾阴虚"},
+            {"name": "黑芝麻糊", "effect": "补肝肾", "note": "适用于须发早白"},
+            {"name": "桑椹膏", "effect": "滋阴补血", "note": "适用于血虚便秘"},
+            {"name": "百合粥", "effect": "养阴润肺", "note": "适用于阴虚燥咳"},
+            {"name": "银耳羹", "effect": "滋阴润肺", "note": "适用于皮肤干燥"},
+            {"name": "阿胶糕", "effect": "补血滋阴", "note": "适用于血虚萎黄"},
+            {"name": "当归生姜羊肉汤", "effect": "温中补血", "note": "适用于产后腹痛"},
+            {"name": "红糖水", "effect": "活血化瘀", "note": "适用于痛经"},
+            {"name": "黑木耳汤", "effect": "补气养血", "note": "适用于气血两虚"},
+            {"name": "丹参茶", "effect": "活血祛瘀", "note": "适用于血瘀痛经"},
+            {"name": "藏红花茶", "effect": "活血化瘀", "note": "适用于血瘀经闭"},
+            {"name": "虫草茶", "effect": "补肾益肺", "note": "适用于肾虚"},
+            {"name": "石斛茶", "effect": "益胃生津", "note": "适用于胃阴不足"},
+            {"name": "五味子茶", "effect": "收敛固涩", "note": "适用于自汗盗汗"},
+            {"name": "黄精粥", "effect": "补气养阴", "note": "适用于气阴两虚"},
+            {"name": "木瓜粥", "effect": "舒筋活络", "note": "适用于产后风湿"},
+            {"name": "樱桃酒", "effect": "益气健脾", "note": "适用于脾虚泄泻"}
+          ]
+        },
+        {
+          "name": "老人食疗",
+          "count": 20,
+          "recipes": [
+            {"name": "枸杞粥", "effect": "滋补肝肾", "note": "适用于肝肾不足"},
+            {"name": "核桃仁粥", "effect": "补肾温肺", "note": "适用于肾虚喘咳"},
+            {"name": "山药粥", "effect": "健脾益胃", "note": "适用于脾虚食少"},
+            {"name": "茯苓粥", "effect": "健脾宁心", "note": "适用于心悸失眠"},
+            {"name": "蜂蜜水", "effect": "补中润燥", "note": "适用于肠燥便秘"},
+            {"name": "黑芝麻糊", "effect": "补肝肾", "note": "适用于须发早白"},
+            {"name": "黄精粥", "effect": "补气养阴", "note": "适用于气阴两虚"},
+            {"name": "玉竹粥", "effect": "养阴润燥", "note": "适用于阴虚肺燥"},
+            {"name": "石斛茶", "effect": "益胃生津", "note": "适用于胃阴不足"},
+            {"name": "人参粥", "effect": "大补元气", "note": "适用于气虚体弱"},
+            {"name": "党参茶", "effect": "补中益气", "note": "适用于脾肺气虚"},
+            {"name": "西洋参茶", "effect": "补气养阴", "note": "适用于气阴两虚"},
+            {"name": "灵芝茶", "effect": "补气安神", "note": "适用于失眠健忘"},
+            {"name": "虫草茶", "effect": "补肾益肺", "note": "适用于肾虚精亏"},
+            {"name": "天麻茶", "effect": "息风止痉", "note": "适用于头晕目眩"},
+            {"name": "葛根茶", "effect": "解肌退热", "note": "适用于项背强痛"},
+            {"name": "菊花茶", "effect": "平抑肝阳", "note": "适用于肝阳上亢"},
+            {"name": "决明子茶", "effect": "清肝明目", "note": "适用于目赤肿痛"},
+            {"name": "山楂茶", "effect": "消食健胃", "note": "适用于食积不化"},
+            {"name": "丹参茶", "effect": "活血祛瘀", "note": "适用于胸痹心痛"}
+          ]
+        },
+        {
+          "name": "孕妇食疗",
+          "count": 10,
+          "recipes": [
+            {"name": "山药粥", "effect": "健脾益胃", "note": "安全，适用于脾虚食少"},
+            {"name": "莲子粥", "effect": "健脾止泻", "note": "安全，适用于脾虚泄泻"},
+            {"name": "大枣粥", "effect": "补中益气", "note": "安全，适用于气血不足"},
+            {"name": "小米粥", "effect": "健脾和胃", "note": "安全，适用于妊娠呕吐"},
+            {"name": "南瓜粥", "effect": "健脾和胃", "note": "安全，适用于消化不良"},
+            {"name": "茯苓粥", "effect": "健脾宁心", "note": "安全，适用于心悸失眠"},
+            {"name": "白扁豆粥", "effect": "健脾化湿", "note": "安全，适用于暑湿泄泻"},
+            {"name": "芝麻糊", "effect": "补肝肾", "note": "安全，适用于肠燥便秘"},
+            {"name": "龙眼肉粥", "effect": "补益心脾", "note": "适量，适用于心血不足"},
+            {"name": "百合粥", "effect": "养阴润肺", "note": "安全，适用于阴虚燥咳"}
+          ],
+          "warnings": ["薏苡仁", "山楂", "肉桂", "螃蟹", "甲鱼", "藏红花", "桃仁"]
+        },
+        {
+          "name": "亚健康人群",
+          "count": 15,
+          "recipes": [
+            {"name": "黄芪茶", "effect": "补气升阳", "note": "适用于气虚乏力"},
+            {"name": "灵芝茶", "effect": "补气安神", "note": "适用于失眠健忘"},
+            {"name": "西洋参茶", "effect": "补气养阴", "note": "适用于气阴两虚"},
+            {"name": "枸杞茶", "effect": "滋补肝肾", "note": "适用于肝肾阴虚"},
+            {"name": "菊花茶", "effect": "平抑肝阳", "note": "适用于肝阳上亢"},
+            {"name": "玫瑰花茶", "effect": "行气解郁", "note": "适用于肝气郁结"},
+            {"name": "蜂蜜水", "effect": "补中润燥", "note": "适用于肠燥便秘"},
+            {"name": "黑芝麻糊", "effect": "补肝肾", "note": "适用于须发早白"},
+            {"name": "核桃仁粥", "effect": "补肾温肺", "note": "适用于肾虚喘咳"},
+            {"name": "山药粥", "effect": "健脾益胃", "note": "适用于脾虚食少"},
+            {"name": "茯苓粥", "effect": "健脾宁心", "note": "适用于心悸失眠"},
+            {"name": "莲子粥", "effect": "健脾止泻", "note": "适用于脾虚泄泻"},
+            {"name": "百合粥", "effect": "养阴润肺", "note": "适用于阴虚燥咳"},
+            {"name": "桑椹膏", "effect": "滋阴补血", "note": "适用于血虚便秘"},
+            {"name": "黄精粥", "effect": "补气养阴", "note": "适用于气阴两虚"}
+          ]
+        }
+      ]
+    },
+    "byConstitution": {
+      "name": "体质食疗方案",
+      "constitutions": [
+        {
+          "name": "平和质",
+          "description": "体态适中，面色红润，精力充沛",
+          "recommendations": ["五谷杂粮粥", "山药粥", "茯苓粥"],
+          "avoid": ["无明显禁忌"]
+        },
+        {
+          "name": "气虚质",
+          "description": "肌肉松软，声音低弱，容易疲劳",
+          "recommendations": ["山药粥", "黄芪炖鸡", "党参茶", "甘草茶"],
+          "avoid": ["生冷苦寒"]
+        },
+        {
+          "name": "阳虚质",
+          "description": "手脚冰凉，怕冷，喜热饮",
+          "recommendations": ["姜枣茶", "肉桂粥", "羊肉汤", "虫草茶"],
+          "avoid": ["生冷寒凉"]
+        },
+        {
+          "name": "阴虚质",
+          "description": "手足心热，口干咽燥，喜冷饮",
+          "recommendations": ["百合粥", "桑椹膏", "石斛茶", "五味子茶"],
+          "avoid": ["辛辣燥热"]
+        },
+        {
+          "name": "痰湿质",
+          "description": "形体肥胖，腹部肥满，口黏苔腻",
+          "recommendations": ["薏米红豆粥", "茯苓饼", "陈皮茶", "砂仁茶"],
+          "avoid": ["肥甘厚味"]
+        },
+        {
+          "name": "湿热质",
+          "description": "面部油光，易生痤疮，口苦口干",
+          "recommendations": ["绿豆汤", "荷叶茶", "栀子茶", "茵陈茶"],
+          "avoid": ["辛辣油腻"]
+        },
+        {
+          "name": "血瘀质",
+          "description": "肤色晦暗，色素沉着，容易出现瘀斑",
+          "recommendations": ["山楂茶", "黑木耳汤", "丹参茶", "藏红花茶"],
+          "avoid": ["寒凉收涩"]
+        },
+        {
+          "name": "气郁质",
+          "description": "神情抑郁，情感脆弱，烦闷不乐",
+          "recommendations": ["玫瑰花茶", "茉莉花茶", "佛手茶", "香橼茶"],
+          "avoid": ["收敛酸涩"]
+        },
+        {
+          "name": "特禀质",
+          "description": "过敏体质，易患哮喘、荨麻疹等",
+          "recommendations": ["灵芝茶", "蜂蜜水", "黄芪茶", "五味子茶"],
+          "avoid": ["发物"]
+        }
+      ]
+    },
+    "bySeason": {
+      "name": "四季食疗",
+      "seasons": [
+        {
+          "name": "春",
+          "principle": "养肝护阳",
+          "recipes": ["枸杞茶", "韭菜", "菊花茶", "玫瑰花茶", "佛手茶"]
+        },
+        {
+          "name": "夏",
+          "principle": "清热解暑",
+          "recipes": ["绿豆汤", "冬瓜汤", "荷叶茶", "西瓜汁", "金银花茶", "薄荷茶"]
+        },
+        {
+          "name": "秋",
+          "principle": "润肺防燥",
+          "recipes": ["梨膏", "百合粥", "蜂蜜水", "桑椹膏", "石斛茶", "玉竹粥"]
+        },
+        {
+          "name": "冬",
+          "principle": "温补肾阳",
+          "recipes": ["姜枣茶", "肉桂粥", "羊肉汤", "核桃仁粥", "虫草茶", "八角茶"]
+        }
+      ]
+    }
+  },
+  "guidelines": {
+    "notes": [
+      "辨证施食：根据体质选择食疗方",
+      "适量为宜：食疗虽好，不可过量",
+      "长期坚持：食疗效果缓慢，需长期坚持",
+      "特殊情况：孕妇、儿童、老人需咨询医师",
+      "药物相互作用：服用西药时注意食物禁忌"
+    ],
+    "warnings": [
+      {"group": "孕妇", "avoid": ["薏苡仁", "山楂", "肉桂", "螃蟹", "甲鱼", "藏红花", "桃仁"]},
+      {"group": "儿童", "avoid": ["人参", "黄芪（慎用）"]},
+      {"group": "糖尿病患者", "avoid": ["蜂蜜", "冰糖", "大枣", "西瓜"]},
+      {"group": "高血压患者", "avoid": ["甘草（长期大量）"]},
+      {"group": "肾病患者", "avoid": ["杨桃", "高蛋白食物"]},
+      {"group": "肝病患者", "avoid": ["酒精", "高脂肪食物"]}
+    ]
+  }
+}

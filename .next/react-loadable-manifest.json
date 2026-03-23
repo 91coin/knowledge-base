@@ -1,14 +1,1 @@
-{
-  "app/page.tsx -> ../data/recipes-index": {
-    "id": 5305,
-    "files": [
-      "static/chunks/305.29fa7716b0fb8516.js"
-    ]
-  },
-  "app/page.tsx -> ../data/yaoshi-tongyuan-catalog": {
-    "id": 9333,
-    "files": [
-      "static/chunks/333.64cb5d8c36bb08d2.js"
-    ]
-  }
-}
+{}

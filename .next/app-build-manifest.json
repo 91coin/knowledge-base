@@ -1,25 +1,32 @@
 {
   "pages": {
     "/_not-found/page": [
-      "static/chunks/webpack-5710ba7bd3088b67.js",
+      "static/chunks/webpack-100b9e646d9c912e.js",
       "static/chunks/fd9d1056-253d8695cd74475a.js",
-      "static/chunks/117-fc7caf60d67e3610.js",
+      "static/chunks/117-f1f0722679bdc789.js",
       "static/chunks/main-app-66a01f1568f0d4a6.js",
       "static/chunks/app/_not-found/page-d54e8ec7e7ec9967.js"
     ],
     "/layout": [
-      "static/chunks/webpack-5710ba7bd3088b67.js",
+      "static/chunks/webpack-100b9e646d9c912e.js",
       "static/chunks/fd9d1056-253d8695cd74475a.js",
-      "static/chunks/117-fc7caf60d67e3610.js",
+      "static/chunks/117-f1f0722679bdc789.js",
       "static/chunks/main-app-66a01f1568f0d4a6.js",
       "static/chunks/app/layout-cbd3ebdc4ecc5247.js"
     ],
     "/page": [
-      "static/chunks/webpack-5710ba7bd3088b67.js",
+      "static/chunks/webpack-100b9e646d9c912e.js",
       "static/chunks/fd9d1056-253d8695cd74475a.js",
-      "static/chunks/117-fc7caf60d67e3610.js",
+      "static/chunks/117-f1f0722679bdc789.js",
       "static/chunks/main-app-66a01f1568f0d4a6.js",
-      "static/chunks/app/page-8cd8de7de0b804dd.js"
+      "static/chunks/app/page-6c10cab4a78433b8.js"
+    ],
+    "/yaoshi-tongyuan/page": [
+      "static/chunks/webpack-100b9e646d9c912e.js",
+      "static/chunks/fd9d1056-253d8695cd74475a.js",
+      "static/chunks/117-f1f0722679bdc789.js",
+      "static/chunks/main-app-66a01f1568f0d4a6.js",
+      "static/chunks/app/yaoshi-tongyuan/page-f25d6f6443d803a1.js"
     ]
   }
 }
