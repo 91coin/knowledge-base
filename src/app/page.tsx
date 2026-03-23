@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useEffect, useLayoutEffect } from 'react'
 import { DATASETS, RECIPE_STATS, SAMPLE_RECIPES_84212, SAMPLE_RECIPES_YAOSHI } from '../data/recipes-index'
+import { YAOSHI_TONGYUAN_CATALOG, YAOSHI_STATS } from '../data/yaoshi-tongyuan-catalog'
 
 const knowledgeBase: any = {
   tcm: {
@@ -39,6 +40,14 @@ const knowledgeBase: any = {
           samplesYaoshi: SAMPLE_RECIPES_YAOSHI
         },
         items: [
+          {
+            id: 'yaoshi-catalog',
+            title: '🍲 国家药食同源目录（106 种）',
+            source: '国家卫健委',
+            content: '国家卫健委公布的药食同源物质目录，截至 2023 年底共 106 种（基础目录 87 种 + 2023 年新增 3 种 + 动物类 5 种 + 其他类 4 种）。包含植物类 78 种、动物类 5 种、其他类 4 种。',
+            tags: ['药食同源', '国家标准', '食疗'],
+            catalog: YAOSHI_TONGYUAN_CATALOG
+          },
           { 
             id: 'formula-1', 
             title: '麻黄汤', 
@@ -967,6 +976,130 @@ export default function Home() {
               </div>
             ) : (
               <>
+                {/* 药食同源目录展示 */}
+                {filteredItems.some((item: any) => item.catalog) && (
+                  <div style={{ marginBottom: '30px' }}>
+                    <div style={{ 
+                      padding: isMobile ? '15px' : '20px',
+                      background: 'linear-gradient(135deg, #27ae6015 0%, #2ecc7115 100%)',
+                      borderRadius: '15px',
+                      border: '2px solid #27ae60',
+                      marginBottom: '20px',
+                    }}>
+                      <div style={{ fontSize: isMobile ? '16px' : '18px', fontWeight: 'bold', color: '#27ae60', marginBottom: '10px' }}>
+                        🍲 国家药食同源目录（106 种完整版）
+                      </div>
+                      <p style={{ fontSize: isMobile ? '13px' : '14px', color: '#666', marginBottom: '15px' }}>
+                        依据：国家卫健委《按照传统既是食品又是中药材的物质目录》（截至 2023 年底）
+                      </p>
+                      
+                      {/* 统计卡片 */}
+                      <div style={{ display: 'grid', gridTemplateColumns: isMobile ? 'repeat(2, 1fr)' : 'repeat(5, 1fr)', gap: '10px', marginBottom: '20px' }}>
+                        <div style={{ padding: '12px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
+                          <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#27ae60' }}>{YAOSHI_STATS.totalItems}</div>
+                          <div style={{ fontSize: '11px', color: '#666' }}>总物质数</div>
+                        </div>
+                        <div style={{ padding: '12px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
+                          <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#3498db' }}>{YAOSHI_STATS.plantItems}</div>
+                          <div style={{ fontSize: '11px', color: '#666' }}>植物类</div>
+                        </div>
+                        <div style={{ padding: '12px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
+                          <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#e74c3c' }}>{YAOSHI_STATS.animalItems}</div>
+                          <div style={{ fontSize: '11px', color: '#666' }}>动物类</div>
+                        </div>
+                        <div style={{ padding: '12px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
+                          <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#f39c12' }}>{YAOSHI_STATS.added2023}</div>
+                          <div style={{ fontSize: '11px', color: '#666' }}>2023 新增</div>
+                        </div>
+                        <div style={{ padding: '12px', background: 'white', borderRadius: '10px', textAlign: 'center' }}>
+                          <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#9b59b6' }}>{YAOSHI_STATS.totalRecipes}</div>
+                          <div style={{ fontSize: '11px', color: '#666' }}>经典食疗方</div>
+                        </div>
+                      </div>
+                      
+                      {/* 分类展示 */}
+                      <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)', gap: '15px' }}>
+                        <div style={{ padding: '15px', background: 'white', borderRadius: '10px' }}>
+                          <div style={{ fontSize: '14px', fontWeight: 'bold', color: '#333', marginBottom: '10px' }}>📊 按功效分类（8 类）</div>
+                          <div style={{ fontSize: '12px', color: '#666', lineHeight: '1.8' }}>
+                            补气类 20 首、养血类 18 首、滋阴类 20 首、温阳类 18 首、健脾类 25 首、祛湿类 22 首、清热类 25 首、理气类 22 首
+                          </div>
+                        </div>
+                        <div style={{ padding: '15px', background: 'white', borderRadius: '10px' }}>
+                          <div style={{ fontSize: '14px', fontWeight: 'bold', color: '#333', marginBottom: '10px' }}>👥 按人群分类（5 类）</div>
+                          <div style={{ fontSize: '12px', color: '#666', lineHeight: '1.8' }}>
+                            儿童 15 首、女性 20 首、老人 20 首、孕妇 10 首、亚健康 15 首
+                          </div>
+                        </div>
+                        <div style={{ padding: '15px', background: 'white', borderRadius: '10px' }}>
+                          <div style={{ fontSize: '14px', fontWeight: 'bold', color: '#333', marginBottom: '10px' }}>🌿 体质食疗（9 种）</div>
+                          <div style={{ fontSize: '12px', color: '#666', lineHeight: '1.8' }}>
+                            平和质、气虚质、阳虚质、阴虚质、痰湿质、湿热质、血瘀质、气郁质、特禀质
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* 药食同源目录列表 */}
+                    <div style={{ marginBottom: '20px' }}>
+                      <div style={{ fontSize: isMobile ? '16px' : '18px', fontWeight: 'bold', color: '#333', marginBottom: '15px' }}>
+                        📜 药食同源物质目录（106 种）
+                      </div>
+                      <div style={{ display: 'grid', gridTemplateColumns: isMobile ? 'repeat(2, 1fr)' : 'repeat(4, 1fr)', gap: '8px' }}>
+                        {YAOSHI_TONGYUAN_CATALOG.items.map((item: any, idx: number) => (
+                          <div
+                            key={idx}
+                            style={{
+                              padding: '8px 12px',
+                              background: item.added === '2023' ? '#fff3cd' : '#f8f9fa',
+                              borderRadius: '8px',
+                              border: item.added === '2023' ? '1px solid #ffc107' : '1px solid #e9ecef',
+                              textAlign: 'center',
+                            }}
+                          >
+                            <div style={{ fontSize: isMobile ? '12px' : '13px', fontWeight: '500', color: '#333' }}>
+                              {item.name}
+                            </div>
+                            {item.added === '2023' && (
+                              <div style={{ fontSize: '9px', color: '#e67e22', marginTop: '2px' }}>2023 新增</div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    
+                    {/* 四季食疗 */}
+                    <div style={{ marginBottom: '20px' }}>
+                      <div style={{ fontSize: isMobile ? '16px' : '18px', fontWeight: 'bold', color: '#333', marginBottom: '15px' }}>
+                        📅 四季食疗方案
+                      </div>
+                      <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(4, 1fr)', gap: '12px' }}>
+                        {YAOSHI_TONGYUAN_CATALOG.recipes.bySeason.map((season: any, idx: number) => (
+                          <div
+                            key={idx}
+                            style={{
+                              padding: '15px',
+                              background: ['#e8f5e9', '#fff3e0', '#ffebee', '#e3f2fd'][idx],
+                              borderRadius: '10px',
+                              border: `2px solid ${['#27ae60', '#f39c12', '#e74c3c', '#3498db'][idx]}33`,
+                            }}
+                          >
+                            <div style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', marginBottom: '5px' }}>
+                              {['🌱', '☀️', '🍂', '❄️'][idx]} {season.season}
+                            </div>
+                            <div style={{ fontSize: '11px', color: '#666', marginBottom: '8px', fontStyle: 'italic' }}>
+                              原则：{season.principle}
+                            </div>
+                            <div style={{ fontSize: '11px', color: '#666', lineHeight: '1.6' }}>
+                              {season.recipes.slice(0, 4).join('、')}...
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                )}
+                
                 {/* 101,401 方剂库示例展示 */}
                 {currentSubcategory.special && (
                   <div style={{ marginBottom: '30px' }}>
