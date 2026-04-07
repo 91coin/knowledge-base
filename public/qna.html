@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💬 中医问答库 - 中医药知识库</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+      background: #f9fafb;
+      line-height: 1.6;
+    }
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 48px 24px;
+      color: white;
+    }
+    .header h1 { font-size: 32px; font-weight: 700; margin-bottom: 12px; }
+    .header p { font-size: 16px; opacity: 0.9; margin-bottom: 24px; }
+    .stats { display: flex; gap: 16px; flex-wrap: wrap; }
+    .stat-card {
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 16px 24px;
+      min-width: 150px;
+    }
+    .stat-number { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+    .stat-label { font-size: 13px; opacity: 0.9; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+    .search-box {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .search-input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      font-size: 15px;
+      outline: none;
+      margin-bottom: 16px;
+    }
+    .filters { display: flex; gap: 8px; flex-wrap: wrap; }
+    .filter-btn {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      background: #f3f4f6;
+      color: #6b7280;
+      transition: all 0.2s;
+    }
+    .filter-btn.active {
+      background: #667eea;
+      color: white;
+    }
+    .results-count { margin-bottom: 16px; color: #6b7280; font-size: 14px; }
+    .qna-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 20px;
+    }
+    .qna-card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      border: 1px solid #e5e7eb;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .qna-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .category-tag {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 16px;
+      font-size: 12px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+    .qna-question {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1f2937;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      background: #f3f4f6;
+      color: #6b7280;
+    }
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      z-index: 1000;
+      padding: 20px;
+      overflow: auto;
+    }
+    .modal-content {
+      background: white;
+      border-radius: 16px;
+      max-width: 900px;
+      width: 100%;
+      max-height: 90vh;
+      overflow: auto;
+      margin-top: 40px;
+      padding: 32px;
+      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+    }
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 24px;
+    }
+    .close-btn {
+      background: #f3f4f6;
+      border: none;
+      border-radius: 8px;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+      font-size: 20px;
+      color: #6b7280;
+    }
+    .modal-body { font-size: 15px; line-height: 1.8; color: #4b5563; }
+    .modal-body h2 { font-size: 20px; font-weight: 600; color: #1f2937; margin: 24px 0 12px; }
+    .modal-body h3 { font-size: 18px; font-weight: 600; color: #1f2937; margin: 20px 0 10px; }
+    .modal-body pre {
+      background: #f9fafb;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 13px;
+      margin: 12px 0;
+    }
+    .modal-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+    }
+    .modal-body th, .modal-body td {
+      border: 1px solid #e5e7eb;
+      padding: 12px;
+      text-align: left;
+    }
+    .modal-body th { background: #f9fafb; font-weight: 600; }
+    .related-topics {
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e7eb;
+    }
+    .related-tag {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin: 4px;
+      background: #e0e7ff;
+      color: #3730a3;
+      cursor: pointer;
+    }
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: #9ca3af;
+    }
+    .back-link {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #667eea;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <a href="/" class="back-link">← 返回首页</a>
+      <h1>💬 中医问答库</h1>
+      <p>整理自 2026-03-25 深度学习对话</p>
+      <div class="stats">
+        <div class="stat-card">
+          <div class="stat-number" id="total-count">0</div>
+          <div class="stat-label">总问答数</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="today-count">0</div>
+          <div class="stat-label">今日新增</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="category-count">0</div>
+          <div class="stat-label">分类数量</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="search-box">
+      <input type="text" class="search-input" id="search-input" placeholder="搜索问题、答案或标签...">
+      <div class="filters" id="filters"></div>
+    </div>
+    <div class="results-count" id="results-count">找到 0 个问答</div>
+    <div class="qna-grid" id="qna-grid"></div>
+  </div>
+
+  <div id="modal" class="modal-overlay" style="display: none;" onclick="closeModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div>
+          <span class="category-tag" id="modal-category"></span>
+          <h1 id="modal-question" style="font-size: 24px; font-weight: 700; color: #1f2937; margin: 12px 0 8px;"></h1>
+          <p id="modal-timestamp" style="font-size: 13px; color: #9ca3af;"></p>
+        </div>
+        <button class="close-btn" onclick="closeModalDirect()">✕</button>
+      </div>
+      <div class="modal-body" id="modal-answer"></div>
+      <div class="related-topics" id="modal-related"></div>
+    </div>
+  </div>
+
+  <script>
+    const qnaDatabase = [
+      {
+        id: 'qna-001',
+        question: '脾气虚、脾阴虚、脾阳虚三者如何鉴别？',
+        category: '中医辨证',
+        tags: ['脾气虚', '脾阴虚', '脾阳虚', '鉴别诊断'],
+        timestamp: '2026-03-25 21:42',
+        answer: `<h2>一、核心病机对比</h2>
+<table>
+  <tr><th>证型</th><th>病机本质</th><th>阴阳属性</th><th>病理特点</th></tr>
+  <tr><td><strong>脾气虚</strong></td><td>脾的功能减退</td><td>气虚</td><td>运化无力</td></tr>
+  <tr><td><strong>脾阴虚</strong></td><td>脾的阴液不足</td><td>阴虚</td><td>虚热内生</td></tr>
+  <tr><td><strong>脾阳虚</strong></td><td>脾的阳气虚衰</td><td>阳虚</td><td>寒湿内生</td></tr>
+</table>
+
+<h2>二、快速鉴别三步法</h2>
+<p><strong>第一步：看寒热</strong></p>
+<ul>
+  <li>有热象（手足心热、舌红）→ <strong>脾阴虚</strong></li>
+  <li>有寒象（畏寒肢冷、喜温）→ <strong>脾阳虚</strong></li>
+  <li>无明显寒热 → <strong>脾气虚</strong></li>
+</ul>
+
+<p><strong>第二步：看大便</strong></p>
+<ul>
+  <li>便溏、完全不化 → <strong>脾气虚/脾阳虚</strong></li>
+  <li>便干或先干后溏 → <strong>脾阴虚</strong></li>
+</ul>
+
+<p><strong>第三步：看舌象</strong>（最可靠！）</p>
+<ul>
+  <li>舌淡苔白 → <strong>脾气虚</strong></li>
+  <li>舌红少苔 → <strong>脾阴虚</strong></li>
+  <li>舌淡胖苔白滑 → <strong>脾阳虚</strong></li>
+</ul>`,
+        relatedTopics: ['脾的气阴阳俱虚', '燥湿同见', '李东垣脾胃论']
+      },
+      {
+        id: 'qna-002',
+        question: '脾阴虚会大便溏么？',
+        category: '中医辨证',
+        tags: ['脾阴虚', '大便', '病机'],
+        timestamp: '2026-03-25 21:20',
+        answer: `<h2>核心结论</h2>
+<table>
+  <tr><th>证型</th><th>大便性状</th><th>病机</th></tr>
+  <tr><td><strong>典型脾阴虚</strong></td><td>大便<strong>干结</strong></td><td>肠道失润</td></tr>
+  <tr><td><strong>脾阴虚夹湿</strong></td><td>大便<strong>先干后溏</strong></td><td>阴虚为本，湿浊为标</td></tr>
+  <tr><td><strong>脾阴虚重证</strong></td><td>大便<strong>溏薄</strong></td><td>阴损及气</td></tr>
+</table>
+
+<p>💡 <strong>关键点</strong>：单纯脾阴虚→便干；脾阴虚<strong>兼夹湿气</strong>→便溏或先干后溏</p>
+
+<h2>治疗思路</h2>
+<p><strong>原则</strong>：滋阴不助湿，化湿不伤阴</p>
+<p><strong>推荐方剂</strong>：参苓白术散（加减）</p>
+<pre>太子参 15g    山药 20g      莲子肉 15g
+白扁豆 12g    茯苓 15g      薏苡仁 20g
+沙参 12g      麦冬 12g      陈皮 6g
+泽泻 10g      甘草 6g</pre>`,
+        relatedTopics: ['脾气虚', '脾阳虚', '燥湿同见']
+      },
+      {
+        id: 'qna-003',
+        question: '为什么脾气虚和脾阳虚很难区分？',
+        category: '中医辨证',
+        tags: ['脾气虚', '脾阳虚', '鉴别诊断', '难点'],
+        timestamp: '2026-03-25 21:46',
+        answer: `<h2>核心原因：病机上的连续性</h2>
+<pre>气 = 阳的初级阶段
+阳 = 气的重度阶段
+
+脾气虚 ─────→ 脾阳虚
+  (量变)        (质变)</pre>
+
+<h2>三大难点</h2>
+<ol>
+  <li><strong>症状高度重叠</strong>：食少、便溏、腹胀、乏力——两者完全相同</li>
+  <li><strong>唯一鉴别点是寒象</strong>：但轻度脾阳虚的寒象很不典型</li>
+  <li><strong>舌脉存在灰色地带</strong>：舌淡苔白→舌淡胖苔白滑之间有过渡型</li>
+</ol>
+
+<h2>快速鉴别（抓核心）</h2>
+<table>
+  <tr><th>鉴别点</th><th>脾气虚</th><th>脾阳虚</th></tr>
+  <tr><td><strong>畏寒肢冷</strong></td><td>❌ 无</td><td>✅ 有（关键！）</td></tr>
+  <tr><td><strong>舌象</strong></td><td>舌淡苔白</td><td>舌淡<strong>胖</strong>苔白<strong>滑</strong></td></tr>
+  <tr><td><strong>脉象</strong></td><td>缓弱</td><td><strong>沉迟</strong>无力</td></tr>
+</ol>`,
+        relatedTopics: ['脾气虚', '脾阳虚', '脾阴虚']
+      },
+      {
+        id: 'qna-004',
+        question: '临床上一些人，脾气、脾阳、脾阴都亏虚，怎么理解？',
+        category: '中医辨证',
+        tags: ['气阴阳俱虚', '复合证型', '慢性病'],
+        timestamp: '2026-03-25 22:06',
+        answer: `<h2>病机演变规律</h2>
+<pre>脾气虚（初期）
+  ↓ 久病不愈/失治误治
+脾阳虚（气虚加重，阳随气损）
+  ↓ 长期阳虚/过用温燥
+脾阴虚（阳损及阴，阴阳两虚）
+  ↓
+脾的气阴阳俱虚（晚期）</pre>
+
+<h2>矛盾症状同时出现</h2>
+<table>
+  <tr><th>矛盾表现</th><th>解释</th></tr>
+  <tr><td>畏寒肢冷 + 手足心热</td><td>阳虚则外寒，阴虚则内热</td></tr>
+  <tr><td>大便溏薄 + 口干咽燥</td><td>阳虚不化水，阴虚津液亏</td></tr>
+  <tr><td>舌淡胖 + 少苔</td><td>阳虚水湿 + 阴虚津亏</td></tr>
+  <tr><td>脉沉细数</td><td>阳虚则沉，阴虚则细数</td></tr>
+</table>
+
+<h2>治疗策略</h2>
+<p><strong>原则</strong>：阴阳双补，气阴同治</p>
+<p><strong>方药</strong>：十全大补汤合生脉散加减</p>`,
+        relatedTopics: ['脾气虚', '脾阴虚', '脾阳虚']
+      },
+      {
+        id: 'qna-005',
+        question: '怎么理解舌诊中的燥湿相继？',
+        category: '舌诊',
+        tags: ['燥湿', '舌诊', '津液代谢'],
+        timestamp: '2026-03-25 22:09',
+        answer: `<h2>概念</h2>
+<p>"燥湿相继"是舌诊中的重要征象，指舌象在短时间内出现<strong>燥湿交替或并存</strong>的变化。</p>
+
+<h2>表现形式</h2>
+<h3>1. 舌面燥湿不均</h3>
+<ul>
+  <li>舌中干燥、舌边湿润</li>
+  <li>舌根湿润、舌尖干燥</li>
+</ul>
+
+<h3>2. 舌苔燥湿交替</h3>
+<ul>
+  <li>苔燥转润（病情好转）</li>
+  <li>苔润转燥（病情加重）</li>
+</ul>
+
+<h2>病机分析</h2>
+<p><strong>燥湿不均——津液分布失常</strong></p>
+<ul>
+  <li>舌中干燥、舌边湿润：中焦燥热，旁有湿阻</li>
+  <li>舌尖干燥、舌根湿润：上燥下湿，心肾不交</li>
+</ul>`,
+        relatedTopics: ['燥湿同见', '脾阴虚', '津液代谢']
+      },
+      {
+        id: 'qna-006',
+        question: '燥湿同见，如何进一步阐释？',
+        category: '中医辨证',
+        tags: ['燥湿同见', '病机', '治疗'],
+        timestamp: '2026-03-25 22:18',
+        answer: `<h2>概念辨析</h2>
+<p>"燥湿同见"是指在同一患者、同一时期，燥象与湿象同时出现的病理状态。</p>
+
+<h2>病机本质</h2>
+<p><strong>核心病机</strong>：津液代谢的双重紊乱</p>
+<pre>津液生成不足（燥）
+  ↓
+脾失健运 → 水湿内停（湿）
+  ↓
+津液输布障碍（燥）</pre>
+
+<p>💡 <strong>关键点</strong>：不是"津液总量"的问题，而是"津液分布"的问题</p>
+
+<h2>治疗原则</h2>
+<p><strong>核心原则</strong>：滋阴不助湿，化湿不伤阴</p>
+
+<h3>常用药对</h3>
+<ul>
+  <li>麦冬 + 茯苓：滋阴不助湿，利水不伤阴</li>
+  <li>石斛 + 薏苡仁：养胃阴，健脾湿</li>
+  <li>沙参 + 白扁豆：益气养阴，化湿和中</li>
+</ul>`,
+        relatedTopics: ['燥湿相继', '脾虚', '津液代谢']
+      },
+      {
+        id: 'qna-007',
+        question: '从舌诊上，怎么看燥湿同见？结合李东垣脾胃论谈谈',
+        category: '舌诊',
+        tags: ['舌诊', '燥湿', '李东垣', '脾胃论'],
+        timestamp: '2026-03-25 22:23',
+        answer: `<h2>一、舌诊辨燥湿同见</h2>
+<table>
+  <tr><th>舌象类型</th><th>舌质</th><th>舌苔</th><th>病机</th></tr>
+  <tr><td>湿热化燥</td><td>红少津</td><td>黄腻</td><td>湿热内蕴，化燥伤津</td></tr>
+  <tr><td>气虚津不上承</td><td>淡胖</td><td>白腻而干</td><td>脾气虚，湿困中焦</td></tr>
+  <tr><td>中燥旁湿</td><td>红（中）</td><td>中干燥</td><td>胃阴不足 + 肝胆湿热</td></tr>
+  <tr><td>上燥下湿</td><td>红（尖）</td><td>尖干燥</td><td>心火亢 + 下焦寒湿</td></tr>
+</table>
+
+<h2>二、李东垣脾胃论核心</h2>
+<h3>1. 脾胃为元气之本</h3>
+<blockquote>"脾胃之气既伤，而元气亦不能充，而诸病之所由生也。"</blockquote>
+
+<h3>2. 补中益气汤</h3>
+<pre>黄芪 15g（君）→ 补中益气，升阳举陷
+人参 6g（臣）→ 大补元气
+白术 10g（臣）→ 健脾燥湿
+当归 10g（佐）→ 养血和营
+陈皮 6g（佐）→ 理气和胃
+升麻 3g（使）→ 升举清阳
+柴胡 3g（使）→ 升举清阳
+炙甘草 6g（使）→ 调和诸药</pre>`,
+        relatedTopics: ['李东垣', '脾胃论', '燥湿同见', '补中益气汤']
+      },
+      {
+        id: 'qna-008',
+        question: '从西医角度，彻底论述脾主运化',
+        category: '中西医结合',
+        tags: ['脾主运化', '西医', '中西医结合'],
+        timestamp: '2026-03-25 22:29',
+        answer: `<h2>前言：中医"脾"≠ 西医"脾脏"</h2>
+<p><strong>中医的"脾"</strong>：是一个功能系统，涵盖消化、吸收、代谢、免疫等</p>
+<p><strong>西医的"脾脏"</strong>：淋巴器官，切除后不影响消化功能</p>
+
+<h2>一、运化水谷的西医解析</h2>
+<h3>对应解剖系统</h3>
+<ul>
+  <li>胃（受纳腐熟）→ 初步消化</li>
+  <li>小肠（受盛化物）→ 消化吸收（核心部位，200-250m²）</li>
+  <li>胰腺（分泌胰液）→ 全面消化</li>
+  <li>肝脏（分泌胆汁）→ 脂肪乳化</li>
+  <li>肠道菌群 → 发酵、合成维生素</li>
+</ul>
+
+<h2>二、脾虚证的西医病理生理</h2>
+<table>
+  <tr><th>证型</th><th>西医病理生理</th></tr>
+  <tr><td><strong>脾气虚</strong></td><td>消化功能减退 + 免疫功能低下 + 能量代谢降低</td></tr>
+  <tr><td><strong>脾阴虚</strong></td><td>腺体萎缩 + 分泌功能减退 + 慢性炎症</td></tr>
+  <tr><td><strong>脾阳虚</strong></td><td>代谢功能衰退 + 微循环障碍 + 能量不足</td></tr>
+</table>`,
+        relatedTopics: ['脾气虚', '脾阴虚', '脾阳虚', '肠道菌群']
+      },
+      {
+        id: 'qna-009',
+        question: '为什么一些人有了中医的脾病，但西医检查不出来任何问题？',
+        category: '中西医结合',
+        tags: ['功能性疾病', '中医辨证', '西医检查'],
+        timestamp: '2026-03-25 22:37',
+        answer: `<h2>核心答案</h2>
+<p><strong>中医的"脾"是功能系统，西医检查针对的是器质性病变。</strong></p>
+<p><strong>功能紊乱 ≠ 器质性病变</strong></p>
+
+<h2>为什么检查不出来？</h2>
+<h3>1. 脾气虚证</h3>
+<ul>
+  <li>胃镜：可能完全正常或仅慢性浅表性胃炎</li>
+  <li>胃肠动力检测：可能在正常范围（代偿期）</li>
+  <li>消化酶检测：可能在参考范围内偏低</li>
+</ul>
+
+<h3>2. 脾阴虚证</h3>
+<ul>
+  <li>胃镜：早期可能完全正常</li>
+  <li>唾液流率：不是常规检查</li>
+  <li>自身抗体：早期可能阴性</li>
+</ul>
+
+<h3>3. 脾阳虚证</h3>
+<ul>
+  <li>甲状腺功能：可能亚临床（TSH 正常高限）</li>
+  <li>基础代谢率：不是常规检查</li>
+  <li>微循环检测：不是常规检查</li>
+</ul>
+
+<h2>关键观点</h2>
+<blockquote>
+<p>检查正常≠没病<br>
+症状真实存在，需要治疗<br>
+中医辨证 + 西医检查=最佳模式</p>
+</blockquote>`,
+        relatedTopics: ['脾气虚', '脾阴虚', '脾阳虚', '功能性疾病']
+      }
+    ]
+
+    let selectedCategory = '全部'
+    let searchQuery = ''
+    let expandedQna = null
+
+    const categories = ['全部', ...new Set(qnaDatabase.map(q => q.category))]
+
+    function getCategoryColor(category) {
+      const colors = {
+        '中医辨证': '#ef4444',
+        '舌诊': '#f59e0b',
+        '中西医结合': '#10b981',
+        '方剂学': '#8b5cf6',
+        '中药学': '#ec4899',
+      }
+      return colors[category] || '#6b7280'
+    }
+
+    function renderFilters() {
+      const filtersEl = document.getElementById('filters')
+      filtersEl.innerHTML = categories.map(cat => 
+        `<button class="filter-btn ${cat === selectedCategory ? 'active' : ''}" onclick="setCategory('${cat}')">${cat}</button>`
+      ).join('')
+    }
+
+    function setCategory(category) {
+      selectedCategory = category
+      renderFilters()
+      renderQna()
+    }
+
+    function renderQna() {
+      let result = qnaDatabase
+      if (selectedCategory !== '全部') {
+        result = result.filter(q => q.category === selectedCategory)
+      }
+      if (searchQuery.trim()) {
+        const query = searchQuery.toLowerCase()
+        result = result.filter(q =>
+          q.question.toLowerCase().includes(query) ||
+          q.answer.toLowerCase().includes(query) ||
+          q.tags.some(tag => tag.toLowerCase().includes(query))
+        )
+      }
+
+      document.getElementById('results-count').textContent = `找到 ${result.length} 个问答`
+      
+      const gridEl = document.getElementById('qna-grid')
+      if (result.length === 0) {
+        gridEl.innerHTML = '<div class="empty-state"><div style="font-size: 48px; margin-bottom: 16px;">🔍</div><div>没有找到相关问答</div></div>'
+        return
+      }
+
+      gridEl.innerHTML = result.map(qna => {
+        const color = getCategoryColor(qna.category)
+        return `
+          <div class="qna-card" onclick="openModal('${qna.id}')">
+            <span class="category-tag" style="background: ${color}15; color: ${color}">${qna.category}</span>
+            <div class="qna-question">${qna.question}</div>
+            <div class="tags">
+              ${qna.tags.slice(0, 3).map(tag => `<span class="tag">#${tag}</span>`).join('')}
+              ${qna.tags.length > 3 ? `<span class="tag">+${qna.tags.length - 3}</span>` : ''}
+            </div>
+          </div>
+        `
+      }).join('')
+
+      // Update stats
+      document.getElementById('total-count').textContent = qnaDatabase.length
+      document.getElementById('today-count').textContent = qnaDatabase.length
+      document.getElementById('category-count').textContent = categories.length - 1
+    }
+
+    function openModal(id) {
+      const qna = qnaDatabase.find(q => q.id === id)
+      if (!qna) return
+
+      const color = getCategoryColor(qna.category)
+      document.getElementById('modal-category').textContent = qna.category
+      document.getElementById('modal-category').style.background = `${color}15`
+      document.getElementById('modal-category').style.color = color
+      document.getElementById('modal-question').textContent = qna.question
+      document.getElementById('modal-timestamp').textContent = qna.timestamp
+      document.getElementById('modal-answer').innerHTML = qna.answer
+
+      const relatedEl = document.getElementById('modal-related')
+      if (qna.relatedTopics && qna.relatedTopics.length > 0) {
+        relatedEl.innerHTML = '<h3 style="font-size: 16px; font-weight: 600; margin-bottom: 12px;">相关问题</h3>' +
+          qna.relatedTopics.map(topic => `<span class="related-tag">💡 ${topic}</span>`).join('')
+        relatedEl.style.display = 'block'
+      } else {
+        relatedEl.style.display = 'none'
+      }
+
+      document.getElementById('modal').style.display = 'flex'
+      document.body.style.overflow = 'hidden'
+    }
+
+    function closeModal(event) {
+      if (event.target === document.getElementById('modal')) {
+        closeModalDirect()
+      }
+    }
+
+    function closeModalDirect() {
+      document.getElementById('modal').style.display = 'none'
+      document.body.style.overflow = 'auto'
+    }
+
+    // Search functionality
+    document.getElementById('search-input').addEventListener('input', (e) => {
+      searchQuery = e.target.value
+      renderQna()
+    })
+
+    // Initialize
+    renderFilters()
+    renderQna()
+  </script>
+</body>
+</html>

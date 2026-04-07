@@ -19,7 +19,7 @@
       "static/chunks/fd9d1056-253d8695cd74475a.js",
       "static/chunks/117-f1f0722679bdc789.js",
       "static/chunks/main-app-66a01f1568f0d4a6.js",
-      "static/chunks/app/page-6c10cab4a78433b8.js"
+      "static/chunks/app/page-6a774e1bb14f6b52.js"
     ],
     "/yaoshi-tongyuan/page": [
       "static/chunks/webpack-100b9e646d9c912e.js",
@@ -27,6 +27,13 @@
       "static/chunks/117-f1f0722679bdc789.js",
       "static/chunks/main-app-66a01f1568f0d4a6.js",
       "static/chunks/app/yaoshi-tongyuan/page-f25d6f6443d803a1.js"
+    ],
+    "/qna/page": [
+      "static/chunks/webpack-100b9e646d9c912e.js",
+      "static/chunks/fd9d1056-253d8695cd74475a.js",
+      "static/chunks/117-f1f0722679bdc789.js",
+      "static/chunks/main-app-66a01f1568f0d4a6.js",
+      "static/chunks/app/qna/page-7d470f4de792892e.js"
     ]
   }
 }

@@ -512,6 +512,7 @@ export default function KnowledgeBaseApp() {
             fontSize: '14px',
             transition: 'all 0.2s ease',
             boxShadow: '0 2px 8px rgba(245, 158, 11, 0.2)',
+            marginBottom: '12px',
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = 'translateY(-2px)'
@@ -526,6 +527,39 @@ export default function KnowledgeBaseApp() {
           <div>
             <div style={{ fontSize: '14px', fontWeight: 'bold' }}>药食同源</div>
             <div style={{ fontSize: '11px', opacity: 0.8, fontWeight: 'normal' }}>106 种食材 · 150 首食疗方</div>
+          </div>
+        </a>
+        
+        {/* 问答库入口 */}
+        <a
+          href="/qna"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '10px',
+            padding: '12px 16px',
+            background: 'linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%)',
+            color: '#3730a3',
+            borderRadius: '12px',
+            textDecoration: 'none',
+            fontWeight: '600',
+            fontSize: '14px',
+            transition: 'all 0.2s ease',
+            boxShadow: '0 2px 8px rgba(99, 102, 241, 0.2)',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'translateY(-2px)'
+            e.currentTarget.style.boxShadow = '0 4px 12px rgba(99, 102, 241, 0.3)'
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'translateY(0)'
+            e.currentTarget.style.boxShadow = '0 2px 8px rgba(99, 102, 241, 0.2)'
+          }}
+        >
+          <span style={{ fontSize: '18px' }}>💬</span>
+          <div>
+            <div style={{ fontSize: '14px', fontWeight: 'bold' }}>问答库</div>
+            <div style={{ fontSize: '11px', opacity: 0.8, fontWeight: 'normal' }}>深度学习对话整理</div>
           </div>
         </a>
       </div>
